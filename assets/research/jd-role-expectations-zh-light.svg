@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 736" width="1000" height="736" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+<title id="t">AIE 岗位描述中的能力与职责期望</title>
+<desc id="d">按技能统计的 JD 提及率，中国与北美对比，含 95% 置信区间。</desc>
+<text x="24.0" y="34.0" font-size="20" fill="#1f2328" font-weight="700">AIE 岗位描述中的能力与职责期望</text>
+<rect x="24" y="50" width="14" height="10" rx="2" fill="#c2552d"/>
+<text x="44.0" y="59.0" font-size="13" fill="#59636e">中国 n=51（18 家雇主）</text>
+<rect x="219" y="50" width="14" height="10" rx="2" fill="#3b62b3"/>
+<text x="239.0" y="59.0" font-size="13" fill="#59636e">北美 n=269（75 家雇主）</text>
+<text x="930.0" y="59.0" font-size="12" fill="#59636e" text-anchor="end">细线 = 95% 置信区间</text>
+<line x1="300.0" y1="88" x2="300.0" y2="666" stroke="#e5e7eb"/>
+<text x="300.0" y="684.0" font-size="11.5" fill="#59636e" text-anchor="middle">0%</text>
+<line x1="457.5" y1="88" x2="457.5" y2="666" stroke="#e5e7eb"/>
+<text x="457.5" y="684.0" font-size="11.5" fill="#59636e" text-anchor="middle">25%</text>
+<line x1="615.0" y1="88" x2="615.0" y2="666" stroke="#e5e7eb"/>
+<text x="615.0" y="684.0" font-size="11.5" fill="#59636e" text-anchor="middle">50%</text>
+<line x1="772.5" y1="88" x2="772.5" y2="666" stroke="#e5e7eb"/>
+<text x="772.5" y="684.0" font-size="11.5" fill="#59636e" text-anchor="middle">75%</text>
+<line x1="930.0" y1="88" x2="930.0" y2="666" stroke="#e5e7eb"/>
+<text x="930.0" y="684.0" font-size="11.5" fill="#59636e" text-anchor="middle">100%</text>
+<text x="288.0" y="111.0" font-size="13.5" fill="#1f2328" text-anchor="end">Agent / 智能体</text>
+<rect x="300" y="98" width="605.4" height="9" rx="1.5" fill="#c2552d"/>
+<line x1="846.8" y1="102.5" x2="923.1" y2="102.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="929.1" y="106.5" font-size="11" fill="#59636e">96%</text>
+<rect x="300" y="109" width="492.0" height="9" rx="1.5" fill="#3b62b3"/>
+<line x1="758.0" y1="113.5" x2="820.4" y2="113.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="826.4" y="117.5" font-size="11" fill="#59636e">78%</text>
+<text x="288.0" y="141.0" font-size="13.5" fill="#1f2328" text-anchor="end">生产上线与交付</text>
+<rect x="300" y="128" width="543.7" height="9" rx="1.5" fill="#c2552d"/>
+<line x1="768.1" y1="132.5" x2="887.2" y2="132.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="893.2" y="136.5" font-size="11" fill="#59636e">86%</text>
+<rect x="300" y="139" width="568.9" height="9" rx="1.5" fill="#3b62b3"/>
+<line x1="843.1" y1="143.5" x2="887.8" y2="143.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="893.8" y="147.5" font-size="11" fill="#59636e">90%</text>
+<text x="288.0" y="171.0" font-size="13.5" fill="#1f2328" text-anchor="end">Prompt / 上下文工程</text>
+<rect x="300" y="158" width="481.9" height="9" rx="1.5" fill="#c2552d"/>
+<line x1="698.2" y1="162.5" x2="841.8" y2="162.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="847.8" y="166.5" font-size="11" fill="#59636e">76%</text>
+<rect x="300" y="169" width="219.9" height="9" rx="1.5" fill="#3b62b3"/>
+<line x1="485.9" y1="173.5" x2="557.0" y2="173.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="563.0" y="177.5" font-size="11" fill="#59636e">35%</text>
+<text x="288.0" y="201.0" font-size="13.5" fill="#1f2328" text-anchor="end">工具调用与集成</text>
+<rect x="300" y="188" width="432.2" height="9" rx="1.5" fill="#c2552d"/>
+<line x1="646.5" y1="192.5" x2="802.1" y2="192.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="808.1" y="196.5" font-size="11" fill="#59636e">69%</text>
+<rect x="300" y="199" width="140.5" height="9" rx="1.5" fill="#3b62b3"/>
+<line x1="411.5" y1="203.5" x2="473.9" y2="203.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="479.9" y="207.5" font-size="11" fill="#59636e">22%</text>
+<text x="288.0" y="231.0" font-size="13.5" fill="#1f2328" text-anchor="end">评测与实验</text>
+<rect x="300" y="218" width="333.3" height="9" rx="1.5" fill="#c2552d"/>
+<line x1="548.9" y1="222.5" x2="715.2" y2="222.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="721.2" y="226.5" font-size="11" fill="#59636e">53%</text>
+<rect x="300" y="229" width="421.5" height="9" rx="1.5" fill="#3b62b3"/>
+<line x1="684.9" y1="233.5" x2="755.5" y2="233.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="761.5" y="237.5" font-size="11" fill="#59636e">67%</text>
+<text x="288.0" y="261.0" font-size="13.5" fill="#1f2328" text-anchor="end">RAG / 检索</text>
+<rect x="300" y="248" width="395.0" height="9" rx="1.5" fill="#c2552d"/>
+<line x1="608.7" y1="252.5" x2="770.6" y2="252.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="776.6" y="256.5" font-size="11" fill="#59636e">63%</text>
+<rect x="300" y="259" width="199.1" height="9" rx="1.5" fill="#3b62b3"/>
+<line x1="465.7" y1="263.5" x2="535.6" y2="263.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="541.6" y="267.5" font-size="11" fill="#59636e">32%</text>
+<text x="288.0" y="291.0" font-size="13.5" fill="#1f2328" text-anchor="end">可靠性与稳定性</text>
+<rect x="300" y="278" width="345.9" height="9" rx="1.5" fill="#c2552d"/>
+<line x1="560.8" y1="282.5" x2="726.5" y2="282.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="732.5" y="286.5" font-size="11" fill="#59636e">55%</text>
+<rect x="300" y="289" width="381.8" height="9" rx="1.5" fill="#3b62b3"/>
+<line x1="644.0" y1="293.5" x2="717.1" y2="293.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="723.1" y="297.5" font-size="11" fill="#59636e">61%</text>
+<text x="288.0" y="321.0" font-size="13.5" fill="#1f2328" text-anchor="end">分布式与大规模系统</text>
+<rect x="300" y="308" width="358.5" height="9" rx="1.5" fill="#c2552d"/>
+<line x1="572.8" y1="312.5" x2="737.9" y2="312.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="743.9" y="316.5" font-size="11" fill="#59636e">57%</text>
+<rect x="300" y="319" width="369.8" height="9" rx="1.5" fill="#3b62b3"/>
+<line x1="632.6" y1="323.5" x2="706.4" y2="323.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="712.4" y="327.5" font-size="11" fill="#59636e">59%</text>
+<text x="288.0" y="351.0" font-size="13.5" fill="#1f2328" text-anchor="end">安全、权限与合规</text>
+<rect x="300" y="338" width="185.2" height="9" rx="1.5" fill="#c2552d"/>
+<line x1="417.8" y1="342.5" x2="570.9" y2="342.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="576.9" y="346.5" font-size="11" fill="#59636e">29%</text>
+<rect x="300" y="349" width="339.6" height="9" rx="1.5" fill="#3b62b3"/>
+<line x1="601.8" y1="353.5" x2="676.7" y2="353.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="682.7" y="357.5" font-size="11" fill="#59636e">54%</text>
+<text x="288.0" y="381.0" font-size="13.5" fill="#1f2328" text-anchor="end">可观测性与监控</text>
+<rect x="300" y="368" width="222.4" height="9" rx="1.5" fill="#c2552d"/>
+<line x1="448.7" y1="372.5" x2="608.7" y2="372.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="614.7" y="376.5" font-size="11" fill="#59636e">35%</text>
+<rect x="300" y="379" width="309.3" height="9" rx="1.5" fill="#3b62b3"/>
+<line x1="572.2" y1="383.5" x2="646.5" y2="383.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="652.5" y="387.5" font-size="11" fill="#59636e">49%</text>
+<text x="288.0" y="411.0" font-size="13.5" fill="#1f2328" text-anchor="end">业务/客户需求对接</text>
+<rect x="300" y="398" width="284.1" height="9" rx="1.5" fill="#c2552d"/>
+<line x1="503.5" y1="402.5" x2="669.2" y2="402.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="675.2" y="406.5" font-size="11" fill="#59636e">45%</text>
+<rect x="300" y="409" width="309.3" height="9" rx="1.5" fill="#3b62b3"/>
+<line x1="572.2" y1="413.5" x2="646.5" y2="413.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="652.5" y="417.5" font-size="11" fill="#59636e">49%</text>
+<text x="288.0" y="441.0" font-size="13.5" fill="#1f2328" text-anchor="end">延迟、成本与性能优化</text>
+<rect x="300" y="428" width="247.0" height="9" rx="1.5" fill="#c2552d"/>
+<line x1="470.1" y1="432.5" x2="633.3" y2="432.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="639.3" y="436.5" font-size="11" fill="#59636e">39%</text>
+<rect x="300" y="439" width="215.5" height="9" rx="1.5" fill="#3b62b3"/>
+<line x1="481.4" y1="443.5" x2="552.6" y2="443.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="558.6" y="447.5" font-size="11" fill="#59636e">34%</text>
+<text x="288.0" y="471.0" font-size="13.5" fill="#1f2328" text-anchor="end">多 Agent 协作</text>
+<rect x="300" y="458" width="247.0" height="9" rx="1.5" fill="#c2552d"/>
+<line x1="470.1" y1="462.5" x2="633.3" y2="462.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="639.3" y="466.5" font-size="11" fill="#59636e">39%</text>
+<rect x="300" y="469" width="58.6" height="9" rx="1.5" fill="#3b62b3"/>
+<line x1="340.3" y1="473.5" x2="384.4" y2="473.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="390.4" y="477.5" font-size="11" fill="#59636e">9%</text>
+<text x="288.0" y="501.0" font-size="13.5" fill="#1f2328" text-anchor="end">Agent 记忆</text>
+<rect x="300" y="488" width="235.0" height="9" rx="1.5" fill="#c2552d"/>
+<line x1="459.4" y1="492.5" x2="621.3" y2="492.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="627.3" y="496.5" font-size="11" fill="#59636e">37%</text>
+<rect x="300" y="499" width="25.8" height="9" rx="1.5" fill="#3b62b3"/>
+<line x1="314.5" y1="503.5" x2="345.4" y2="503.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="351.4" y="507.5" font-size="11" fill="#59636e">4%</text>
+<text x="288.0" y="531.0" font-size="13.5" fill="#1f2328" text-anchor="end">微调 / 后训练</text>
+<rect x="300" y="518" width="197.8" height="9" rx="1.5" fill="#c2552d"/>
+<line x1="427.9" y1="522.5" x2="583.5" y2="522.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="589.5" y="526.5" font-size="11" fill="#59636e">31%</text>
+<rect x="300" y="529" width="114.7" height="9" rx="1.5" fill="#3b62b3"/>
+<line x1="388.8" y1="533.5" x2="446.8" y2="533.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="452.8" y="537.5" font-size="11" fill="#59636e">18%</text>
+<text x="288.0" y="561.0" font-size="13.5" fill="#1f2328" text-anchor="end">多模态 / 语音</text>
+<rect x="300" y="548" width="136.1" height="9" rx="1.5" fill="#c2552d"/>
+<line x1="378.8" y1="552.5" x2="518.0" y2="552.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="524.0" y="556.5" font-size="11" fill="#59636e">22%</text>
+<rect x="300" y="559" width="112.1" height="9" rx="1.5" fill="#3b62b3"/>
+<line x1="386.3" y1="563.5" x2="444.3" y2="563.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="450.3" y="567.5" font-size="11" fill="#59636e">18%</text>
+<text x="288.0" y="591.0" font-size="13.5" fill="#1f2328" text-anchor="end">强化学习 / 偏好对齐</text>
+<rect x="300" y="578" width="98.9" height="9" rx="1.5" fill="#c2552d"/>
+<line x1="351.7" y1="582.5" x2="476.4" y2="582.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="482.4" y="586.5" font-size="11" fill="#59636e">16%</text>
+<rect x="300" y="589" width="61.1" height="9" rx="1.5" fill="#3b62b3"/>
+<line x1="342.2" y1="593.5" x2="386.9" y2="593.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="392.9" y="597.5" font-size="11" fill="#59636e">10%</text>
+<text x="288.0" y="621.0" font-size="13.5" fill="#1f2328" text-anchor="end">数据管道与处理</text>
+<rect x="300" y="608" width="86.3" height="9" rx="1.5" fill="#c2552d"/>
+<line x1="342.8" y1="612.5" x2="461.9" y2="612.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="467.9" y="616.5" font-size="11" fill="#59636e">14%</text>
+<rect x="300" y="619" width="65.5" height="9" rx="1.5" fill="#3b62b3"/>
+<line x1="346.0" y1="623.5" x2="392.0" y2="623.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="398.0" y="627.5" font-size="11" fill="#59636e">10%</text>
+<text x="288.0" y="651.0" font-size="13.5" fill="#1f2328" text-anchor="end">模型原理（Transformer 等）</text>
+<rect x="300" y="638" width="86.3" height="9" rx="1.5" fill="#c2552d"/>
+<line x1="342.8" y1="642.5" x2="461.9" y2="642.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="467.9" y="646.5" font-size="11" fill="#59636e">14%</text>
+<rect x="300" y="649" width="20.8" height="9" rx="1.5" fill="#3b62b3"/>
+<line x1="311.3" y1="653.5" x2="339.1" y2="653.5" stroke="#1f2328" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="345.1" y="657.5" font-size="11" fill="#59636e">3%</text>
+<text x="24.0" y="714.0" font-size="12" fill="#59636e">统计单位：提到该项的 JD 占比（含必需与加分项）· 中国为人工复核样本；北美含人工复核与规则筛选样本 · 规则见 research/skill-terms.json</text>
+</svg>

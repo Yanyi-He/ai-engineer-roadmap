@@ -214,6 +214,7 @@ Independently write, test, debug and maintain deliverable Python code.
   - Verifying generated code: tests first, diff review, dependency/security checks and hallucinated APIs
   - Sandboxes, secrets and production access; human confirmation for irreversible actions
   - Measuring productivity and AI-allowed interviews: explaining your own judgment rather than the assistant’s output
+  - AI-driven testing and code review built into team standards; fluent but not dependent: read code, debug and explain designs without an assistant
 
 ## [02 Backend, data and distributed systems](modules/02.md)
 
@@ -437,7 +438,7 @@ Build a measurable, maintainable and authorized knowledge application.
   - Cleaning, hashes, document/chunk IDs and revisions
   - Structural/semantic chunks, overlap and metadata
   - Batching, replay, idempotent indexes and deletion
-  - Choosing parsers (Docling, MinerU, PaddleOCR, Unstructured) and evaluating parse quality by document type
+  - Choosing parsers (Docling, MinerU, PaddleOCR, Unstructured) or cloud document-intelligence services (Azure Document Intelligence, AWS Textract), and evaluating parse quality by document type
 - **[06.2 Embeddings and similarity](modules/06.md#unit-06-2)** · `core` · [Sentence Transformers: Retrieve and Rerank](https://www.sbert.net/examples/sentence_transformer/applications/retrieve_rerank/README.html)
   - Bi-encoders, query/document representations and objectives
   - Cosine/dot/L2, normalization, dimension and distribution
@@ -566,6 +567,7 @@ Master one stateful framework and explain alternatives and cross-layer compositi
   - Conditional routing, loops, termination and debugging
   - Model/retrieval/tool nodes and dependencies
   - Fixed workflows and dynamic graphs
+  - LangChain/LangGraph 1.0: create_agent on LangGraph and middleware (PII redaction, summarization, human approval); create_react_agent is deprecated
 - **[08.2 Parallelism, subgraphs and control](modules/08.md#unit-08-2)** · `advanced` · [LangGraph Overview and Guides](https://docs.langchain.com/oss/python/langgraph/overview)
   - Fan-out/fan-in, Send, Command and dynamic routing
   - Parallel merging, reducer conflicts and determinism
@@ -586,7 +588,7 @@ Master one stateful framework and explain alternatives and cross-layer compositi
   - Limits, tenancy, upgrades, rollback and support
 - **[08.5 Peer frameworks and enterprise ecosystems](modules/08.md#unit-08-5)** · `advanced` · [Google Agent Development Kit](https://google.github.io/adk-docs/)
   - LangChain versus LangGraph responsibilities
-  - ADK, PydanticAI, Microsoft Agent Framework (AutoGen’s successor) and CrewAI
+  - ADK, PydanticAI, Microsoft Agent Framework (successor to the archived AutoGen), CrewAI, and AgentScope and Spring AI Alibaba in China
   - Provider agent SDKs (OpenAI Agents SDK, Claude Agent SDK) and neutral typed actions
   - TypeScript (Vercel AI SDK, Mastra), Java (Spring AI/LangChain4j; see 02.8) and .NET ecosystems
   - Compare sessions, state, retries, tools, deployment and evaluation
@@ -610,6 +612,7 @@ Master one stateful framework and explain alternatives and cross-layer compositi
   - Self-hosting, licenses, multi-tenancy and data boundaries
   - DSL export, version control, and how to fill evaluation/observability gaps
   - Triggers and steps for migrating a platform prototype to a code service
+  - Enterprise low-code counterparts: Copilot Studio and Power Automate in North America, Dify and Coze in China; licences (Dify's multi-tenant and logo terms), single-instance throughput limits and when to move to code
 
 ## [09 Multi-agent collaboration](modules/09.md)
 
@@ -945,12 +948,14 @@ Own delivery from discovery to operation of an AI product.
   - Minimization, retention, correction/deletion and vendors
   - Domain review, responsibility, approval and escalation
   - Security tests, release records and explanations
+  - Model-risk management in regulated industries (insurance, banking, health): human oversight, traceable evidence and release approval
 - **[14.6 Release, cost and ongoing operation](modules/14.md#unit-14-6)** · `core` · [What We’ve Learned From A Year of Building with LLMs](https://applied-llms.org/)
   - Traceable releases across model/prompt/tools/index/data
   - Automated/manual evaluation, shadow/canary and rollback
   - Inference/training/storage/observability cost and budgets
   - Adoption, success, time saved and corrections
   - Maintenance, upgrades, handoff and documentation
+  - Environment promotion (sandbox → dev → QA → UAT → prod), architecture decision records, API specifications and runbooks
 - **[14.7 Risk tiers, privacy boundaries and safety evaluation](modules/14.md#unit-14-7)** · `core` · [Stanford CS329Z: Engineering AI Agents](https://cs329z.stanford.edu/)
   - Threat models covering assets, principals, sources, actions, attackers and egress
   - Direct/indirect injection, poisoned retrieval, cross-tenant leaks and composed-tool risks

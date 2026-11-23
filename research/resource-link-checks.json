@@ -1873,5 +1873,115 @@
     "content_sha256": "ac1498ec1baf8f30e6c12c641e20c7dd01f96588b6f944a1f1ac2e910af8820d",
     "checked_at": "2026-11-23",
     "verification_method": "HTTP GET plus title/content snapshot; editorial scope/cost annotations are separate"
+  },
+  {
+    "id": "roadmap-sh",
+    "url": "https://roadmap.sh/ai-engineer",
+    "resolved_url": "https://roadmap.sh/ai-engineer",
+    "http_status": 200,
+    "title": "AI Engineer Roadmap",
+    "characters": 1964,
+    "content_sha256": "bb0d9d4342f8042b9ea40ed7cd75b3ad54d8084351b854ef2f2c265bd2e46552",
+    "checked_at": "2026-11-23",
+    "verification_method": "HTTP GET plus title/content snapshot; editorial scope/cost annotations are separate"
+  },
+  {
+    "id": "happy-llm",
+    "url": "https://github.com/datawhalechina/happy-llm",
+    "resolved_url": "https://github.com/datawhalechina/happy-llm",
+    "http_status": 200,
+    "title": "GitHub - datawhalechina/happy-llm: 📚 从零开始构建大模型 · GitHub",
+    "characters": 7020,
+    "content_sha256": "f2e20df2eac6a6cd8befe53f592a947d877eee58091551f248fe63c2d4a0c396",
+    "checked_at": "2026-11-23",
+    "verification_method": "HTTP GET plus title/content snapshot; editorial scope/cost annotations are separate"
+  },
+  {
+    "id": "self-llm",
+    "url": "https://github.com/datawhalechina/self-llm",
+    "resolved_url": "https://github.com/datawhalechina/self-llm",
+    "http_status": 200,
+    "title": "GitHub - datawhalechina/self-llm: 《开源大模型食用指南》针对中国宝宝量身打造的基于Linux环境快速微调（全参数/Lora）、部署国内外开源大模型（LLM）/多模态大模型（MLLM）教程 · GitHub",
+    "characters": 9579,
+    "content_sha256": "810b61e2beb1e2092be7c0991b5d52c9dcca855e65899b1a5bc5a1970ea61ac8",
+    "checked_at": "2026-11-23",
+    "verification_method": "HTTP GET plus title/content snapshot; editorial scope/cost annotations are separate"
+  },
+  {
+    "id": "copilot-studio",
+    "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/",
+    "resolved_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/",
+    "http_status": 200,
+    "title": "Official Microsoft Copilot Studio documentation - Microsoft Copilot Studio | Microsoft Learn",
+    "characters": 6117,
+    "content_sha256": "76da6d38996af1bbb160444f5908ccb82e8ed48e2b87f81787361bb70000aa03",
+    "checked_at": "2026-11-23",
+    "verification_method": "HTTP GET plus title/content snapshot; editorial scope/cost annotations are separate"
+  },
+  {
+    "id": "azure-doc-intel",
+    "url": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/",
+    "resolved_url": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/?view=doc-intel-4.0.0",
+    "http_status": 200,
+    "title": "Document Intelligence documentation - Quickstarts, Tutorials, API Reference - Foundry Tools | Microsoft Learn",
+    "characters": 1992,
+    "content_sha256": "d954c09f45d59f4f8a0d74d4ac413ce19ba4ed59a887ee096c19effedc825b5f",
+    "checked_at": "2026-11-23",
+    "verification_method": "HTTP GET plus title/content snapshot; editorial scope/cost annotations are separate"
+  },
+  {
+    "id": "langchain-v1",
+    "url": "https://blog.langchain.com/langchain-langgraph-1dot0/",
+    "resolved_url": "https://www.langchain.com/blog/langchain-langgraph-1dot0",
+    "http_status": 200,
+    "title": "LangChain and LangGraph Agent Frameworks Reach v1.0 Milestones",
+    "characters": 14546,
+    "content_sha256": "6e2c39c65fd7b192579c56bdaee3808fe3d5db65cab252cdf2c381377d265b74",
+    "checked_at": "2026-11-23",
+    "verification_method": "HTTP GET plus title/content snapshot; editorial scope/cost annotations are separate"
+  },
+  {
+    "id": "agentscope",
+    "url": "https://github.com/agentscope-ai/agentscope",
+    "resolved_url": "https://github.com/agentscope-ai/agentscope",
+    "http_status": 200,
+    "title": "GitHub - agentscope-ai/agentscope: Build and run agents you can see, understand and trust. · GitHub",
+    "characters": 11006,
+    "content_sha256": "541b23ef959012db0511aafda8ff367b07abc0d9eba1ff9b0f0938e54384d444",
+    "checked_at": "2026-11-23",
+    "verification_method": "HTTP GET plus title/content snapshot; editorial scope/cost annotations are separate"
+  },
+  {
+    "id": "spring-ai-alibaba",
+    "url": "https://github.com/alibaba/spring-ai-alibaba",
+    "resolved_url": "https://github.com/alibaba/spring-ai-alibaba",
+    "http_status": 200,
+    "title": "GitHub - alibaba/spring-ai-alibaba: Agentic AI Framework for Java Developers · GitHub",
+    "characters": 10903,
+    "content_sha256": "b0d3a557cbe95c27a6360e06cf2e5df096258e664e9024b56e18d465f1b8e65b",
+    "checked_at": "2026-11-23",
+    "verification_method": "HTTP GET plus title/content snapshot; editorial scope/cost annotations are separate"
+  },
+  {
+    "id": "ragflow",
+    "url": "https://github.com/infiniflow/ragflow",
+    "resolved_url": "https://github.com/infiniflow/ragflow",
+    "http_status": 200,
+    "title": "GitHub - infiniflow/ragflow: RAGFlow is an agent-native database: a Retrieval-Augmented Generation (RAG) engine that grew into context infrastructure. · GitHub",
+    "characters": 14997,
+    "content_sha256": "f898959e2af13d092d203f6afa10e93417ce553367294c263751db035bf1304d",
+    "checked_at": "2026-11-23",
+    "verification_method": "HTTP GET plus title/content snapshot; editorial scope/cost annotations are separate"
+  },
+  {
+    "id": "dify-source",
+    "url": "https://github.com/langgenius/dify",
+    "resolved_url": "https://github.com/langgenius/dify",
+    "http_status": 200,
+    "title": "GitHub - langgenius/dify: Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack. · GitHub",
+    "characters": 10004,
+    "content_sha256": "9a518360c5d8095e04f3545213739bd6b990e912c43539fb61a94f61c8ea4a92",
+    "checked_at": "2026-11-23",
+    "verification_method": "HTTP GET plus title/content snapshot; editorial scope/cost annotations are separate"
   }
 ]

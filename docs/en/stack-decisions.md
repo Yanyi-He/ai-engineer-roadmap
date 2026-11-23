@@ -17,7 +17,7 @@
 
 Beyond agents, MCP and sandboxes, prioritize data/retrieval engineering, evaluation, backend/distributed systems, observability/reliability, identity/privacy, model-serving performance, and product/business communication. Multimodality, speech, NL2SQL and post-training depend on the role. Foundation-model pretraining, CUDA kernels and distributed training platforms are optional specialties.
 
-Maintenance findings: AutoGen's README says it is no longer maintained and points to Microsoft Agent Framework, despite `archived=false` metadata. Flowise metadata marks it archived. Dify, n8n, Langfuse and LiteLLM require checking custom/partitioned licensing; Basic Memory currently reports AGPL-3.0. Inspect the actual file license before reuse.
+Maintenance findings (rechecked 23 November 2026): AutoGen is archived and succeeded by Microsoft Agent Framework; Flowise was archived and reached end of life in August 2026. Neither belongs in a new project's main line. Dify, n8n, Langfuse and LiteLLM require checking custom/partitioned licensing; Basic Memory currently reports AGPL-3.0. Inspect the actual file license before reuse.
 
 Primary references: [LangGraph](https://docs.langchain.com/oss/python/langgraph/overview), [Microsoft Agent Framework](https://learn.microsoft.com/agent-framework/overview), [Spring AI](https://docs.spring.io/spring-ai/reference/), [LangChain4j](https://docs.langchain4j.dev/), [MCP](https://modelcontextprotocol.io/docs/develop/build-server), [repository snapshot](open-source.md).
 

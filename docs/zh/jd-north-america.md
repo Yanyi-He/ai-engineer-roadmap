@@ -1,8 +1,8 @@
-# 北美：53份应用/系统AIE JD
+# 北美：53份人工复核的应用/系统AIE JD
 
 [研究方法](market-research.md) · [岗位总述](role-overview.md)
 
-25家雇主；美国43份、加拿大10份。保留产品、平台及客户交付差异，分别阅读每个国家的结果。
+本页逐条列出人工复核的 53 份（25 家雇主；美国 43 份、加拿大 10 份）。另有 216 份规则筛选的北美 JD 见 [jds.json](../../research/jds.json)（`sample` 为 `v4-rule-screened`），合并统计见[岗位总述](role-overview.md)。保留产品、平台及客户交付差异，分别阅读每个国家的结果。
 
 ## 全部关键词
 
@@ -66,7 +66,7 @@
 | lora_qlora_peft | 0/53 | 0.0 | 0.0 |
 | rlhf_preference_alignment | 0/53 | 0.0 | 0.0 |
 | ppo_grpo_rlvr | 0/53 | 0.0 | 0.0 |
-| agentic_rl | 17/53 | 32.08 | 31.2 |
+| agentic_rl | 0/53 | 0.0 | 0.0 |
 | distillation | 3/53 | 5.66 | 2.4 |
 | quantization_compression | 1/53 | 1.89 | 2.0 |
 | serving_frameworks | 0/53 | 0.0 | 0.0 |

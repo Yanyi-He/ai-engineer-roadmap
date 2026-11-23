@@ -1,10 +1,12 @@
 # Reproducible hiring and repository research
 
-Collection window:18–19 November2026. Read the [English methods](../docs/en/market-research.md) or [中文方法](../docs/zh/market-research.md).
+Collection windows: 18–19 November 2026 (reviewed cohorts) and 23 November 2026 (North American rule-screened expansion). Read the [English methods](../docs/en/market-research.md) or [中文方法](../docs/zh/market-research.md).
 
 | File | Meaning |
 |---|---|
-| [jds.json](jds.json) |104 scoped descriptions: CN51, US43, CA10; URLs, grades, status, reviewed offsets/hashes and literal features |
+| [jds.json](jds.json) |320 scoped descriptions: CN 51, US 236, CA 33; `sample` marks 104 hand-reviewed and 216 rule-screened records; URLs, grades, status, offsets/hashes, `features` (codebook) and `features_v2` (skill terms) |
+| [skill-terms.json](skill-terms.json) |39 stricter terms in two groups (tech stack, role expectations) with zh/en labels |
+| [skill-distribution.csv](skill-distribution.csv) |Shares by market and subsample with 95% Wilson intervals and employer-balanced shares |
 | [keyword-codebook.json](keyword-codebook.json) |66 regex categories; alternatives/preferences count as mentions |
 | [keyword-counts.csv](keyword-counts.csv) |CN/NA and US/CA counts, denominators, percentages and employer-balanced rates |
 | [sample-summary.json](sample-summary.json) |Country/sector/employer/source/status/level composition |
@@ -27,7 +29,7 @@ python3 -B scripts/render_docs.py
 python3 -B scripts/validate.py
 ```
 
-Optional charts: install `requirements-viz.txt` in a virtual environment and run `python3 -B scripts/plot_research.py`. Counts/aggregates are independently checked offline. To re-extract features, supply exact private bodies to `scripts/extract_keywords.py`; it validates the public offsets/hashes before matching.
+Charts are dependency-free SVG files that `scripts/render_docs.py` regenerates from these tables (via `scripts/render_charts.py`). To re-extract features, supply exact private bodies to `scripts/extract_keywords.py`; it validates the public offsets/hashes before matching.
 
 The public registry omits employer description bodies. Third-party text remains with its owners. Live pages may change; hashes verify historical captures rather than reconstructing missing text. JD mentions describe this purposive cohort. Official market indicators use separate units and populations.
 

@@ -25,7 +25,7 @@ LangGraph解决有状态Agent控制流；PydanticAI/ADK/Microsoft Agent Framewor
 
 默认练习只保留一种orchestrator、一个持久存储和一种trace/eval记录方式。采用第二套框架前，写清新约束并迁移一项任务比较。源码机制与边界见[固定版本阅读](source-readings.md)。
 
-- AutoGen README 已声明停止维护并指向 Microsoft Agent Framework；元数据 `archived=false` 与 README 不一致时记录冲突，不把它放进新项目主线。
+- AutoGen 已于 2026 年归档（2026-11-23 复核），由 Microsoft Agent Framework 接替；Flowise 于 2026-08 归档并停止维护。两者都不进入新项目主线。
 - Flowise 元数据已标归档；历史内容可读，暂不作为新项目主框架。
 - Dify、n8n、Langfuse、LiteLLM 等仓库存在自定义或分区许可，复用前读目标文件许可；Basic Memory 当前元数据为 AGPL-3.0。星数与旧博客不能代替许可核对。
 

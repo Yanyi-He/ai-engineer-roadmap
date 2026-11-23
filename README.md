@@ -2,7 +2,7 @@
 
 [中文](README.zh-CN.md) · English
 
-**Become an AI Engineer: what to learn, in what order and how to prove it, built from 104 job descriptions in China and North America.**
+**Become an AI Engineer: what to learn, in what order and how to prove it, built from 320 job descriptions in China and North America.**
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/overview/roadmap-en-dark.svg">
@@ -22,16 +22,16 @@ Each of the 126 units has a knowledge outline, a target depth (explain, implemen
 
 ## What makes it different
 
-- **Built from hiring evidence, not a tool list.** In a purposive sample of 51 Chinese and 53 North American job descriptions, delivery and production work appears in 94% and 98%, and evaluation in 61% and 76%. The markets also differ: Java/Spring appears in 47% of the Chinese sample and 6% of the North American one. See the [methods and charts](docs/en/role-overview.md).
+- **Built from hiring evidence, not a tool list.** In 51 Chinese and 269 North American AI-engineering job descriptions, shipping to production appears in 86% and 90%, and evaluation in 53% and 67%; fine-tuning appears in only 31% and 18%. The markets also differ: Java/Spring appears in 47% of Chinese descriptions and 10% of North American ones. See the [charts, intervals and enterprise cases](docs/en/role-overview.md).
 - **Prerequisites at the unit level.** You can ship a model API service and a framework-free agent before studying transformer internals. Each route expands only the prerequisites its project needs.
-- **Free readings with a scope.** All 171 resources are link-checked, and each unit names the chapters or sections to read and why that source was chosen.
+- **Free readings with a scope.** All 181 resources are link-checked, and each unit names the chapters or sections to read and why that source was chosen.
 - **Evidence you can show.** 17 labs, 4 capstones, an exit-assessment rubric and 378 self-check questions turn reading into work an interviewer can inspect.
 
 ## All pages
 
-1. [Roles and hiring](docs/en/role-overview.md): 104 descriptions analyzed by market, plus verifiable public indicators.
+1. [Roles and hiring](docs/en/role-overview.md): 320 descriptions analyzed by market, enterprise JD cases and verifiable public indicators.
 2. [Diagnostic](docs/en/entry-diagnostic.md) → [learning path](docs/en/learning-path.md) → [dependencies](docs/en/dependency-order.md).
-3. [Knowledge tree](docs/en/knowledge-tree.md): 17 modules, 126 units, 693 topic branches.
+3. [Knowledge tree](docs/en/knowledge-tree.md): 17 modules, 126 units, 698 topic branches.
 4. [Self-check question bank](docs/en/self-check.md): 378 interview-style questions, three per unit, for finding gaps before interviews.
 5. [Labs](docs/en/labs.md) → [capstones](docs/en/capstones.md) → [assessment](docs/en/assessment.md).
 6. [Stack decisions](docs/en/stack-decisions.md), [repositories](docs/en/open-source.md), [resource policy](docs/en/resource-policy.md).
@@ -223,7 +223,7 @@ The [Ragas/testing/regression playbook](docs/en/evaluation-playbook.md) connects
 
 ## Resources
 
-Published [Stanford CS329Z](https://cs329z.stanford.edu/) materials provide the agent-systems spine, supported by official documentation, open textbooks and free courses. The 171-resource registry specifies scope and selection reasons. Complete one primary reading/build task before consulting additional references. Metadata from 61 repositories helps select source-reading examples.
+Published [Stanford CS329Z](https://cs329z.stanford.edu/) materials provide the agent-systems spine, supported by official documentation, open textbooks and free courses. The 181-resource registry specifies scope and selection reasons. Complete one primary reading/build task before consulting additional references. Metadata from 61 repositories helps select source-reading examples.
 
 Core reading is free to access; commercial APIs, clouds and GPUs can incur execution costs. Access, course progress and snapshots are documented in the [resource policy](docs/en/resource-policy.md).
 
@@ -241,6 +241,6 @@ python3 -B scripts/validate.py
 
 ## Research and contribution
 
-[Hiring methods](docs/en/market-research.md) analyze 51 Chinese and 53 North American descriptions selected by responsibilities. Market charts keep advertisement shares, posting indices and hiring trends separate. Missing national historical active totals remain empty; see the [overview](docs/en/role-overview.md).
+[Hiring methods](docs/en/market-research.md) analyze 51 Chinese and 269 North American descriptions: 104 reviewed by hand and 216 rule-screened from public job-board APIs. Market charts keep only occupation-defined series. Missing national historical active totals remain empty; see the [overview](docs/en/role-overview.md).
 
 Contribute reproducible failures, curriculum improvements, experiments or resource updates through the [contribution guide](CONTRIBUTING.md). Outcomes are assessed with projects and independent review; learner employment outcomes have not yet been studied. Original repository material uses MIT. External materials retain their own licenses.

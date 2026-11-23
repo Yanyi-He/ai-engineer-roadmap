@@ -17,136 +17,275 @@ AI Engineer, LLM/agent engineer, Applied AI Engineer and some Forward Deployed E
 
 Software engineering provides the implementation foundation. MLE contributes data and model experimentation; SRE contributes reliability and operations. The roadmap covers the parts needed to deliver AI products. Large-scale pretraining, GPU kernel development and research roles require additional specialization.
 
-## 2. What does hiring data actually show?
+## 2. Hiring market: which data matter for SDE and AIE decisions?
 
-Research updated **19 November 2026**. The following sources measure advertisements, posting indices and hiring trends separately.
+Updated **23 November 2026**. This section keeps only indicators defined by **occupation or job title**. All-occupation indicators are easy to misread and were removed from the charts; the reasons are at the end of this section.
 
-### United States and Canada
+### North American software development: recovering, concentrated in senior and AI roles
 
-Indeed Hiring Lab publishes the share of advertisements mentioning AI-related keywords and a Software Development posting index. The table averages published daily observations within each quarter. [AI data](https://github.com/hiring-lab/ai-tracker), [posting indices](https://github.com/hiring-lab/job_postings_tracker)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../../assets/research/market-software-postings-en-dark.svg">
+  <img alt="Indeed Software Development postings index for the US and Canada, 2025Q1–2026Q4" src="../../assets/research/market-software-postings-en-light.svg" width="100%">
+</picture>
 
-| Indicator | US: 2025Q1 → 2026Q3 | Canada: 2025Q1 → 2026Q3 | Interpretation |
+Indeed's Software Development postings index uses 1 February 2020 = 100. The US rose from 64.9 in 2025Q1 to 75.5 in 2026Q3 and 80.1 in 2026Q4 (to 13 November); Canada fell from 81.7 in 2025Q4 to 76.2 in 2026Q4. [Quarterly data](../../research/market/indeed-quarterly.csv), [Indeed data](https://github.com/hiring-lab/job_postings_tracker)
+
+Hiring Lab reports that US software-development postings have risen about 15% since February 2025 but remain about 27.5% below pre-pandemic levels. Of the increase from May 2025 to May 2026, 71% came from senior roles and 37% from jobs with AI in the title (the groups overlap). The author calls the evidence preliminary. [Hiring Lab, 8 July 2026](https://hiringlab.indeed.com/2026/07/08/ai-and-job-postings-from-destruction-to-creation/)
+
+For learners, the recovering roles expect independent delivery and AI-system skills; newcomers need verifiable projects that show both.
+
+### Signals specific to AI Engineers
+
+| Signal | Latest value | How to read it |
+|---|---|---|
+| LinkedIn "AI Engineer" hiring growth (US) | +64% YoY; +62% at entry level (August 2026 report) | A new standardized title with a small base, and some people re-title themselves; shows direction, not volume. [LinkedIn AI Labor Market Update](https://delivery-p143253-e1476319.adobeaemcloud.com/adobe/assets/urn:aaid:aem:ef153078-1061-4817-82e7-a1c027d7a7d7/original/as/AI-Labor-Market-Update-August-2026-v2.pdf) |
+| CompTIA: active postings requiring AI skills (US) | 366,322 (October 2026, +6.2% m/m); AI-titled roles +9.8% m/m | Lightcast data, subject to revision; the AI-title measure is closer to AIE demand. [CompTIA](https://www.comptia.org/en/about-us/news/press-releases/Tech-employment-gains-momentum-in-October-CompTIA-analysis-finds/) |
+| Share of US software-development postings mentioning AI | 20% or more (December 2025) | A mention is not an AI-engineering requirement; it shows AI becoming a common SDE expectation. [Hiring Lab, 22 January 2026](https://hiringlab.indeed.com/2026/01/22/january-labor-market-update-jobs-mentioning-ai-are-growing-amid-broader-hiring-weakness/) |
+
+### China: platform growth signals, no skill shares
+
+- Maimai, *Agent 重置职场* (January–July 2026): new AI postings +789.47% YoY; AI application development was 60.97% of new AI postings, and agent developers were the most demanded application role; FDE / on-site deployment roles grew 1,522.73%. [National Business Daily](https://www.nbd.com.cn/articles/2026-09-16/4583369.html)
+- Zhaopin, H1 2026: demand for agent-related technical talent +244% YoY. [CCTV Finance](https://finance.cctv.cn/2026/08/28/ARTIxnofbL409vkM6skY5WRh260828.shtml)
+- On 9 September 2026 the Ministry of Human Resources and Social Security added an "agent developer" (智能体开发员) specialty under the generative-AI system application occupation. [Beijing News](https://m.bjnews.com.cn/detail/1788949841129475.html)
+
+These are platform growth rates without published samples, methods or skill shares. The China skill profile below relies on the JD sample.
+
+### Why the AI-keyword chart and others were removed
+
+The previous first chart compared Indeed's AI-keyword share of all postings in the US and Canada. Canada rose from 5.8% in October 2025 to 20.2% in October 2026, while the US went from 3.7% to 7.8%. **The data were transcribed correctly, but Canada's rise mostly does not reflect AI-skill demand.**
+
+- Since 1 January 2026, Ontario has required employers with 25 or more employees to state in public job postings whether AI is used to screen, assess or select applicants. That disclosure contains terms such as "artificial intelligence", which the tracker counts.
+- Hiring Lab found that the share in Ontario rose from 9% (October 2025) to 28% (May 2026) and in the rest of Canada from 4% to 12%, while nine comparison economies averaged about 7%. All 48 occupations rose, including pharmacy and retail. Hiring Lab now describes the Canadian figure as "primarily a metric capturing the use of AI by employers for recruitment". [Hiring Lab Canada, 8 July 2026](https://hiringlab.indeed.com/en-ca/2026/07/08/ontario-job-postings-highlight-the-widespread-use-of-ai-in-hiring-processes/)
+- Canada's software-development index was falling over the same period, so there was no AI-engineering hiring boom.
+- Even in the US, the measure includes AI use in non-engineering jobs and recruiting-tool notices. Hiring Lab's US text analysis found that only about 52% of AI-mentioning postings concern AI development or use directly.
+
+Comparing this indicator's level across countries is therefore invalid, and it says little to SDE/AIE learners. Also removed: LinkedIn "AI builders" hiring growth (unpublished definition that mixes ML engineers and data scientists; the source page no longer covers Canada), overall hiring by employer size (all occupations) and the JD-sample seniority pie (sample composition only, now in the [methods](market-research.md)). [Market data and provenance](../../research/market/)
+
+### Precise data not yet available
+
+| Question | Available here | Still missing |
+|---|---|---|
+| Active AIE/SDE/MLE/SRE vacancies in three countries since 2025Q1 | US/Canada software-development index; JD samples | A deduplicated national vacancy history with a shared role taxonomy and closure dates |
+| Large- versus mid-size-employer AIE counts | No AIE-specific data | AIE-specific historical postings stratified by employer size |
+| Entry/mid/senior/staff market shares | Explicit title levels in the JD samples | A representative population and a stable level mapping |
+
+These gaps remain empty in the [requested national quarterly table](../../research/market/requested-national-active-counts.csv).
+
+## 3. 320 job descriptions: what do employers keep asking for?
+
+### Sample
+
+- **China, 51 descriptions** collected 18–19 November 2026 from employer APIs and pages, university-hosted employer postings and traceable reposts; duties and qualifications were reviewed by hand.
+- **North America, 269 descriptions.** 53 were reviewed by hand in the same window. Another 216 were collected on 23 November 2026 through the documented public job-board APIs of Greenhouse, Ashby and Lever, covering 67 employers (AI-native companies, enterprise software, fintech, internet, health tech and others). Titles must contain engineering-role markers such as AI, LLM, agent, applied AI or forward deployed, and the role text must repeatedly mention AI-application terms. Each distinct title counts once per employer, with at most six per employer. These 216 use rule-based role-text bounds and were not reviewed one by one.
+- North America covers 75 employers: 236 US and 33 Canadian descriptions. The China sample stays at 51 because major Chinese job sites offer no documented public posting API; expanding it needs another compliant source.
+
+The unit is "the description mentions the item", including requirements, alternatives, duties and preferences; each description counts once per item. Terms use [stricter patterns](../../research/skill-terms.json); for example, "cost" counts only next to inference, token or model costs. Whiskers are 95% Wilson intervals. North America also reports an employer-balanced share so that one employer's many postings cannot dominate. [Records](../../research/jds.json), [full statistics](../../research/skill-distribution.csv), [China analysis](jd-china.md), [North America analysis](jd-north-america.md)
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../../assets/research/jd-role-expectations-en-dark.svg">
+  <img alt="Role expectations mentioned in AI-engineering job descriptions, China versus North America" src="../../assets/research/jd-role-expectations-en-light.svg" width="100%">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../../assets/research/jd-tech-stack-en-dark.svg">
+  <img alt="Tech stack named in AI-engineering job descriptions, China versus North America" src="../../assets/research/jd-tech-stack-en-light.svg" width="100%">
+</picture>
+
+<!-- SKILL-TABLE:START -->
+<details>
+<summary>Expand exact shares and 95% intervals</summary>
+
+| Group | Skill or expectation | China n=51 | North America n=269 | NA employer-balanced |
+|---|---|---:|---:|---:|
+| Tech stack | Python | 82% [70–90] | 58% [52–63] | 59% |
+| Tech stack | Go | 49% [36–62] | 24% [20–30] | 24% |
+| Tech stack | Java / Spring | 47% [34–60] | 10% [7–14] | 11% |
+| Tech stack | MCP | 39% [27–53] | 17% [13–22] | 19% |
+| Tech stack | LangChain | 35% [24–49] | 10% [7–15] | 13% |
+| Tech stack | TypeScript / JavaScript | 22% [12–35] | 33% [27–38] | 30% |
+| Tech stack | AI coding tools (Cursor, Claude Code…) | 29% [19–43] | 25% [20–31] | 24% |
+| Tech stack | React / frontend | 24% [14–37] | 26% [21–31] | 25% |
+| Tech stack | Public cloud (AWS/Azure/GCP) | 6% [2–16] | 25% [20–31] | 26% |
+| Tech stack | Docker / Kubernetes | 18% [10–30] | 18% [14–23] | 15% |
+| Tech stack | Vector DB / search engine | 18% [10–30] | 13% [10–18] | 13% |
+| Tech stack | Other agent frameworks / SDKs | 18% [10–30] | 6% [4–9] | 6% |
+| Tech stack | LlamaIndex | 16% [8–28] | 2% [1–4] | 3% |
+| Tech stack | Serving engines (vLLM, SGLang…) | 16% [8–28] | 3% [2–6] | 3% |
+| Tech stack | SQL / relational databases | 12% [6–23] | 14% [11–19] | 14% |
+| Tech stack | LangGraph | 14% [7–26] | 7% [4–10] | 7% |
+| Tech stack | PyTorch / DL frameworks | 14% [7–26] | 6% [4–9] | 10% |
+| Tech stack | Dify / Coze / FastGPT | 12% [6–23] | 0% [0–1] | 0% |
+| Tech stack | Observability/eval tools (Langfuse…) | 2% [0–10] | 7% [4–10] | 5% |
+| Tech stack | Hugging Face | 2% [0–10] | 4% [2–7] | 4% |
+| Role expectations | Agents | 96% [87–99] | 78% [73–83] | 80% |
+| Role expectations | Shipping to production | 86% [74–93] | 90% [86–93] | 91% |
+| Role expectations | Prompt and context engineering | 76% [63–86] | 35% [30–41] | 35% |
+| Role expectations | Tool calling and integrations | 69% [55–80] | 22% [18–28] | 24% |
+| Role expectations | Evaluation and experiments | 53% [40–66] | 67% [61–72] | 64% |
+| Role expectations | RAG / retrieval | 63% [49–75] | 32% [26–37] | 32% |
+| Role expectations | Reliability | 55% [41–68] | 61% [55–66] | 58% |
+| Role expectations | Distributed and large-scale systems | 57% [43–70] | 59% [53–64] | 55% |
+| Role expectations | Security, access and compliance | 29% [19–43] | 54% [48–60] | 51% |
+| Role expectations | Observability and monitoring | 35% [24–49] | 49% [43–55] | 51% |
+| Role expectations | Customer and stakeholder work | 45% [32–59] | 49% [43–55] | 52% |
+| Role expectations | Latency, cost and performance | 39% [27–53] | 34% [29–40] | 32% |
+| Role expectations | Multi-agent systems | 39% [27–53] | 9% [6–13] | 8% |
+| Role expectations | Agent memory | 37% [25–51] | 4% [2–7] | 3% |
+| Role expectations | Fine-tuning / post-training | 31% [20–45] | 18% [14–23] | 18% |
+| Role expectations | Multimodal / voice | 22% [12–35] | 18% [14–23] | 15% |
+| Role expectations | RL / preference alignment | 16% [8–28] | 10% [7–14] | 9% |
+| Role expectations | Data pipelines | 14% [7–26] | 10% [7–15] | 8% |
+| Role expectations | Model internals (transformers…) | 14% [7–26] | 3% [2–6] | 5% |
+
+</details>
+<!-- SKILL-TABLE:END -->
+
+### Shared: turn model capability into systems that ship, are evaluated and keep running
+
+- **Production delivery** appears in almost every role (China 86%, North America 90%).
+- **Evaluation and experiments** (53% / 67%), **reliability** (55% / 61%) and **distributed, large-scale systems** (57% / 59%) exceed half in both markets.
+- **Agents** have the highest share (96% / 78%), but the samples were selected for agent and AI-application titles, so this share does not describe all engineering roles.
+- **Fine-tuning / post-training** (31% / 18%) and **reinforcement learning** (16% / 10%) appear in a minority of roles. **AI coding tools** (Cursor, Claude Code and others) appear in about a quarter (29% / 25%).
+
+### Differences: different writing styles and different emphasis
+
+- **Chinese descriptions name concrete components more often:** prompt and context engineering (76% / 35%), tool calling (69% / 22%), RAG (63% / 32%), agent memory (37% / 4%), multi-agent systems (39% / 9%), LangChain (35% / 10%) and MCP (39% / 17%).
+- **North American descriptions state duties and constraints more often:** security, access and compliance (29% / 54%), observability (35% / 49%), public cloud (6% / 25%) and TypeScript (22% / 33%).
+- **Languages:** Chinese postings often say "at least one of Python, Go or Java", so Go (49%) and Java/Spring (47%) are both high; North America centres on Python (58%), followed by TypeScript. Many North American postings name no language; of the 190 that do, 82% name Python (93% of the 45 Chinese postings that name one).
+- **Inference:** North American postings name RAG and tool calling less often, probably because they describe outcomes and responsibilities rather than components, not because these skills are unnecessary. They remain common interview topics.
+
+The two North American subsamples also differ. The 53 hand-reviewed postings lean toward agent platforms and AI-native companies, with higher RAG (45% / 28%), MCP (34% / 12%) and multi-agent (23% / 6%) shares than the 216 rule-screened postings. The broader sample is closer to typical AIE roles.
+
+### Cross-checks against external data
+
+| Source | Sample | Main results | Compared with this sample |
 |---|---|---|---|
-| AI keywords across all advertisements | 2.77% → 6.75% | 3.76% → 18.41% | Includes other occupations using AI |
-| Software Development posting index | 64.87 → 75.47 | 73.61 → 77.48 | Broad category; 1 February 2020 = 100 |
-| LinkedIn AI builders relative hiring growth | +12.37% → −0.45% | +15.39% → +1.36% | Quarterly mean of published monthly year-on-year measures |
+| InterviewStack job board, Nov 2026 | 3,835 global AI Engineer postings (about 35% US) | Python 75%, agents ≥61%, RAG 50%, evaluation ≥41%, LangChain 23%, MCP 21%, LangGraph 19%, TypeScript 17%, fine-tuning 17% | Same direction: Python is the majority, agents and evaluation are high, fine-tuning is below 20% and named frameworks are a minority. [Source](https://interviewstack.io/blog/how-ai-is-changing-ai-engineer-2026) |
+| Juejin, May 2026 | Application-development postings; 23 listed | Python ~100%, LangChain ~80%, RAG ~60%, Dify ~35%, fine-tuning ~35%, LangGraph ~25%, MCP ~10% | Smaller Chinese employers name LangChain and Dify more often; this sample is large-employer-heavy, with Dify/Coze at 12%. [Source](https://juejin.cn/post/7644822313692692518) |
+| CSDN, Mar 2026 | 200 "large model" postings paying ¥30k+ per month | C++ 61.5%, RAG 37%, multimodal 33.5%, Python 33%, agents 31.5% | Includes algorithm and inference-optimization roles, hence high C++ and lower Python. [Source](https://gitcode.csdn.net/69b3835a54b52172bc60e19d.html) |
+| LangChain practitioner survey, Nov–Dec 2025 | 1,340 respondents | 57% have agents in production; 52% run offline evaluation, 30% none; 57% do not fine-tune | Supports "evaluate first, fine-tune rarely". [Source](https://langchain.com/state-of-agent-engineering) |
 
-LinkedIn's AI builders category covers a wider population of AI-building talent. Hiring and advertising measures have different denominators. [LinkedIn dashboard](https://pulse.linkedin.com/reporting-ai)
+External sources are mostly job-board or blog tallies with limited method disclosure; this page uses them as directional checks and does not pool them.
 
-![Quarterly market indicators for the US and Canada](../../assets/research/market-quarterly-indicators.png)
+### Job-search strategy
 
-2026Q4 is partial: AI keyword share ends on 31 October, software posting indices on 13 November and LinkedIn observations in October. Complete-quarter comparisons use Q1–Q3; retain actual coverage dates when interpreting Q4. [Quarterly data and provenance](../../research/market/)
+- **China:** Python plus one backend language (Go or Java); implementation-level command of RAG, tool calling, context and memory, and multi-agent systems; at least one mainstream framework (LangChain/LangGraph); MCP. Roles at smaller and traditional-industry employers also value quick prototyping on platforms such as Dify.
+- **North America:** Python plus TypeScript; emphasize evaluation, observability, security and permissions, cloud deployment, and experience working with customers and stakeholders, especially for FDE and applied-AI roles.
+- **Both:** one complete project with evaluation data, a deployment record and a failure postmortem. Go deeper into fine-tuning, RL or inference optimization only for target roles. The Canadian sample has 33 postings; read each target description before setting priorities.
 
-These observations indicate wider demand for AI skills alongside software posting indices that remain below their 2020 baseline. Measuring vacancies for a specific occupation requires a separate dataset.
+## 4. From job requirements to a knowledge structure: weights and priorities
 
-### China
+### Three enterprise job descriptions, taken apart
 
-An August 2026 CCTV report describes **244% year-on-year growth** in AI Agent job demand during the first half of 2026, using a recruiting-platform measure. This is a useful signal of demand within that platform and period. Its population differs from the North American series. [CCTV report](https://finance.cctv.cn/2026/08/28/ARTIxnofbL409vkM6skY5WRh260828.shtml)
+These three AI Engineer–type roles come from large and mid-size North American employers (November 2026). The Stripe posting is already in the sample. The Canada Life and Microsoft postings were provided by a reader and serve as qualitative enterprise cases; they are not counted in the statistics above.
 
-The Chinese JD cohort includes internet companies, enterprise software, manufacturing, automotive, finance and consumer hardware. Descriptions concern knowledge retrieval, office/customer-service workflows, analytics and industry applications. Chinese skill findings are analyzed separately below.
+| Dimension | Stripe: AI Engineer, Solutions Architecture | Canada Life: full-stack AI application engineer | Microsoft MCAPS: software engineer, AI apps and agents | Units |
+|---|---|---|---|---|
+| Engineering base | 4+ years shipping production systems; debug across services; two of Ruby, Node.js, Python, Next.js | 3+ years of production software; Python + React; APIs, databases, modular design, automated tests | 2+ years of engineering; APIs, backend services, web apps, automated tests | 01, 02 |
+| LLMs and agents | Build agents, LLM tools and workflow automation beyond basic prompting | Combine models, retrieval, tools and business rules; choose the simplest effective architecture | Context engineering, structured outputs, tool calling, grounding, guardrails, session management, human escalation; multi-agent routing, hand-offs and retries | 05, 07–10 |
+| RAG and documents | — | Ingestion, parsing, chunking, indexing, retrieval, citations; intelligent document processing | Grounding in knowledge sources | 06, 05.6 |
+| Evaluation and testing | — | Unit, integration, end-to-end and regression tests covering AI interactions and security controls | Automated and human evaluation, regression, edge cases, adversarial testing, failure analysis | 11 |
+| Deployment and operations | Cloud deployment, monitoring, basic DevOps | Containers; sandbox → dev → QA → UAT → prod promotion; logging, tracing, telemetry, cost | CI/CD and observability; monitor drift, quality, latency, failures and cost | 02.6, 11.5, 14.4, 14.6 |
+| Security and governance | — | Responsible AI, privacy, model risk, traceability and human oversight | Least privilege, Responsible AI, auditability, secrets management | 10, 14.5, 14.7, 14.9 |
+| Platforms and ecosystem | Third-party integrations (Salesforce, Gong); systems non-engineers can extend | Azure AI Foundry, Azure OpenAI, AI Search, Document Intelligence; Databricks, MLflow; Microsoft Agent Framework, LangChain, LangGraph, MCP | Copilot Studio, Power Automate, Azure OpenAI, GitHub Copilot | 05.10, 08.5, 08.8 |
+| Business and delivery | Embedded with the business; turn ambiguous needs into deliverables; success measured by adoption | Work with business and data-science teams; ADRs, API specifications, runbooks | Convert proofs of concept into production; document architecture, data flows, risks and operations | 00.2, 14.1, 14.6 |
+| AI-assisted development | Fluent with AI coding tools but able to debug without them | Evaluate new models, frameworks and developer tools | AI-assisted coding, AI-driven testing and code review, built into team standards | 01.7 |
 
-### Employer size and seniority
+The common pattern is clear: **strong backend or full-stack engineering + LLM applications and agents + production discipline (testing, deployment, observability) + security and governance + one cloud AI platform.** None of the three requires fine-tuning or reinforcement learning; only Microsoft lists machine-learning experience as a preference. Enterprise low-code platforms (Copilot Studio and Power Automate in North America, Dify and Coze in China) are worth knowing, but every one of these roles expects you to move to code when needed.
 
-LinkedIn's public size series supports comparison of **overall hiring** at employers with 10,001+ and 1,001–5,000 employees, separately for the US and Canada. These are source-defined bins and cover only part of the employer-size spectrum.
+### What screening looks at first
 
-![Overall hiring by employer size](../../assets/research/company-size-hiring-context.png)
+Combining the 320-description statistics with the cases above, application and systems AIE screening roughly follows this order:
 
-This provides context for job seekers. AIE-specific size trends require historical advertisements with role classifications.
+| Priority | Capability | Evidence (China / North America) | Modules | Target depth |
+|---|---|---|---|---|
+| 1 | Software engineering and production delivery: backend services, APIs, databases, testing, containers, CI/CD, cloud deployment, debugging | Production delivery 86% / 90%; distributed and large-scale systems 57% / 59%; reliability 55% / 61%; enterprise roles ask for 2–4+ years of production experience | 01, 02, 14 | Build and debug independently |
+| 2 | LLM applications and agents: structured output, tool calling, context, RAG, agent loops, human approval | Agents 96% / 78%; prompt and context 76% / 35%; tool calling 69% / 22%; RAG 63% / 32% | 05–10 | Implement once without a framework, then master one framework |
+| 3 | Evaluation, testing and observability | Evaluation 53% / 67%; observability 35% / 49% | 11 | Design evaluation sets, run regressions and attribute failures |
+| 4 | Security, access and governance | Security, access and compliance 29% / 54% | 10, 14 | Design permissions, audit trails and guardrails in |
+| 5 | Business understanding and communication | Customer and stakeholder work 45% / 49% | 00, 14, 15 | Turn ambiguous needs into deliverables with acceptance criteria |
+| 6 | Model internals and math | Mentioned in 14% / 3% of postings, yet theory questions and hand-written implementations are common interview rounds, especially in China | 03, 04, 15.5 | Explain and hand-write core components |
+| 7 | Specializations: fine-tuning and RL, inference optimization, multimodality | Fine-tuning 31% / 18%; RL 16% / 10%; serving engines 16% / 3% | 12, 13, 05.6–05.7 | Choose by target role |
 
-The next chart labels seniority explicitly stated in JD titles. The country cohorts contain China 51, US 43 and Canada 10 descriptions. Unmarked levels stay unspecified; a title is assigned to mid-level only when it explicitly says so.
+### Weight of each area
 
-![Seniority labels in the three country cohorts](../../assets/research/jd-levels-by-country.png)
+Evaluation gets more time than its unit share: about 20% of Chip Huyen's *AI Engineering* covers evaluation, and evaluation plus data take about a third of CS329Z sessions. "Suggested time" is for the application-AIE main line; skip what the [entry diagnostic](entry-diagnostic.md) shows you already know. Unit counts reflect breadth, not study time: the agent modules contain many advanced units, while the backend modules have fewer units but more practice.
 
-This is a description of the sample. National entry/senior vacancy shares require a representative vacancy population. Learners should compare target roles against evidence of independent delivery, design and operational ownership.
+| Area | Suggested time | Units (share) | Share of core units |
+|---|---:|---:|---:|
+| 00–02 Role, Python and backend | 20% | 17 (13%) | 18% |
+| 03–04 Math, ML and transformers | 8% | 12 (10%) | 12% |
+| 05 Model applications and context | 10% | 10 (8%) | 10% |
+| 06 Data and RAG | 10% | 9 (7%) | 7% |
+| 07–09 Agents, orchestration and multi-agent | 15% | 22 (17%) | 12% |
+| 10 Tools, MCP and safe execution | 8% | 7 (6%) | 6% |
+| 11 Evaluation and observability | 15% | 12 (10%) | 13% |
+| 14 Product delivery | 8% | 9 (7%) | 8% |
+| 15 Portfolio and job search | 6% | 7 (6%) | 8% |
+| 12–13 Post-training and inference optimization | Specialization: add 20–30% | 17 (13%) | 6% |
+| 16 World models and embodied AI | Elective | 4 (3%) | 0% |
 
-### Data still needed for the requested comparisons
+### Compared with CS329Z, CS336 and widely used roadmaps
 
-| Research question | Available here | Missing input |
+| Reference | Structure and emphasis | How this roadmap responds |
 |---|---|---|
-| National active AIE/SDE/MLE/SRE vacancies, each quarter since 2025Q1 | US/Canada public indicators and three-country JD cohorts | A comparable historical vacancy database with stable classification, deduplication and closure dates |
-| AIE demand at large/mid-sized employers | US/Canada overall hiring by size | AIE-specific historical postings by employer size in all three countries |
-| National entry/mid/senior/staff shares | Explicit title labels in the JD sample | A representative vacancy population and consistent level mapping |
+| [CS329Z Engineering AI Agents](https://cs329z.stanford.edu/) (Fall 2026) | From LLM pipelines to compound AI systems to autonomous agents. HW1 builds a harness without frameworks: BM25 and multi-hop RAG, a tool-call protocol, the agent loop, a sandboxed terminal, compaction, memory, approval, guardrails and injection, and a simulated-user evaluation. HW2 authors a Harbor evaluation task with a verifier and an oracle. Evaluation is about 21% of sessions, evaluation plus data about 32%; the project is 40% of the grade | Units 07.3, 07.5–07.6, 10.4–10.7, 11.1 and 11.8 follow these two assignments. CS329Z has no dedicated RL or test-time-compute session; this roadmap covers them in 05.8 and 12.6–12.7 |
+| [CS336 Language Modeling from Scratch](https://cs336.stanford.edu/) | Tokenizer and transformer from scratch, GPUs and parallelism, scaling laws, inference, evaluation, data, SFT/RLHF/RLVR; five assignments; the 2026 edition bans coding agents for implementation | For application AIEs: tokenization, resource accounting, inference (KV cache, quantization, speculative decoding, continuous batching), evaluation validity, data deduplication and filtering, SFT/DPO/GRPO (04.1, 13.2–13.7, 11.9, 12.10, 12.5–12.6). Triton kernels, FSDP/tensor-parallel implementation and fitting scaling laws are awareness-level |
+| Chip Huyen, *AI Engineering* (O'Reilly, 2025) | By page count: evaluation about 20% (two chapters, before prompting), fine-tuning and dataset engineering about 20%, model internals 13%, RAG/agents/memory 11%, inference 9% | Evaluation also comes early here; training-heavy material is a specialization |
+| [roadmap.sh AI Engineer](https://roadmap.sh/ai-engineer) | Of 193 topics: RAG/vector stores about 20%, model APIs about 16%, prompting and context about 15%, agents about 10%, evaluation about 10%, MCP about 7%, fine-tuning about one topic | Similar application coverage; this roadmap adds the software engineering, production delivery, permissions and sandboxes it covers lightly |
+| [mlabonne/llm-course](https://github.com/mlabonne/llm-course) | Fundamentals 19% (optional), scientist/training track 46%, engineer track 36% | Training content sits in modules 12–13 |
+| Datawhale [hello-agents](https://github.com/datawhalechina/hello-agents), [happy-llm](https://github.com/datawhalechina/happy-llm), [self-llm](https://github.com/datawhalechina/self-llm) | Chinese-language agent practice (including Coze, Dify and n8n), LLMs from scratch, deploying and fine-tuning Chinese models | Added as Chinese-language companions in the relevant units |
 
-The [national quarterly table](../../research/market/requested-national-active-counts.csv) retains empty values for missing observations. Current search-result counts and hiring growth rates cannot reconstruct historical active vacancy totals.
+Most roadmaps cover prompting, RAG, tools and agents, and their 2025–2026 updates add MCP, context engineering, memory and harnesses. They rarely cover backend and software-engineering fundamentals, production delivery, sandboxes and permissions, or interviews (common only in Chinese repositories). Those are exactly what enterprise roles screen for, which is why this roadmap gives them their own modules.
 
-## 3. What 104 descriptions say employers value
+### A stack route aimed at passing screening
 
-The application/systems cohort contains **51 descriptions from China and 53 from North America**, across 43 employers. North America comprises 43 US and 10 Canadian roles. Sources include employer APIs/pages, employer descriptions hosted by universities and traceable syndicated descriptions. Sixty-six were listed on employer boards at collection; 38 descriptions were accessible with opening status unverified. This cohort studies job content.
+**Tier 1: required in both markets**
 
-The unit below is a description **mentioning** a term. Responsibilities, requirements, alternatives and preferences all qualify. Each keyword counts at most once per reviewed role text. [Sources](../../research/jds.json), [matching rules](../../research/keyword-codebook.json), [full results](../../research/keyword-counts.csv), [China cohort](jd-china.md), [North America cohort](jd-north-america.md)
+- Languages: Python first, plus one more: Go or Java for China, TypeScript for North America.
+- Services and data: FastAPI, PostgreSQL (with pgvector), Redis, Docker, GitHub Actions and one cloud platform.
+- Model access: one commercial API and one open or Chinese model; structured output, tool calling, streaming, retries and budgets.
+- RAG: parsing, chunking, hybrid retrieval, reranking and citations, with permission filtering.
+- Agents: implement the loop and human approval without a framework first, then use LangGraph for persistence and recovery; write one MCP server.
+- Evaluation and observability: pytest plus promptfoo or Ragas for regression; calibrate an LLM judge against human labels; record traces, quality, latency and cost with Langfuse or OpenTelemetry.
+- Security: permissions, secrets management, injection defenses and audit logs.
 
-| Skill or responsibility | China, n=51 | North America, n=53 | Curriculum implication |
-|---|---:|---:|---|
-| Product/production delivery | 48 · 94.1% | 52 · 98.1% | Carry a project through implementation, validation and operation |
-| Evaluation/experiments | 31 · 60.8% | 40 · 75.5% | Establish baselines, datasets and failure analysis from the first project |
-| Latency/cost/performance | 33 · 64.7% | 33 · 62.3% | Report quality, latency, resources and cost together |
-| Observability | 21 · 41.2% | 32 · 60.4% | Diagnose retrieval, tools and generation from traces |
-| Security/governance | 17 · 33.3% | 25 · 47.2% | Design authorization, data boundaries and auditability |
-| Python | 42 · 82.4% | 23 · 43.4% | Use a common implementation language |
-| Java/Spring | 24 · 47.1% | 3 · 5.7% | Optional enterprise-integration depth for relevant Chinese roles |
-| JavaScript/TypeScript | 11 · 21.6% | 16 · 30.2% | Build product interfaces and streaming interactions |
-| RAG | 27 · 52.9% | 16 · 30.2% | Learn ingestion, retrieval, citations and layered diagnosis |
-| MCP | 20 · 39.2% | 18 · 34.0% | Learn protocol, tool contracts and authorized integration |
-| Multi-agent | 20 · 39.2% | 12 · 22.6% | Understand coordination and measure its added complexity |
-| Fine-tuning/SFT/LoRA | 16 · 31.4% | 7 · 13.2% | Select post-training depth after establishing data and evaluation |
-| Reinforcement learning | 8 · 15.7% | 3 · 5.7% | Understand foundations; specialize for relevant roles |
+**Tier 2: by target market**
 
-![Skill mentions by market](../../assets/research/jd-skills-cn-na.png)
+- China: deeper LangChain/LangGraph; use Dify to prototype, write plugins and self-host, and know when to move to code; agent memory and multi-agent systems; Qwen or DeepSeek through APIs and local vLLM deployment; Spring AI or Spring AI Alibaba for Java roles.
+- North America: React/Next.js full stack; one of Azure AI Foundry, Azure OpenAI and AI Search, or AWS Bedrock; Copilot Studio and Power Automate in Microsoft-ecosystem roles; customer communication, demos and rapid prototyping for FDE roles.
 
-### Shared work: make model capability useful in a business system
+**Tier 3: by role**: fine-tuning (LoRA/QLoRA, SFT, DPO), inference optimization (vLLM, quantization, KV cache), multimodality and voice, agentic RL.
 
-Both cohorts emphasize delivery, experiments and performance. A recurring work cycle is:
+### Projects that pass screening
 
-1. **Define the task:** users, workflow, error costs and business outcomes.
-2. **Prepare data and interfaces:** documents, databases, APIs, freshness and permissions.
-3. **Build the solution:** model choice, context, retrieval, tools, control flow and product integration.
-4. **Establish evidence:** fixed evaluations, real failures, baseline comparisons, safety and recovery checks.
-5. **Deploy and improve:** quality/latency/cost monitoring and feedback-driven changes to data, code or models.
-
-A learner should explain the choices at each step, diagnose failures and assess whether an improvement justifies its additional cost.
-
-### Differences: adjust depth to the target role
-
-Python, Java, RAG and post-training terms appear more often in the Chinese cohort. API/system integration, observability, security, cloud and customer delivery appear more often in the North American cohort. The Chinese cohort contains more internet roles, while North America contains more AI-native/customer-delivery roles. Sector composition and selection methods affect these differences. The CSV also includes employer-balanced rates for checking the influence of multiple postings from one employer.
-
-For Chinese roles, strengthen Python/backend work, retrieval and business agents, then add Java or model optimization as relevant. For North America, strengthen software design, integration, evaluation, reliability and requirements communication. Canada's ten descriptions are a small cohort; inspect target descriptions individually.
-
-## 4. Turn job requirements into a complete knowledge structure
-
-The curriculum combines JD-derived delivery capabilities with the foundations needed to perform them. Each unit specifies topic scope, expected depth, a selected resource and a build task. The [full knowledge tree](knowledge-tree.md) has **17 modules, 126 units and 693 topic branches**.
-
-| Layer | Scope | Work enabled |
+| Project | Matching job scenario | Evidence to show |
 |---|---|---|
-| 00–02 Careers, Python and backend | Types, testing, async, HTTP, databases, transactions, queues, caching, collaboration | Maintainable services, enterprise integration and failure handling |
-| 03–04 Math, ML and Transformers | Statistics, gradients/tensors, PyTorch, attention, tokenization, training/generation | Model understanding and credible experimentation |
-| 05 Model applications and context | APIs, structured outputs, tool calling, prompting, multimodal/voice interaction | Interactive products with explicit I/O contracts |
-| 06 Data and RAG | Parsing, incremental indexing, sparse/dense/hybrid retrieval, reranking, citations, permissions | Traceable use of enterprise data |
-| 07–09 Agents and orchestration | Harnesses, memory, recovery, LangGraph/peers, durable workflows, multi-agent | Recoverable, bounded and measurable task execution |
-| 10 Tools and execution | MCP, identity/authorization, business tools, sandboxes, resource limits, audit | External integration and controlled code execution |
-| 11 Evaluation and observability | Datasets, metrics, human/model graders, experiments, traces, regression, feedback | Failure localization and verified improvements |
-| 12 Post-training | SFT, LoRA/QLoRA, preferences, RLHF/DPO, PPO/GRPO, agentic RL, distillation | Task-specific adaptation with measured gains and costs |
-| 13 Inference and practical infrastructure | Local models, vLLM/SGLang, quantization, KV cache, scheduling, profiling, distributed concepts | Model deployment, capacity and latency/memory tradeoffs |
-| 14–15 Delivery and employment | Requirements, containers/CI/CD, reliability, security, operations, portfolio, interviews | Demonstrable delivery and defensible engineering decisions |
-| 16 Electives | World models, simulation, embodied data, robotics policies/deployment | An entry point for adjacent specialized roles |
+| [P1 Enterprise knowledge service](capstones.md#p1-enterprise-knowledge-service) | Canada Life's document ingestion, retrieval and citations; enterprise knowledge bases and support assistants in China | Parser comparison, retrieval metrics, citation accuracy, permission tests, traces and cost per successful task |
+| [P2 Business workflow agent](capstones.md#p2-business-workflow-agent) | Microsoft's tool calling, multi-agent routing, hand-offs, retries and human escalation; Stripe's internal tools and workflow automation | Tool contracts, approval and idempotency, failure-recovery drills, trajectory evaluation, deployment and usage records |
+| [P3 Document processing with human review](capstones.md#p3-document-processing-with-human-review) | Insurance claims, financial document review, contract review | Field-extraction accuracy, uncertainty display and human confirmation, regression tests |
+| [P4 Small-model serving and adaptation](capstones.md#p4-small-model-serving-and-adaptation) | Inference-optimization and post-training roles | Memory and throughput benchmarks, quality before and after quantization, evaluation before and after fine-tuning |
 
-Study and project work progress together: build an API service and small evaluation set, add retrieval/tools, then address durable state, authorization and deployment. Choose post-training or inference depth after measuring a relevant bottleneck. [Dependency order](dependency-order.md)
+Make P1 or P2 your main project and build a smaller version of the other. For China, also prototype the same scenario in Dify and explain why and how you moved it to code. Write résumé bullets as problem, method and measured result, aligned with the target description's keywords. [Project requirements](capstones.md), [résumé and interviews](modules/15.md)
 
 ## 5. How courses and open-source projects fit
 
-[Stanford CS329Z](https://cs329z.stanford.edu/) supplies the agent-systems spine: tasks, tools, harnesses, memory, collaboration, evaluation and optimization. Use the published lectures and assignments while the course is in progress. Official documentation and open courses supply software, model, training and deployment foundations. Core reading is freely accessible; commercial API/GPU execution can cost money.
+[Stanford CS329Z](https://cs329z.stanford.edu/) provides the agent-systems spine and [CS336](https://cs336.stanford.edu/) covers model internals, inference and post-training; official documentation and open courses fill in Python, backend and deployment. Core readings are free; commercial APIs and GPUs cost what you use.
 
-The research records public metadata for 61 repositories. Selection considers responsibility, maintenance, documentation and learning value; stars help discover candidates. The following mechanisms receive priority:
+Open-source projects enter the roadmap in three tiers: use and read the source, deploy and operate, or recognize (GitHub data as of 23 November 2026):
 
-| Projects | Curriculum additions | Employer problem |
-|---|---|---|
-| LangGraph, PydanticAI, ADK | Explicit state, typed tools, persistence, human intervention, portability | Fragile long tasks and difficult debugging |
-| Temporal, DSPy | Durable workflows; data-driven program/prompt optimization | External-operation retries and unmeasured tuning |
-| RAGFlow, Haystack, LlamaIndex | Ingestion, retrieval components, index lifecycle, layered evaluation | Inaccessible enterprise information and retrieval failures |
-| MCP, OpenHands, Langfuse | Tool protocols, execution environments, permissions, traces and feedback | Integration effort, code execution and diagnosis |
-| Transformers, PEFT, TRL, LlamaFactory | Model/data formats, adapter training, preference optimization, experiment records | Behavioral errors and unclear training value |
-| vLLM, SGLang, llama.cpp | Scheduling, caching, quantization, benchmarking | Resource cost, concurrency and interaction latency |
+| Tier | Project | What to learn | 2025–2026 changes |
+|---|---|---|---|
+| Use and read the source | [Dify](https://github.com/langgenius/dify) (about 162k stars) | Build workflow and knowledge apps, write plugins and tools, self-host; read the workflow engine and plugin daemon | Two-way MCP since v1.6; OpenTelemetry export and human-approval forms in v1.20; one-click deployment on Alibaba, Huawei and Tencent clouds. Modified Apache 2.0 licence: running a multi-tenant service or removing the frontend logo needs a commercial licence. One practitioner test saturated at about 10 QPS on a single 4-core/8 GB instance, and complex flows often move to code |
+| Use and read the source | [LangChain](https://github.com/langchain-ai/langchain) + [LangGraph](https://github.com/langchain-ai/langgraph) | State graphs, checkpointers, interrupts and resume; `create_agent` and middleware in 1.0 | 1.0 released October 2025; `create_react_agent` deprecated |
+| Use and read the source | [vLLM](https://github.com/vllm-project/vllm), [SGLang](https://github.com/sgl-project/sglang) | Continuous batching, KV cache, prefix caching, speculative decoding | Mainstream serving engines for inference roles |
+| Use and read the source | [RAGFlow](https://github.com/infiniflow/ragflow) or LightRAG | Document parsing, retrieval pipelines, citations | RAGFlow 1.0 (November 2026) is a Go rewrite |
+| Deploy and operate | [Coze Studio](https://github.com/coze-dev/coze-studio) / Coze Loop, FastGPT, MaxKB, n8n, Open WebUI, Ollama | Platform deployment, model integration, permissions and data boundaries | Coze Studio has had no commits since July 2026 while Coze Loop stays active; FastGPT's licence terms resemble Dify's |
+| Deploy and operate | [Langfuse](https://github.com/langfuse/langfuse), [promptfoo](https://github.com/promptfoo/promptfoo), Ragas | Traces, dataset evaluation, regression and red-team tests | ClickHouse acquired Langfuse (January 2026); OpenAI announced it will acquire Promptfoo (March 2026); both open-source projects continue |
+| Pick one framework to go deep | OpenAI Agents SDK, Google ADK, PydanticAI, AgentScope (Alibaba), Spring AI Alibaba (Java), Microsoft Agent Framework | Compare state, tools, deployment and evaluation | AutoGen is archived and succeeded by Microsoft Agent Framework; AgentScope 2.0 was a breaking rewrite |
+| No longer worth investing in | Flowise, Langchain-Chatchat, MetaGPT, Qwen-Agent | — | Flowise was archived and reached end of life in August 2026; the others show no commits in 90 days |
 
-For example, LangGraph is mentioned in seven Chinese descriptions and zero North American descriptions in this sample. It is the main teaching framework because it exposes state and recovery well. The learning goal includes recognizing equivalent mechanisms in other frameworks. [Repository study](open-source.md), [stack decisions](stack-decisions.md)
+LangGraph appears in 14% of Chinese and 7% of North American postings. It is the main teaching framework because it suits learning state, persistence and recovery. Dify appears in 12% of the Chinese sample and more often in roles at smaller employers. See [open-source research](open-source.md) and [stack decisions](stack-decisions.md) for repository snapshots and selection reasons.
 
 ## 6. What demonstrates readiness?
 

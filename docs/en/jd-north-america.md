@@ -1,8 +1,8 @@
-# North America: 53 application/systems descriptions
+# North America: 53 reviewed application/systems descriptions
 
 [Methods](market-research.md) · [Overview](role-overview.md)
 
-25 employers; 43 US and 10 Canadian descriptions. Product, platform and customer-delivery work differ; inspect country results separately.
+This page lists the 53 hand-reviewed descriptions (25 employers; 43 US and 10 Canadian). Another 216 rule-screened North American descriptions are in [jds.json](../../research/jds.json) (`sample` is `v4-rule-screened`); combined statistics are in the [role overview](role-overview.md). Product, platform and customer-delivery work differ; inspect country results separately.
 
 ## All keyword categories
 
@@ -66,7 +66,7 @@ Literal mentions include alternatives/preferences. Employer-balanced rates provi
 | lora_qlora_peft | 0/53 | 0.0 | 0.0 |
 | rlhf_preference_alignment | 0/53 | 0.0 | 0.0 |
 | ppo_grpo_rlvr | 0/53 | 0.0 | 0.0 |
-| agentic_rl | 17/53 | 32.08 | 31.2 |
+| agentic_rl | 0/53 | 0.0 | 0.0 |
 | distillation | 3/53 | 5.66 | 2.4 |
 | quantization_compression | 1/53 | 1.89 | 2.0 |
 | serving_frameworks | 0/53 | 0.0 | 0.0 |

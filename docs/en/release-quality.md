@@ -4,9 +4,9 @@ This bilingual learning guide develops application/systems AI engineering throug
 
 | Material | Scope and verification |
 |---|---|
-| Roles/market |104 descriptions, 43 employers; separate China/NA and US/CA; public indicators retain sources, units, coverage and missing values|
-| Curriculum |17 modules, 126 units, 693 topics, 378 self-check questions; bilingual scope, prerequisites, depth, readings, build tasks and self-checks|
-| Resources/source |171 resources, 61 repository snapshots, 3 pinned source readings; inspection scope recorded|
+| Roles/market |320 descriptions, 93 employers (104 reviewed, 216 rule-screened); separate China/NA and US/CA; public indicators retain sources, units, coverage and missing values|
+| Curriculum |17 modules, 126 units, 698 topics, 378 self-check questions; bilingual scope, prerequisites, depth, readings, build tasks and self-checks|
+| Resources/source |181 resources, 61 repository snapshots, 3 pinned source readings; inspection scope recorded|
 | Practice |17 lab briefs, 4 general capstones, 3 runnable offline mechanism references|
 | Assessment |Task/data/experiment/operation package plus independent implementation, diagnosis, change and discussion|
 

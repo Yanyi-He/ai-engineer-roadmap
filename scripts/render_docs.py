@@ -5,9 +5,11 @@ from pathlib import Path
 try:
     from .curriculum_graph import index_units, topological_units, expand_route
     from .render_overview import render_overview
+    from .render_charts import render_charts
 except ImportError:
     from curriculum_graph import index_units, topological_units, expand_route
     from render_overview import render_overview
+    from render_charts import render_charts
 ROOT=Path(__file__).resolve().parents[1]
 mods=json.loads((ROOT/'data/curriculum.json').read_text())
 resources={r['id']:r for r in json.loads((ROOT/'data/resources.json').read_text())}
@@ -15,12 +17,12 @@ routes=json.loads((ROOT/'data/learning-routes.json').read_text())
 units=index_units(mods)
 depth={'explain':('解释：讲清机制、边界与选择依据','Explain mechanisms, limits and choices'),'implement':('实现：独立完成小型实现并验证行为','Implement a small system and verify behavior'),'diagnose':('诊断：定位失败、设计对照并修正','Diagnose failures, compare and repair'),'design':('设计：在约束下选择架构并论证取舍','Design under constraints and defend tradeoffs')}
 refs={
-'00':['swyx-aie','cs329z','fsdl','ml-course'], '01':['python','asyncio-tasks','pythonds','missing','fastapi','claude-code-best-practices','agents-md'], '02':['fastapi','sql','idempotency','system-design-primer','owasp-cheatsheets','docker','actions','ts','vercel-ai-sdk','ag-ui','spring-ai','langchain4j'],
-'03':['d2l','openintro-stats','pytorch-tutorials','cs336-resource-accounting'],'04':['hf-llm','d2l','cs336','cs336-2026','nanogpt-course','hf-vlms','clip','chinchilla','deepseek-v2'],'05':['litellm','anthropic-prompt-tutorial','function','structured','context','routellm','openai-prompt-caching','openai-batch','aws-bedrock','bailian','cs336-evaluation','hf-vision','hf-audio'],
-'06':['llm-zoomcamp','docling','mineru','rag-from-scratch','contextual-retrieval','llamaindex','sentence','mteb','ir','pgvector','qdrant','milvus','alce','graphrag','colpali','jxnl-rag','ragas'],'07':['effective','hf-agents','ms-begin','deep-course','12factor','agent-skills-post','agent-skills','mem0','graphiti','cs329z-hw1'],
-'08':['lg-course','lg-code','langgraph','adk','pydantic-ai','maf','openai-agents-sdk','claude-agent-sdk','temporal','dspy','dify','coze','n8n'],'09':['cs329z','adk','deepagents','a2a','inspect'],
+'00':['swyx-aie','cs329z','fsdl','ml-course','roadmap-sh'], '01':['python','asyncio-tasks','pythonds','missing','fastapi','claude-code-best-practices','agents-md'], '02':['fastapi','sql','idempotency','system-design-primer','owasp-cheatsheets','docker','actions','ts','vercel-ai-sdk','ag-ui','spring-ai','langchain4j','spring-ai-alibaba'],
+'03':['d2l','openintro-stats','pytorch-tutorials','cs336-resource-accounting'],'04':['hf-llm','d2l','cs336','cs336-2026','nanogpt-course','hf-vlms','clip','chinchilla','deepseek-v2','happy-llm'],'05':['litellm','anthropic-prompt-tutorial','function','structured','context','routellm','openai-prompt-caching','openai-batch','aws-bedrock','bailian','cs336-evaluation','hf-vision','hf-audio'],
+'06':['llm-zoomcamp','docling','mineru','rag-from-scratch','contextual-retrieval','llamaindex','sentence','mteb','ir','pgvector','qdrant','milvus','alce','graphrag','colpali','jxnl-rag','ragas','azure-doc-intel','ragflow'],'07':['effective','hf-agents','ms-begin','deep-course','12factor','agent-skills-post','agent-skills','mem0','graphiti','cs329z-hw1','hello'],
+'08':['lg-course','lg-code','langgraph','adk','pydantic-ai','maf','openai-agents-sdk','claude-agent-sdk','temporal','dspy','dify','coze','n8n','langchain-v1','dify-source','copilot-studio','agentscope','spring-ai-alibaba','hello'],'09':['cs329z','adk','deepagents','a2a','inspect'],
 '10':['anthropic-tools','function','mcp-server','mcp-sdk','mcp-auth','mcp-security','docker-security','gvisor','injection-patterns','lethal-trifecta','owasp-agentic','purple-llama','qwen3guard','presidio'],'11':['hamel-evals','hamel-judge','inspect','ragas','error-bars','scipy-bootstrap','otel','langfuse','promptfoo','cs329z-hw2','cs336-evaluation','terminal-bench','tau2-bench','pytest','deepeval','ragas-precision','ragas-faithfulness','promptfoo-ci','langfuse-eval','inspect-evalsets'],
-'12':['cs336-data','cs336-a4','hf-llm','trl','peft','llamafactory','unsloth','ms-swift','rlhf-book','cs336-a5','verl','trl-gkd','obp','dr-paper'],'13':['mlx','llamacpp','vllm','sglang','mooncake','profiler','cs336-resource-accounting','cs336-inference'],
+'12':['cs336-data','cs336-a4','hf-llm','trl','peft','llamafactory','unsloth','ms-swift','rlhf-book','cs336-a5','verl','trl-gkd','obp','dr-paper','self-llm'],'13':['mlx','llamacpp','vllm','sglang','mooncake','profiler','cs336-resource-accounting','cs336-inference','self-llm'],
 '14':['fsdl','applied-llms','pair-guidebook','sre','actions','owasp','cac-genai','cac-labeling','eu-ai-act','nist-ai-rmf','gum-paper'],'15':['tech-interview-handbook','ml-interviews-book','llms-from-scratch','genai-platform','system-design-primer','design-docs-google','llm-zoomcamp','sre'],'16':['hf-deep-rl','dreamerv3','mujoco','lerobot','ros2']}
 def resource_link(rid,lang):
     r=resources[rid]
@@ -113,5 +115,6 @@ def main():
             n=units[id];lines.append(f"| {unit_link(id,lang)} | {n['track']} | {', '.join(unit_link(x,lang) for x in n['prerequisites']) or '—'} |")
         (out/'dependency-order.md').write_text('\n'.join(lines)+'\n')
     render_overview(mods)
+    render_charts()
     print(f'Rendered {len(mods)} modules, {len(units)} units and {len(routes)} routes in both languages.')
 if __name__=='__main__':main()

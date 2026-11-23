@@ -2,7 +2,7 @@
 
 中文 · [English](README.md)
 
-**成为 AI Engineer：学什么、按什么顺序学、怎样证明自己会。基于中国与北美 104 份 JD 整理。**
+**成为 AI Engineer：学什么、按什么顺序学、怎样证明自己会。基于中国与北美 320 份 JD 整理。**
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/overview/roadmap-zh-dark.svg">
@@ -22,16 +22,16 @@
 
 ## 这份路线有什么不同
 
-- **从招聘证据出发，而不是罗列工具。** 在目的性抽样的 51 份中国 JD 和 53 份北美 JD 中，交付与生产相关要求分别出现在 94% 和 98% 的 JD 里，评测与实验分别为 61% 和 76%。两地也有差异：Java/Spring 出现在 47% 的中国 JD 中，北美只有 6%。详见[方法与图表](docs/zh/role-overview.md)。
+- **从招聘证据出发，而不是罗列工具。** 在 51 份中国和 269 份北美 AI 工程岗位描述中，生产上线与交付分别出现在 86% 和 90% 的 JD 里，评测与实验为 53% 和 67%，微调只有 31% 和 18%。两地也有差异：Java/Spring 出现在 47% 的中国 JD 中，北美只有 10%。详见[图表、置信区间与企业 JD 拆解](docs/zh/role-overview.md)。
 - **先修精确到单元。** 不必先学完 Transformer 原理，也能先做出模型 API 服务和无框架 Agent；每条路线只展开项目需要的先修。
-- **免费资源，并标明阅读范围。** 171 项资源全部检查过链接，每个单元写明读哪些章节、为什么选这份资料。
+- **免费资源，并标明阅读范围。** 181 项资源全部检查过链接，每个单元写明读哪些章节、为什么选这份资料。
 - **能拿给面试官看的证据。** 17 个实验、4 个完整项目、毕业评审标准和 378 道自测题，把阅读变成可以检查的作品。
 
 ## 全部页面
 
-1. [岗位与招聘市场](docs/zh/role-overview.md)：104 份 JD 分市场分析，以及可核验的公开趋势。
+1. [岗位与招聘市场](docs/zh/role-overview.md)：320 份 JD 分市场分析、企业 JD 拆解，以及可核验的公开趋势。
 2. [入门诊断](docs/zh/entry-diagnostic.md) → [学习路径](docs/zh/learning-path.md) → [依赖顺序](docs/zh/dependency-order.md)。
-3. [完整知识树](docs/zh/knowledge-tree.md)：17 个模块、126 个单元、693 条主题分支。
+3. [完整知识树](docs/zh/knowledge-tree.md)：17 个模块、126 个单元、698 条主题分支。
 4. [自测题清单](docs/zh/self-check.md)：每个单元 3 道面试式自测题，共 378 道，用于面试前查漏补缺。
 5. [实验](docs/zh/labs.md) → [完整项目](docs/zh/capstones.md) → [能力评审](docs/zh/assessment.md)。
 6. [技术选择](docs/zh/stack-decisions.md)、[开源项目研究](docs/zh/open-source.md)、[资源筛选](docs/zh/resource-policy.md)。
@@ -223,7 +223,7 @@ mindmap
 
 ## 资源如何使用
 
-[Stanford CS329Z](https://cs329z.stanford.edu/)的已公开材料承担 Agent 系统主线，辅以官方文档、开放教材和免费课程。171 项资源记录了对应范围与选用理由；优先完成一个主读资源和对应实现，再按问题查阅其他资料。61 个 GitHub 项目的元数据用于筛选源码参考。
+[Stanford CS329Z](https://cs329z.stanford.edu/)的已公开材料承担 Agent 系统主线，辅以官方文档、开放教材和免费课程。181 项资源记录了对应范围与选用理由；优先完成一个主读资源和对应实现，再按问题查阅其他资料。61 个 GitHub 项目的元数据用于筛选源码参考。
 
 核心阅读材料可以免费获取；商业 API、云和 GPU 的实际使用可能产生费用。资源访问状态、课程发布进度与快照日期见[资源说明](docs/zh/resource-policy.md)。
 
@@ -241,6 +241,6 @@ python3 -B scripts/validate.py
 
 ## 研究与贡献
 
-[招聘研究](docs/zh/market-research.md)分别分析中国 51 份、北美 53 份 JD；这是一组按职责筛选的描述样本。市场图表区分广告占比、招聘指数和入职趋势，未获得的全国历史空缺总量留空。数据与图表的范围在[岗位总述](docs/zh/role-overview.md)中说明。
+[招聘研究](docs/zh/market-research.md)分别分析中国 51 份、北美 269 份 JD：其中 104 份人工复核，216 份从公开职位接口按规则筛选。市场图表只保留按职业定义的指标，未获得的全国历史空缺总量留空。数据与图表的范围在[岗位总述](docs/zh/role-overview.md)中说明。
 
 欢迎补充可复现案例、改进学习脉络、贡献实验或更新资源，见[贡献指南](CONTRIBUTING.md)。学习成果通过作品与独立评审验证；本路线尚无学习者就业结果研究。仓库原创内容采用 MIT，外部材料保留各自许可证。

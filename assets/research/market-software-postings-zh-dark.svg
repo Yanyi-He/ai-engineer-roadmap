@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380" width="1000" height="380" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+<title id="t">Indeed 软件开发岗位广告指数（2020-02-01 = 100）</title>
+<desc id="d">Indeed 软件开发岗位广告指数（2020-02-01 = 100）</desc>
+<text x="24.0" y="34.0" font-size="19" fill="#f0f6fc" font-weight="700">Indeed 软件开发岗位广告指数（2020-02-01 = 100）</text>
+<rect x="850.0" y="80" width="110.0" height="230" fill="#161b22"/>
+<text x="905.0" y="96.0" font-size="11" fill="#9198a1" text-anchor="middle">部分季度</text>
+<line x1="80" y1="310.0" x2="960" y2="310.0" stroke="#262c36"/>
+<text x="70.0" y="314.0" font-size="11.5" fill="#9198a1" text-anchor="end">60</text>
+<line x1="80" y1="264.0" x2="960" y2="264.0" stroke="#262c36"/>
+<text x="70.0" y="268.0" font-size="11.5" fill="#9198a1" text-anchor="end">65</text>
+<line x1="80" y1="218.0" x2="960" y2="218.0" stroke="#262c36"/>
+<text x="70.0" y="222.0" font-size="11.5" fill="#9198a1" text-anchor="end">70</text>
+<line x1="80" y1="172.0" x2="960" y2="172.0" stroke="#262c36"/>
+<text x="70.0" y="176.0" font-size="11.5" fill="#9198a1" text-anchor="end">75</text>
+<line x1="80" y1="126.0" x2="960" y2="126.0" stroke="#262c36"/>
+<text x="70.0" y="130.0" font-size="11.5" fill="#9198a1" text-anchor="end">80</text>
+<line x1="80" y1="80.0" x2="960" y2="80.0" stroke="#262c36"/>
+<text x="70.0" y="84.0" font-size="11.5" fill="#9198a1" text-anchor="end">85</text>
+<text x="135.0" y="332.0" font-size="12" fill="#9198a1" text-anchor="middle">2025Q1</text>
+<text x="245.0" y="332.0" font-size="12" fill="#9198a1" text-anchor="middle">2025Q2</text>
+<text x="355.0" y="332.0" font-size="12" fill="#9198a1" text-anchor="middle">2025Q3</text>
+<text x="465.0" y="332.0" font-size="12" fill="#9198a1" text-anchor="middle">2025Q4</text>
+<text x="575.0" y="332.0" font-size="12" fill="#9198a1" text-anchor="middle">2026Q1</text>
+<text x="685.0" y="332.0" font-size="12" fill="#9198a1" text-anchor="middle">2026Q2</text>
+<text x="795.0" y="332.0" font-size="12" fill="#9198a1" text-anchor="middle">2026Q3</text>
+<text x="905.0" y="332.0" font-size="12" fill="#9198a1" text-anchor="middle">2026Q4</text>
+<text transform="translate(22 195) rotate(-90)" font-size="12" fill="#9198a1" text-anchor="middle">指数</text>
+<polyline points="135.0,265.2 245.0,274.6 355.0,259.9 465.0,254.6 575.0,218.2 685.0,187.0 795.0,167.6 905.0,125.2" fill="none" stroke="#4493f8" stroke-width="2.4" stroke-linejoin="round"/>
+<circle cx="135.0" cy="265.2" r="3.6" fill="#4493f8"/>
+<circle cx="245.0" cy="274.6" r="3.6" fill="#4493f8"/>
+<circle cx="355.0" cy="259.9" r="3.6" fill="#4493f8"/>
+<circle cx="465.0" cy="254.6" r="3.6" fill="#4493f8"/>
+<circle cx="575.0" cy="218.2" r="3.6" fill="#4493f8"/>
+<circle cx="685.0" cy="187.0" r="3.6" fill="#4493f8"/>
+<circle cx="795.0" cy="167.6" r="3.6" fill="#4493f8"/>
+<circle cx="905.0" cy="125.2" r="3.6" fill="#4493f8"/>
+<text x="913.0" y="129.2" font-size="11.5" fill="#4493f8" font-weight="600">80.1</text>
+<rect x="80" y="50" width="14" height="10" rx="2" fill="#4493f8"/>
+<text x="100.0" y="59.0" font-size="13" fill="#9198a1">美国</text>
+<polyline points="135.0,184.8 245.0,161.2 355.0,139.5 465.0,110.5 575.0,119.6 685.0,140.9 795.0,149.2 905.0,161.3" fill="none" stroke="#39c5cf" stroke-width="2.4" stroke-linejoin="round"/>
+<circle cx="135.0" cy="184.8" r="3.6" fill="#39c5cf"/>
+<circle cx="245.0" cy="161.2" r="3.6" fill="#39c5cf"/>
+<circle cx="355.0" cy="139.5" r="3.6" fill="#39c5cf"/>
+<circle cx="465.0" cy="110.5" r="3.6" fill="#39c5cf"/>
+<circle cx="575.0" cy="119.6" r="3.6" fill="#39c5cf"/>
+<circle cx="685.0" cy="140.9" r="3.6" fill="#39c5cf"/>
+<circle cx="795.0" cy="149.2" r="3.6" fill="#39c5cf"/>
+<circle cx="905.0" cy="161.3" r="3.6" fill="#39c5cf"/>
+<text x="913.0" y="165.3" font-size="11.5" fill="#39c5cf" font-weight="600">76.2</text>
+<rect x="230" y="50" width="14" height="10" rx="2" fill="#39c5cf"/>
+<text x="250.0" y="59.0" font-size="13" fill="#9198a1">加拿大</text>
+<text x="24.0" y="362.0" font-size="12" fill="#9198a1">来源：Indeed Hiring Lab job_postings_tracker（CC-BY-4.0）· 日值季度均值 · 2026Q4 截至 11 月 13 日</text>
+</svg>

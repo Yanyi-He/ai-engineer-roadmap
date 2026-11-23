@@ -55,7 +55,7 @@
   "lora_qlora_peft": "\\blora\\b|\\bqlora\\b|\\bpeft\\b|参数高效|parameter.efficient",
   "rlhf_preference_alignment": "rlhf|\\bdpo\\b|preference.optim|reward.model|奖励模型|偏好优化|人类反馈",
   "ppo_grpo_rlvr": "\\bppo\\b|\\bgrpo\\b|\\brlvr\\b|policy.gradient|策略梯度",
-  "agentic_rl": "agentic.rl|agent.强化学习|智能体.*强化学习|rl.*agent|强化学习.*智能体",
+  "agentic_rl": "agentic.rl|agent.强化学习|智能体.*强化学习|\\brl\\b.{0,40}agents?|reinforcement.learning.{0,60}agents?|agents?.{0,40}\\brl\\b|强化学习.*智能体",
   "distillation": "distillat|蒸馏",
   "quantization_compression": "quantiz|量化|模型压缩|model.compression",
   "serving_frameworks": "vllm|sglang|tensorrt|triton.inference|ollama|llama\\.cpp|mlx",

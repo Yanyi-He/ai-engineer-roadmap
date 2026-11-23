@@ -66,7 +66,7 @@ Literal mentions include alternatives/preferences. Employer-balanced rates provi
 | lora_qlora_peft | 2/51 | 3.92 | 7.41 |
 | rlhf_preference_alignment | 2/51 | 3.92 | 11.11 |
 | ppo_grpo_rlvr | 1/51 | 1.96 | 5.56 |
-| agentic_rl | 6/51 | 11.76 | 13.15 |
+| agentic_rl | 5/51 | 9.8 | 7.59 |
 | distillation | 1/51 | 1.96 | 0.93 |
 | quantization_compression | 7/51 | 13.73 | 21.06 |
 | serving_frameworks | 8/51 | 15.69 | 31.83 |

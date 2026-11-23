@@ -1,18 +1,18 @@
 {
-  "collection_window": "2026-11-18 to 2026-11-19",
+  "collection_window": "2026-11-18 to 2026-11-23",
   "scope": "Application/systems AI engineering; purposive descriptions, not national active totals",
   "overall": {
-    "n": 104,
-    "employers": 43,
+    "n": 320,
+    "employers": 93,
     "country": {
       "CN": 51,
-      "CA": 10,
-      "US": 43
+      "CA": 33,
+      "US": 236
     },
     "sector": {
-      "internet": 40,
+      "internet": 62,
       "traditional-manufacturing": 3,
-      "enterprise-software": 14,
+      "enterprise-software": 66,
       "enterprise-hardware": 1,
       "traditional-automotive": 1,
       "enterprise-commerce": 1,
@@ -20,34 +20,36 @@
       "finance": 1,
       "consumer-hardware": 1,
       "research-institute": 1,
-      "fintech": 12,
-      "ai-native": 23,
-      "industrial-tech": 2,
+      "fintech": 34,
+      "ai-native": 122,
+      "industrial-tech": 4,
       "traditional-healthcare": 2,
-      "traditional-retail": 1
+      "traditional-retail": 1,
+      "health-tech": 5,
+      "developer-tools": 14
     },
     "source_grade": {
-      "A1-employer-api": 66,
+      "A1-employer-api": 282,
       "A1-employer": 13,
       "A2-university-hosted": 10,
       "B1-syndicated-employer": 15
     },
     "seniority": {
-      "senior": 15,
-      "unspecified": 62,
-      "lead_architect_expert": 7,
-      "entry": 5,
-      "intern": 2,
-      "staff_plus": 13
+      "senior": 55,
+      "unspecified": 150,
+      "lead_architect_expert": 28,
+      "entry": 9,
+      "intern": 5,
+      "staff_plus": 73
     },
     "archetype": {
-      "product_application": 68,
-      "agent_platform": 20,
-      "application_optimization": 5,
-      "customer_delivery": 11
+      "product_application": 179,
+      "agent_platform": 79,
+      "application_optimization": 10,
+      "customer_delivery": 52
     },
     "active_status": {
-      "listed-at-collection": 66,
+      "listed-at-collection": 282,
       "description-accessible-opening-unverified": 38
     }
   },
@@ -95,40 +97,43 @@
       }
     },
     "NA": {
-      "n": 53,
-      "employers": 25,
+      "n": 269,
+      "employers": 75,
       "country": {
-        "CA": 10,
-        "US": 43
+        "CA": 33,
+        "US": 236
       },
       "sector": {
-        "fintech": 10,
-        "enterprise-software": 11,
-        "ai-native": 23,
-        "industrial-tech": 2,
-        "internet": 4,
+        "fintech": 32,
+        "enterprise-software": 63,
+        "ai-native": 122,
+        "industrial-tech": 4,
+        "internet": 26,
         "traditional-healthcare": 2,
-        "traditional-retail": 1
+        "traditional-retail": 1,
+        "health-tech": 5,
+        "developer-tools": 14
       },
       "source_grade": {
-        "A1-employer-api": 50,
+        "A1-employer-api": 266,
         "A1-employer": 3
       },
       "seniority": {
-        "senior": 11,
-        "unspecified": 25,
-        "staff_plus": 13,
-        "entry": 2,
-        "intern": 1,
-        "lead_architect_expert": 1
+        "senior": 51,
+        "unspecified": 113,
+        "staff_plus": 73,
+        "entry": 6,
+        "intern": 4,
+        "lead_architect_expert": 22
       },
       "archetype": {
-        "agent_platform": 8,
-        "product_application": 34,
-        "customer_delivery": 11
+        "agent_platform": 67,
+        "product_application": 145,
+        "customer_delivery": 52,
+        "application_optimization": 5
       },
       "active_status": {
-        "listed-at-collection": 50,
+        "listed-at-collection": 266,
         "description-accessible-opening-unverified": 3
       }
     }
@@ -177,69 +182,76 @@
       }
     },
     "CA": {
-      "n": 10,
-      "employers": 8,
+      "n": 33,
+      "employers": 20,
       "country": {
-        "CA": 10
+        "CA": 33
       },
       "sector": {
-        "fintech": 2,
-        "enterprise-software": 3,
-        "ai-native": 3,
-        "industrial-tech": 1,
-        "internet": 1
-      },
-      "source_grade": {
-        "A1-employer-api": 10
-      },
-      "seniority": {
-        "senior": 5,
-        "staff_plus": 2,
-        "unspecified": 3
-      },
-      "archetype": {
-        "agent_platform": 2,
-        "product_application": 7,
-        "customer_delivery": 1
-      },
-      "active_status": {
-        "listed-at-collection": 10
-      }
-    },
-    "US": {
-      "n": 43,
-      "employers": 21,
-      "country": {
-        "US": 43
-      },
-      "sector": {
-        "fintech": 8,
+        "fintech": 4,
         "enterprise-software": 8,
-        "ai-native": 20,
+        "ai-native": 15,
         "industrial-tech": 1,
-        "internet": 3,
-        "traditional-healthcare": 2,
-        "traditional-retail": 1
+        "internet": 4,
+        "developer-tools": 1
       },
       "source_grade": {
-        "A1-employer-api": 40,
-        "A1-employer": 3
+        "A1-employer-api": 33
       },
       "seniority": {
-        "unspecified": 22,
+        "senior": 9,
         "staff_plus": 11,
-        "senior": 6,
-        "entry": 2,
+        "unspecified": 11,
         "intern": 1,
         "lead_architect_expert": 1
       },
       "archetype": {
-        "product_application": 27,
-        "customer_delivery": 10,
-        "agent_platform": 6
+        "agent_platform": 5,
+        "product_application": 22,
+        "customer_delivery": 5,
+        "application_optimization": 1
       },
       "active_status": {
-        "listed-at-collection": 40,
+        "listed-at-collection": 33
+      }
+    },
+    "US": {
+      "n": 236,
+      "employers": 68,
+      "country": {
+        "US": 236
+      },
+      "sector": {
+        "fintech": 28,
+        "enterprise-software": 55,
+        "ai-native": 107,
+        "industrial-tech": 3,
+        "internet": 22,
+        "traditional-healthcare": 2,
+        "traditional-retail": 1,
+        "health-tech": 5,
+        "developer-tools": 13
+      },
+      "source_grade": {
+        "A1-employer-api": 233,
+        "A1-employer": 3
+      },
+      "seniority": {
+        "unspecified": 102,
+        "staff_plus": 62,
+        "senior": 42,
+        "entry": 6,
+        "intern": 3,
+        "lead_architect_expert": 21
+      },
+      "archetype": {
+        "product_application": 123,
+        "customer_delivery": 47,
+        "agent_platform": 62,
+        "application_optimization": 4
+      },
+      "active_status": {
+        "listed-at-collection": 233,
         "description-accessible-opening-unverified": 3
       }
     }

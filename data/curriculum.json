@@ -389,7 +389,8 @@
           "AGENTS.md/CLAUDE.md、Skills与MCP配置：把仓库约定变成可复用上下文",
           "验证生成代码：测试先行、diff审阅、依赖与安全检查、虚构API",
           "沙箱、密钥与生产权限；不可逆操作的人工确认",
-          "效率度量与可用AI的面试：讲清自己的判断而非复述助手输出"
+          "效率度量与可用AI的面试：讲清自己的判断而非复述助手输出",
+          "AI 驱动的测试与代码评审，沉淀为团队规范；熟练使用但不依赖：没有 AI 也能读代码、排障和解释设计"
         ],
         "topics_en": [
           "Capability limits, permission modes and cost of tools such as Claude Code, Codex and Cursor",
@@ -397,7 +398,8 @@
           "AGENTS.md/CLAUDE.md, skills and MCP configuration: turning repository conventions into reusable context",
           "Verifying generated code: tests first, diff review, dependency/security checks and hallucinated APIs",
           "Sandboxes, secrets and production access; human confirmation for irreversible actions",
-          "Measuring productivity and AI-allowed interviews: explaining your own judgment rather than the assistant’s output"
+          "Measuring productivity and AI-allowed interviews: explaining your own judgment rather than the assistant’s output",
+          "AI-driven testing and code review built into team standards; fluent but not dependent: read code, debug and explain designs without an assistant"
         ],
         "build_zh": "用Coding Agent完成一个带测试的小功能，保留计划、diff审阅记录与自己修正的错误。",
         "build_en": "Ship a small tested feature with a coding agent and keep the plan, diff-review notes and the errors you corrected yourself.",
@@ -1918,7 +1920,7 @@
           "清洗、去重、内容hash、文档/段落ID与版本",
           "按标题/语义/结构切分、overlap与metadata",
           "批处理、失败重跑、幂等索引和删除传播",
-          "解析工具选型（Docling、MinerU、PaddleOCR、Unstructured）与按文档类型的解析质量评测"
+          "解析工具选型（Docling、MinerU、PaddleOCR、Unstructured）或云端文档智能服务（Azure Document Intelligence、AWS Textract），按文档类型评估解析质量"
         ],
         "topics_en": [
           "Connectors, incremental sync, provenance and data cards",
@@ -1926,7 +1928,7 @@
           "Cleaning, hashes, document/chunk IDs and revisions",
           "Structural/semantic chunks, overlap and metadata",
           "Batching, replay, idempotent indexes and deletion",
-          "Choosing parsers (Docling, MinerU, PaddleOCR, Unstructured) and evaluating parse quality by document type"
+          "Choosing parsers (Docling, MinerU, PaddleOCR, Unstructured) or cloud document-intelligence services (Azure Document Intelligence, AWS Textract), and evaluating parse quality by document type"
         ],
         "build_zh": "为一个有修订和删除的数据源建立可重放入库流水线。",
         "build_en": "Build replayable ingestion for a source with revisions/deletion.",
@@ -2821,14 +2823,16 @@
           "TypedDict/Pydantic、reducer和消息累积",
           "条件路由、循环、终止与图调试",
           "模型/检索/工具节点与依赖注入",
-          "从固定workflow到动态agent graph"
+          "从固定workflow到动态agent graph",
+          "LangChain/LangGraph 1.0：基于 LangGraph 的 create_agent 与中间件（PII 脱敏、摘要、人工审批）；create_react_agent 已弃用"
         ],
         "topics_en": [
           "StateGraph, schemas, nodes and edges",
           "Typed state, reducers and accumulated messages",
           "Conditional routing, loops, termination and debugging",
           "Model/retrieval/tool nodes and dependencies",
-          "Fixed workflows and dynamic graphs"
+          "Fixed workflows and dynamic graphs",
+          "LangChain/LangGraph 1.0: create_agent on LangGraph and middleware (PII redaction, summarization, human approval); create_react_agent is deprecated"
         ],
         "build_zh": "将同一个任务分别实现为固定图和动态路由图。",
         "build_en": "Implement a task as fixed and dynamically routed graphs.",
@@ -3003,14 +3007,14 @@
         "read_en": "ADK agents, sessions, tools and workflows; compare PydanticAI/MAF.",
         "topics_zh": [
           "LangChain与LangGraph的职责差异",
-          "Google ADK、PydanticAI、Microsoft Agent Framework（AutoGen后继）与CrewAI",
+          "ADK、PydanticAI、Microsoft Agent Framework（接替已归档的 AutoGen）、CrewAI，以及国内的 AgentScope 与 Spring AI Alibaba",
           "OpenAI Agents SDK、Claude Agent SDK等provider agent SDK与框架中立的typed action contract",
           "TypeScript（Vercel AI SDK、Mastra）、Java（Spring AI/LangChain4j，见02.8）与.NET生态",
           "session、state、重试、工具、部署和评测语义对照"
         ],
         "topics_en": [
           "LangChain versus LangGraph responsibilities",
-          "ADK, PydanticAI, Microsoft Agent Framework (AutoGen’s successor) and CrewAI",
+          "ADK, PydanticAI, Microsoft Agent Framework (successor to the archived AutoGen), CrewAI, and AgentScope and Spring AI Alibaba in China",
           "Provider agent SDKs (OpenAI Agents SDK, Claude Agent SDK) and neutral typed actions",
           "TypeScript (Vercel AI SDK, Mastra), Java (Spring AI/LangChain4j; see 02.8) and .NET ecosystems",
           "Compare sessions, state, retries, tools, deployment and evaluation"
@@ -3150,7 +3154,8 @@
           "扩展方式：自定义工具、HTTP节点、MCP接入与插件开发",
           "私有化部署、许可证、多租户与数据边界",
           "DSL导出、版本控制，以及评测与观测缺口的补法",
-          "从平台原型迁移到代码服务的触发条件与步骤"
+          "从平台原型迁移到代码服务的触发条件与步骤",
+          "企业低代码平台对照：北美的 Copilot Studio 与 Power Automate、中国的 Dify 与扣子；许可证（Dify 多租户与 Logo 条款）、单机吞吐上限与迁移到代码的时机"
         ],
         "topics_en": [
           "Dify/Coze/n8n workflow canvases, knowledge bases, plugins/tools and app publishing",
@@ -3158,7 +3163,8 @@
           "Extension paths: custom tools, HTTP nodes, MCP integration and plugin development",
           "Self-hosting, licenses, multi-tenancy and data boundaries",
           "DSL export, version control, and how to fill evaluation/observability gaps",
-          "Triggers and steps for migrating a platform prototype to a code service"
+          "Triggers and steps for migrating a platform prototype to a code service",
+          "Enterprise low-code counterparts: Copilot Studio and Power Automate in North America, Dify and Coze in China; licences (Dify's multi-tenant and logo terms), single-instance throughput limits and when to move to code"
         ],
         "build_zh": "用Dify搭一个带知识库和工具调用的业务助手，再用代码实现同一流程，对比开发时间、可测试性和失败处理。",
         "build_en": "Build a business assistant with a knowledge base and tool calls in Dify, reimplement the flow in code and compare build time, testability and failure handling.",
@@ -5449,14 +5455,16 @@
           "租户隔离、授权、密钥、加密与审计",
           "数据最小化、保留、纠正/删除和供应商边界",
           "领域审核、人工责任、审批和风险升级",
-          "安全测试、发布记录和用户可解释性"
+          "安全测试、发布记录和用户可解释性",
+          "受监管行业（保险、银行、医疗）的模型风险管理：人工监督、可追溯证据与上线审批"
         ],
         "topics_en": [
           "Threat models, injection, tool abuse and exfiltration",
           "Tenancy, access, secrets, encryption and audit",
           "Minimization, retention, correction/deletion and vendors",
           "Domain review, responsibility, approval and escalation",
-          "Security tests, release records and explanations"
+          "Security tests, release records and explanations",
+          "Model-risk management in regulated industries (insurance, banking, health): human oversight, traceable evidence and release approval"
         ],
         "build_zh": "对一个企业场景给出威胁模型与可测试控制。",
         "build_en": "Create a threat model and testable controls for an enterprise task.",
@@ -5495,14 +5503,16 @@
           "自动评测、人工评审、shadow/canary与回滚",
           "调用费用、训练费用、存储/观测费用和预算",
           "采用率、任务成功、人工节省和投诉/纠正",
-          "维护节奏、依赖升级、交接和文档"
+          "维护节奏、依赖升级、交接和文档",
+          "多环境发布（sandbox → dev → QA → UAT → prod）、架构决策记录（ADR）、API 规范与运行手册"
         ],
         "topics_en": [
           "Traceable releases across model/prompt/tools/index/data",
           "Automated/manual evaluation, shadow/canary and rollback",
           "Inference/training/storage/observability cost and budgets",
           "Adoption, success, time saved and corrections",
-          "Maintenance, upgrades, handoff and documentation"
+          "Maintenance, upgrades, handoff and documentation",
+          "Environment promotion (sandbox → dev → QA → UAT → prod), architecture decision records, API specifications and runbooks"
         ],
         "build_zh": "发布一次可回滚变更，并交付运维与成本记录。",
         "build_en": "Release a reversible change with operation/cost evidence.",

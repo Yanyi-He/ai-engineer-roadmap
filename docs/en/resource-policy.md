@@ -1,6 +1,6 @@
 # Resource selection and use
 
-Selection considers authoritative ownership, complete public access, specific topics/exercises, maintenance and adoption signals. Each unit has one primary reading scope; additional references answer specific questions. All 171 entries preserve selection reasons, costs, release status and check dates. We use explicit evidence where no comparable rating exists.
+Selection considers authoritative ownership, complete public access, specific topics/exercises, maintenance and adoption signals. Each unit has one primary reading scope; additional references answer specific questions. All 181 entries preserve selection reasons, costs, release status and check dates. We use explicit evidence where no comparable rating exists.
 
 CS329Z supplies the agent-systems spine using published materials from an ongoing course. Complete open textbooks, official tutorials and published courses support foundations/deployment. LangGraph uses its official course/code, followed by the Deep Agents course for harness depth. Historical FSDL lectures support product/system methods; check current APIs in current documentation.
 
@@ -18,7 +18,7 @@ Free access means legal access to the core text/video/specification. APIs, GPUs,
 | [Full Stack LLM Bootcamp](https://fullstackdeeplearning.com/llm-bootcamp/) | Product requirements through deployment/feedback | Do not copy historical APIs verbatim |
 | [LLM Master](https://github.com/youngyangyang04/llm-master) | Staged path, topic indexes and project gates | Borrow structure; exclude paid funnels and recharge links |
 
-The structure borrows staged navigation, framework-focused study and incremental projects. This roadmap adds market-separated JD evidence, 17 modules/126 units, selected reading scopes, 693 topic branches and end-to-end assessment. Its prose and diagrams are original.
+The structure borrows staged navigation, framework-focused study and incremental projects. This roadmap adds market-separated JD evidence, 17 modules/126 units, selected reading scopes, 698 topic branches and end-to-end assessment. Its prose and diagrams are original.
 
 ## Resource registry
 
@@ -195,5 +195,15 @@ The structure borrows staged navigation, framework-focused study and incremental
 | ms-swift | [ms-swift (ModelScope)](https://github.com/modelscope/ms-swift) | repo | free software; GPU resources | complete / reference | 2026-11-23 |
 | unsloth | [Unsloth Documentation](https://unsloth.ai/docs) | docs | free software; GPU resources | complete / reference | 2026-11-23 |
 | mooncake | [Mooncake](https://github.com/kvcache-ai/Mooncake) | repo | free software; cluster resources | complete / reference | 2026-11-23 |
+| roadmap-sh | [roadmap.sh: AI Engineer Roadmap](https://roadmap.sh/ai-engineer) | roadmap | free | complete / reference | 2026-11-23 |
+| happy-llm | [Datawhale happy-llm（中文）](https://github.com/datawhalechina/happy-llm) | course | free | complete / reference | 2026-11-23 |
+| self-llm | [Datawhale self-llm（中文）](https://github.com/datawhalechina/self-llm) | tutorial | free; optional GPU cost | complete / reference | 2026-11-23 |
+| copilot-studio | [Microsoft Copilot Studio documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) | docs | free docs; licensed product | complete / reference | 2026-11-23 |
+| azure-doc-intel | [Azure AI Document Intelligence documentation](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/) | docs | free docs; paid service | complete / reference | 2026-11-23 |
+| langchain-v1 | [LangChain and LangGraph 1.0 release](https://blog.langchain.com/langchain-langgraph-1dot0/) | article | free | complete / core | 2026-11-23 |
+| agentscope | [AgentScope](https://github.com/agentscope-ai/agentscope) | repo | free software | complete / reference | 2026-11-23 |
+| spring-ai-alibaba | [Spring AI Alibaba](https://github.com/alibaba/spring-ai-alibaba) | repo | free software | complete / reference | 2026-11-23 |
+| ragflow | [RAGFlow](https://github.com/infiniflow/ragflow) | repo | free software; self-hosted resources | complete / reference | 2026-11-23 |
+| dify-source | [Dify source code](https://github.com/langgenius/dify) | repo | free source; modified Apache 2.0 licence | complete / reference | 2026-11-23 |
 
 See the [tree](knowledge-tree.md) for scope and [evaluation guide](evaluation-playbook.md) for operations.

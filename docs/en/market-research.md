@@ -1,57 +1,58 @@
 # Hiring study: cohorts, definitions and comparisons
 
-The [role overview](role-overview.md) connects the work to learning. This page documents methods. Inspect [China](jd-china.md) and [North America](jd-north-america.md) separately. Collection: 18–19 November 2026.
+The [role overview](role-overview.md) connects the work to learning. This page documents methods. Inspect [China](jd-china.md) and [North America](jd-north-america.md) separately. The reviewed cohorts were collected on 18–19 November 2026 and the North American expansion on 23 November 2026.
 
 ## Cohort
 
-The application/systems cohort has 104 descriptions across 43 employers: China51/18 employers, North America53/25 employers, including US43 and Canada 10. Responsibilities determine inclusion in product applications, agent platforms, customer delivery or application optimization. Sales-led, IT-administration-led and pure research descriptions without application delivery are outside scope. Requisitions are records; exact bodies and same-body location copies are deduplicated.
+There are 320 application/systems AIE descriptions from 93 employers:
 
-| Source | China | North America |
-|---|---:|---:|
-| Employer API (A1) |16|50|
-| Employer page (A1) |10|3|
-| Employer text hosted by a university (A2) |10|0|
-| Traceable syndicated employer description (B1) |15|0|
+| Subsample | Descriptions | Employers | Collection |
+|---|---:|---:|---|
+| China, reviewed | 51 | 18 | Employer APIs 16, employer pages 10, university-hosted employer text 10, traceable reposts 15; role-text bounds reviewed one by one |
+| North America, reviewed | 53 | 25 | Employer APIs 50, employer pages 3; role-text bounds reviewed one by one |
+| North America, rule-screened | 216 | 67 | Documented public job-board APIs of Greenhouse, Ashby and Lever; rule-based role-text bounds |
 
-Sixty-six records were listed on employer boards at collection. Thirty-eight descriptions were accessible with opening status unverified. University/syndicated pages support content research. Each record preserves grade, collection date, URL, job ID where available and body hash.
+North America totals 269 descriptions from 75 employers: 236 US and 33 Canadian. By sector: AI-native 122, enterprise software 63, fintech 32, internet 26, developer tools 14, health 7, industrial tech 4, retail 1. China has 36 internet roles among 51, including 16 from Tencent.
 
-China includes 36 internet roles, with 16 from Tencent. North America includes 23 AI-native, 11 enterprise-software, 10 fintech, 4 internet, 2 industrial-tech, 2 healthcare and 1 retail roles. Targeted searches and public availability shape the cohort; sectors, archetypes and employer concentration affect comparisons.
+**Inclusion rules for the rule-screened sample** (23 November 2026):
+
+1. From 116 reachable public job boards, take US or Canadian roles whose titles contain both an engineering-role word (Engineer, Developer, Member of Technical Staff, Architect) and an AI-application marker (AI, GenAI, LLM, agent, agentic, applied AI, forward deployed and similar).
+2. Exclude management, sales, research-scientist, data-science, annotation and AI-training, hardware, kernel, networking, security-engineer and solutions-architect titles; "machine learning" titles without an LLM, agent or AI-application marker are excluded.
+3. The role text must mention LLM, generative AI, agent, RAG or AI terms at least three times; forward-deployed titles without AI in the title need five.
+4. Keep one record per employer for the same title, body or URL, at most six per employer, and exclude roles already in the reviewed sample.
+5. Role text starts at headings such as "About the role", "What you'll do" or "Responsibilities" and ends before pay, benefits, equal-opportunity or privacy text. A check found 4 of 216 records still containing pay or benefits sentences.
+
+Limitations of the rule-screened sample: AI-native employers are over-represented. Microsoft, Google, Amazon and other large technology companies, as well as banks and insurers, use their own applicant systems and are absent from these APIs; the [enterprise cases](role-overview.md#three-enterprise-job-descriptions-taken-apart) in the role overview cover that context. The China sample was not expanded because major Chinese job sites offer no documented public posting API.
 
 ## Counting method
 
-Reviewed role-text offsets exclude company introductions and page footers, retaining hashes. Sixty-six transparent regex categories count literal mentions at most once per description. ASCII word boundaries handle mixed Chinese/English text, recognizing Python beside Chinese characters while excluding Pythonic.
+Reviewed records use reviewed role-text offsets that exclude company introductions and footers, with hashes. Two rule sets run side by side:
 
-Mentions include requirements, alternatives and preferences. Broad words such as performance or experiments need source context. An absent term does not establish non-use. One reviewer checked boundaries; no independent inter-rater study has been completed.
+- [keyword-codebook.json](../../research/keyword-codebook.json): 66 categories kept for historical comparability; results in [keyword-counts.csv](../../research/keyword-counts.csv).
+- [skill-terms.json](../../research/skill-terms.json): 39 terms in two groups, tech stack and role expectations, used for the role-overview charts. Patterns are stricter: "cost" counts only next to inference, token or model costs, and "production" counts only phrases such as "in production", "production-grade" or "deploy". Results are in [skill-distribution.csv](../../research/skill-distribution.csv).
 
-Employer-balanced percentages average within-employer mention rates across employers. They expose employer concentration without fixing selection bias. See the [research directory](../../research/README.md) for records, rules and outputs.
+Both use ASCII word boundaries, so Python next to Chinese characters is recognized. Each term counts at most once per description, including requirements, alternatives and preferences. An absent term does not establish non-use. Error-prone terms (security, production, cost, customer work, evaluation, retrieval) were spot-checked in context.
 
-## Common ground and differences
+Shares carry 95% Wilson intervals. Employer-balanced shares average within-employer mention rates, exposing employer concentration without fixing selection bias. No independent inter-rater study has been completed.
 
-| Skill | China count/51 (%) | NA count/53 (%) | China employer-balanced % | NA employer-balanced % |
-|---|---:|---:|---:|---:|
-| Python | 42 (82.35) | 23 (43.4) | 94.21 | 45.33 |
-| Java / Spring | 24 (47.06) | 3 (5.66) | 56.34 | 9.33 |
-| JavaScript / TypeScript | 11 (21.57) | 16 (30.19) | 21.37 | 30.13 |
-| APIs/integration | 15 (29.41) | 35 (66.04) | 39.93 | 71.2 |
-| RAG | 27 (52.94) | 16 (30.19) | 72.55 | 31.73 |
-| MCP | 20 (39.22) | 18 (33.96) | 40.76 | 32.87 |
-| Multi-agent | 20 (39.22) | 12 (22.64) | 27.82 | 19.73 |
-| Evaluation/experiments | 31 (60.78) | 40 (75.47) | 60.09 | 73.53 |
-| Observability | 21 (41.18) | 32 (60.38) | 32.2 | 63.2 |
-| Product/production delivery | 48 (94.12) | 52 (98.11) | 87.04 | 98.0 |
-| Latency/cost/performance | 33 (64.71) | 33 (62.26) | 56.99 | 57.53 |
-| Security/governance | 17 (33.33) | 25 (47.17) | 33.75 | 42.53 |
-| Fine-tuning/SFT/LoRA | 16 (31.37) | 7 (13.21) | 53.89 | 13.07 |
-| Reinforcement learning | 8 (15.69) | 3 (5.66) | 21.48 | 2.4 |
-| Workflow/orchestration/harness | 28 (54.9) | 39 (73.58) | 50.83 | 66.2 |
+## Seniority composition
 
-Delivery, evaluation, performance and collaboration are shared priorities. Python/Java, RAG and post-training appear more often in China; APIs, observability, security, cloud and customer delivery appear more often in North America. Adjust depth using target descriptions and cohort composition. Canada's ten descriptions require individual inspection.
+Seniority comes only from explicit title labels; unmarked roles stay unspecified and are not inferred from years of experience.
 
-## Seniority and time trends
+| Level | China | North America |
+|---|---:|---:|
+| Intern | 1 | 4 |
+| Entry / new grad | 3 | 6 |
+| Senior | 4 | 51 |
+| Staff and above | 0 | 73 |
+| Lead / architect / expert | 6 | 22 |
+| Unspecified | 37 | 113 |
 
-Seniority comes from explicit titles; unspecified stays unspecified. See sample pies in the [overview](role-overview.md). Titles do not provide a complete employer-level taxonomy, and unmarked roles are not inferred to be mid-level.
+The table describes the sample, not national shares of junior or senior roles. Staff-and-above titles are common on North American public job boards, consistent with Hiring Lab's finding that the software-development rebound came mainly from senior roles.
 
-Quarterly charts use published Indeed/LinkedIn indicators with units, actual coverage, aggregation and partial-Q4 labels. [Market provenance](../../research/market/README.md) explains differences and the missing three-country/four-occupation historical totals. JD mention rates inform capabilities rather than national vacancy curves.
+## Market indicators
+
+Only series defined by occupation or job title remain, with units, actual coverage dates and partial-quarter labels. Indeed's AI-keyword share of all postings lost comparability under Ontario's AI-in-hiring disclosure rule, LinkedIn's "AI builders" definition is unpublished, and hiring by employer size covers all occupations; all three were removed. See the [role overview](role-overview.md#why-the-ai-keyword-chart-and-others-were-removed) and [market provenance](../../research/market/README.md).
 
 ## From evidence to curriculum
 
@@ -59,4 +60,4 @@ Map work to capabilities, [17 modules](knowledge-tree.md), labs and projects. Ba
 
 ## Reproduction
 
-`python3 -B scripts/summarize_jds.py` recomputes counts from public features. With exact frozen bodies, `extract_keywords.py --input ... --annotations research/jds.json --output ...` verifies hashes and rematches terms. Employer bodies are not published. Historical semantic review requires the original capture when live pages change. Future collection can add Chinese finance, non-AI-native North American employers and Canadian roles, plus an independent annotation review.
+`python3 -B scripts/summarize_jds.py` recomputes both rule sets and intervals from public features; `scripts/render_docs.py` regenerates the charts and tables. With exact frozen bodies, `extract_keywords.py --input ... --annotations research/jds.json --output ...` verifies hashes and rematches terms. Employer bodies are not published. Future collection can add Chinese roles from a compliant source, large North American technology companies and traditional-industry employers, plus an independent annotation review.

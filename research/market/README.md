@@ -20,6 +20,8 @@ Snapshot: 19 November 2026; extraction cutoff 18 November 2026. These releases c
 
 AI keywords include non-engineering jobs using AI. Software Development is a broad category. AI builders extends beyond application/systems AIE. Employer-size series cover overall hiring. These measures provide context and retain separate axes.
 
+Since November 2025 the Canadian AI-keyword share mostly reflects Ontario's AI-in-hiring disclosure rule (in force 1 January 2026), not AI-skill demand ([Hiring Lab Canada, 8 July 2026](https://hiringlab.indeed.com/en-ca/2026/07/08/ontario-job-postings-highlight-the-widespread-use-of-ai-in-hiring-processes/)). The AI-keyword, LinkedIn AI-builders and company-size series remain here as data but are no longer charted in the role overview; only the Software Development index is charted. Indeed revises tracker history: quote values with their download date.
+
 The LinkedIn annual AI-job share series was omitted because it describes country shares within the source population and could be mistaken for an AI share of each country's total jobs. Unexplained industry outliers were not used.
 
 ## Missing national occupation counts

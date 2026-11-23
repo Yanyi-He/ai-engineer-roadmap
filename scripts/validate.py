@@ -132,6 +132,19 @@ for job in jobs:
     check(all(a[1] <= b[0] for a,b in zip(intervals,intervals[1:])), f'Overlapping role spans: {tag}')
     for key, value in job['features'].items():
         check(value == any(s[key] for s in job['section_features'].values()), f'Span union mismatch: {tag}/{key}')
+skill_terms = read_json('research/skill-terms.json')['terms']
+skill_keys = {t['key'] for t in skill_terms}
+check(len(skill_keys) == len(skill_terms) and all(t['group'] in ['tech_stack','role_expectations'] and t['zh'] and t['en'] for t in skill_terms), 'Skill term definitions')
+for job in jobs:
+    check(job.get('sample') in ['v3-reviewed','v4-rule-screened'], f'Unknown sample: {job["jd_id"]}')
+    check(set(job.get('features_v2',{})) == skill_keys and all(type(v) is bool for v in job.get('features_v2',{}).values()), f'Skill-term coverage: {job["jd_id"]}')
+    if job.get('sample') == 'v4-rule-screened':
+        check(job['source_grade'] == 'A1-employer-api' and job['market'] == 'NA', f'Rule-screened provenance: {job["jd_id"]}')
+for row in read_csv('research/skill-distribution.csv'):
+    sample = [j for j in jobs if j['market']==row['market'] and (row['sample']=='all' or j.get('sample')==row['sample'])]
+    count = sum(j['features_v2'][row['key']] for j in sample)
+    check(int(row['n']) == len(sample) and int(row['count']) == count, f'Skill distribution mismatch: {row["market"]}/{row["sample"]}/{row["key"]}')
+    check(float(row['ci95_low']) <= float(row['pct']) <= float(row['ci95_high']), f'Interval does not contain share: {row["key"]}')
 cohorts = {label:[j for j in jobs if j['market']==label or j['country']==label] for label in ['CN','NA','CA','US']}
 check(len(cohorts['CN']) >= 50 and len(cohorts['NA']) >= 50, 'Regional JD minimum not met')
 rows = read_csv('research/keyword-counts.csv')

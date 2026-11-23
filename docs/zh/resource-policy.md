@@ -1,6 +1,6 @@
 # 资源筛选与使用
 
-按权威性、完整公开访问、对应知识点与练习、维护状态和社区采用信号筛选。每个单元指定一个主读范围，其余资料按问题查阅。171项资源都有选用理由、费用范围、发布状态和检查日期；没有统一可信评分时使用明确证据说明选择。
+按权威性、完整公开访问、对应知识点与练习、维护状态和社区采用信号筛选。每个单元指定一个主读范围，其余资料按问题查阅。181项资源都有选用理由、费用范围、发布状态和检查日期；没有统一可信评分时使用明确证据说明选择。
 
 CS329Z承担Agent系统主线，课程仍在进行，仅使用已发布讲义和作业。基础与部署由完整开放教材、官方教程和已发布课程支撑。LangGraph使用官方入门课与代码，harness进阶使用Deep Agents官方课。FSDL历史课程用于产品与系统方法，具体API对照当前文档。
 
@@ -18,7 +18,7 @@ CS329Z承担Agent系统主线，课程仍在进行，仅使用已发布讲义和
 | [Full Stack LLM Bootcamp](https://fullstackdeeplearning.com/llm-bootcamp/) | 从产品需求看到部署与反馈 | 旧 API 不直接复制 |
 | [LLM Master](https://github.com/youngyangyang04/llm-master) | 分阶段主线、专题索引、项目验收 | 仅借结构；营销课程与充值入口不纳入本路线 |
 
-课程结构吸收阶段导航、框架专题和边学边做的写法。本路线增加分市场JD证据、17模块126单元、具体主读范围、693条主题脉络和端到端作品评审，正文与图表自行编写。
+课程结构吸收阶段导航、框架专题和边学边做的写法。本路线增加分市场JD证据、17模块126单元、具体主读范围、698条主题脉络和端到端作品评审，正文与图表自行编写。
 
 ## 资源目录
 
@@ -195,5 +195,15 @@ CS329Z承担Agent系统主线，课程仍在进行，仅使用已发布讲义和
 | ms-swift | [ms-swift (ModelScope)](https://github.com/modelscope/ms-swift) | repo | free software; GPU resources | complete / reference | 2026-11-23 |
 | unsloth | [Unsloth Documentation](https://unsloth.ai/docs) | docs | free software; GPU resources | complete / reference | 2026-11-23 |
 | mooncake | [Mooncake](https://github.com/kvcache-ai/Mooncake) | repo | free software; cluster resources | complete / reference | 2026-11-23 |
+| roadmap-sh | [roadmap.sh: AI Engineer Roadmap](https://roadmap.sh/ai-engineer) | roadmap | free | complete / reference | 2026-11-23 |
+| happy-llm | [Datawhale happy-llm（中文）](https://github.com/datawhalechina/happy-llm) | course | free | complete / reference | 2026-11-23 |
+| self-llm | [Datawhale self-llm（中文）](https://github.com/datawhalechina/self-llm) | tutorial | free; optional GPU cost | complete / reference | 2026-11-23 |
+| copilot-studio | [Microsoft Copilot Studio documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) | docs | free docs; licensed product | complete / reference | 2026-11-23 |
+| azure-doc-intel | [Azure AI Document Intelligence documentation](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/) | docs | free docs; paid service | complete / reference | 2026-11-23 |
+| langchain-v1 | [LangChain and LangGraph 1.0 release](https://blog.langchain.com/langchain-langgraph-1dot0/) | article | free | complete / core | 2026-11-23 |
+| agentscope | [AgentScope](https://github.com/agentscope-ai/agentscope) | repo | free software | complete / reference | 2026-11-23 |
+| spring-ai-alibaba | [Spring AI Alibaba](https://github.com/alibaba/spring-ai-alibaba) | repo | free software | complete / reference | 2026-11-23 |
+| ragflow | [RAGFlow](https://github.com/infiniflow/ragflow) | repo | free software; self-hosted resources | complete / reference | 2026-11-23 |
+| dify-source | [Dify source code](https://github.com/langgenius/dify) | repo | free source; modified Apache 2.0 licence | complete / reference | 2026-11-23 |
 
 阅读范围见[知识树](knowledge-tree.md)，评测操作见[指南](evaluation-playbook.md)。

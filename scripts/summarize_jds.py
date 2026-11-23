@@ -1,9 +1,24 @@
 """Reproduce separate China/NA mention statistics and title-level counts."""
-import collections,csv,json
+import collections,csv,json,math
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 def summary(rows):
  return {'n':len(rows),'employers':len({r['company'] for r in rows}),'country':dict(collections.Counter(r['country'] for r in rows)),'sector':dict(collections.Counter(r['sector'] for r in rows)),'source_grade':dict(collections.Counter(r['source_grade'] for r in rows)),'seniority':dict(collections.Counter(r['seniority'] for r in rows)),'archetype':dict(collections.Counter(r['archetype'] for r in rows)),'active_status':dict(collections.Counter(r['active_status'] for r in rows))}
+def wilson(k,n,z=1.96):
+ if not n:return (None,None)
+ p=k/n;d=1+z*z/n;c=(p+z*z/(2*n))/d;h=z*math.sqrt(p*(1-p)/n+z*z/(4*n*n))/d
+ return (round(100*max(0,c-h),1),round(100*min(1,c+h),1))
+def write_skill_distribution(rows):
+ # Stricter v2 terms; Wilson 95% intervals; employer-balanced share gives each employer equal weight.
+ terms=json.loads((ROOT/'research/skill-terms.json').read_text())['terms'];out=[]
+ cohorts=[('CN','all',[r for r in rows if r['market']=='CN']),('NA','all',[r for r in rows if r['market']=='NA']),('NA','v3-reviewed',[r for r in rows if r['market']=='NA' and r.get('sample')=='v3-reviewed']),('NA','v4-rule-screened',[r for r in rows if r['market']=='NA' and r.get('sample')=='v4-rule-screened'])]
+ for t in terms:
+  for market,sample,cohort in cohorts:
+   n=len(cohort);k=sum(r['features_v2'][t['key']] for r in cohort);employers=sorted({r['company'] for r in cohort});lo,hi=wilson(k,n)
+   balanced=round(100*sum(sum(r['features_v2'][t['key']] for r in cohort if r['company']==c)/sum(r['company']==c for r in cohort) for c in employers)/len(employers),1) if employers else None
+   out.append({'key':t['key'],'group':t['group'],'market':market,'sample':sample,'n':n,'count':k,'pct':round(100*k/n,1) if n else None,'ci95_low':lo,'ci95_high':hi,'employers':len(employers),'employer_balanced_pct':balanced})
+ with (ROOT/'research/skill-distribution.csv').open('w',newline='') as f:
+  w=csv.DictWriter(f,fieldnames=out[0]);w.writeheader();w.writerows(out)
 def main():
  rows=json.loads((ROOT/'research/jds.json').read_text());keys=list(rows[0]['features']);records=[]
  for key in keys:
@@ -14,7 +29,8 @@ def main():
   records.append(item)
  with (ROOT/'research/keyword-counts.csv').open('w',newline='') as f:
   w=csv.DictWriter(f,fieldnames=records[0]);w.writeheader();w.writerows(records)
- report={'collection_window':'2026-11-18 to 2026-11-19','scope':'Application/systems AI engineering; purposive descriptions, not national active totals','overall':summary(rows),'markets':{m:summary([r for r in rows if r['market']==m]) for m in ['CN','NA']},'countries':{c:summary([r for r in rows if r['country']==c]) for c in ['CN','CA','US']}}
+ write_skill_distribution(rows)
+ report={'collection_window':'2026-11-18 to 2026-11-23','scope':'Application/systems AI engineering; purposive descriptions, not national active totals','overall':summary(rows),'markets':{m:summary([r for r in rows if r['market']==m]) for m in ['CN','NA']},'countries':{c:summary([r for r in rows if r['country']==c]) for c in ['CN','CA','US']}}
  (ROOT/'research/sample-summary.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
  for field in ['market','sector','seniority','archetype']:
   groups={value:{'n':len(sub),'counts':{k:sum(r['features'][k] for r in sub) for k in keys}} for value in sorted({r[field] for r in rows}) if (sub:=[r for r in rows if r[field]==value])}

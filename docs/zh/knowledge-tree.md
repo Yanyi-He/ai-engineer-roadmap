@@ -214,6 +214,7 @@ mindmap
   - 验证生成代码：测试先行、diff审阅、依赖与安全检查、虚构API
   - 沙箱、密钥与生产权限；不可逆操作的人工确认
   - 效率度量与可用AI的面试：讲清自己的判断而非复述助手输出
+  - AI 驱动的测试与代码评审，沉淀为团队规范；熟练使用但不依赖：没有 AI 也能读代码、排障和解释设计
 
 ## [02 传统后端、数据与分布式基础](modules/02.md)
 
@@ -437,7 +438,7 @@ mindmap
   - 清洗、去重、内容hash、文档/段落ID与版本
   - 按标题/语义/结构切分、overlap与metadata
   - 批处理、失败重跑、幂等索引和删除传播
-  - 解析工具选型（Docling、MinerU、PaddleOCR、Unstructured）与按文档类型的解析质量评测
+  - 解析工具选型（Docling、MinerU、PaddleOCR、Unstructured）或云端文档智能服务（Azure Document Intelligence、AWS Textract），按文档类型评估解析质量
 - **[06.2 Embedding与相似度](modules/06.md#unit-06-2)** · `core` · [Sentence Transformers: Retrieve and Rerank](https://www.sbert.net/examples/sentence_transformer/applications/retrieve_rerank/README.html)
   - bi-encoder、query/document表示与训练目标
   - cosine/dot/L2、归一化、维度和分布
@@ -566,6 +567,7 @@ mindmap
   - 条件路由、循环、终止与图调试
   - 模型/检索/工具节点与依赖注入
   - 从固定workflow到动态agent graph
+  - LangChain/LangGraph 1.0：基于 LangGraph 的 create_agent 与中间件（PII 脱敏、摘要、人工审批）；create_react_agent 已弃用
 - **[08.2 并行、子图与动态控制](modules/08.md#unit-08-2)** · `advanced` · [LangGraph Overview and Guides](https://docs.langchain.com/oss/python/langgraph/overview)
   - fan-out/fan-in、Send、Command和动态路由
   - 并行状态合并、reducer冲突与确定性
@@ -586,7 +588,7 @@ mindmap
   - 限流、租户、升级、回滚与生产支持
 - **[08.5 同层框架与企业语言生态](modules/08.md#unit-08-5)** · `advanced` · [Google Agent Development Kit](https://google.github.io/adk-docs/)
   - LangChain与LangGraph的职责差异
-  - Google ADK、PydanticAI、Microsoft Agent Framework（AutoGen后继）与CrewAI
+  - ADK、PydanticAI、Microsoft Agent Framework（接替已归档的 AutoGen）、CrewAI，以及国内的 AgentScope 与 Spring AI Alibaba
   - OpenAI Agents SDK、Claude Agent SDK等provider agent SDK与框架中立的typed action contract
   - TypeScript（Vercel AI SDK、Mastra）、Java（Spring AI/LangChain4j，见02.8）与.NET生态
   - session、state、重试、工具、部署和评测语义对照
@@ -610,6 +612,7 @@ mindmap
   - 私有化部署、许可证、多租户与数据边界
   - DSL导出、版本控制，以及评测与观测缺口的补法
   - 从平台原型迁移到代码服务的触发条件与步骤
+  - 企业低代码平台对照：北美的 Copilot Studio 与 Power Automate、中国的 Dify 与扣子；许可证（Dify 多租户与 Logo 条款）、单机吞吐上限与迁移到代码的时机
 
 ## [09 Multi-Agent与协作系统](modules/09.md)
 
@@ -945,12 +948,14 @@ mindmap
   - 数据最小化、保留、纠正/删除和供应商边界
   - 领域审核、人工责任、审批和风险升级
   - 安全测试、发布记录和用户可解释性
+  - 受监管行业（保险、银行、医疗）的模型风险管理：人工监督、可追溯证据与上线审批
 - **[14.6 发布、成本与持续运营](modules/14.md#unit-14-6)** · `core` · [What We’ve Learned From A Year of Building with LLMs](https://applied-llms.org/)
   - 模型/prompt/工具/索引/数据的可追溯发布包
   - 自动评测、人工评审、shadow/canary与回滚
   - 调用费用、训练费用、存储/观测费用和预算
   - 采用率、任务成功、人工节省和投诉/纠正
   - 维护节奏、依赖升级、交接和文档
+  - 多环境发布（sandbox → dev → QA → UAT → prod）、架构决策记录（ADR）、API 规范与运行手册
 - **[14.7 风险分层、隐私边界与安全评测](modules/14.md#unit-14-7)** · `core` · [Stanford CS329Z: Engineering AI Agents](https://cs329z.stanford.edu/)
   - 资产、主体、数据来源、工具动作、攻击者与数据出口的威胁建模
   - 直接/间接注入、检索投毒、跨租户泄漏与工具链组合风险
