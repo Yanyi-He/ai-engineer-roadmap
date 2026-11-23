@@ -1,0 +1,197 @@
+{
+  "kind": "authored synthetic teaching fixture",
+  "license": "MIT",
+  "documents": [
+    {
+      "id": "retry",
+      "scope": "work",
+      "text": "Retries repeat requests. An idempotency key prevents duplicate side effects."
+    },
+    {
+      "id": "checkpoint",
+      "scope": "work",
+      "text": "A checkpoint stores workflow state. External side effects require their own idempotency contract."
+    },
+    {
+      "id": "memory",
+      "scope": "work",
+      "text": "A memory records facts with provenance and validity intervals. Updated facts supersede earlier facts."
+    },
+    {
+      "id": "auth",
+      "scope": "work",
+      "text": "Authorization binds the authenticated principal to allowed resources and scopes."
+    },
+    {
+      "id": "dense",
+      "scope": "work",
+      "text": "Dense retrieval uses embeddings to find semantic similarity."
+    },
+    {
+      "id": "sparse",
+      "scope": "work",
+      "text": "BM25 uses term frequencies and document frequencies in an inverted index."
+    },
+    {
+      "id": "rerank",
+      "scope": "work",
+      "text": "A cross encoder reranks retrieved candidates. It cannot recover documents missing from retrieval."
+    },
+    {
+      "id": "budget",
+      "scope": "work",
+      "text": "A run budget reserves expected cost before calls and reconciles actual token usage later."
+    },
+    {
+      "id": "ttft",
+      "scope": "work",
+      "text": "Time to first token includes waiting before the first generated content token."
+    },
+    {
+      "id": "delete",
+      "scope": "work",
+      "text": "Memory deletion removes current and historical access and propagates to indexes and caches."
+    },
+    {
+      "id": "private",
+      "scope": "personal",
+      "text": "Personal budget canary: this document is not part of work scope."
+    },
+    {
+      "id": "unrelated",
+      "scope": "work",
+      "text": "Garden tomatoes require sunlight and water."
+    }
+  ],
+  "queries": [
+    {
+      "id": "q1",
+      "split": "dev",
+      "group": "idempotency",
+      "query": "How do retries avoid duplicate side effects?",
+      "qrels": {
+        "retry": 2,
+        "checkpoint": 1
+      },
+      "slice": "exact",
+      "scope": "work"
+    },
+    {
+      "id": "q2",
+      "split": "dev",
+      "group": "authorization",
+      "query": "What binds scopes to a principal?",
+      "qrels": {
+        "auth": 2
+      },
+      "slice": "exact",
+      "scope": "work"
+    },
+    {
+      "id": "q3",
+      "split": "dev",
+      "group": "index",
+      "query": "How does BM25 use term frequencies?",
+      "qrels": {
+        "sparse": 2
+      },
+      "slice": "exact",
+      "scope": "work"
+    },
+    {
+      "id": "q4",
+      "split": "dev",
+      "group": "rerank",
+      "query": "Can a cross encoder recover missing documents?",
+      "qrels": {
+        "rerank": 2
+      },
+      "slice": "exact",
+      "scope": "work"
+    },
+    {
+      "id": "q5",
+      "split": "dev",
+      "group": "absence",
+      "query": "lunar hedgehog orchestra",
+      "qrels": {},
+      "slice": "unanswerable",
+      "scope": "work"
+    },
+    {
+      "id": "q6",
+      "split": "dev",
+      "group": "budget",
+      "query": "How is actual token usage reconciled with a run budget?",
+      "qrels": {
+        "budget": 2
+      },
+      "slice": "exact",
+      "scope": "work"
+    },
+    {
+      "id": "q7",
+      "split": "holdout",
+      "group": "timing",
+      "query": "Why does an assistant stay silent before its initial reply?",
+      "qrels": {
+        "ttft": 2
+      },
+      "slice": "paraphrase",
+      "scope": "work"
+    },
+    {
+      "id": "q8",
+      "split": "holdout",
+      "group": "erase",
+      "query": "Which memory deletion reaches indexes and caches?",
+      "qrels": {
+        "delete": 2
+      },
+      "slice": "exact",
+      "scope": "work"
+    },
+    {
+      "id": "q9",
+      "split": "holdout",
+      "group": "meaning",
+      "query": "Match meanings despite different wording",
+      "qrels": {
+        "dense": 2
+      },
+      "slice": "semantic-gap",
+      "scope": "work"
+    },
+    {
+      "id": "q10",
+      "split": "holdout",
+      "group": "history",
+      "query": "After moving cities which address should the assistant consider current?",
+      "qrels": {
+        "memory": 2
+      },
+      "slice": "temporal-paraphrase",
+      "scope": "work"
+    },
+    {
+      "id": "q11",
+      "split": "holdout",
+      "group": "state",
+      "query": "What stores workflow state?",
+      "qrels": {
+        "checkpoint": 2
+      },
+      "slice": "exact",
+      "scope": "work"
+    },
+    {
+      "id": "q12",
+      "split": "holdout",
+      "group": "absent-other",
+      "query": "Can a token reveal tomorrow weather?",
+      "qrels": {},
+      "slice": "unanswerable-overlap",
+      "scope": "work"
+    }
+  ]
+}

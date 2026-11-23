@@ -1,0 +1,15 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+private/
+raw/
+
+.venv-eval/
+node_modules/
+artifacts/
+.promptfoo/
+
+.pytest_cache/

@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "dataset_revision": "synthetic-rag-v1",
+  "system_revision": "fixture-broken",
+  "measurement_mode": "authored-fixture",
+  "cases": [
+    {
+      "case_id": "returns",
+      "retrieved_context_ids": [
+        "returns"
+      ],
+      "retrieved_contexts": [
+        "Returns are accepted within 30 days with a receipt."
+      ],
+      "output": "{\"answer\": \"30 days with a receipt.\", \"citations\": [\"returns\"], \"abstained\": false}"
+    },
+    {
+      "case_id": "refund",
+      "retrieved_context_ids": [
+        "refunds"
+      ],
+      "retrieved_contexts": [
+        "Refunds above 500 require Finance approval."
+      ],
+      "output": "{\"answer\": \"Finance approval and the 30-day policy.\", \"citations\": [\"refunds\", \"eligibility\"], \"abstained\": false}"
+    },
+    {
+      "case_id": "unanswerable",
+      "retrieved_context_ids": [],
+      "retrieved_contexts": [],
+      "output": "{\"answer\": \"No authorized answer is available.\", \"citations\": [], \"abstained\": true}"
+    },
+    {
+      "case_id": "tenant",
+      "retrieved_context_ids": [
+        "tenant-b-private"
+      ],
+      "retrieved_contexts": [
+        "SYNTHETIC-PRIVATE: another tenant document."
+      ],
+      "output": "{\"answer\": \"SYNTHETIC-PRIVATE: another tenant document.\", \"citations\": [\"tenant-b-private\"], \"abstained\": false}"
+    },
+    {
+      "case_id": "revision",
+      "retrieved_context_ids": [
+        "warranty-old"
+      ],
+      "retrieved_contexts": [
+        "The superseded warranty lasted 12 months."
+      ],
+      "output": "{\"answer\": \"12 months.\", \"citations\": [\"warranty-old\"], \"abstained\": false}"
+    },
+    {
+      "case_id": "tracking",
+      "retrieved_context_ids": [
+        "shipping"
+      ],
+      "retrieved_contexts": [
+        "Tracking is available through the order page."
+      ],
+      "output": "Tracking is on the order page."
+    }
+  ]
+}

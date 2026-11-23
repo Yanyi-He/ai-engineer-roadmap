@@ -1,0 +1,202 @@
+{
+  "review_date": "2026-11-21",
+  "scope": "Operational evaluation guide; synthetic fixtures and framework integration, separate from real model quality",
+  "versions": {
+    "ragas": "0.4.4",
+    "pytest": "9.2.0",
+    "promptfoo": "0.126.0",
+    "python": "3.15.2",
+    "node": "24.22.3",
+    "openai": "1.109.1",
+    "instructor": "1.3.2"
+  },
+  "units": [
+    "11.10",
+    "11.11",
+    "11.12"
+  ],
+  "framework_roles": [
+    {
+      "name": "pytest",
+      "role": "Deterministic contracts,fixtures,parameterized checks and test exits",
+      "evidence": "Local test runner executed"
+    },
+    {
+      "name": "Ragas",
+      "role": "Retrieval/generation metrics with explicit labels and dependencies",
+      "evidence": "ID metrics executed;modern semantic imports/signatures and adapter constructors checked;no judge requests"
+    },
+    {
+      "name": "promptfoo",
+      "role": "Config-driven provider/assertion runs and CI outputs",
+      "evidence": "Pinned CLI executed on normal/broken local providers"
+    },
+    {
+      "name": "DeepEval",
+      "role": "Application metrics and pytest-style assertions",
+      "evidence": "Official RAG quickstart reviewed;not installed or executed"
+    },
+    {
+      "name": "Inspect",
+      "role": "Task/dataset/solver/scorer evaluation sets and logs",
+      "evidence": "Official documentation reviewed;not executed in this change"
+    },
+    {
+      "name": "Langfuse",
+      "role": "Trace/dataset/annotation/experiment and CI feedback loop",
+      "evidence": "Official documentation reviewed;not self-hosted or executed in this change"
+    }
+  ],
+  "verification": {
+    "dataset": "six authored synthetic cases;not production/model output",
+    "core_unittest_count": 38,
+    "ragas_pytest_count": 9,
+    "ragas_id_cases": 6,
+    "promptfoo_baseline": {
+      "exit_code": 0,
+      "passed": 6,
+      "failed": 0,
+      "errors": 0
+    },
+    "promptfoo_broken": {
+      "exit_code": 100,
+      "passed": 3,
+      "failed": 3,
+      "errors": 0
+    },
+    "regression_unchanged_exit": 0,
+    "regression_broken_exit": 1,
+    "live_llm_judge": "not_run",
+    "embedding_model_calls": "not_run",
+    "real_sut_quality": "not_measured",
+    "real_sut_latency_cost": "not_measured",
+    "github_actions": "copyable template;not run remotely"
+  },
+  "compatibility": [
+    "Ragas0.4.4 ID metrics use deprecated compatibility imports with no direct collections equivalent;pin and recheck before1.0",
+    "Semantic metrics use ragas.metrics.collections",
+    "Promptfoo0.126.0 requires Node>=22.22.0;local run used bundled24.22.3"
+  ],
+  "sources": [
+    {
+      "url": "https://pypi.org/pypi/ragas/json",
+      "checked_at": "2026-11-21",
+      "http_status": 200,
+      "resolved_url": "https://pypi.org/pypi/ragas/json",
+      "bytes": 160663,
+      "sha256": "8d3a7cce3f05fec815683122495f1d9ef0bac398ffb743ba30ede7e5478ba43a"
+    },
+    {
+      "url": "https://pypi.org/pypi/pytest/json",
+      "checked_at": "2026-11-21",
+      "http_status": 200,
+      "resolved_url": "https://pypi.org/pypi/pytest/json",
+      "bytes": 284454,
+      "sha256": "57f548cb785c5d41f5292b34e956c60c7a44cfa06ab1fd17e6969b6208a3cb60"
+    },
+    {
+      "url": "https://registry.npmjs.org/promptfoo/latest",
+      "checked_at": "2026-11-21",
+      "http_status": 200,
+      "resolved_url": "https://registry.npmjs.org/promptfoo/latest",
+      "bytes": 13278,
+      "sha256": "61944dda98db18f38d16630da60266374694eb6c7b60f47d2b466e71232bb1ad"
+    },
+    {
+      "url": "https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/context_precision/",
+      "checked_at": "2026-11-21",
+      "http_status": 200,
+      "resolved_url": "https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/context_precision/",
+      "bytes": 151861,
+      "sha256": "00defe6e7518c52a75f700912af4709738d00f33708a916ce0abd114bbb9ad9e"
+    },
+    {
+      "url": "https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/context_recall/",
+      "checked_at": "2026-11-21",
+      "http_status": 200,
+      "resolved_url": "https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/context_recall/",
+      "bytes": 130815,
+      "sha256": "82e4e95f083713b9fe3ea2d08d7da8cc0ceff50b2ea7f36efeeb617b56bf8494"
+    },
+    {
+      "url": "https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/faithfulness/",
+      "checked_at": "2026-11-21",
+      "http_status": 200,
+      "resolved_url": "https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/faithfulness/",
+      "bytes": 129739,
+      "sha256": "49f87d97609a77fb75761d6ac2b363d5935ba24658d30cbdf6e517bb85532668"
+    },
+    {
+      "url": "https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/answer_relevance/",
+      "checked_at": "2026-11-21",
+      "http_status": 200,
+      "resolved_url": "https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/answer_relevance/",
+      "bytes": 125529,
+      "sha256": "6232d8e5a3afa786ff1cf4b371dfa4a4530b98029ead12d7d49a80b629dd0241"
+    },
+    {
+      "url": "https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/factual_correctness/",
+      "checked_at": "2026-11-21",
+      "http_status": 200,
+      "resolved_url": "https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/factual_correctness/",
+      "bytes": 138447,
+      "sha256": "2ad01e22e8067304a9a1abd11bb4a90454c5f80b6dc7d1c3496efb632c88921f"
+    },
+    {
+      "url": "https://deepeval.com/docs/getting-started-rag",
+      "checked_at": "2026-11-21",
+      "http_status": 200,
+      "resolved_url": "https://deepeval.com/docs/getting-started-rag",
+      "bytes": 635004,
+      "sha256": "cbee24ad1e4bf8b2da459ed4b5cccef0bb369d48410a1e094d2cace055f5e4ee"
+    },
+    {
+      "url": "https://www.promptfoo.dev/docs/integrations/ci-cd/",
+      "checked_at": "2026-11-21",
+      "http_status": 200,
+      "resolved_url": "https://www.promptfoo.dev/docs/integrations/ci-cd/",
+      "bytes": 156678,
+      "sha256": "daaceb66e434ffca30781ec283b701aa6519144fe65170b78859c46ea646826b"
+    },
+    {
+      "url": "https://www.promptfoo.dev/docs/providers/python/",
+      "checked_at": "2026-11-21",
+      "http_status": 200,
+      "resolved_url": "https://www.promptfoo.dev/docs/providers/python/",
+      "bytes": 310393,
+      "sha256": "c38401cd9fd433c8dd635545963482531de4a6b379aa9ab9ee89c5914a2f74db"
+    },
+    {
+      "url": "https://inspect.aisi.org.uk/eval-sets.html",
+      "checked_at": "2026-11-21",
+      "http_status": 200,
+      "resolved_url": "https://inspect.aisi.org.uk/eval-sets.html",
+      "bytes": 99080,
+      "sha256": "c9a1a8c89e5aeb07542c58a96a0cf150fafed285925cc9c910b32a8a579ff01b"
+    },
+    {
+      "url": "https://langfuse.com/docs/evaluation/overview",
+      "checked_at": "2026-11-21",
+      "http_status": 200,
+      "resolved_url": "https://langfuse.com/docs/evaluation/overview",
+      "bytes": 360511,
+      "sha256": "104efcc7c7f1eca84827a7a0e09fb312ba45b213be679f532863cbbdbf532abb"
+    },
+    {
+      "url": "https://docs.pytest.org/en/stable/how-to/usage.html",
+      "checked_at": "2026-11-21",
+      "http_status": 200,
+      "resolved_url": "https://docs.pytest.org/en/stable/how-to/usage.html",
+      "bytes": 41500,
+      "sha256": "2e521b6d7b0207dc16060b8926dfb3e765ff6da87b1b7acc2cc4f02358c62c28"
+    },
+    {
+      "url": "https://developers.openai.com/api/reference/python",
+      "checked_at": "2026-11-21",
+      "http_status": 200,
+      "resolved_url": "https://developers.openai.com/api/reference/python",
+      "bytes": 638654,
+      "sha256": "78baff4339268e36701bc97bd67dee719e4851b63349daca5ebe4a0cbefec192"
+    }
+  ]
+}

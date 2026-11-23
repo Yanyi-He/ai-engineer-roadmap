@@ -1,0 +1,54 @@
+{
+  "snapshot_date": "2026-11-19",
+  "sources": [
+    {
+      "file": "indeed-ai.csv",
+      "sha256": "60278c4e6a0774ee1694b89b09ab490f50dafbf01409d13daaf391bb9b476ea5",
+      "bytes": 795281,
+      "url": "https://raw.githubusercontent.com/hiring-lab/ai-tracker/main/AI_posting.csv",
+      "attribution": "Indeed Hiring Lab",
+      "license": "CC-BY-4.0",
+      "measure": "AI keyword share of all advertisements; daily 7-day trailing values"
+    },
+    {
+      "file": "indeed-us-sectors.csv",
+      "sha256": "aff050a6983bc8d31619f69c3e36f03bc7f3bf7cea56f1a8ae25bee097e001a5",
+      "bytes": 12275534,
+      "url": "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/US/job_postings_by_sector_US.csv",
+      "attribution": "Indeed Hiring Lab",
+      "license": "CC-BY-4.0",
+      "measure": "Software Development total-postings index;2020-02-01=100"
+    },
+    {
+      "file": "indeed-ca-sectors.csv",
+      "sha256": "9d9b07d16f4b5831194d0aabd292ccad9b6188c39b79a192b47eab402e805b84",
+      "bytes": 12341268,
+      "url": "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/CA/job_postings_by_sector_CA.csv",
+      "attribution": "Indeed Hiring Lab",
+      "license": "CC-BY-4.0",
+      "measure": "Software Development total-postings index;2020-02-01=100"
+    },
+    {
+      "file": "linkedin-dataset.json",
+      "sha256": "f3dac1e210d8734a7c0998c9d0de3105db8a78e472cbe7e637f5a26fd63a19db",
+      "bytes": 9519869,
+      "public_manifest": "https://content.linkedin.com/content/dam/lem/pulse/data/185ecd9be044b027.manifest.json",
+      "scope_note": "Company-size series are overall hiring, not AIE-specific; no CN series; annual job-share measures omitted.",
+      "url": "https://content.linkedin.com/content/dam/lem/pulse/data/f3dac1e210d8734a.dataset.json",
+      "attribution": "LinkedIn Economic Graph",
+      "license": "No general redistribution license inferred; public factual subset only",
+      "measure": "Selected monthly YoY measures; raw fraction multiplied by100"
+    }
+  ],
+  "cutoff": "2026-11-18",
+  "country_absent": [
+    "CN"
+  ],
+  "notes": [
+    "AI-keyword share includes jobs using AI; not application-AIE occupation counts.",
+    "Indeed Software Development is a broad category index, not an SDE title census.",
+    "LinkedIn AI builders use broader skills/occupation definitions than application-AIE.",
+    "LinkedIn company sizes cover all hiring; they do not establish AIE demand by size.",
+    "Partial-quarter observations retain their actual last dates."
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "collection_window": "2026-11-18 to 2026-11-19",
+  "scope": "Application/systems AI engineering; purposive descriptions, not national active totals",
+  "overall": {
+    "n": 104,
+    "employers": 43,
+    "country": {
+      "CN": 51,
+      "CA": 10,
+      "US": 43
+    },
+    "sector": {
+      "internet": 40,
+      "traditional-manufacturing": 3,
+      "enterprise-software": 14,
+      "enterprise-hardware": 1,
+      "traditional-automotive": 1,
+      "enterprise-commerce": 1,
+      "automotive": 1,
+      "finance": 1,
+      "consumer-hardware": 1,
+      "research-institute": 1,
+      "fintech": 12,
+      "ai-native": 23,
+      "industrial-tech": 2,
+      "traditional-healthcare": 2,
+      "traditional-retail": 1
+    },
+    "source_grade": {
+      "A1-employer-api": 66,
+      "A1-employer": 13,
+      "A2-university-hosted": 10,
+      "B1-syndicated-employer": 15
+    },
+    "seniority": {
+      "senior": 15,
+      "unspecified": 62,
+      "lead_architect_expert": 7,
+      "entry": 5,
+      "intern": 2,
+      "staff_plus": 13
+    },
+    "archetype": {
+      "product_application": 68,
+      "agent_platform": 20,
+      "application_optimization": 5,
+      "customer_delivery": 11
+    },
+    "active_status": {
+      "listed-at-collection": 66,
+      "description-accessible-opening-unverified": 38
+    }
+  },
+  "markets": {
+    "CN": {
+      "n": 51,
+      "employers": 18,
+      "country": {
+        "CN": 51
+      },
+      "sector": {
+        "internet": 36,
+        "traditional-manufacturing": 3,
+        "enterprise-software": 3,
+        "enterprise-hardware": 1,
+        "traditional-automotive": 1,
+        "enterprise-commerce": 1,
+        "automotive": 1,
+        "finance": 1,
+        "consumer-hardware": 1,
+        "research-institute": 1,
+        "fintech": 2
+      },
+      "source_grade": {
+        "A1-employer-api": 16,
+        "A1-employer": 10,
+        "A2-university-hosted": 10,
+        "B1-syndicated-employer": 15
+      },
+      "seniority": {
+        "senior": 4,
+        "unspecified": 37,
+        "lead_architect_expert": 6,
+        "entry": 3,
+        "intern": 1
+      },
+      "archetype": {
+        "product_application": 34,
+        "agent_platform": 12,
+        "application_optimization": 5
+      },
+      "active_status": {
+        "listed-at-collection": 16,
+        "description-accessible-opening-unverified": 35
+      }
+    },
+    "NA": {
+      "n": 53,
+      "employers": 25,
+      "country": {
+        "CA": 10,
+        "US": 43
+      },
+      "sector": {
+        "fintech": 10,
+        "enterprise-software": 11,
+        "ai-native": 23,
+        "industrial-tech": 2,
+        "internet": 4,
+        "traditional-healthcare": 2,
+        "traditional-retail": 1
+      },
+      "source_grade": {
+        "A1-employer-api": 50,
+        "A1-employer": 3
+      },
+      "seniority": {
+        "senior": 11,
+        "unspecified": 25,
+        "staff_plus": 13,
+        "entry": 2,
+        "intern": 1,
+        "lead_architect_expert": 1
+      },
+      "archetype": {
+        "agent_platform": 8,
+        "product_application": 34,
+        "customer_delivery": 11
+      },
+      "active_status": {
+        "listed-at-collection": 50,
+        "description-accessible-opening-unverified": 3
+      }
+    }
+  },
+  "countries": {
+    "CN": {
+      "n": 51,
+      "employers": 18,
+      "country": {
+        "CN": 51
+      },
+      "sector": {
+        "internet": 36,
+        "traditional-manufacturing": 3,
+        "enterprise-software": 3,
+        "enterprise-hardware": 1,
+        "traditional-automotive": 1,
+        "enterprise-commerce": 1,
+        "automotive": 1,
+        "finance": 1,
+        "consumer-hardware": 1,
+        "research-institute": 1,
+        "fintech": 2
+      },
+      "source_grade": {
+        "A1-employer-api": 16,
+        "A1-employer": 10,
+        "A2-university-hosted": 10,
+        "B1-syndicated-employer": 15
+      },
+      "seniority": {
+        "senior": 4,
+        "unspecified": 37,
+        "lead_architect_expert": 6,
+        "entry": 3,
+        "intern": 1
+      },
+      "archetype": {
+        "product_application": 34,
+        "agent_platform": 12,
+        "application_optimization": 5
+      },
+      "active_status": {
+        "listed-at-collection": 16,
+        "description-accessible-opening-unverified": 35
+      }
+    },
+    "CA": {
+      "n": 10,
+      "employers": 8,
+      "country": {
+        "CA": 10
+      },
+      "sector": {
+        "fintech": 2,
+        "enterprise-software": 3,
+        "ai-native": 3,
+        "industrial-tech": 1,
+        "internet": 1
+      },
+      "source_grade": {
+        "A1-employer-api": 10
+      },
+      "seniority": {
+        "senior": 5,
+        "staff_plus": 2,
+        "unspecified": 3
+      },
+      "archetype": {
+        "agent_platform": 2,
+        "product_application": 7,
+        "customer_delivery": 1
+      },
+      "active_status": {
+        "listed-at-collection": 10
+      }
+    },
+    "US": {
+      "n": 43,
+      "employers": 21,
+      "country": {
+        "US": 43
+      },
+      "sector": {
+        "fintech": 8,
+        "enterprise-software": 8,
+        "ai-native": 20,
+        "industrial-tech": 1,
+        "internet": 3,
+        "traditional-healthcare": 2,
+        "traditional-retail": 1
+      },
+      "source_grade": {
+        "A1-employer-api": 40,
+        "A1-employer": 3
+      },
+      "seniority": {
+        "unspecified": 22,
+        "staff_plus": 11,
+        "senior": 6,
+        "entry": 2,
+        "intern": 1,
+        "lead_architect_expert": 1
+      },
+      "archetype": {
+        "product_application": 27,
+        "customer_delivery": 10,
+        "agent_platform": 6
+      },
+      "active_status": {
+        "listed-at-collection": 40,
+        "description-accessible-opening-unverified": 3
+      }
+    }
+  }
+}

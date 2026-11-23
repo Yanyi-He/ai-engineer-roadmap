@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 372" width="1040" height="372" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+<title id="t">AI Engineering 学习路线总览</title>
+<desc id="d">四个阶段：打基础、构建AI应用、评测与上线、求职；另有按目标岗位选择的专项。每个圆点代表一个学习单元。</desc>
+<rect x="20.0" y="16" width="220.0" height="312" rx="12" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="36.0" y="42.0" font-size="11.5" fill="#59636e" font-weight="600">阶段 1 · 29 个单元</text>
+<text x="36.0" y="66.0" font-size="18" fill="#1f2328" font-weight="700">打基础</text>
+<line x1="36.0" y1="78" x2="72.0" y2="78" stroke="#0969da" stroke-width="3" stroke-linecap="round"/>
+<text x="36.0" y="100.0" font-size="13.5" fill="#1f2328">00  岗位地图与交付全景</text>
+<circle cx="40.0" cy="114" r="3.6" fill="#0969da"/>
+<circle cx="50.0" cy="114" r="3.6" fill="#0969da"/>
+<text x="36.0" y="140.0" font-size="13.5" fill="#1f2328">01  Python与软件工程</text>
+<circle cx="40.0" cy="154" r="3.6" fill="#0969da"/>
+<circle cx="50.0" cy="154" r="3.6" fill="#0969da"/>
+<circle cx="60.0" cy="154" r="3.6" fill="#0969da"/>
+<circle cx="70.0" cy="154" r="3.6" fill="#0969da"/>
+<circle cx="80.0" cy="154" r="3.6" fill="#0969da"/>
+<circle cx="90.0" cy="154" r="3.6" fill="#0969da"/>
+<circle cx="100.0" cy="154" r="3.6" fill="#0969da"/>
+<text x="36.0" y="180.0" font-size="13.5" fill="#1f2328">02  后端、数据与分布式</text>
+<circle cx="40.0" cy="194" r="3.6" fill="#0969da"/>
+<circle cx="50.0" cy="194" r="3.6" fill="#0969da"/>
+<circle cx="60.0" cy="194" r="3.6" fill="#0969da"/>
+<circle cx="70.0" cy="194" r="3.6" fill="#0969da"/>
+<circle cx="80.0" cy="194" r="3.6" fill="#0969da"/>
+<circle cx="90.0" cy="194" r="3.6" fill="#0969da"/>
+<circle cx="100.0" cy="194" r="3.6" fill="#0969da"/>
+<circle cx="110.0" cy="194" r="3.6" fill="#0969da" fill-opacity="0.35"/>
+<text x="36.0" y="220.0" font-size="13.5" fill="#1f2328">03  数学、ML与PyTorch</text>
+<circle cx="40.0" cy="234" r="3.6" fill="#0969da"/>
+<circle cx="50.0" cy="234" r="3.6" fill="#0969da"/>
+<circle cx="60.0" cy="234" r="3.6" fill="#0969da"/>
+<circle cx="70.0" cy="234" r="3.6" fill="#0969da"/>
+<circle cx="80.0" cy="234" r="3.6" fill="#0969da"/>
+<text x="36.0" y="260.0" font-size="13.5" fill="#1f2328">04  Transformer与LLM原理</text>
+<circle cx="40.0" cy="274" r="3.6" fill="#0969da"/>
+<circle cx="50.0" cy="274" r="3.6" fill="#0969da"/>
+<circle cx="60.0" cy="274" r="3.6" fill="#0969da" fill-opacity="0.35"/>
+<circle cx="70.0" cy="274" r="3.6" fill="#0969da"/>
+<circle cx="80.0" cy="274" r="3.6" fill="#0969da"/>
+<circle cx="90.0" cy="274" r="3.6" fill="#0969da"/>
+<circle cx="100.0" cy="274" r="3.6" fill="#0969da"/>
+<text x="36.0" y="300.0" font-size="13" fill="#0969da" font-weight="600">+ 入门诊断</text>
+<path d="M248.0 60 H272.0 M266.0 55 L272.0 60 L266.0 65" fill="none" stroke="#59636e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="280.0" y="16" width="220.0" height="312" rx="12" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="296.0" y="42.0" font-size="11.5" fill="#59636e" font-weight="600">阶段 2 · 43 个单元</text>
+<text x="296.0" y="66.0" font-size="18" fill="#1f2328" font-weight="700">构建AI应用</text>
+<line x1="296.0" y1="78" x2="332.0" y2="78" stroke="#8250df" stroke-width="3" stroke-linecap="round"/>
+<text x="296.0" y="100.0" font-size="13.5" fill="#1f2328">05  模型应用与Prompt</text>
+<circle cx="300.0" cy="114" r="3.6" fill="#8250df"/>
+<circle cx="310.0" cy="114" r="3.6" fill="#8250df"/>
+<circle cx="320.0" cy="114" r="3.6" fill="#8250df"/>
+<circle cx="330.0" cy="114" r="3.6" fill="#8250df"/>
+<circle cx="340.0" cy="114" r="3.6" fill="#8250df"/>
+<circle cx="350.0" cy="114" r="3.6" fill="#8250df"/>
+<circle cx="360.0" cy="114" r="3.6" fill="#8250df" fill-opacity="0.35"/>
+<circle cx="370.0" cy="114" r="3.6" fill="#8250df"/>
+<circle cx="380.0" cy="114" r="3.6" fill="#8250df"/>
+<circle cx="390.0" cy="114" r="3.6" fill="#8250df"/>
+<text x="296.0" y="140.0" font-size="13.5" fill="#1f2328">06  检索与RAG</text>
+<circle cx="300.0" cy="154" r="3.6" fill="#8250df"/>
+<circle cx="310.0" cy="154" r="3.6" fill="#8250df"/>
+<circle cx="320.0" cy="154" r="3.6" fill="#8250df"/>
+<circle cx="330.0" cy="154" r="3.6" fill="#8250df"/>
+<circle cx="340.0" cy="154" r="3.6" fill="#8250df" fill-opacity="0.35"/>
+<circle cx="350.0" cy="154" r="3.6" fill="#8250df"/>
+<circle cx="360.0" cy="154" r="3.6" fill="#8250df" fill-opacity="0.35"/>
+<circle cx="370.0" cy="154" r="3.6" fill="#8250df"/>
+<circle cx="380.0" cy="154" r="3.6" fill="#8250df" fill-opacity="0.35"/>
+<text x="296.0" y="180.0" font-size="13.5" fill="#1f2328">07  Agent架构与记忆</text>
+<circle cx="300.0" cy="194" r="3.6" fill="#8250df"/>
+<circle cx="310.0" cy="194" r="3.6" fill="#8250df"/>
+<circle cx="320.0" cy="194" r="3.6" fill="#8250df"/>
+<circle cx="330.0" cy="194" r="3.6" fill="#8250df"/>
+<circle cx="340.0" cy="194" r="3.6" fill="#8250df"/>
+<circle cx="350.0" cy="194" r="3.6" fill="#8250df"/>
+<circle cx="360.0" cy="194" r="3.6" fill="#8250df"/>
+<circle cx="370.0" cy="194" r="3.6" fill="#8250df" fill-opacity="0.35"/>
+<circle cx="380.0" cy="194" r="3.6" fill="#8250df" fill-opacity="0.35"/>
+<text x="296.0" y="220.0" font-size="13.5" fill="#1f2328">08  LangGraph与框架</text>
+<circle cx="300.0" cy="234" r="3.6" fill="#8250df"/>
+<circle cx="310.0" cy="234" r="3.6" fill="#8250df" fill-opacity="0.35"/>
+<circle cx="320.0" cy="234" r="3.6" fill="#8250df"/>
+<circle cx="330.0" cy="234" r="3.6" fill="#8250df"/>
+<circle cx="340.0" cy="234" r="3.6" fill="#8250df" fill-opacity="0.35"/>
+<circle cx="350.0" cy="234" r="3.6" fill="#8250df" fill-opacity="0.35"/>
+<circle cx="360.0" cy="234" r="3.6" fill="#8250df" fill-opacity="0.35"/>
+<circle cx="370.0" cy="234" r="3.6" fill="#8250df" fill-opacity="0.35"/>
+<text x="296.0" y="260.0" font-size="13.5" fill="#1f2328">10  MCP与工具安全</text>
+<circle cx="300.0" cy="274" r="3.6" fill="#8250df"/>
+<circle cx="310.0" cy="274" r="3.6" fill="#8250df"/>
+<circle cx="320.0" cy="274" r="3.6" fill="#8250df"/>
+<circle cx="330.0" cy="274" r="3.6" fill="#8250df"/>
+<circle cx="340.0" cy="274" r="3.6" fill="#8250df" fill-opacity="0.35"/>
+<circle cx="350.0" cy="274" r="3.6" fill="#8250df" fill-opacity="0.35"/>
+<circle cx="360.0" cy="274" r="3.6" fill="#8250df"/>
+<text x="296.0" y="300.0" font-size="13" fill="#8250df" font-weight="600">+ 17 个动手实验</text>
+<path d="M508.0 60 H532.0 M526.0 55 L532.0 60 L526.0 65" fill="none" stroke="#59636e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="540.0" y="16" width="220.0" height="166" rx="12" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="556.0" y="42.0" font-size="11.5" fill="#59636e" font-weight="600">阶段 3 · 21 个单元</text>
+<text x="556.0" y="66.0" font-size="18" fill="#1f2328" font-weight="700">评测与上线</text>
+<line x1="556.0" y1="78" x2="592.0" y2="78" stroke="#1a7f37" stroke-width="3" stroke-linecap="round"/>
+<text x="556.0" y="100.0" font-size="13.5" fill="#1f2328">11  评测与可观测性</text>
+<circle cx="560.0" cy="114" r="3.6" fill="#1a7f37"/>
+<circle cx="570.0" cy="114" r="3.6" fill="#1a7f37"/>
+<circle cx="580.0" cy="114" r="3.6" fill="#1a7f37"/>
+<circle cx="590.0" cy="114" r="3.6" fill="#1a7f37"/>
+<circle cx="600.0" cy="114" r="3.6" fill="#1a7f37"/>
+<circle cx="610.0" cy="114" r="3.6" fill="#1a7f37"/>
+<circle cx="620.0" cy="114" r="3.6" fill="#1a7f37"/>
+<circle cx="630.0" cy="114" r="3.6" fill="#1a7f37"/>
+<circle cx="640.0" cy="114" r="3.6" fill="#1a7f37"/>
+<circle cx="650.0" cy="114" r="3.6" fill="#1a7f37"/>
+<circle cx="660.0" cy="114" r="3.6" fill="#1a7f37"/>
+<circle cx="670.0" cy="114" r="3.6" fill="#1a7f37"/>
+<text x="556.0" y="140.0" font-size="13.5" fill="#1f2328">14  端到端生产交付</text>
+<circle cx="560.0" cy="154" r="3.6" fill="#1a7f37"/>
+<circle cx="570.0" cy="154" r="3.6" fill="#1a7f37"/>
+<circle cx="580.0" cy="154" r="3.6" fill="#1a7f37"/>
+<circle cx="590.0" cy="154" r="3.6" fill="#1a7f37"/>
+<circle cx="600.0" cy="154" r="3.6" fill="#1a7f37"/>
+<circle cx="610.0" cy="154" r="3.6" fill="#1a7f37"/>
+<circle cx="620.0" cy="154" r="3.6" fill="#1a7f37"/>
+<circle cx="630.0" cy="154" r="3.6" fill="#1a7f37" fill-opacity="0.35"/>
+<circle cx="640.0" cy="154" r="3.6" fill="#1a7f37" fill-opacity="0.35"/>
+<path d="M768.0 60 H792.0 M786.0 55 L792.0 60 L786.0 65" fill="none" stroke="#59636e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="800.0" y="16" width="220.0" height="166" rx="12" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="816.0" y="42.0" font-size="11.5" fill="#59636e" font-weight="600">阶段 4 · 7 个单元</text>
+<text x="816.0" y="66.0" font-size="18" fill="#1f2328" font-weight="700">求职</text>
+<line x1="816.0" y1="78" x2="852.0" y2="78" stroke="#bc4c00" stroke-width="3" stroke-linecap="round"/>
+<text x="816.0" y="100.0" font-size="13.5" fill="#1f2328">15  作品集与面试</text>
+<circle cx="820.0" cy="114" r="3.6" fill="#bc4c00"/>
+<circle cx="830.0" cy="114" r="3.6" fill="#bc4c00"/>
+<circle cx="840.0" cy="114" r="3.6" fill="#bc4c00"/>
+<circle cx="850.0" cy="114" r="3.6" fill="#bc4c00"/>
+<circle cx="860.0" cy="114" r="3.6" fill="#bc4c00"/>
+<circle cx="870.0" cy="114" r="3.6" fill="#bc4c00"/>
+<circle cx="880.0" cy="114" r="3.6" fill="#bc4c00"/>
+<text x="816.0" y="140.0" font-size="13" fill="#bc4c00" font-weight="600">+ 4 个完整项目</text>
+<text x="816.0" y="164.0" font-size="13" fill="#bc4c00" font-weight="600">+ 378 道自测题</text>
+<rect x="540.0" y="202" width="480.0" height="126" rx="12" fill="#f6f8fa" stroke="#1b7c83" stroke-opacity="0.7" stroke-dasharray="6 4"/>
+<path d="M508.0 265.0 H532.0 M526.0 260.0 L532.0 265.0 L526.0 270.0" fill="none" stroke="#59636e" stroke-width="1.6" stroke-dasharray="4 3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="556.0" y="230.0" font-size="16" fill="#1f2328" font-weight="700">按目标岗位选专项</text>
+<text x="696.0" y="230.0" font-size="12.5" fill="#59636e">可选纵深 · 26 个单元</text>
+<text x="556.0" y="258.0" font-size="13.5" fill="#1f2328">09  多Agent协作</text>
+<circle cx="560.0" cy="271" r="3.6" fill="#1b7c83"/>
+<circle cx="570.0" cy="271" r="3.6" fill="#1b7c83" fill-opacity="0.35"/>
+<circle cx="580.0" cy="271" r="3.6" fill="#1b7c83" fill-opacity="0.35"/>
+<circle cx="590.0" cy="271" r="3.6" fill="#1b7c83" fill-opacity="0.35"/>
+<circle cx="600.0" cy="271" r="3.6" fill="#1b7c83" fill-opacity="0.35"/>
+<text x="780.0" y="258.0" font-size="13.5" fill="#1f2328">12  微调、RL与蒸馏</text>
+<circle cx="784.0" cy="271" r="3.6" fill="#1b7c83"/>
+<circle cx="794.0" cy="271" r="3.6" fill="#1b7c83" fill-opacity="0.35"/>
+<circle cx="804.0" cy="271" r="3.6" fill="#1b7c83" fill-opacity="0.35"/>
+<circle cx="814.0" cy="271" r="3.6" fill="#1b7c83" fill-opacity="0.35"/>
+<circle cx="824.0" cy="271" r="3.6" fill="#1b7c83" fill-opacity="0.35"/>
+<circle cx="834.0" cy="271" r="3.6" fill="#1b7c83" fill-opacity="0.35"/>
+<circle cx="844.0" cy="271" r="3.6" fill="#1b7c83" fill-opacity="0.35"/>
+<circle cx="854.0" cy="271" r="3.6" fill="#1b7c83" fill-opacity="0.35"/>
+<circle cx="864.0" cy="271" r="3.6" fill="#1b7c83" fill-opacity="0.35"/>
+<circle cx="874.0" cy="271" r="3.6" fill="#1b7c83"/>
+<text x="556.0" y="296.0" font-size="13.5" fill="#1f2328">13  推理优化与部署</text>
+<circle cx="560.0" cy="309" r="3.6" fill="#1b7c83"/>
+<circle cx="570.0" cy="309" r="3.6" fill="#1b7c83"/>
+<circle cx="580.0" cy="309" r="3.6" fill="#1b7c83" fill-opacity="0.35"/>
+<circle cx="590.0" cy="309" r="3.6" fill="#1b7c83" fill-opacity="0.35"/>
+<circle cx="600.0" cy="309" r="3.6" fill="#1b7c83" fill-opacity="0.35"/>
+<circle cx="610.0" cy="309" r="3.6" fill="#1b7c83" fill-opacity="0.35"/>
+<circle cx="620.0" cy="309" r="3.6" fill="#1b7c83"/>
+<text x="780.0" y="296.0" font-size="13.5" fill="#1f2328">16  世界模型与具身智能</text>
+<circle cx="784.0" cy="309" r="3" fill="none" stroke="#1b7c83" stroke-width="1.3"/>
+<circle cx="794.0" cy="309" r="3" fill="none" stroke="#1b7c83" stroke-width="1.3"/>
+<circle cx="804.0" cy="309" r="3" fill="none" stroke="#1b7c83" stroke-width="1.3"/>
+<circle cx="814.0" cy="309" r="3" fill="none" stroke="#1b7c83" stroke-width="1.3"/>
+<text x="20.0" y="358.0" font-size="13" fill="#59636e">17 个模块 · 126 个单元 · 693 条主题 · 171 项免费资源 · 17 个实验 · 378 道自测题</text>
+<text x="1020.0" y="358.0" font-size="12.5" fill="#59636e" text-anchor="end">选修</text>
+<circle cx="986.0" cy="354" r="3" fill="none" stroke="#1f2328" stroke-width="1.3"/>
+<text x="964.0" y="358.0" font-size="12.5" fill="#59636e" text-anchor="end">进阶</text>
+<circle cx="930.0" cy="354" r="3.6" fill="#1f2328" fill-opacity="0.35"/>
+<text x="908.0" y="358.0" font-size="12.5" fill="#59636e" text-anchor="end">核心</text>
+<circle cx="874.0" cy="354" r="3.6" fill="#1f2328"/>
+<text x="860.0" y="358.0" font-size="12.5" fill="#59636e" text-anchor="end">每个圆点 = 1 个单元：</text>
+</svg>

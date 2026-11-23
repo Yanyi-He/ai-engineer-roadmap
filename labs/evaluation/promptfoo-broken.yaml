@@ -1,0 +1,54 @@
+{
+  "description": "Synthetic fixtures: contracts and retrieval, no model API",
+  "prompts": [
+    "{{case_id}}"
+  ],
+  "providers": [
+    {
+      "id": "file://fixture_provider.py",
+      "config": {
+        "variant": "broken"
+      }
+    }
+  ],
+  "defaultTest": {
+    "assert": [
+      {
+        "type": "python",
+        "value": "file://promptfoo_assert.py"
+      }
+    ]
+  },
+  "tests": [
+    {
+      "vars": {
+        "case_id": "returns"
+      }
+    },
+    {
+      "vars": {
+        "case_id": "refund"
+      }
+    },
+    {
+      "vars": {
+        "case_id": "unanswerable"
+      }
+    },
+    {
+      "vars": {
+        "case_id": "tenant"
+      }
+    },
+    {
+      "vars": {
+        "case_id": "revision"
+      }
+    },
+    {
+      "vars": {
+        "case_id": "tracking"
+      }
+    }
+  ]
+}

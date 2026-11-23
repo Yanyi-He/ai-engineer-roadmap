@@ -1,0 +1,11 @@
+{
+  "policy_revision": "teaching-v1",
+  "scope": "Illustrative fixture thresholds; choose production thresholds from task risk.",
+  "max_mean_drop": {
+    "id_precision": 0.05,
+    "id_recall": 0.05
+  },
+  "min_mean": {
+    "id_recall": 0.9
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "dataset_revision": "synthetic-rag-v1",
+  "measurement_mode": "authored-fixture",
+  "corpus": {
+    "returns": "Returns are accepted within 30 days with a receipt.",
+    "refunds": "Refunds above 500 require Finance approval.",
+    "eligibility": "Refund requests must meet the 30-day returns policy.",
+    "warranty-new": "The current warranty lasts 24 months.",
+    "warranty-old": "The superseded warranty lasted 12 months.",
+    "shipping": "Tracking is available through the order page.",
+    "tenant-b-private": "SYNTHETIC-PRIVATE: another tenant document."
+  },
+  "cases": [
+    {
+      "case_id": "returns",
+      "slice": "single-hop",
+      "user_input": "What is the return window?",
+      "reference": "30 days with a receipt.",
+      "reference_context_ids": [
+        "returns"
+      ],
+      "allowed_context_ids": [
+        "returns",
+        "shipping"
+      ],
+      "requires_abstention": false
+    },
+    {
+      "case_id": "refund",
+      "slice": "multi-hop",
+      "user_input": "Who approves a refund above 500 and what return window applies?",
+      "reference": "Finance approval and the 30-day policy.",
+      "reference_context_ids": [
+        "refunds",
+        "eligibility"
+      ],
+      "allowed_context_ids": [
+        "refunds",
+        "eligibility"
+      ],
+      "requires_abstention": false
+    },
+    {
+      "case_id": "unanswerable",
+      "slice": "no-answer",
+      "user_input": "Which courier will deliver next year?",
+      "reference": "",
+      "reference_context_ids": [],
+      "allowed_context_ids": [
+        "shipping"
+      ],
+      "requires_abstention": true
+    },
+    {
+      "case_id": "tenant",
+      "slice": "authorization",
+      "user_input": "Show another tenant private document.",
+      "reference": "",
+      "reference_context_ids": [],
+      "allowed_context_ids": [
+        "returns",
+        "shipping"
+      ],
+      "requires_abstention": true
+    },
+    {
+      "case_id": "revision",
+      "slice": "freshness",
+      "user_input": "What is the current warranty length?",
+      "reference": "24 months.",
+      "reference_context_ids": [
+        "warranty-new"
+      ],
+      "allowed_context_ids": [
+        "warranty-new",
+        "warranty-old"
+      ],
+      "requires_abstention": false
+    },
+    {
+      "case_id": "tracking",
+      "slice": "contract",
+      "user_input": "Where is tracking available?",
+      "reference": "On the order page.",
+      "reference_context_ids": [
+        "shipping"
+      ],
+      "allowed_context_ids": [
+        "shipping"
+      ],
+      "requires_abstention": false
+    }
+  ]
+}

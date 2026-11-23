@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "description": "Optional promptfoo reference runtime",
+  "devDependencies": {
+    "promptfoo": "0.126.0"
+  },
+  "engines": {
+    "node": ">=22.22.0"
+  }
+}

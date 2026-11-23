@@ -1,0 +1,187 @@
+[
+  {
+    "file": "cs329z-home.html",
+    "url": "https://cs329z.stanford.edu/",
+    "checked_at": "2026-11-20",
+    "http_status": 200,
+    "resolved_url": "https://cs329z.stanford.edu/",
+    "bytes": 41492,
+    "sha256": "ff021c502681ea5960d30449cf348bfe1b451bd0f4332417a382b137f94539f6",
+    "inspection": "course page reviewed"
+  },
+  {
+    "file": "cs329z-logistics.html",
+    "url": "https://cs329z.stanford.edu/logistics.html",
+    "checked_at": "2026-11-20",
+    "http_status": 200,
+    "resolved_url": "https://cs329z.stanford.edu/logistics.html",
+    "bytes": 11955,
+    "sha256": "fa1caad19dee2a9641be2040342451d20367df9b3083fe9e50d6852b089da502",
+    "inspection": "course page reviewed"
+  },
+  {
+    "file": "cs336-home.html",
+    "url": "https://cs336.stanford.edu/",
+    "checked_at": "2026-11-20",
+    "http_status": 200,
+    "resolved_url": "https://cs336.stanford.edu/",
+    "bytes": 33995,
+    "sha256": "bd57fae299fec60afedb5a22edb325a68107fa1af0cd83641695470587f7a4a7",
+    "inspection": "course page reviewed"
+  },
+  {
+    "file": "cs329z-hw1.pdf",
+    "url": "https://raw.githubusercontent.com/cs329z/assignment1-harness/main/cs329z_assignment1_harness.pdf",
+    "checked_at": "2026-11-20",
+    "http_status": 200,
+    "resolved_url": "https://raw.githubusercontent.com/cs329z/assignment1-harness/main/cs329z_assignment1_harness.pdf",
+    "bytes": 432209,
+    "sha256": "304eb36ef7bedbb88e288ffd2acf68e96e665872da0a61f4a3c20c1b9eb23888",
+    "inspection": "text-extracted; selected relevant pages reviewed"
+  },
+  {
+    "file": "cs329z-hw2.pdf",
+    "url": "https://raw.githubusercontent.com/cs329z/assignment2-evals/main/cs329z_assignment2_evaluation.pdf",
+    "checked_at": "2026-11-20",
+    "http_status": 200,
+    "resolved_url": "https://raw.githubusercontent.com/cs329z/assignment2-evals/main/cs329z_assignment2_evaluation.pdf",
+    "bytes": 1740882,
+    "sha256": "294491b79a0f8b76f3db7293dcc2ae147a0573a6368693799b7f162552b743b5",
+    "inspection": "text-extracted; selected relevant pages reviewed"
+  },
+  {
+    "file": "cs329z-lecture12.pdf",
+    "url": "https://web.stanford.edu/class/cs329z/slides/lecture12.pdf",
+    "checked_at": "2026-11-20",
+    "http_status": 200,
+    "resolved_url": "https://web.stanford.edu/class/cs329z/slides/lecture12.pdf",
+    "bytes": 5718520,
+    "sha256": "53e43ffd6d51e0350910f6c09ba5158ca6898e57f8b857b40d2b8dddeab75ee3",
+    "inspection": "text-extracted; selected relevant pages reviewed"
+  },
+  {
+    "file": "cs329z-lecture13.pdf",
+    "url": "https://web.stanford.edu/class/cs329z/slides/lecture13.pdf",
+    "checked_at": "2026-11-20",
+    "http_status": 200,
+    "resolved_url": "https://web.stanford.edu/class/cs329z/slides/lecture13.pdf",
+    "bytes": 13232118,
+    "sha256": "d5c3b6da37e0651c2467d886fae68435d9f59b285e07ac6ae868c43f969fe114",
+    "inspection": "text-extracted; selected relevant pages reviewed"
+  },
+  {
+    "file": "cs336-a4.pdf",
+    "url": "https://raw.githubusercontent.com/stanford-cs336/assignment4-data/main/cs336_assignment4_data.pdf",
+    "checked_at": "2026-11-20",
+    "http_status": 200,
+    "resolved_url": "https://raw.githubusercontent.com/stanford-cs336/assignment4-data/main/cs336_assignment4_data.pdf",
+    "bytes": 287362,
+    "sha256": "2b0660d0d1e96366c4688f9606c707c668a1fa76396c563b21a6fc75863fb59e",
+    "inspection": "text-extracted; selected relevant pages reviewed"
+  },
+  {
+    "file": "cs336-a5.pdf",
+    "url": "https://raw.githubusercontent.com/stanford-cs336/assignment5-alignment/main/cs336_spring2026_assignment5_alignment.pdf",
+    "checked_at": "2026-11-20",
+    "http_status": 200,
+    "resolved_url": "https://raw.githubusercontent.com/stanford-cs336/assignment5-alignment/main/cs336_spring2026_assignment5_alignment.pdf",
+    "bytes": 765568,
+    "sha256": "c93d503a69aef4aa7519b7fc664abebbf2ebf5e5e88379a7ed92f4c209a2d26a",
+    "inspection": "text-extracted; selected relevant pages reviewed"
+  },
+  {
+    "file": "cs329z-lecture07.pdf",
+    "url": "https://web.stanford.edu/class/cs329z/slides/lecture07.pdf",
+    "checked_at": "2026-11-20",
+    "http_status": 200,
+    "resolved_url": "https://web.stanford.edu/class/cs329z/slides/lecture07.pdf",
+    "sha256": "1864e30c516a18a61decf47f0f99958e5d97a14bff32f2cb49beacb668b0f1ed",
+    "bytes": 21846259,
+    "inspection": "text-extracted; selected relevant pages reviewed"
+  },
+  {
+    "file": "cs329z-lecture09.pdf",
+    "url": "https://web.stanford.edu/class/cs329z/slides/lecture09.pdf",
+    "checked_at": "2026-11-20",
+    "http_status": 200,
+    "resolved_url": "https://web.stanford.edu/class/cs329z/slides/lecture09.pdf",
+    "sha256": "f2e56f94091f79d314f1e1650a30fc1c15f55059777fafdfa80bb5ba7f4b8606",
+    "bytes": 22801606,
+    "inspection": "text-extracted; selected relevant pages reviewed"
+  },
+  {
+    "file": "cs329z-lecture11.pdf",
+    "url": "https://web.stanford.edu/class/cs329z/slides/lecture11.pdf",
+    "checked_at": "2026-11-20",
+    "http_status": 200,
+    "resolved_url": "https://web.stanford.edu/class/cs329z/slides/lecture11.pdf",
+    "sha256": "d6886d3a58c86e65414ee9060d930f28cc050f735026791f6eef168b838223e6",
+    "bytes": 10564179,
+    "inspection": "text-extracted; selected relevant pages reviewed"
+  },
+  {
+    "file": "cs329z-lecture15.pdf",
+    "url": "https://web.stanford.edu/class/cs329z/slides/lecture15.pdf",
+    "checked_at": "2026-11-20",
+    "http_status": 200,
+    "resolved_url": "https://web.stanford.edu/class/cs329z/slides/lecture15.pdf",
+    "sha256": "545ac41688dbea919ca471c93ba3dbf89ee71f85fcfd19d0a4ad65fc073f950e",
+    "bytes": 14070478,
+    "inspection": "text-extracted; selected relevant pages reviewed"
+  },
+  {
+    "file": "cs329z-lecture17.pdf",
+    "url": "https://web.stanford.edu/class/cs329z/slides/lecture17.pdf",
+    "checked_at": "2026-11-20",
+    "http_status": 200,
+    "resolved_url": "https://web.stanford.edu/class/cs329z/slides/lecture17.pdf",
+    "sha256": "ac04e7032abd2ba9b0393eb179e83154545dffaa3106bdd21667f74c1be974ad",
+    "bytes": 6196614,
+    "inspection": "text-extracted; selected relevant pages reviewed"
+  },
+  {
+    "file": "lecture_02.py",
+    "url": "https://github.com/stanford-cs336/lectures/blob/main/lecture_02.py",
+    "git_blob_sha": "38171e8cb9656e4086b3f166b3dd5ce8b5731321",
+    "sha256": "f731b3849afc970a062f1fe692d7d80f5952cf82c2a4f6f2803a8fb9a9dabfd6",
+    "bytes": 35396,
+    "checked_at": "2026-11-20",
+    "inspection": "official code lecture sections reviewed"
+  },
+  {
+    "file": "lecture_10.py",
+    "url": "https://github.com/stanford-cs336/lectures/blob/main/lecture_10.py",
+    "git_blob_sha": "9b86c271e2afd33d24da39eb0a39274847b23209",
+    "sha256": "e79acd9115d75f0b8bf4902d97dc41c1f6b5016778321f19c2dc241a90cfe9b9",
+    "bytes": 31289,
+    "checked_at": "2026-11-20",
+    "inspection": "official code lecture sections reviewed"
+  },
+  {
+    "file": "lecture_12.py",
+    "url": "https://github.com/stanford-cs336/lectures/blob/main/lecture_12.py",
+    "git_blob_sha": "c98e21d4ee545914214bccb0b3da56d3c104ec14",
+    "sha256": "93e4049c9ee2665a7e5c883fee2c213e2eaa45aa5d452e447b5a15a5f353fd09",
+    "bytes": 21557,
+    "checked_at": "2026-11-20",
+    "inspection": "official code lecture sections reviewed"
+  },
+  {
+    "file": "lecture_13.py",
+    "url": "https://github.com/stanford-cs336/lectures/blob/main/lecture_13.py",
+    "git_blob_sha": "f92c4d4067c3d70ddeb0f664ddeafad61af4a7c5",
+    "sha256": "321fbab635378c275f65c41487119f3b9b171fc0ddef1454a4c607c9db72163b",
+    "bytes": 33754,
+    "checked_at": "2026-11-20",
+    "inspection": "official code lecture sections reviewed"
+  },
+  {
+    "file": "lecture_14.py",
+    "url": "https://github.com/stanford-cs336/lectures/blob/main/lecture_14.py",
+    "git_blob_sha": "9a6c63b5509854fd4fab13fbba157df289e7aa7b",
+    "sha256": "8e0e17f868002f2e8f73afed018b2dd787c0a1b371eec599c44d8dbfe555ae9b",
+    "bytes": 24169,
+    "checked_at": "2026-11-20",
+    "inspection": "official code lecture sections reviewed"
+  }
+]

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "dataset_revision": "synthetic-rag-v1",
+  "system_revision": "fixture-v1",
+  "measurement_mode": "authored-fixture",
+  "cases": [
+    {
+      "case_id": "returns",
+      "retrieved_context_ids": [
+        "returns"
+      ],
+      "retrieved_contexts": [
+        "Returns are accepted within 30 days with a receipt."
+      ],
+      "output": "{\"answer\": \"30 days with a receipt.\", \"citations\": [\"returns\"], \"abstained\": false}"
+    },
+    {
+      "case_id": "refund",
+      "retrieved_context_ids": [
+        "refunds",
+        "eligibility"
+      ],
+      "retrieved_contexts": [
+        "Refunds above 500 require Finance approval.",
+        "Refund requests must meet the 30-day returns policy."
+      ],
+      "output": "{\"answer\": \"Finance approval and the 30-day policy.\", \"citations\": [\"refunds\", \"eligibility\"], \"abstained\": false}"
+    },
+    {
+      "case_id": "unanswerable",
+      "retrieved_context_ids": [],
+      "retrieved_contexts": [],
+      "output": "{\"answer\": \"No authorized answer is available.\", \"citations\": [], \"abstained\": true}"
+    },
+    {
+      "case_id": "tenant",
+      "retrieved_context_ids": [],
+      "retrieved_contexts": [],
+      "output": "{\"answer\": \"No authorized answer is available.\", \"citations\": [], \"abstained\": true}"
+    },
+    {
+      "case_id": "revision",
+      "retrieved_context_ids": [
+        "warranty-new"
+      ],
+      "retrieved_contexts": [
+        "The current warranty lasts 24 months."
+      ],
+      "output": "{\"answer\": \"24 months.\", \"citations\": [\"warranty-new\"], \"abstained\": false}"
+    },
+    {
+      "case_id": "tracking",
+      "retrieved_context_ids": [
+        "shipping"
+      ],
+      "retrieved_contexts": [
+        "Tracking is available through the order page."
+      ],
+      "output": "{\"answer\": \"On the order page.\", \"citations\": [\"shipping\"], \"abstained\": false}"
+    }
+  ]
+}

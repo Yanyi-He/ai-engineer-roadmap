@@ -1,0 +1,442 @@
+[
+  {
+    "id": "application",
+    "zh": "应用交付主线",
+    "en": "Application delivery",
+    "purpose_zh": "以托管模型完成业务Agent产品；模型原理并行补齐。",
+    "purpose_en": "Deliver a business-agent product with hosted models; strengthen model foundations in parallel.",
+    "stages": [
+      {
+        "zh": "需求、Python与模型接口",
+        "en": "Task, Python and model interface",
+        "targets": [
+          "00.2",
+          "01.5",
+          "01.6",
+          "02.1",
+          "05.1",
+          "05.3",
+          "01.7",
+          "05.10"
+        ],
+        "labs": [
+          "L01"
+        ]
+      },
+      {
+        "zh": "评测基线与可测量目标",
+        "en": "Evaluation baseline and measurable targets",
+        "targets": [
+          "03.2",
+          "11.1",
+          "11.2",
+          "11.3",
+          "11.4",
+          "05.9"
+        ],
+        "labs": []
+      },
+      {
+        "zh": "无框架Agent内核",
+        "en": "Framework-neutral harness",
+        "targets": [
+          "05.4",
+          "07.3",
+          "07.5"
+        ],
+        "labs": [
+          "L13"
+        ]
+      },
+      {
+        "zh": "数据、工具、持久化与授权",
+        "en": "Data, tools, persistence and authorization",
+        "targets": [
+          "12.10",
+          "07.4",
+          "10.3",
+          "10.4",
+          "08.1",
+          "08.3",
+          "10.7"
+        ],
+        "labs": [
+          "L03",
+          "L05"
+        ]
+      },
+      {
+        "zh": "验证器、运行与业务验收",
+        "en": "Verifier, operation and acceptance",
+        "targets": [
+          "11.8",
+          "11.6",
+          "14.1",
+          "14.2",
+          "14.3",
+          "14.6",
+          "14.7",
+          "11.12"
+        ],
+        "labs": [
+          "L14",
+          "L06",
+          "L17"
+        ]
+      },
+      {
+        "zh": "模型原理、选型复核与作品答辩",
+        "en": "Model foundations, selection review and portfolio",
+        "targets": [
+          "04.2",
+          "04.5",
+          "11.9",
+          "05.8",
+          "15.4",
+          "15.5",
+          "15.6",
+          "15.7"
+        ],
+        "labs": [
+          "L09"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "knowledge",
+    "zh": "企业知识与RAG方向",
+    "en": "Enterprise knowledge and RAG",
+    "purpose_zh": "在应用基础上增加权限感知的数据与知识服务。",
+    "purpose_en": "Add authorized data/knowledge services to application foundations.",
+    "stages": [
+      {
+        "zh": "需求、Python与模型接口",
+        "en": "Task, Python and model interface",
+        "targets": [
+          "00.2",
+          "01.5",
+          "01.6",
+          "02.1",
+          "05.1",
+          "05.3",
+          "01.7",
+          "05.10"
+        ],
+        "labs": [
+          "L01"
+        ]
+      },
+      {
+        "zh": "评测基线与可测量目标",
+        "en": "Evaluation baseline and measurable targets",
+        "targets": [
+          "03.2",
+          "11.1",
+          "11.2",
+          "11.3",
+          "11.4",
+          "05.9"
+        ],
+        "labs": []
+      },
+      {
+        "zh": "无框架Agent内核",
+        "en": "Framework-neutral harness",
+        "targets": [
+          "05.4",
+          "07.3",
+          "07.5"
+        ],
+        "labs": [
+          "L13"
+        ]
+      },
+      {
+        "zh": "数据、检索、引用与维护",
+        "en": "Data, retrieval, citations and maintenance",
+        "targets": [
+          "06.4",
+          "06.6",
+          "06.8",
+          "12.10",
+          "11.11"
+        ],
+        "labs": [
+          "L02",
+          "L15",
+          "L16"
+        ]
+      },
+      {
+        "zh": "数据、工具、持久化与授权",
+        "en": "Data, tools, persistence and authorization",
+        "targets": [
+          "12.10",
+          "07.4",
+          "10.3",
+          "10.4",
+          "08.1",
+          "08.3",
+          "10.7"
+        ],
+        "labs": [
+          "L03",
+          "L05"
+        ]
+      },
+      {
+        "zh": "验证器、运行与业务验收",
+        "en": "Verifier, operation and acceptance",
+        "targets": [
+          "11.8",
+          "11.6",
+          "14.1",
+          "14.2",
+          "14.3",
+          "14.6",
+          "14.7",
+          "11.12"
+        ],
+        "labs": [
+          "L14",
+          "L06",
+          "L17"
+        ]
+      },
+      {
+        "zh": "模型原理、选型复核与作品答辩",
+        "en": "Model foundations, selection review and portfolio",
+        "targets": [
+          "04.2",
+          "04.5",
+          "11.9",
+          "05.8",
+          "15.4",
+          "15.5",
+          "15.6",
+          "15.7"
+        ],
+        "labs": [
+          "L09"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "model_optimization",
+    "zh": "本地推理与模型适配方向",
+    "en": "Local inference and model adaptation",
+    "purpose_zh": "从小模型计算与训练走到推理、LoRA及可回滚模型服务。",
+    "purpose_en": "Build small-model fundamentals, inference, LoRA and a reversible model service.",
+    "stages": [
+      {
+        "zh": "软件、数据与模型计算",
+        "en": "Software, data and model computation",
+        "targets": [
+          "02.1",
+          "02.6",
+          "04.6",
+          "11.1",
+          "11.4"
+        ],
+        "labs": [
+          "L01",
+          "L09"
+        ]
+      },
+      {
+        "zh": "资源核算与本地服务",
+        "en": "Resource accounting and local serving",
+        "targets": [
+          "13.7",
+          "13.1",
+          "13.2",
+          "13.3",
+          "13.4",
+          "13.5"
+        ],
+        "labs": [
+          "L07"
+        ]
+      },
+      {
+        "zh": "数据策展与SFT/LoRA",
+        "en": "Curation and SFT/LoRA",
+        "targets": [
+          "12.10",
+          "12.3",
+          "12.4"
+        ],
+        "labs": [
+          "L15",
+          "L08"
+        ]
+      },
+      {
+        "zh": "模型评测与服务交付",
+        "en": "Model evaluation and service delivery",
+        "targets": [
+          "11.9",
+          "11.6",
+          "05.9",
+          "14.1",
+          "14.2",
+          "14.4",
+          "14.6",
+          "15.2",
+          "11.12",
+          "15.5",
+          "15.7"
+        ],
+        "labs": [
+          "L06",
+          "L17"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "agent_platform",
+    "zh": "Agent平台与系统优化方向",
+    "en": "Agent platforms and system optimization",
+    "purpose_zh": "应用主线后深入执行环境、编排、协作和数据驱动优化；RL按目标另选。",
+    "purpose_en": "Extend applications with execution, orchestration, coordination and data-driven optimization; select RL separately.",
+    "stages": [
+      {
+        "zh": "需求、Python与模型接口",
+        "en": "Task, Python and model interface",
+        "targets": [
+          "00.2",
+          "01.5",
+          "01.6",
+          "02.1",
+          "05.1",
+          "05.3",
+          "01.7",
+          "05.10"
+        ],
+        "labs": [
+          "L01"
+        ]
+      },
+      {
+        "zh": "评测基线与可测量目标",
+        "en": "Evaluation baseline and measurable targets",
+        "targets": [
+          "03.2",
+          "11.1",
+          "11.2",
+          "11.3",
+          "11.4",
+          "05.9"
+        ],
+        "labs": []
+      },
+      {
+        "zh": "无框架Agent内核",
+        "en": "Framework-neutral harness",
+        "targets": [
+          "05.4",
+          "07.3",
+          "07.5"
+        ],
+        "labs": [
+          "L13"
+        ]
+      },
+      {
+        "zh": "数据、工具、持久化与授权",
+        "en": "Data, tools, persistence and authorization",
+        "targets": [
+          "12.10",
+          "07.4",
+          "10.3",
+          "10.4",
+          "08.1",
+          "08.3",
+          "10.7"
+        ],
+        "labs": [
+          "L03",
+          "L05"
+        ]
+      },
+      {
+        "zh": "验证器、运行与业务验收",
+        "en": "Verifier, operation and acceptance",
+        "targets": [
+          "11.8",
+          "11.6",
+          "14.1",
+          "14.2",
+          "14.3",
+          "14.6",
+          "14.7",
+          "11.12"
+        ],
+        "labs": [
+          "L14",
+          "L06",
+          "L17"
+        ]
+      },
+      {
+        "zh": "模型原理、选型复核与作品答辩",
+        "en": "Model foundations, selection review and portfolio",
+        "targets": [
+          "04.2",
+          "04.5",
+          "11.9",
+          "05.8",
+          "15.4",
+          "15.5",
+          "15.6",
+          "15.7"
+        ],
+        "labs": [
+          "L09"
+        ]
+      },
+      {
+        "zh": "框架语义、工具目录与沙箱",
+        "en": "Framework semantics, catalogs and isolation",
+        "targets": [
+          "08.2",
+          "08.5",
+          "08.6",
+          "10.5",
+          "10.6",
+          "07.9",
+          "08.8"
+        ],
+        "labs": []
+      },
+      {
+        "zh": "记忆、协作与程序优化",
+        "en": "Memory, collaboration and program optimization",
+        "targets": [
+          "07.8",
+          "09.5",
+          "08.7"
+        ],
+        "labs": [
+          "L04",
+          "L10"
+        ]
+      },
+      {
+        "zh": "可选模型策略优化",
+        "en": "Optional policy optimization",
+        "targets": [
+          "12.6",
+          "12.7"
+        ],
+        "labs": [
+          "L12"
+        ],
+        "optional": true
+      }
+    ]
+  }
+]
