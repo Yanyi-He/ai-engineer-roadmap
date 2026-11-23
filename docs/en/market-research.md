@@ -22,7 +22,7 @@ North America totals 269 descriptions from 75 employers: 236 US and 33 Canadian.
 4. Keep one record per employer for the same title, body or URL, at most six per employer, and exclude roles already in the reviewed sample.
 5. Role text starts at headings such as "About the role", "What you'll do" or "Responsibilities" and ends before pay, benefits, equal-opportunity or privacy text. A check found 4 of 216 records still containing pay or benefits sentences.
 
-Limitations of the rule-screened sample: AI-native employers are over-represented. Microsoft, Google, Amazon and other large technology companies, as well as banks and insurers, use their own applicant systems and are absent from these APIs; the [enterprise cases](role-overview.md#three-enterprise-job-descriptions-taken-apart) in the role overview cover that context. The China sample was not expanded because major Chinese job sites offer no documented public posting API.
+Limitations of the rule-screened sample: AI-native employers are over-represented. Microsoft, Google, Amazon and other large technology companies, as well as banks and insurers, use their own applicant systems and are absent from these APIs; the [enterprise cases](role-overview.md#nine-enterprise-job-descriptions-what-they-actually-value) in the role overview cover that context. The China sample was not expanded because major Chinese job sites offer no documented public posting API.
 
 ## Counting method
 

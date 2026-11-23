@@ -180,11 +180,58 @@ def render_skill_tables():
             path.write_text(text)
 
 
+def replace_block(path, name, lines):
+    start, end = f'<!-- {name}:START -->', f'<!-- {name}:END -->'
+    text = path.read_text()
+    if start in text:
+        path.write_text(text.split(start, 1)[0] + start + '\n' + '\n'.join(lines) + '\n' + end + text.split(end, 1)[1])
+
+
+def render_enterprise_tables():
+    # Capability matrix of enterprise cases and an established-vs-AI-native split of the NA sample.
+    cases = json.loads((ROOT / 'research/enterprise-cases.json').read_text())
+    caps = cases['capabilities']
+    short = {'microsoft': 'Microsoft', 'workday': 'Workday', 'rbc': 'RBC', 'bmo': 'BMO', 'vanguard': 'Vanguard',
+             'canada-life': 'Canada Life', 'stripe': 'Stripe', 'databricks': 'Databricks', 'amex': 'AmEx'}
+    order = sorted(caps[1:], key=lambda c: (-sum(1 for x in cases['cases'] if x['codes'].get(c['key'])),
+                                             -sum(1 for x in cases['cases'] if x['codes'].get(c['key']) == 'R')))
+    terms = {t['key']: t for t in json.loads((ROOT / 'research/skill-terms.json').read_text())['terms']}
+    jobs = [r for r in json.loads((ROOT / 'research/jds.json').read_text()) if r['market'] == 'NA']
+    native = {'ai-native', 'developer-tools'}
+    est = [r for r in jobs if r['sector'] not in native]
+    nat = [r for r in jobs if r['sector'] in native]
+    def share(rows, key):
+        k, n = sum(r['features_v2'][key] for r in rows), len(rows)
+        p = k / n; d = 1 + 1.96 ** 2 / n; c = (p + 1.96 ** 2 / (2 * n)) / d
+        h = 1.96 * math.sqrt(p * (1 - p) / n + 1.96 ** 2 / (4 * n * n)) / d
+        return f'{100 * p:.0f}% [{100 * max(0, c - h):.0f}–{100 * min(1, c + h):.0f}]', 100 * p
+    diffs = sorted(terms, key=lambda k: share(est, k)[1] - share(nat, k)[1])
+    picked = [k for k in diffs[::-1] if share(est, k)[1] - share(nat, k)[1] >= 9][:7] + \
+             [k for k in ['evaluation', 'agents', 'production'] if k in terms] + \
+             [k for k in diffs if share(nat, k)[1] - share(est, k)[1] >= 9][:5]
+    for lang in ['zh', 'en']:
+        zh = lang == 'zh'
+        head = '| ' + ('能力' if zh else 'Capability') + ' | ' + ' | '.join(short[x['id']] for x in cases['cases']) + ' | ' + ('必需 / 提及' if zh else 'Required / mentioned') + ' |'
+        lines = [head, '|---|' + '---|' * len(cases['cases']) + '---:|']
+        lines.append(f"| {caps[0][lang]} | " + ' | '.join(x['experience'] if not zh else x['experience'].replace('yrs', '年').replace("Master's graduate (2027)", '2027 届硕士').replace('-', '–') for x in cases['cases']) + ' | — |')
+        for c in order:
+            marks = [{'R': '✓', 'P': '○'}.get(x['codes'].get(c['key']), '') for x in cases['cases']]
+            lines.append(f"| {c[lang]} | " + ' | '.join(marks) + f" | {marks.count('✓')} / {sum(1 for m in marks if m)} |")
+        lines += ['', ('✓ = 必需条件或核心职责；○ = 加分项或备选；空白 = 未提及。编码与链接见 [enterprise-cases.json](../../research/enterprise-cases.json)。' if zh else
+                       '✓ = requirement or core duty; ○ = preference or alternative; blank = not mentioned. Coding and links are in [enterprise-cases.json](../../research/enterprise-cases.json).')]
+        replace_block(ROOT / f'docs/{lang}/role-overview.md', 'ENTERPRISE-MATRIX', lines)
+        head2 = (f'| 技能或期望 | 成熟企业 n={len(est)}（{len({r["company"] for r in est})} 家） | AI 原生公司 n={len(nat)}（{len({r["company"] for r in nat})} 家） |' if zh else
+                 f'| Skill or expectation | Established employers n={len(est)} ({len({r["company"] for r in est})}) | AI-native companies n={len(nat)} ({len({r["company"] for r in nat})}) |')
+        rows = [head2, '|---|---:|---:|'] + [f'| {terms[k][lang]} | {share(est, k)[0]} | {share(nat, k)[0]} |' for k in picked]
+        replace_block(ROOT / f'docs/{lang}/role-overview.md', 'EMPLOYER-SPLIT', rows)
+
+
 def render_charts():
     OUT.mkdir(parents=True, exist_ok=True)
     render_skill_charts()
     render_market_charts()
     render_skill_tables()
+    render_enterprise_tables()
 
 
 if __name__ == '__main__':

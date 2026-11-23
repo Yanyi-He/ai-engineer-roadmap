@@ -175,27 +175,68 @@ External sources are mostly job-board or blog tallies with limited method disclo
 
 ## 4. From job requirements to a knowledge structure: weights and priorities
 
-### Three enterprise job descriptions, taken apart
+### Nine enterprise job descriptions: what they actually value
 
-These three AI Engineer–type roles come from large and mid-size North American employers (November 2026). The Stripe posting is already in the sample. The Canada Life and Microsoft postings were provided by a reader and serve as qualitative enterprise cases; they are not counted in the statistics above.
+Public job-board APIs miss many large employers. To fill that gap, here are nine AI-engineering postings from large and mid-size North American employers (November 2026): Microsoft, Workday, RBC, BMO, Vanguard, Canada Life, Stripe, Databricks and American Express. A reader supplied the BMO and Canada Life texts. These are qualitative cases and are not counted in the statistics above.
 
-| Dimension | Stripe: AI Engineer, Solutions Architecture | Canada Life: full-stack AI application engineer | Microsoft MCAPS: software engineer, AI apps and agents | Units |
-|---|---|---|---|---|
-| Engineering base | 4+ years shipping production systems; debug across services; two of Ruby, Node.js, Python, Next.js | 3+ years of production software; Python + React; APIs, databases, modular design, automated tests | 2+ years of engineering; APIs, backend services, web apps, automated tests | 01, 02 |
-| LLMs and agents | Build agents, LLM tools and workflow automation beyond basic prompting | Combine models, retrieval, tools and business rules; choose the simplest effective architecture | Context engineering, structured outputs, tool calling, grounding, guardrails, session management, human escalation; multi-agent routing, hand-offs and retries | 05, 07–10 |
-| RAG and documents | — | Ingestion, parsing, chunking, indexing, retrieval, citations; intelligent document processing | Grounding in knowledge sources | 06, 05.6 |
-| Evaluation and testing | — | Unit, integration, end-to-end and regression tests covering AI interactions and security controls | Automated and human evaluation, regression, edge cases, adversarial testing, failure analysis | 11 |
-| Deployment and operations | Cloud deployment, monitoring, basic DevOps | Containers; sandbox → dev → QA → UAT → prod promotion; logging, tracing, telemetry, cost | CI/CD and observability; monitor drift, quality, latency, failures and cost | 02.6, 11.5, 14.4, 14.6 |
-| Security and governance | — | Responsible AI, privacy, model risk, traceability and human oversight | Least privilege, Responsible AI, auditability, secrets management | 10, 14.5, 14.7, 14.9 |
-| Platforms and ecosystem | Third-party integrations (Salesforce, Gong); systems non-engineers can extend | Azure AI Foundry, Azure OpenAI, AI Search, Document Intelligence; Databricks, MLflow; Microsoft Agent Framework, LangChain, LangGraph, MCP | Copilot Studio, Power Automate, Azure OpenAI, GitHub Copilot | 05.10, 08.5, 08.8 |
-| Business and delivery | Embedded with the business; turn ambiguous needs into deliverables; success measured by adoption | Work with business and data-science teams; ADRs, API specifications, runbooks | Convert proofs of concept into production; document architecture, data flows, risks and operations | 00.2, 14.1, 14.6 |
-| AI-assisted development | Fluent with AI coding tools but able to debug without them | Evaluate new models, frameworks and developer tools | AI-assisted coding, AI-driven testing and code review, built into team standards | 01.7 |
+<!-- ENTERPRISE-MATRIX:START -->
+| Capability | Microsoft | Workday | RBC | BMO | Vanguard | Canada Life | Stripe | Databricks | AmEx | Required / mentioned |
+|---|---|---|---|---|---|---|---|---|---|---:|
+| Production software experience | 2+ yrs | 5+ yrs | 2+ yrs | 6 yrs | 6+ yrs | 3+ yrs | 4+ yrs | 2-8 yrs | Master's graduate (2027) | — |
+| Backend, APIs and system design | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 9 / 9 |
+| Testing, CI/CD, containers and cloud deployment | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 9 / 9 |
+| Business partnership and product mindset | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ○ | ✓ | 8 / 9 |
+| LLM applications and agents | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ | ○ | 7 / 8 |
+| Production monitoring and observability | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ○ |  | 7 / 8 |
+| Security, Responsible AI and model risk | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ | 7 / 7 |
+| RAG, retrieval and documents | ✓ | ○ |  | ✓ | ✓ | ✓ |  |  | ○ | 4 / 6 |
+| Evaluation and experiments | ○ | ✓ |  | ✓ |  | ✓ | ○ |  | ✓ | 4 / 6 |
+| Technical leadership and mentoring |  | ✓ | ✓ | ✓ | ✓ | ✓ |  |  |  | 5 / 5 |
+| Full stack / frontend | ○ | ○ | ✓ |  |  | ✓ | ✓ |  |  | 3 / 5 |
+| Classical ML, training and MLOps | ○ |  |  | ○ | ✓ |  |  | ○ | ○ | 1 / 5 |
+| AI-assisted development | ✓ |  | ○ |  |  |  | ✓ |  |  | 2 / 3 |
+| Fine-tuning |  |  |  |  | ○ |  |  |  |  | 0 / 1 |
 
-The common pattern is clear: **strong backend or full-stack engineering + LLM applications and agents + production discipline (testing, deployment, observability) + security and governance + one cloud AI platform.** None of the three requires fine-tuning or reinforcement learning; only Microsoft lists machine-learning experience as a preference. Enterprise low-code platforms (Copilot Studio and Power Automate in North America, Dify and Coze in China) are worth knowing, but every one of these roles expects you to move to code when needed.
+✓ = requirement or core duty; ○ = preference or alternative; blank = not mentioned. Coding and links are in [enterprise-cases.json](../../research/enterprise-cases.json).
+<!-- ENTERPRISE-MATRIX:END -->
+
+Five things stand out:
+
+1. **Software engineering is the first filter, required by all nine.** Workday says the role is "first and foremost a software engineering role", with system design, scalability and performance "non-negotiable". Databricks explicitly welcomes infrastructure and systems engineers without an ML background. RBC's "Senior AI Engineer" is a full-stack role in Vue/Nuxt, Node.js and SQL; AI appears only as a preference for AI coding assistants, so read the duties, not just the title.
+2. **Production delivery and business partnership are also universal.** Testing, CI/CD, containers and cloud deployment: 9/9. Defining problems with the business and owning outcomes: mentioned in all nine, required in eight. Production monitoring and observability: 8/9.
+3. **LLMs and agents are central but not everything.** 8/9 involve LLM applications or agents, 6/9 RAG and document processing, and 6/9 evaluation. Financial and insurance employers especially value document processing (claims, contracts, audit) together with evaluation and guardrails.
+4. **Security, Responsible AI and model risk separate enterprise roles.** 7/9 require them, including every bank, insurer and asset manager here (RBC, BMO, Vanguard, Canada Life, American Express).
+5. **Fine-tuning and training are rarely required.** Fine-tuning appears only as a Vanguard preference; only Vanguard requires classical ML and MLOps. Experience ranges from a new master's graduate (American Express, which asks for data structures, algorithms, projects, hackathons or open source) to six years or more, and senior roles expect technical leadership and mentoring.
+
+### Established employers versus AI-native companies
+
+Splitting the 269 North American descriptions by employer type: established employers cover enterprise software, fintech, internet, health and industrial companies; AI-native companies cover model labs, AI application companies and developer-tool companies. The table lists the largest differences and three items that are nearly identical.
+
+<!-- EMPLOYER-SPLIT:START -->
+| Skill or expectation | Established employers n=133 (48) | AI-native companies n=136 (27) |
+|---|---:|---:|
+| Security, access and compliance | 63% [55–71] | 45% [37–53] |
+| Observability and monitoring | 58% [49–66] | 40% [33–49] |
+| Java / Spring | 17% [12–25] | 3% [1–7] |
+| Reliability | 66% [58–74] | 55% [47–63] |
+| Public cloud (AWS/Azure/GCP) | 31% [24–39] | 20% [14–27] |
+| LangChain | 15% [10–22] | 6% [3–11] |
+| LangGraph | 11% [7–18] | 2% [1–6] |
+| Evaluation and experiments | 66% [58–74] | 68% [59–75] |
+| Agents | 77% [69–83] | 79% [72–85] |
+| Shipping to production | 87% [80–92] | 93% [88–96] |
+| TypeScript / JavaScript | 25% [18–33] | 40% [33–49] |
+| Multimodal / voice | 11% [6–17] | 25% [18–33] |
+| RL / preference alignment | 4% [2–8] | 15% [10–22] |
+| Docker / Kubernetes | 12% [8–19] | 24% [17–31] |
+| Customer and stakeholder work | 44% [35–52] | 54% [46–63] |
+<!-- EMPLOYER-SPLIT:END -->
+
+Established employers more often require security and compliance, observability, reliability, public cloud and Java, and more often name LangChain or LangGraph. AI-native companies more often mention TypeScript, multimodal and voice work, reinforcement learning and customer-facing work. Evaluation, agents and production delivery are equally high in both. When applying to large and mid-size companies, put evidence of **security, monitoring and stable operation** first in your résumé and projects, not only model quality.
 
 ### What screening looks at first
 
-Combining the 320-description statistics with the cases above, application and systems AIE screening roughly follows this order:
+Combining the 320-description statistics with the enterprise cases above, application and systems AIE screening roughly follows this order:
 
 | Priority | Capability | Evidence (China / North America) | Modules | Target depth |
 |---|---|---|---|---|

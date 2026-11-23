@@ -145,6 +145,11 @@ for row in read_csv('research/skill-distribution.csv'):
     count = sum(j['features_v2'][row['key']] for j in sample)
     check(int(row['n']) == len(sample) and int(row['count']) == count, f'Skill distribution mismatch: {row["market"]}/{row["sample"]}/{row["key"]}')
     check(float(row['ci95_low']) <= float(row['pct']) <= float(row['ci95_high']), f'Interval does not contain share: {row["key"]}')
+enterprise = read_json('research/enterprise-cases.json')
+cap_keys = {c['key'] for c in enterprise['capabilities']}
+for case in enterprise['cases']:
+    check(set(case['codes']) <= cap_keys and set(case['codes'].values()) <= {'R','P'} and case.get('experience'), f'Enterprise case coding: {case["id"]}')
+    check(case['url'] is None or case['url'].startswith('https://'), f'Enterprise case URL: {case["id"]}')
 cohorts = {label:[j for j in jobs if j['market']==label or j['country']==label] for label in ['CN','NA','CA','US']}
 check(len(cohorts['CN']) >= 50 and len(cohorts['NA']) >= 50, 'Regional JD minimum not met')
 rows = read_csv('research/keyword-counts.csv')
