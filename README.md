@@ -36,7 +36,7 @@ Each of the 126 units has a knowledge outline, a target depth (explain, implemen
 5. [Labs](docs/en/labs.md) → [capstones](docs/en/capstones.md) → [assessment](docs/en/assessment.md).
 6. [Stack decisions](docs/en/stack-decisions.md), [repositories](docs/en/open-source.md), [resource policy](docs/en/resource-policy.md).
 
-[CS329Z / CS336 course audit](docs/en/course-audit.md) explains additions, depth, unit prerequisites and practice choices.
+[CS329Z / CS336 course mapping](docs/en/course-audit.md) shows how both courses map to units, depth, prerequisites and practice choices.
 
 ## Modules
 

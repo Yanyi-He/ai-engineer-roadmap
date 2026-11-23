@@ -52,7 +52,7 @@
 
 ## 市场指标
 
-市场指标只保留按职业或职位定义的序列，并保留单位、实际覆盖日期和部分季度标记。Indeed 全部广告中的 AI 关键词占比因安大略省招聘 AI 披露规则失去可比性，LinkedIn AI builders 定义未公开，按企业规模的入职趋势覆盖所有职业，三者均已移除，详见[岗位总述](role-overview.md#为什么移除了ai-关键词占比等图表)和[市场数据来源](../../research/market/README.md)。
+只采用按职业或职位定义的市场序列，并保留单位、实际覆盖日期和部分季度标记。全部职业的 AI 关键词占比不作为需求指标：它包含非工程职业的 AI 使用和招聘工具说明，加拿大的数据自 2026 年起还包含安大略省要求的招聘 AI 披露文字（[Hiring Lab Canada](https://hiringlab.indeed.com/en-ca/2026/07/08/ontario-job-postings-highlight-the-widespread-use-of-ai-in-hiring-processes/)）。LinkedIn“AI builders”的定义未公开，按企业规模的入职趋势覆盖所有职业，也不作为 AIE 需求指标。[市场数据来源](../../research/market/README.md)
 
 ## 从研究到课程
 

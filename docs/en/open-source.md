@@ -93,7 +93,7 @@ Star counts do not establish equal demand in the JD sample. Use the [stack decis
 
 Concrete implementation readings are limited to [three pinned files](source-readings.md). Manifest/docs observations are not runtime guarantees. An active flag means not marked archived in the snapshot, not independently verified maintenance.
 
-## Additional model, data and robotics references
+## Model, data and robotics references
 
 | References | Mechanism | Curriculum |
 |---|---|---|
@@ -104,4 +104,4 @@ Concrete implementation readings are limited to [three pinned files](source-read
 | A2A | cross-service task lifecycle and agent communication |09|
 | LeRobot / MuJoCo / IsaacLab / OpenPI / ROS2 docs | simulation, embodied data, policies and robot integration |16|
 
-Additional projects were primarily screened at metadata/official-documentation level; inspection scope is recorded per entry. Select implementations by learning need. See [pinned source readings](source-readings.md) and [stack decisions](stack-decisions.md).
+These projects were primarily screened at metadata/official-documentation level; inspection scope is recorded per entry. Select implementations by learning need. See [pinned source readings](source-readings.md) and [stack decisions](stack-decisions.md).

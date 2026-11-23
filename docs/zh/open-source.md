@@ -89,9 +89,9 @@
 
 许可证 `NOASSERTION`/缺失表示 API 未可靠识别，不表示没有限制；AutoGen 的代码与文档许可可能不同。任何实际复制都应核对具体文件。Basic Memory 当前 AGPL，Dify/n8n 等自定义许可项目适合先借设计。
 
-高星信号没有证明这些组件在本次 320 份 JD 中都有同等需求。最终建议按[技术栈决策表](stack-decisions.md)执行。
+高星信号没有证明这些组件在本研究的 320 份 JD 中都有同等需求。最终建议按[技术栈决策表](stack-decisions.md)执行。
 
-## 新增的模型、数据与机器人方向
+## 模型、数据与机器人方向的参考项目
 
 | References | Mechanism | Curriculum |
 |---|---|---|
@@ -102,4 +102,4 @@
 | A2A | cross-service task lifecycle and agent communication |09|
 | LeRobot / MuJoCo / IsaacLab / OpenPI / ROS2 docs | simulation, embodied data, policies and robot integration |16|
 
-新增项目主要完成元数据与官方文档层筛选；逐个记录检查范围。课程并不要求全部安装或逐个复刻。进一步实现级阅读见[固定版本源码](source-readings.md)，选型见[技术表](stack-decisions.md)。
+这些项目主要完成元数据与官方文档层筛选；逐个记录检查范围。课程并不要求全部安装或逐个复刻。进一步实现级阅读见[固定版本源码](source-readings.md)，选型见[技术表](stack-decisions.md)。

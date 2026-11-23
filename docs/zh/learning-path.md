@@ -1,6 +1,6 @@
 # 从基础到独立交付的学习路径
 
-目标与市场见[岗位总述](role-overview.md)，本轮缺口与修改见[CS329Z/CS336课程审阅](course-audit.md)。[单元先修与四条路线](dependency-order.md)自动展开所需知识，模块编号用于分类。
+目标与市场见[岗位总述](role-overview.md)，课程对应见[CS329Z/CS336课程对照](course-audit.md)。[单元先修与四条路线](dependency-order.md)自动展开所需知识，模块编号用于分类。
 
 ## 先形成小闭环，再逐步加深
 

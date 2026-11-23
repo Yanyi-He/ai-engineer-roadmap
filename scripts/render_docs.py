@@ -56,7 +56,7 @@ def main():
     for lang in ['zh','en']:
         zh=lang=='zh';out=ROOT/f'docs/{lang}';(out/'modules').mkdir(exist_ok=True)
         for m in mods:
-            lines=[f"# {m['id']} · {m[lang]}",'',('[总览](../knowledge-tree.md) · [学习顺序](../dependency-order.md) · [自测题](../self-check.md) · [课程对照审阅](../course-audit.md)' if zh else '[Map](../knowledge-tree.md) · [Study order](../dependency-order.md) · [Self-check](../self-check.md) · [Course audit](../course-audit.md)'),'',m['outcome_'+lang],'',('相关模块：' if zh else 'Related modules: ')+(', '.join(f"[{k}](./{k}.md)" for k in m['related_modules']) or '—'),'',('单元先修按知识点计算。core是共同知识；advanced按岗位深入；elective是方向拓展。实作按所选项目路线推进；路线只展开该作品所需先修，共同知识按图谱持续补齐。' if zh else 'Prerequisites operate at unit level. Core is common knowledge; advanced follows role needs; electives explore adjacent fields. Routes expand prerequisites for the selected product; continue filling common knowledge from the map.'),'']
+            lines=[f"# {m['id']} · {m[lang]}",'',('[总览](../knowledge-tree.md) · [学习顺序](../dependency-order.md) · [自测题](../self-check.md) · [课程对照](../course-audit.md)' if zh else '[Map](../knowledge-tree.md) · [Study order](../dependency-order.md) · [Self-check](../self-check.md) · [Course mapping](../course-audit.md)'),'',m['outcome_'+lang],'',('相关模块：' if zh else 'Related modules: ')+(', '.join(f"[{k}](./{k}.md)" for k in m['related_modules']) or '—'),'',('单元先修按知识点计算。core是共同知识；advanced按岗位深入；elective是方向拓展。实作按所选项目路线推进；路线只展开该作品所需先修，共同知识按图谱持续补齐。' if zh else 'Prerequisites operate at unit level. Core is common knowledge; advanced follows role needs; electives explore adjacent fields. Routes expand prerequisites for the selected product; continue filling common knowledge from the map.'),'']
             if m['id'] in ['06','11']:
                 lines += [('[评测操作：Ragas、pytest、promptfoo与CI](../evaluation-playbook.md)' if zh else '[Evaluation operations: Ragas, pytest, promptfoo and CI](../evaluation-playbook.md)'), '']
             for n in m['nodes']:
@@ -66,7 +66,7 @@ def main():
                 lines += [f'{i}. {q}' for i,q in enumerate(n['checks_'+lang],1)]+['']
             lines += [('## 按需参考' if zh else '## References'),'']+['- '+resource_link(r,lang) for r in refs[m['id']]]
             (out/'modules'/f"{m['id']}.md").write_text('\n'.join(lines)+'\n')
-        lines=['# '+('AIE知识树' if zh else 'AI Engineering knowledge tree'),'',('从模块进入单元，再看机制、失败、资源和实践产物。分类图用于总览；[学习顺序](dependency-order.md)按单元先修与项目路线展开；[课程审阅](course-audit.md)说明CS329Z/CS336对照与取舍。' if zh else 'Browse modules and units, then mechanisms, failures, readings and evidence. The taxonomy gives an overview; [study order](dependency-order.md) expands unit prerequisites and project routes. The [course audit](course-audit.md) explains CS329Z/CS336 comparisons.'),'','```mermaid','mindmap','  root((AI Engineering))']
+        lines=['# '+('AIE知识树' if zh else 'AI Engineering knowledge tree'),'',('从模块进入单元，再看机制、失败、资源和实践产物。分类图用于总览；[学习顺序](dependency-order.md)按单元先修与项目路线展开；[课程对照](course-audit.md)说明CS329Z/CS336怎样落到单元。' if zh else 'Browse modules and units, then mechanisms, failures, readings and evidence. The taxonomy gives an overview; [study order](dependency-order.md) expands unit prerequisites and project routes. The [course mapping](course-audit.md) shows how CS329Z/CS336 map to units.'),'','```mermaid','mindmap','  root((AI Engineering))']
         for m in mods:
             lines.append('    '+m['id']+' '+m[lang])
             for n in m['nodes']:lines.append('      '+n['id']+' '+n[lang].replace('(','（').replace(')','）'))

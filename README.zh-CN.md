@@ -36,7 +36,7 @@
 5. [实验](docs/zh/labs.md) → [完整项目](docs/zh/capstones.md) → [能力评审](docs/zh/assessment.md)。
 6. [技术选择](docs/zh/stack-decisions.md)、[开源项目研究](docs/zh/open-source.md)、[资源筛选](docs/zh/resource-policy.md)。
 
-[CS329Z / CS336 深度审阅与补充](docs/zh/course-audit.md)说明新增知识、学习深度、单元先修与实作取舍。
+[CS329Z / CS336 课程对照](docs/zh/course-audit.md)说明两门课怎样落到单元、学习深度、先修与实作取舍。
 
 ## 模块
 

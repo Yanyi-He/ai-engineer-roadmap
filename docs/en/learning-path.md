@@ -1,6 +1,6 @@
 # A learning path toward independent delivery
 
-Read the [role overview](role-overview.md) and the [CS329Z/CS336 audit](course-audit.md). [Unit prerequisites and four routes](dependency-order.md) expand the required topics; module numbers classify knowledge.
+Read the [role overview](role-overview.md) and the [CS329Z/CS336 course mapping](course-audit.md). [Unit prerequisites and four routes](dependency-order.md) expand the required topics; module numbers classify knowledge.
 
 ## Build a small loop and deepen it
 

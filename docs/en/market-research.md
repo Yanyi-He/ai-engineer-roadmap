@@ -52,7 +52,7 @@ The table describes the sample, not national shares of junior or senior roles. S
 
 ## Market indicators
 
-Only series defined by occupation or job title remain, with units, actual coverage dates and partial-quarter labels. Indeed's AI-keyword share of all postings lost comparability under Ontario's AI-in-hiring disclosure rule, LinkedIn's "AI builders" definition is unpublished, and hiring by employer size covers all occupations; all three were removed. See the [role overview](role-overview.md#why-the-ai-keyword-chart-and-others-were-removed) and [market provenance](../../research/market/README.md).
+Market series are defined by occupation or job title, with units, actual coverage dates and partial-quarter labels. The AI-keyword share of all postings is not used as a demand indicator: it includes AI use in non-engineering jobs and recruiting-tool notices, and since 2026 the Canadian series also counts the AI-in-hiring disclosures Ontario requires ([Hiring Lab Canada](https://hiringlab.indeed.com/en-ca/2026/07/08/ontario-job-postings-highlight-the-widespread-use-of-ai-in-hiring-processes/)). LinkedIn's "AI builders" definition is unpublished, and hiring by employer size covers all occupations, so neither serves as an AIE demand indicator. [Market provenance](../../research/market/README.md)
 
 ## From evidence to curriculum
 

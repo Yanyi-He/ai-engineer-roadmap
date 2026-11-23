@@ -19,7 +19,7 @@ Software engineering provides the implementation foundation. MLE contributes dat
 
 ## 2. Hiring market: which data matter for SDE and AIE decisions?
 
-Updated **23 November 2026**. This section keeps only indicators defined by **occupation or job title**. All-occupation indicators are easy to misread and were removed from the charts; the reasons are at the end of this section.
+Updated **23 November 2026**. All indicators below are defined by occupation or job title.
 
 ### North American software development: recovering, concentrated in senior and AI roles
 
@@ -49,17 +49,6 @@ For learners, the recovering roles expect independent delivery and AI-system ski
 - On 9 September 2026 the Ministry of Human Resources and Social Security added an "agent developer" (智能体开发员) specialty under the generative-AI system application occupation. [Beijing News](https://m.bjnews.com.cn/detail/1788949841129475.html)
 
 These are platform growth rates without published samples, methods or skill shares. The China skill profile below relies on the JD sample.
-
-### Why the AI-keyword chart and others were removed
-
-The previous first chart compared Indeed's AI-keyword share of all postings in the US and Canada. Canada rose from 5.8% in October 2025 to 20.2% in October 2026, while the US went from 3.7% to 7.8%. **The data were transcribed correctly, but Canada's rise mostly does not reflect AI-skill demand.**
-
-- Since 1 January 2026, Ontario has required employers with 25 or more employees to state in public job postings whether AI is used to screen, assess or select applicants. That disclosure contains terms such as "artificial intelligence", which the tracker counts.
-- Hiring Lab found that the share in Ontario rose from 9% (October 2025) to 28% (May 2026) and in the rest of Canada from 4% to 12%, while nine comparison economies averaged about 7%. All 48 occupations rose, including pharmacy and retail. Hiring Lab now describes the Canadian figure as "primarily a metric capturing the use of AI by employers for recruitment". [Hiring Lab Canada, 8 July 2026](https://hiringlab.indeed.com/en-ca/2026/07/08/ontario-job-postings-highlight-the-widespread-use-of-ai-in-hiring-processes/)
-- Canada's software-development index was falling over the same period, so there was no AI-engineering hiring boom.
-- Even in the US, the measure includes AI use in non-engineering jobs and recruiting-tool notices. Hiring Lab's US text analysis found that only about 52% of AI-mentioning postings concern AI development or use directly.
-
-Comparing this indicator's level across countries is therefore invalid, and it says little to SDE/AIE learners. Also removed: LinkedIn "AI builders" hiring growth (unpublished definition that mixes ML engineers and data scientists; the source page no longer covers Canada), overall hiring by employer size (all occupations) and the JD-sample seniority pie (sample composition only, now in the [methods](market-research.md)). [Market data and provenance](../../research/market/)
 
 ### Precise data not yet available
 

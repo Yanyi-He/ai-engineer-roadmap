@@ -1,6 +1,6 @@
 # AIE知识树
 
-从模块进入单元，再看机制、失败、资源和实践产物。分类图用于总览；[学习顺序](dependency-order.md)按单元先修与项目路线展开；[课程审阅](course-audit.md)说明CS329Z/CS336对照与取舍。
+从模块进入单元，再看机制、失败、资源和实践产物。分类图用于总览；[学习顺序](dependency-order.md)按单元先修与项目路线展开；[课程对照](course-audit.md)说明CS329Z/CS336怎样落到单元。
 
 ```mermaid
 mindmap

@@ -1,6 +1,6 @@
 # AI Engineering knowledge tree
 
-Browse modules and units, then mechanisms, failures, readings and evidence. The taxonomy gives an overview; [study order](dependency-order.md) expands unit prerequisites and project routes. The [course audit](course-audit.md) explains CS329Z/CS336 comparisons.
+Browse modules and units, then mechanisms, failures, readings and evidence. The taxonomy gives an overview; [study order](dependency-order.md) expands unit prerequisites and project routes. The [course mapping](course-audit.md) shows how CS329Z/CS336 map to units.
 
 ```mermaid
 mindmap
