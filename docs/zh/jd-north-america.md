@@ -2,7 +2,7 @@
 
 [研究方法](market-research.md) · [岗位总述](role-overview.md)
 
-本页逐条列出人工复核的 53 份（25 家雇主；美国 43 份、加拿大 10 份）。另有 216 份规则筛选的北美 JD 见 [jds.json](../../research/jds.json)（`sample` 为 `v4-rule-screened`），合并统计见[岗位总述](role-overview.md)。保留产品、平台及客户交付差异，分别阅读每个国家的结果。
+本页逐条列出人工复核的 53 份（25 家雇主；美国 43 份、加拿大 10 份）。另有 263 份规则筛选的北美 JD 见 [jds.json](../../research/jds.json)（`sample` 为 `v4-rule-screened` 或加拿大扩充的 `v5-canada`），合并统计见[岗位总述](role-overview.md)。保留产品、平台及客户交付差异，分别阅读每个国家的结果。
 
 ## 全部关键词
 

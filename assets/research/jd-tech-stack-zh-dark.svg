@@ -5,7 +5,7 @@
 <rect x="24" y="50" width="14" height="10" rx="2" fill="#f0883e"/>
 <text x="44.0" y="59.0" font-size="13" fill="#9198a1">中国 n=51（18 家雇主）</text>
 <rect x="219" y="50" width="14" height="10" rx="2" fill="#4493f8"/>
-<text x="239.0" y="59.0" font-size="13" fill="#9198a1">北美 n=269（75 家雇主）</text>
+<text x="239.0" y="59.0" font-size="13" fill="#9198a1">北美 n=316（98 家雇主）</text>
 <text x="930.0" y="59.0" font-size="12" fill="#9198a1" text-anchor="end">细线 = 95% 置信区间</text>
 <line x1="300.0" y1="88" x2="300.0" y2="696" stroke="#262c36"/>
 <text x="300.0" y="714.0" font-size="11.5" fill="#9198a1" text-anchor="middle">0%</text>
@@ -22,140 +22,140 @@
 <line x1="739.1" y1="102.5" x2="869.5" y2="102.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
 <text x="875.5" y="106.5" font-size="11" fill="#9198a1">82%</text>
 <rect x="300" y="109" width="362.9" height="9" rx="1.5" fill="#4493f8"/>
-<line x1="625.1" y1="113.5" x2="699.4" y2="113.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
-<text x="705.4" y="117.5" font-size="11" fill="#9198a1">58%</text>
+<line x1="628.2" y1="113.5" x2="696.3" y2="113.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="702.3" y="117.5" font-size="11" fill="#9198a1">58%</text>
 <text x="288.0" y="141.0" font-size="13.5" fill="#f0f6fc" text-anchor="end">Go</text>
 <rect x="300" y="128" width="308.7" height="9" rx="1.5" fill="#f0883e"/>
 <line x1="526.2" y1="132.5" x2="692.5" y2="132.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
 <text x="698.5" y="136.5" font-size="11" fill="#9198a1">49%</text>
-<rect x="300" y="139" width="154.3" height="9" rx="1.5" fill="#4493f8"/>
-<line x1="424.7" y1="143.5" x2="489.0" y2="143.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
-<text x="495.0" y="147.5" font-size="11" fill="#9198a1">24%</text>
+<rect x="300" y="139" width="149.3" height="9" rx="1.5" fill="#4493f8"/>
+<line x1="422.2" y1="143.5" x2="480.8" y2="143.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="486.8" y="147.5" font-size="11" fill="#9198a1">24%</text>
 <text x="288.0" y="171.0" font-size="13.5" fill="#f0f6fc" text-anchor="end">Java / Spring</text>
 <rect x="300" y="158" width="296.7" height="9" rx="1.5" fill="#f0883e"/>
 <line x1="514.8" y1="162.5" x2="681.1" y2="162.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
 <text x="687.1" y="166.5" font-size="11" fill="#9198a1">47%</text>
-<rect x="300" y="169" width="63.0" height="9" rx="1.5" fill="#4493f8"/>
-<line x1="344.1" y1="173.5" x2="389.5" y2="173.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
-<text x="395.5" y="177.5" font-size="11" fill="#9198a1">10%</text>
+<rect x="300" y="169" width="63.6" height="9" rx="1.5" fill="#4493f8"/>
+<line x1="346.0" y1="173.5" x2="387.6" y2="173.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="393.6" y="177.5" font-size="11" fill="#9198a1">10%</text>
 <text x="288.0" y="201.0" font-size="13.5" fill="#f0f6fc" text-anchor="end">MCP</text>
 <rect x="300" y="188" width="247.0" height="9" rx="1.5" fill="#f0883e"/>
 <line x1="470.1" y1="192.5" x2="633.3" y2="192.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
 <text x="639.3" y="196.5" font-size="11" fill="#9198a1">39%</text>
-<rect x="300" y="199" width="105.2" height="9" rx="1.5" fill="#4493f8"/>
-<line x1="380.0" y1="203.5" x2="436.7" y2="203.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
-<text x="442.7" y="207.5" font-size="11" fill="#9198a1">17%</text>
+<rect x="300" y="199" width="99.5" height="9" rx="1.5" fill="#4493f8"/>
+<line x1="376.9" y1="203.5" x2="427.9" y2="203.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="433.9" y="207.5" font-size="11" fill="#9198a1">16%</text>
 <text x="288.0" y="231.0" font-size="13.5" fill="#f0f6fc" text-anchor="end">LangChain</text>
 <rect x="300" y="218" width="222.4" height="9" rx="1.5" fill="#f0883e"/>
 <line x1="448.7" y1="222.5" x2="608.7" y2="222.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
 <text x="614.7" y="226.5" font-size="11" fill="#9198a1">35%</text>
-<rect x="300" y="229" width="65.5" height="9" rx="1.5" fill="#4493f8"/>
-<line x1="346.0" y1="233.5" x2="392.0" y2="233.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
-<text x="398.0" y="237.5" font-size="11" fill="#9198a1">10%</text>
+<rect x="300" y="229" width="73.7" height="9" rx="1.5" fill="#4493f8"/>
+<line x1="354.2" y1="233.5" x2="398.9" y2="233.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="404.9" y="237.5" font-size="11" fill="#9198a1">12%</text>
 <text x="288.0" y="261.0" font-size="13.5" fill="#f0f6fc" text-anchor="end">TypeScript / JavaScript</text>
 <rect x="300" y="248" width="136.1" height="9" rx="1.5" fill="#f0883e"/>
 <line x1="378.8" y1="252.5" x2="518.0" y2="252.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
 <text x="524.0" y="256.5" font-size="11" fill="#9198a1">22%</text>
-<rect x="300" y="259" width="206.0" height="9" rx="1.5" fill="#4493f8"/>
-<line x1="472.6" y1="263.5" x2="542.5" y2="263.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
-<text x="548.5" y="267.5" font-size="11" fill="#9198a1">33%</text>
+<rect x="300" y="259" width="203.5" height="9" rx="1.5" fill="#4493f8"/>
+<line x1="472.6" y1="263.5" x2="536.9" y2="263.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="542.9" y="267.5" font-size="11" fill="#9198a1">32%</text>
 <text x="288.0" y="291.0" font-size="13.5" fill="#f0f6fc" text-anchor="end">AI 编程工具（Cursor/Claude Code 等）</text>
 <rect x="300" y="278" width="185.2" height="9" rx="1.5" fill="#f0883e"/>
 <line x1="417.8" y1="282.5" x2="570.9" y2="282.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
 <text x="576.9" y="286.5" font-size="11" fill="#9198a1">29%</text>
-<rect x="300" y="289" width="159.4" height="9" rx="1.5" fill="#4493f8"/>
-<line x1="429.1" y1="293.5" x2="494.0" y2="293.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
-<text x="500.0" y="297.5" font-size="11" fill="#9198a1">25%</text>
-<text x="288.0" y="321.0" font-size="13.5" fill="#f0f6fc" text-anchor="end">React / 前端</text>
-<rect x="300" y="308" width="148.1" height="9" rx="1.5" fill="#f0883e"/>
-<line x1="388.2" y1="312.5" x2="531.8" y2="312.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
-<text x="537.8" y="316.5" font-size="11" fill="#9198a1">24%</text>
-<rect x="300" y="319" width="161.9" height="9" rx="1.5" fill="#4493f8"/>
-<line x1="431.0" y1="323.5" x2="496.6" y2="323.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
-<text x="502.6" y="327.5" font-size="11" fill="#9198a1">26%</text>
-<text x="288.0" y="351.0" font-size="13.5" fill="#f0f6fc" text-anchor="end">公有云（AWS/Azure/GCP 等）</text>
-<rect x="300" y="338" width="37.2" height="9" rx="1.5" fill="#f0883e"/>
-<line x1="312.6" y1="342.5" x2="400.2" y2="342.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
-<text x="406.2" y="346.5" font-size="11" fill="#9198a1">6%</text>
+<rect x="300" y="289" width="161.3" height="9" rx="1.5" fill="#4493f8"/>
+<line x1="432.9" y1="293.5" x2="493.4" y2="293.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="499.4" y="297.5" font-size="11" fill="#9198a1">26%</text>
+<text x="288.0" y="321.0" font-size="13.5" fill="#f0f6fc" text-anchor="end">公有云（AWS/Azure/GCP 等）</text>
+<rect x="300" y="308" width="37.2" height="9" rx="1.5" fill="#f0883e"/>
+<line x1="312.6" y1="312.5" x2="400.2" y2="312.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="406.2" y="316.5" font-size="11" fill="#9198a1">6%</text>
+<rect x="300" y="319" width="179.6" height="9" rx="1.5" fill="#4493f8"/>
+<line x1="449.9" y1="323.5" x2="512.3" y2="323.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="518.3" y="327.5" font-size="11" fill="#9198a1">28%</text>
+<text x="288.0" y="351.0" font-size="13.5" fill="#f0f6fc" text-anchor="end">React / 前端</text>
+<rect x="300" y="338" width="148.1" height="9" rx="1.5" fill="#f0883e"/>
+<line x1="388.2" y1="342.5" x2="531.8" y2="342.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="537.8" y="346.5" font-size="11" fill="#9198a1">24%</text>
 <rect x="300" y="349" width="159.4" height="9" rx="1.5" fill="#4493f8"/>
-<line x1="429.1" y1="353.5" x2="494.0" y2="353.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
-<text x="500.0" y="357.5" font-size="11" fill="#9198a1">25%</text>
+<line x1="431.0" y1="353.5" x2="491.5" y2="353.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="497.5" y="357.5" font-size="11" fill="#9198a1">25%</text>
 <text x="288.0" y="381.0" font-size="13.5" fill="#f0f6fc" text-anchor="end">Docker / Kubernetes</text>
 <rect x="300" y="368" width="110.9" height="9" rx="1.5" fill="#f0883e"/>
 <line x1="360.5" y1="372.5" x2="490.9" y2="372.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
 <text x="496.9" y="376.5" font-size="11" fill="#9198a1">18%</text>
-<rect x="300" y="379" width="112.1" height="9" rx="1.5" fill="#4493f8"/>
-<line x1="386.3" y1="383.5" x2="444.3" y2="383.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
-<text x="450.3" y="387.5" font-size="11" fill="#9198a1">18%</text>
+<rect x="300" y="379" width="131.7" height="9" rx="1.5" fill="#4493f8"/>
+<line x1="405.8" y1="383.5" x2="461.9" y2="383.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="467.9" y="387.5" font-size="11" fill="#9198a1">21%</text>
 <text x="288.0" y="411.0" font-size="13.5" fill="#f0f6fc" text-anchor="end">向量库 / 搜索引擎</text>
 <rect x="300" y="398" width="110.9" height="9" rx="1.5" fill="#f0883e"/>
 <line x1="360.5" y1="402.5" x2="490.9" y2="402.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
 <text x="496.9" y="406.5" font-size="11" fill="#9198a1">18%</text>
-<rect x="300" y="409" width="84.4" height="9" rx="1.5" fill="#4493f8"/>
-<line x1="361.7" y1="413.5" x2="413.4" y2="413.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
-<text x="419.4" y="417.5" font-size="11" fill="#9198a1">13%</text>
+<rect x="300" y="409" width="92.0" height="9" rx="1.5" fill="#4493f8"/>
+<line x1="369.9" y1="413.5" x2="419.1" y2="413.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="425.1" y="417.5" font-size="11" fill="#9198a1">15%</text>
 <text x="288.0" y="441.0" font-size="13.5" fill="#f0f6fc" text-anchor="end">其他 Agent 框架 / SDK</text>
 <rect x="300" y="428" width="110.9" height="9" rx="1.5" fill="#f0883e"/>
 <line x1="360.5" y1="432.5" x2="490.9" y2="432.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
 <text x="496.9" y="436.5" font-size="11" fill="#9198a1">18%</text>
-<rect x="300" y="439" width="37.2" height="9" rx="1.5" fill="#4493f8"/>
-<line x1="323.3" y1="443.5" x2="359.2" y2="443.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
-<text x="365.2" y="447.5" font-size="11" fill="#9198a1">6%</text>
-<text x="288.0" y="471.0" font-size="13.5" fill="#f0f6fc" text-anchor="end">LlamaIndex</text>
-<rect x="300" y="458" width="98.9" height="9" rx="1.5" fill="#f0883e"/>
-<line x1="351.7" y1="462.5" x2="476.4" y2="462.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
-<text x="482.4" y="466.5" font-size="11" fill="#9198a1">16%</text>
-<rect x="300" y="469" width="12.0" height="9" rx="1.5" fill="#4493f8"/>
-<line x1="305.0" y1="473.5" x2="327.1" y2="473.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
-<text x="333.1" y="477.5" font-size="11" fill="#9198a1">2%</text>
-<text x="288.0" y="501.0" font-size="13.5" fill="#f0f6fc" text-anchor="end">推理框架（vLLM/SGLang 等）</text>
+<rect x="300" y="439" width="39.7" height="9" rx="1.5" fill="#4493f8"/>
+<line x1="325.8" y1="443.5" x2="360.5" y2="443.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="366.5" y="447.5" font-size="11" fill="#9198a1">6%</text>
+<text x="288.0" y="471.0" font-size="13.5" fill="#f0f6fc" text-anchor="end">SQL / 关系数据库</text>
+<rect x="300" y="458" width="74.3" height="9" rx="1.5" fill="#f0883e"/>
+<line x1="334.6" y1="462.5" x2="447.4" y2="462.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="453.4" y="466.5" font-size="11" fill="#9198a1">12%</text>
+<rect x="300" y="469" width="104.0" height="9" rx="1.5" fill="#4493f8"/>
+<line x1="380.6" y1="473.5" x2="431.7" y2="473.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="437.7" y="477.5" font-size="11" fill="#9198a1">16%</text>
+<text x="288.0" y="501.0" font-size="13.5" fill="#f0f6fc" text-anchor="end">LlamaIndex</text>
 <rect x="300" y="488" width="98.9" height="9" rx="1.5" fill="#f0883e"/>
 <line x1="351.7" y1="492.5" x2="476.4" y2="492.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
 <text x="482.4" y="496.5" font-size="11" fill="#9198a1">16%</text>
-<rect x="300" y="499" width="18.9" height="9" rx="1.5" fill="#4493f8"/>
-<line x1="309.4" y1="503.5" x2="336.5" y2="503.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
-<text x="342.5" y="507.5" font-size="11" fill="#9198a1">3%</text>
-<text x="288.0" y="531.0" font-size="13.5" fill="#f0f6fc" text-anchor="end">SQL / 关系数据库</text>
-<rect x="300" y="518" width="74.3" height="9" rx="1.5" fill="#f0883e"/>
-<line x1="334.6" y1="522.5" x2="447.4" y2="522.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
-<text x="453.4" y="526.5" font-size="11" fill="#9198a1">12%</text>
-<rect x="300" y="529" width="91.3" height="9" rx="1.5" fill="#4493f8"/>
-<line x1="368.0" y1="533.5" x2="421.0" y2="533.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
-<text x="427.0" y="537.5" font-size="11" fill="#9198a1">14%</text>
+<rect x="300" y="499" width="22.1" height="9" rx="1.5" fill="#4493f8"/>
+<line x1="312.6" y1="503.5" x2="338.4" y2="503.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="344.4" y="507.5" font-size="11" fill="#9198a1">4%</text>
+<text x="288.0" y="531.0" font-size="13.5" fill="#f0f6fc" text-anchor="end">推理框架（vLLM/SGLang 等）</text>
+<rect x="300" y="518" width="98.9" height="9" rx="1.5" fill="#f0883e"/>
+<line x1="351.7" y1="522.5" x2="476.4" y2="522.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="482.4" y="526.5" font-size="11" fill="#9198a1">16%</text>
+<rect x="300" y="529" width="22.1" height="9" rx="1.5" fill="#4493f8"/>
+<line x1="312.6" y1="533.5" x2="338.4" y2="533.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="344.4" y="537.5" font-size="11" fill="#9198a1">4%</text>
 <text x="288.0" y="561.0" font-size="13.5" fill="#f0f6fc" text-anchor="end">LangGraph</text>
 <rect x="300" y="548" width="86.3" height="9" rx="1.5" fill="#f0883e"/>
 <line x1="342.8" y1="552.5" x2="461.9" y2="552.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
 <text x="467.9" y="556.5" font-size="11" fill="#9198a1">14%</text>
-<rect x="300" y="559" width="42.2" height="9" rx="1.5" fill="#4493f8"/>
-<line x1="327.1" y1="563.5" x2="364.9" y2="563.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
-<text x="370.9" y="567.5" font-size="11" fill="#9198a1">7%</text>
+<rect x="300" y="559" width="47.9" height="9" rx="1.5" fill="#4493f8"/>
+<line x1="332.8" y1="563.5" x2="369.9" y2="563.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="375.9" y="567.5" font-size="11" fill="#9198a1">8%</text>
 <text x="288.0" y="591.0" font-size="13.5" fill="#f0f6fc" text-anchor="end">PyTorch / 深度学习框架</text>
 <rect x="300" y="578" width="86.3" height="9" rx="1.5" fill="#f0883e"/>
 <line x1="342.8" y1="582.5" x2="461.9" y2="582.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
 <text x="467.9" y="586.5" font-size="11" fill="#9198a1">14%</text>
-<rect x="300" y="589" width="37.2" height="9" rx="1.5" fill="#4493f8"/>
-<line x1="323.3" y1="593.5" x2="359.2" y2="593.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
-<text x="365.2" y="597.5" font-size="11" fill="#9198a1">6%</text>
+<rect x="300" y="589" width="47.9" height="9" rx="1.5" fill="#4493f8"/>
+<line x1="332.8" y1="593.5" x2="369.9" y2="593.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="375.9" y="597.5" font-size="11" fill="#9198a1">8%</text>
 <text x="288.0" y="621.0" font-size="13.5" fill="#f0f6fc" text-anchor="end">Dify / Coze / FastGPT</text>
 <rect x="300" y="608" width="74.3" height="9" rx="1.5" fill="#f0883e"/>
 <line x1="334.6" y1="612.5" x2="447.4" y2="612.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
 <text x="453.4" y="616.5" font-size="11" fill="#9198a1">12%</text>
 <rect x="300" y="619" width="1.0" height="9" rx="1.5" fill="#4493f8"/>
-<line x1="300.0" y1="623.5" x2="308.8" y2="623.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
-<text x="314.8" y="627.5" font-size="11" fill="#9198a1">0%</text>
+<line x1="300.0" y1="623.5" x2="307.6" y2="623.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="313.6" y="627.5" font-size="11" fill="#9198a1">0%</text>
 <text x="288.0" y="651.0" font-size="13.5" fill="#f0f6fc" text-anchor="end">观测/评测工具（Langfuse 等）</text>
 <rect x="300" y="638" width="12.6" height="9" rx="1.5" fill="#f0883e"/>
 <line x1="301.9" y1="642.5" x2="364.9" y2="642.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
 <text x="370.9" y="646.5" font-size="11" fill="#9198a1">2%</text>
-<rect x="300" y="649" width="42.2" height="9" rx="1.5" fill="#4493f8"/>
-<line x1="327.1" y1="653.5" x2="364.9" y2="653.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
-<text x="370.9" y="657.5" font-size="11" fill="#9198a1">7%</text>
+<rect x="300" y="649" width="49.8" height="9" rx="1.5" fill="#4493f8"/>
+<line x1="334.0" y1="653.5" x2="371.8" y2="653.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="377.8" y="657.5" font-size="11" fill="#9198a1">8%</text>
 <text x="288.0" y="681.0" font-size="13.5" fill="#f0f6fc" text-anchor="end">Hugging Face</text>
 <rect x="300" y="668" width="12.6" height="9" rx="1.5" fill="#f0883e"/>
 <line x1="301.9" y1="672.5" x2="364.9" y2="672.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
 <text x="370.9" y="676.5" font-size="11" fill="#9198a1">2%</text>
-<rect x="300" y="679" width="23.3" height="9" rx="1.5" fill="#4493f8"/>
-<line x1="312.6" y1="683.5" x2="342.2" y2="683.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
-<text x="348.2" y="687.5" font-size="11" fill="#9198a1">4%</text>
+<rect x="300" y="679" width="23.9" height="9" rx="1.5" fill="#4493f8"/>
+<line x1="313.9" y1="683.5" x2="340.9" y2="683.5" stroke="#f0f6fc" stroke-opacity="0.55" stroke-width="1.2"/>
+<text x="346.9" y="687.5" font-size="11" fill="#9198a1">4%</text>
 <text x="24.0" y="744.0" font-size="12" fill="#9198a1">统计单位：提到该项的 JD 占比（含必需与加分项）· 中国为人工复核样本；北美含人工复核与规则筛选样本 · 规则见 research/skill-terms.json</text>
 </svg>

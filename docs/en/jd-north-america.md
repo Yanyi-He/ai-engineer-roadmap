@@ -2,7 +2,7 @@
 
 [Methods](market-research.md) · [Overview](role-overview.md)
 
-This page lists the 53 hand-reviewed descriptions (25 employers; 43 US and 10 Canadian). Another 216 rule-screened North American descriptions are in [jds.json](../../research/jds.json) (`sample` is `v4-rule-screened`); combined statistics are in the [role overview](role-overview.md). Product, platform and customer-delivery work differ; inspect country results separately.
+This page lists the 53 hand-reviewed descriptions (25 employers; 43 US and 10 Canadian). Another 263 rule-screened North American descriptions are in [jds.json](../../research/jds.json) (`sample` is `v4-rule-screened`, or `v5-canada` for the Canada expansion); combined statistics are in the [role overview](role-overview.md). Product, platform and customer-delivery work differ; inspect country results separately.
 
 ## All keyword categories
 

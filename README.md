@@ -2,7 +2,7 @@
 
 [中文](README.zh-CN.md) · English
 
-**Become an AI Engineer: what to learn, in what order and how to prove it, built from 320 job descriptions in China and North America.**
+**Become an AI Engineer: what to learn, in what order and how to prove it, built from 367 job descriptions in China and North America.**
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/overview/roadmap-en-dark.svg">
@@ -22,14 +22,14 @@ Each of the 126 units has a knowledge outline, a target depth (explain, implemen
 
 ## What makes it different
 
-- **Built from hiring evidence, not a tool list.** In 51 Chinese and 269 North American AI-engineering job descriptions, shipping to production appears in 86% and 90%, and evaluation in 53% and 67%; fine-tuning appears in only 31% and 18%. The markets also differ: Java/Spring appears in 47% of Chinese descriptions and 10% of North American ones. See the [charts, intervals and enterprise cases](docs/en/role-overview.md).
+- **Built from hiring evidence, not a tool list.** In 51 Chinese and 316 North American AI-engineering job descriptions, shipping to production appears in 86% and 90%, and evaluation in 53% and 67%; fine-tuning appears in only 31% and 18%. The markets also differ: Java/Spring appears in 47% of Chinese descriptions and 10% of North American ones. See the [charts, intervals and enterprise cases](docs/en/role-overview.md).
 - **Prerequisites at the unit level.** You can ship a model API service and a framework-free agent before studying transformer internals. Each route expands only the prerequisites its project needs.
 - **Free readings with a scope.** All 181 resources are link-checked, and each unit names the chapters or sections to read and why that source was chosen.
 - **Evidence you can show.** 17 labs, 4 capstones, an exit-assessment rubric and 378 self-check questions turn reading into work an interviewer can inspect.
 
 ## All pages
 
-1. [Roles and hiring](docs/en/role-overview.md): 320 descriptions analyzed by market, enterprise JD cases and verifiable public indicators.
+1. [Roles and hiring](docs/en/role-overview.md): 367 descriptions analyzed by market (80 Canadian), enterprise JD cases and verifiable data such as official Canadian quarterly vacancies.
 2. [Diagnostic](docs/en/entry-diagnostic.md) → [learning path](docs/en/learning-path.md) → [dependencies](docs/en/dependency-order.md).
 3. [Knowledge tree](docs/en/knowledge-tree.md): 17 modules, 126 units, 698 topic branches.
 4. [Self-check question bank](docs/en/self-check.md): 378 interview-style questions, three per unit, for finding gaps before interviews.
@@ -241,6 +241,6 @@ python3 -B scripts/validate.py
 
 ## Research and contribution
 
-[Hiring methods](docs/en/market-research.md) analyze 51 Chinese and 269 North American descriptions: 104 reviewed by hand and 216 rule-screened from public job-board APIs. Market charts keep only occupation-defined series. Missing national historical active totals remain empty; see the [overview](docs/en/role-overview.md).
+[Hiring methods](docs/en/market-research.md) analyze 51 Chinese and 316 North American descriptions: 104 reviewed by hand and 263 rule-screened from public job-board APIs and employer career pages. Market charts keep only occupation-defined series. Missing national historical active totals remain empty; see the [overview](docs/en/role-overview.md).
 
 Contribute reproducible failures, curriculum improvements, experiments or resource updates through the [contribution guide](CONTRIBUTING.md). Outcomes are assessed with projects and independent review; learner employment outcomes have not yet been studied. Original repository material uses MIT. External materials retain their own licenses.

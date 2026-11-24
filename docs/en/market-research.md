@@ -4,15 +4,16 @@ The [role overview](role-overview.md) connects the work to learning. This page d
 
 ## Cohort
 
-There are 320 application/systems AIE descriptions from 93 employers:
+There are 367 application/systems AIE descriptions from 116 employers:
 
 | Subsample | Descriptions | Employers | Collection |
 |---|---:|---:|---|
 | China, reviewed | 51 | 18 | Employer APIs 16, employer pages 10, university-hosted employer text 10, traceable reposts 15; role-text bounds reviewed one by one |
 | North America, reviewed | 53 | 25 | Employer APIs 50, employer pages 3; role-text bounds reviewed one by one |
 | North America, rule-screened | 216 | 67 | Documented public job-board APIs of Greenhouse, Ashby and Lever; rule-based role-text bounds |
+| Canada expansion | 47 | 27 | Public job-board APIs 38, employer career pages 7, job-board reposts 2 (one closed at collection); same inclusion rules, at most six Canadian postings per employer |
 
-North America totals 269 descriptions from 75 employers: 236 US and 33 Canadian. By sector: AI-native 122, enterprise software 63, fintech 32, internet 26, developer tools 14, health 7, industrial tech 4, retail 1. China has 36 internet roles among 51, including 16 from Tencent.
+North America totals 316 descriptions from 98 employers: 236 US and 80 Canadian (43 employers). By sector: AI-native 134, enterprise software 82, fintech 36, internet 30, developer tools 14, health 10, industrial tech 6, banking and asset management 2, telecom 1, retail 1. China has 36 internet roles among 51, including 16 from Tencent.
 
 **Inclusion rules for the rule-screened sample** (23 November 2026):
 
@@ -42,11 +43,11 @@ Seniority comes only from explicit title labels; unmarked roles stay unspecified
 | Level | China | North America |
 |---|---:|---:|
 | Intern | 1 | 4 |
-| Entry / new grad | 3 | 6 |
-| Senior | 4 | 51 |
-| Staff and above | 0 | 73 |
-| Lead / architect / expert | 6 | 22 |
-| Unspecified | 37 | 113 |
+| Entry / new grad | 3 | 7 |
+| Senior | 4 | 64 |
+| Staff and above | 0 | 85 |
+| Lead / architect / expert | 6 | 23 |
+| Unspecified | 37 | 133 |
 
 The table describes the sample, not national shares of junior or senior roles. Staff-and-above titles are common on North American public job boards, consistent with Hiring Lab's finding that the software-development rebound came mainly from senior roles.
 

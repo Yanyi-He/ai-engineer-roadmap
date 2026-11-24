@@ -118,7 +118,7 @@ for job in jobs:
     check(job['country'] in ['CN','US','CA'], f'Unknown country: {tag}')
     check(job['market'] == ('CN' if job['country']=='CN' else 'NA'), f'Market mismatch: {tag}')
     check(job['source_grade'] in ['A1-employer-api','A1-employer','A2-university-hosted','B1-syndicated-employer'], f'Source grade: {tag}')
-    check(job['active_status'] in ['listed-at-collection','description-accessible-opening-unverified'], f'Unqualified status: {tag}')
+    check(job['active_status'] in ['listed-at-collection','description-accessible-opening-unverified','closed-at-collection'], f'Unqualified status: {tag}')
     check(bool(re.fullmatch('[a-f0-9]{64}', job['body_sha256'])), f'Invalid hash: {tag}')
     check(set(job['features']) == set(codebook), f'Feature coverage: {tag}')
     check(all(type(v) is bool for v in job['features'].values()), f'Non-boolean feature: {tag}')
@@ -136,12 +136,14 @@ skill_terms = read_json('research/skill-terms.json')['terms']
 skill_keys = {t['key'] for t in skill_terms}
 check(len(skill_keys) == len(skill_terms) and all(t['group'] in ['tech_stack','role_expectations'] and t['zh'] and t['en'] for t in skill_terms), 'Skill term definitions')
 for job in jobs:
-    check(job.get('sample') in ['v3-reviewed','v4-rule-screened'], f'Unknown sample: {job["jd_id"]}')
+    check(job.get('sample') in ['v3-reviewed','v4-rule-screened','v5-canada'], f'Unknown sample: {job["jd_id"]}')
     check(set(job.get('features_v2',{})) == skill_keys and all(type(v) is bool for v in job.get('features_v2',{}).values()), f'Skill-term coverage: {job["jd_id"]}')
     if job.get('sample') == 'v4-rule-screened':
         check(job['source_grade'] == 'A1-employer-api' and job['market'] == 'NA', f'Rule-screened provenance: {job["jd_id"]}')
+    if job.get('sample') == 'v5-canada':
+        check(job['country'] == 'CA', f'Canada expansion country: {job["jd_id"]}')
 for row in read_csv('research/skill-distribution.csv'):
-    sample = [j for j in jobs if j['market']==row['market'] and (row['sample']=='all' or j.get('sample')==row['sample'])]
+    sample = [j for j in jobs if row['market'] in (j['market'], j['country']) and (row['sample']=='all' or j.get('sample')==row['sample'])]
     count = sum(j['features_v2'][row['key']] for j in sample)
     check(int(row['n']) == len(sample) and int(row['count']) == count, f'Skill distribution mismatch: {row["market"]}/{row["sample"]}/{row["key"]}')
     check(float(row['ci95_low']) <= float(row['pct']) <= float(row['ci95_high']), f'Interval does not contain share: {row["key"]}')

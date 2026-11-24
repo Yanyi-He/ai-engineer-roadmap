@@ -9,8 +9,8 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'assets/research'
 FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif"
 THEMES = {
-    'light': {'text': '#1f2328', 'muted': '#59636e', 'grid': '#e5e7eb', 'axis': '#d0d7de', 'CN': '#c2552d', 'NA': '#3b62b3', 'US': '#3b62b3', 'CA': '#14817c', 'band': '#f3f4f6'},
-    'dark': {'text': '#f0f6fc', 'muted': '#9198a1', 'grid': '#262c36', 'axis': '#3d444d', 'CN': '#f0883e', 'NA': '#4493f8', 'US': '#4493f8', 'CA': '#39c5cf', 'band': '#161b22'},
+    'light': {'text': '#1f2328', 'muted': '#59636e', 'grid': '#e5e7eb', 'axis': '#d0d7de', 'CN': '#c2552d', 'NA': '#3b62b3', 'US': '#3b62b3', 'CA': '#14817c', 'band': '#f3f4f6', 's1': '#3b62b3', 's2': '#14817c', 's3': '#c2552d', 's4': '#8250df'},
+    'dark': {'text': '#f0f6fc', 'muted': '#9198a1', 'grid': '#262c36', 'axis': '#3d444d', 'CN': '#f0883e', 'NA': '#4493f8', 'US': '#4493f8', 'CA': '#39c5cf', 'band': '#161b22', 's1': '#4493f8', 's2': '#39c5cf', 's3': '#f0883e', 's4': '#ab7df8'},
 }
 
 
@@ -72,24 +72,27 @@ def skill_chart(group, lang, theme, terms, rows, meta):
     return wrap_svg(W, h, title, desc, body)
 
 
-def line_chart(lang, theme, series, quarters, title, ylabel, foot, zero_line=False):
+def line_chart(lang, theme, series, quarters, title, ylabel, foot, zero_line=False, partial=True):
     th, zh = THEMES[theme], lang == 'zh'
     W, H, left, right, top, bottom = 1000, 380, 80, 40, 80, 70
     vals = [v for s in series for v in s['values'] if v is not None]
     lo, hi = min(vals + ([0] if zero_line else [])), max(vals)
-    step = next(s for s in [1, 2, 2.5, 5, 10, 20, 25, 50, 100] if (hi - lo) / s <= 6)
+    step = next(s for s in [1, 2, 2.5, 5, 10, 20, 25, 50, 100, 200, 250, 500, 1000, 2000, 2500, 5000] if (hi - lo) / s <= 6)
     lo, hi = step * math.floor(lo / step - 0.3), step * math.ceil(hi / step + 0.3)
+    if min(vals) >= 0 and not zero_line:
+        lo = max(lo, 0)
     steps = round((hi - lo) / step)
     pw, ph = W - left - right, H - top - bottom
     x = lambda i: left + pw * (i + 0.5) / len(quarters)
     y = lambda v: top + ph * (hi - v) / (hi - lo)
     body = [t(24, 34, title, 19, th['text'], weight='700')]
-    body.append(f'<rect x="{x(len(quarters) - 1) - pw / len(quarters) / 2:.1f}" y="{top}" width="{pw / len(quarters):.1f}" height="{ph}" fill="{th["band"]}"/>')
-    body.append(t(x(len(quarters) - 1), top + 16, '部分季度' if zh else 'partial', 11, th['muted'], anchor='middle'))
+    if partial:
+        body.append(f'<rect x="{x(len(quarters) - 1) - pw / len(quarters) / 2:.1f}" y="{top}" width="{pw / len(quarters):.1f}" height="{ph}" fill="{th["band"]}"/>')
+        body.append(t(x(len(quarters) - 1), top + 16, '部分季度' if zh else 'partial', 11, th['muted'], anchor='middle'))
     for s in range(steps + 1):
         v = lo + (hi - lo) * s / steps
         body.append(f'<line x1="{left}" y1="{y(v):.1f}" x2="{W - right}" y2="{y(v):.1f}" stroke="{th["grid"]}"/>')
-        body.append(t(left - 10, y(v) + 4, f'{v:.0f}', 11.5, th['muted'], anchor='end'))
+        body.append(t(left - 10, y(v) + 4, f'{v:,.0f}', 11.5, th['muted'], anchor='end'))
     if zero_line and lo < 0 < hi:
         body.append(f'<line x1="{left}" y1="{y(0):.1f}" x2="{W - right}" y2="{y(0):.1f}" stroke="{th["axis"]}" stroke-width="1.5"/>')
     for i, q in enumerate(quarters):
@@ -97,15 +100,15 @@ def line_chart(lang, theme, series, quarters, title, ylabel, foot, zero_line=Fal
     body.append(f'<text transform="translate(22 {top + ph / 2:.0f}) rotate(-90)" font-size="12" fill="{th["muted"]}" text-anchor="middle">{escape(ylabel)}</text>')
     lx = left
     for s in series:
-        c = th[s['country']]
+        c = th[s.get('color', s.get('country'))]
         pts = [(x(i), y(v)) for i, v in enumerate(s['values']) if v is not None]
         body.append(f'<polyline points="{" ".join(f"{a:.1f},{b:.1f}" for a, b in pts)}" fill="none" stroke="{c}" stroke-width="2.4" stroke-linejoin="round"/>')
         body += [f'<circle cx="{a:.1f}" cy="{b:.1f}" r="3.6" fill="{c}"/>' for a, b in pts]
         last = pts[-1]
-        body.append(t(last[0] + 8, last[1] + 4, f'{s["values"][-1]:.1f}', 11.5, c, weight='600'))
+        body.append(t(last[0] + 8, last[1] + 4, f'{s["values"][-1]:,.0f}' if s['values'][-1] >= 100 else f'{s["values"][-1]:.1f}', 11.5, c, weight='600'))
         body.append(f'<rect x="{lx}" y="50" width="14" height="10" rx="2" fill="{c}"/>')
         body.append(t(lx + 20, 59, s['label'], 13, th['muted']))
-        lx += 150
+        lx += max(150, int(len(s['label']) * (13 if zh else 7.4)) + 40)
     body.append(t(24, H - 18, foot, 12, th['muted']))
     return wrap_svg(W, H, title, title, body)
 
@@ -226,12 +229,68 @@ def render_enterprise_tables():
         replace_block(ROOT / f'docs/{lang}/role-overview.md', 'EMPLOYER-SPLIT', rows)
 
 
+def render_canada_vacancies():
+    rows = list(csv.DictReader((ROOT / 'research/market/statcan-tech-vacancies.csv').open()))
+    quarters = sorted({r['quarter'] for r in rows})
+    occ = [('Computer, software and Web designers and developers (2123)', 's1', '软件、计算机与 Web 开发（2123 大组）', 'Software & web devs (2123)'),
+           ('Software engineers and designers (21231)', 's2', '软件工程师（21231）', 'Software engineers (21231)'),
+           ('Software developers and programmers (21232)', 's3', '软件开发与程序员（21232）', 'Software developers (21232)'),
+           ('Data scientists (21211)', 's4', '数据科学家（21211）', 'Data scientists (21211)')]
+    for lang in ['zh', 'en']:
+        zh = lang == 'zh'
+        series = []
+        for name, color, lzh, len_ in occ:
+            # Points graded D (acceptable) or worse are left out of the chart; the CSV keeps them.
+            sub = {r['quarter']: float(r['job_vacancies']) for r in rows if r['occupation'] == name and r['job_vacancies'] and r['quality'] in 'ABC'}
+            series.append({'color': color, 'label': lzh if zh else len_, 'values': [sub.get(q) for q in quarters]})
+        title = '加拿大科技职业职位空缺（季度，官方统计）' if zh else 'Canadian job vacancies in tech occupations (quarterly, official)'
+        foot = ('来源：Statistics Canada 表 14-10-0444-01（职位空缺与工资调查），未季节调整；只画质量等级 A–C 的数据点' if zh else
+                'Source: Statistics Canada Table 14-10-0444-01 (Job Vacancy and Wage Survey), unadjusted; only points graded A–C are plotted')
+        for theme in THEMES:
+            (OUT / f'market-canada-vacancies-{lang}-{theme}.svg').write_text(
+                line_chart(lang, theme, series, [q.replace('Q', ' Q') for q in quarters], title, '职位空缺' if zh else 'Vacancies', foot, partial=False))
+
+
+def render_canada_tables():
+    terms = {t['key']: t for t in json.loads((ROOT / 'research/skill-terms.json').read_text())['terms']}
+    rows = {(r['key'], r['market']): r for r in csv.DictReader((ROOT / 'research/skill-distribution.csv').open()) if r['sample'] == 'all'}
+    cell = lambda r: f"{float(r['pct']):.0f}% [{float(r['ci95_low']):.0f}–{float(r['ci95_high']):.0f}]"
+    diff = lambda k: float(rows[(k, 'CA')]['pct']) - float(rows[(k, 'US')]['pct'])
+    keys = sorted(terms, key=diff, reverse=True)
+    picked = [k for k in keys if diff(k) >= 8] + [k for k in ['evaluation', 'production', 'fine_tuning'] if abs(diff(k)) < 8]
+    jobs = json.loads((ROOT / 'research/jds.json').read_text())
+    n_emp = len({r['company'] for r in jobs if r['country'] == 'CA'})
+    vac = list(csv.DictReader((ROOT / 'research/market/statcan-tech-vacancies.csv').open()))
+    quarters = ['2023Q1'] + [q for q in sorted({r['quarter'] for r in vac}) if q >= '2025Q1']
+    occ = [('Computer, software and Web designers and developers (2123)', '软件、计算机与 Web 开发（2123 大组）'), ('Software engineers and designers (21231)', '软件工程师（21231）'),
+           ('Software developers and programmers (21232)', '软件开发与程序员（21232）'), ('Data scientists (21211)', '数据科学家（21211）'), ('Total, all occupations', '全部职业')]
+    for lang in ['zh', 'en']:
+        zh = lang == 'zh'
+        n_ca, n_us = rows[('python', 'CA')]['n'], rows[('python', 'US')]['n']
+        head = (f'| 技能或期望 | 加拿大 n={n_ca}（{n_emp} 家雇主） | 美国 n={n_us} |' if zh else f'| Skill or expectation | Canada n={n_ca} ({n_emp} employers) | United States n={n_us} |')
+        lines = [head, '|---|---:|---:|'] + [f"| {terms[k][lang]} | {cell(rows[(k, 'CA')])} | {cell(rows[(k, 'US')])} |" for k in picked]
+        replace_block(ROOT / f'docs/{lang}/role-overview.md', 'CANADA-SPLIT', lines)
+        head = '| ' + ('职业（NOC 2021）' if zh else 'Occupation (NOC 2021)') + ' | ' + ' | '.join(quarters) + ' |'
+        vlines = [head, '|---|' + '---:|' * len(quarters)]
+        for name, name_zh in occ:
+            sub = {r['quarter']: r for r in vac if r['occupation'] == name}
+            cells = []
+            for q in quarters:
+                r = sub.get(q)
+                cells.append(f"{int(r['job_vacancies']):,}" if r and r['job_vacancies'] and r['quality'] in 'ABC' else '—')
+            vlines.append(f"| {name_zh if zh else name} | " + ' | '.join(cells) + ' |')
+        vlines += ['', ('“—”表示数据质量低于 C 级，未列出。' if zh else '"—" marks values graded below C, which are not shown.')]
+        replace_block(ROOT / f'docs/{lang}/role-overview.md', 'CANADA-VACANCIES', vlines)
+
+
 def render_charts():
     OUT.mkdir(parents=True, exist_ok=True)
     render_skill_charts()
     render_market_charts()
+    render_canada_vacancies()
     render_skill_tables()
     render_enterprise_tables()
+    render_canada_tables()
 
 
 if __name__ == '__main__':

@@ -1,0 +1,169 @@
+geography,occupation,quarter,job_vacancies,quality,vector
+Canada,Computer and information systems managers (20012),2023Q1,995,E,1569792838
+Canada,Computer and information systems managers (20012),2023Q2,505,C,1569792838
+Canada,Computer and information systems managers (20012),2023Q3,485,C,1569792838
+Canada,Computer and information systems managers (20012),2023Q4,565,C,1569792838
+Canada,Computer and information systems managers (20012),2024Q1,540,C,1569792838
+Canada,Computer and information systems managers (20012),2024Q2,580,C,1569792838
+Canada,Computer and information systems managers (20012),2024Q3,550,C,1569792838
+Canada,Computer and information systems managers (20012),2024Q4,425,B,1569792838
+Canada,Computer and information systems managers (20012),2025Q1,535,D,1569792838
+Canada,Computer and information systems managers (20012),2025Q2,390,B,1569792838
+Canada,Computer and information systems managers (20012),2025Q3,575,C,1569792838
+Canada,Computer and information systems managers (20012),2025Q4,415,B,1569792838
+Canada,Computer and information systems managers (20012),2026Q1,545,D,1569792838
+Canada,Computer and information systems managers (20012),2026Q2,415,C,1569792838
+Canada,Computer and information systems professionals (2122),2023Q1,9285,A,1569792370
+Canada,Computer and information systems professionals (2122),2023Q2,8625,A,1569792370
+Canada,Computer and information systems professionals (2122),2023Q3,7245,A,1569792370
+Canada,Computer and information systems professionals (2122),2023Q4,5885,B,1569792370
+Canada,Computer and information systems professionals (2122),2024Q1,5915,B,1569792370
+Canada,Computer and information systems professionals (2122),2024Q2,5225,B,1569792370
+Canada,Computer and information systems professionals (2122),2024Q3,5225,B,1569792370
+Canada,Computer and information systems professionals (2122),2024Q4,5005,B,1569792370
+Canada,Computer and information systems professionals (2122),2025Q1,4805,A,1569792370
+Canada,Computer and information systems professionals (2122),2025Q2,5525,B,1569792370
+Canada,Computer and information systems professionals (2122),2025Q3,4525,A,1569792370
+Canada,Computer and information systems professionals (2122),2025Q4,4760,B,1569792370
+Canada,Computer and information systems professionals (2122),2026Q1,5235,B,1569792370
+Canada,Computer and information systems professionals (2122),2026Q2,5480,B,1569792370
+Canada,Computer engineers (21311),2023Q1,510,D,1569792830
+Canada,Computer engineers (21311),2023Q2,600,D,1569792830
+Canada,Computer engineers (21311),2023Q3,385,E,1569792830
+Canada,Computer engineers (21311),2023Q4,870,D,1569792830
+Canada,Computer engineers (21311),2024Q1,910,D,1569792830
+Canada,Computer engineers (21311),2024Q2,750,D,1569792830
+Canada,Computer engineers (21311),2024Q3,910,D,1569792830
+Canada,Computer engineers (21311),2024Q4,900,D,1569792830
+Canada,Computer engineers (21311),2025Q1,735,C,1569792830
+Canada,Computer engineers (21311),2025Q2,770,D,1569792830
+Canada,Computer engineers (21311),2025Q3,710,D,1569792830
+Canada,Computer engineers (21311),2025Q4,625,C,1569792830
+Canada,Computer engineers (21311),2026Q1,665,C,1569792830
+Canada,Computer engineers (21311),2026Q2,380,D,1569792830
+Canada,Computer systems developers and programmers (21230),2023Q1,460,C,1569792814
+Canada,Computer systems developers and programmers (21230),2023Q2,530,D,1569792814
+Canada,Computer systems developers and programmers (21230),2023Q3,380,E,1569792814
+Canada,Computer systems developers and programmers (21230),2023Q4,695,D,1569792814
+Canada,Computer systems developers and programmers (21230),2024Q1,660,C,1569792814
+Canada,Computer systems developers and programmers (21230),2024Q2,450,B,1569792814
+Canada,Computer systems developers and programmers (21230),2024Q3,470,B,1569792814
+Canada,Computer systems developers and programmers (21230),2024Q4,465,B,1569792814
+Canada,Computer systems developers and programmers (21230),2025Q1,445,B,1569792814
+Canada,Computer systems developers and programmers (21230),2025Q2,615,C,1569792814
+Canada,Computer systems developers and programmers (21230),2025Q3,455,B,1569792814
+Canada,Computer systems developers and programmers (21230),2025Q4,525,B,1569792814
+Canada,Computer systems developers and programmers (21230),2026Q1,540,C,1569792814
+Canada,Computer systems developers and programmers (21230),2026Q2,525,C,1569792814
+Canada,"Computer, software and Web designers and developers (2123)",2023Q1,11315,A,1569792372
+Canada,"Computer, software and Web designers and developers (2123)",2023Q2,10560,B,1569792372
+Canada,"Computer, software and Web designers and developers (2123)",2023Q3,7590,B,1569792372
+Canada,"Computer, software and Web designers and developers (2123)",2023Q4,7825,B,1569792372
+Canada,"Computer, software and Web designers and developers (2123)",2024Q1,8115,B,1569792372
+Canada,"Computer, software and Web designers and developers (2123)",2024Q2,6490,B,1569792372
+Canada,"Computer, software and Web designers and developers (2123)",2024Q3,7060,B,1569792372
+Canada,"Computer, software and Web designers and developers (2123)",2024Q4,7205,B,1569792372
+Canada,"Computer, software and Web designers and developers (2123)",2025Q1,6735,B,1569792372
+Canada,"Computer, software and Web designers and developers (2123)",2025Q2,6765,B,1569792372
+Canada,"Computer, software and Web designers and developers (2123)",2025Q3,7050,B,1569792372
+Canada,"Computer, software and Web designers and developers (2123)",2025Q4,6700,B,1569792372
+Canada,"Computer, software and Web designers and developers (2123)",2026Q1,6855,B,1569792372
+Canada,"Computer, software and Web designers and developers (2123)",2026Q2,6915,B,1569792372
+Canada,Cybersecurity specialists (21220),2023Q1,1865,C,1569792822
+Canada,Cybersecurity specialists (21220),2023Q2,1760,C,1569792822
+Canada,Cybersecurity specialists (21220),2023Q3,1345,C,1569792822
+Canada,Cybersecurity specialists (21220),2023Q4,695,D,1569792822
+Canada,Cybersecurity specialists (21220),2024Q1,510,D,1569792822
+Canada,Cybersecurity specialists (21220),2024Q2,390,D,1569792822
+Canada,Cybersecurity specialists (21220),2024Q3,390,D,1569792822
+Canada,Cybersecurity specialists (21220),2024Q4,270,C,1569792822
+Canada,Cybersecurity specialists (21220),2025Q1,370,D,1569792822
+Canada,Cybersecurity specialists (21220),2025Q2,425,D,1569792822
+Canada,Cybersecurity specialists (21220),2025Q3,315,D,1569792822
+Canada,Cybersecurity specialists (21220),2025Q4,445,D,1569792822
+Canada,Cybersecurity specialists (21220),2026Q1,300,D,1569792822
+Canada,Cybersecurity specialists (21220),2026Q2,285,D,1569792822
+Canada,Data scientists (21211),2023Q1,6375,A,1569792818
+Canada,Data scientists (21211),2023Q2,5935,A,1569792818
+Canada,Data scientists (21211),2023Q3,4860,B,1569792818
+Canada,Data scientists (21211),2023Q4,3430,B,1569792818
+Canada,Data scientists (21211),2024Q1,3485,B,1569792818
+Canada,Data scientists (21211),2024Q2,3005,B,1569792818
+Canada,Data scientists (21211),2024Q3,3045,B,1569792818
+Canada,Data scientists (21211),2024Q4,2680,B,1569792818
+Canada,Data scientists (21211),2025Q1,2505,B,1569792818
+Canada,Data scientists (21211),2025Q2,2865,B,1569792818
+Canada,Data scientists (21211),2025Q3,2670,B,1569792818
+Canada,Data scientists (21211),2025Q4,2430,C,1569792818
+Canada,Data scientists (21211),2026Q1,2710,B,1569792818
+Canada,Data scientists (21211),2026Q2,2910,B,1569792818
+Canada,Information systems specialists (21222),2023Q1,4300,B,1569792824
+Canada,Information systems specialists (21222),2023Q2,4415,C,1569792824
+Canada,Information systems specialists (21222),2023Q3,2590,B,1569792824
+Canada,Information systems specialists (21222),2023Q4,2545,B,1569792824
+Canada,Information systems specialists (21222),2024Q1,3180,D,1569792824
+Canada,Information systems specialists (21222),2024Q2,2415,C,1569792824
+Canada,Information systems specialists (21222),2024Q3,2805,B,1569792824
+Canada,Information systems specialists (21222),2024Q4,2815,B,1569792824
+Canada,Information systems specialists (21222),2025Q1,2885,B,1569792824
+Canada,Information systems specialists (21222),2025Q2,2910,B,1569792824
+Canada,Information systems specialists (21222),2025Q3,3110,C,1569792824
+Canada,Information systems specialists (21222),2025Q4,2885,B,1569792824
+Canada,Information systems specialists (21222),2026Q1,3105,B,1569792824
+Canada,Information systems specialists (21222),2026Q2,2625,B,1569792824
+Canada,Software developers and programmers (21232),2023Q1,50,E,1569792812
+Canada,Software developers and programmers (21232),2023Q2,60,D,1569792812
+Canada,Software developers and programmers (21232),2023Q3,25,D,1569792812
+Canada,Software developers and programmers (21232),2023Q4,770,C,1569792812
+Canada,Software developers and programmers (21232),2024Q1,1135,C,1569792812
+Canada,Software developers and programmers (21232),2024Q2,1095,B,1569792812
+Canada,Software developers and programmers (21232),2024Q3,1105,C,1569792812
+Canada,Software developers and programmers (21232),2024Q4,1075,B,1569792812
+Canada,Software developers and programmers (21232),2025Q1,1320,B,1569792812
+Canada,Software developers and programmers (21232),2025Q2,1250,B,1569792812
+Canada,Software developers and programmers (21232),2025Q3,1165,B,1569792812
+Canada,Software developers and programmers (21232),2025Q4,1620,C,1569792812
+Canada,Software developers and programmers (21232),2026Q1,1470,B,1569792812
+Canada,Software developers and programmers (21232),2026Q2,1435,B,1569792812
+Canada,Software engineers and designers (21231),2023Q1,2205,B,1569792782
+Canada,Software engineers and designers (21231),2023Q2,2305,B,1569792782
+Canada,Software engineers and designers (21231),2023Q3,1740,B,1569792782
+Canada,Software engineers and designers (21231),2023Q4,1495,B,1569792782
+Canada,Software engineers and designers (21231),2024Q1,1490,B,1569792782
+Canada,Software engineers and designers (21231),2024Q2,1485,B,1569792782
+Canada,Software engineers and designers (21231),2024Q3,1805,B,1569792782
+Canada,Software engineers and designers (21231),2024Q4,1770,B,1569792782
+Canada,Software engineers and designers (21231),2025Q1,2055,B,1569792782
+Canada,Software engineers and designers (21231),2025Q2,1765,B,1569792782
+Canada,Software engineers and designers (21231),2025Q3,1870,B,1569792782
+Canada,Software engineers and designers (21231),2025Q4,1995,B,1569792782
+Canada,Software engineers and designers (21231),2026Q1,1870,B,1569792782
+Canada,Software engineers and designers (21231),2026Q2,2170,B,1569792782
+Canada,"Total, all occupations",2023Q1,781250,A,1569792030
+Canada,"Total, all occupations",2023Q2,818135,A,1569792030
+Canada,"Total, all occupations",2023Q3,737555,A,1569792030
+Canada,"Total, all occupations",2023Q4,646365,A,1569792030
+Canada,"Total, all occupations",2024Q1,601755,A,1569792030
+Canada,"Total, all occupations",2024Q2,621085,A,1569792030
+Canada,"Total, all occupations",2024Q3,572350,A,1569792030
+Canada,"Total, all occupations",2024Q4,517570,A,1569792030
+Canada,"Total, all occupations",2025Q1,490170,A,1569792030
+Canada,"Total, all occupations",2025Q2,545910,A,1569792030
+Canada,"Total, all occupations",2025Q3,514465,A,1569792030
+Canada,"Total, all occupations",2025Q4,469840,A,1569792030
+Canada,"Total, all occupations",2026Q1,473035,A,1569792030
+Canada,"Total, all occupations",2026Q2,548400,A,1569792030
+Canada,Web developers and programmers (21234),2023Q1,4385,B,1569792826
+Canada,Web developers and programmers (21234),2023Q2,3640,B,1569792826
+Canada,Web developers and programmers (21234),2023Q3,3025,B,1569792826
+Canada,Web developers and programmers (21234),2023Q4,3590,B,1569792826
+Canada,Web developers and programmers (21234),2024Q1,3355,B,1569792826
+Canada,Web developers and programmers (21234),2024Q2,2785,B,1569792826
+Canada,Web developers and programmers (21234),2024Q3,2890,C,1569792826
+Canada,Web developers and programmers (21234),2024Q4,3200,B,1569792826
+Canada,Web developers and programmers (21234),2025Q1,2695,B,1569792826
+Canada,Web developers and programmers (21234),2025Q2,2620,B,1569792826
+Canada,Web developers and programmers (21234),2025Q3,2825,B,1569792826
+Canada,Web developers and programmers (21234),2025Q4,2610,B,1569792826
+Canada,Web developers and programmers (21234),2026Q1,2725,B,1569792826
+Canada,Web developers and programmers (21234),2026Q2,3545,B,1569792826

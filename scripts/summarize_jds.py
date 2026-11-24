@@ -11,7 +11,7 @@ def wilson(k,n,z=1.96):
 def write_skill_distribution(rows):
  # Stricter v2 terms; Wilson 95% intervals; employer-balanced share gives each employer equal weight.
  terms=json.loads((ROOT/'research/skill-terms.json').read_text())['terms'];out=[]
- cohorts=[('CN','all',[r for r in rows if r['market']=='CN']),('NA','all',[r for r in rows if r['market']=='NA']),('NA','v3-reviewed',[r for r in rows if r['market']=='NA' and r.get('sample')=='v3-reviewed']),('NA','v4-rule-screened',[r for r in rows if r['market']=='NA' and r.get('sample')=='v4-rule-screened'])]
+ cohorts=[('CN','all',[r for r in rows if r['market']=='CN']),('NA','all',[r for r in rows if r['market']=='NA']),('NA','v3-reviewed',[r for r in rows if r['market']=='NA' and r.get('sample')=='v3-reviewed']),('NA','v4-rule-screened',[r for r in rows if r['market']=='NA' and r.get('sample')=='v4-rule-screened']),('CA','all',[r for r in rows if r['country']=='CA']),('US','all',[r for r in rows if r['country']=='US'])]
  for t in terms:
   for market,sample,cohort in cohorts:
    n=len(cohort);k=sum(r['features_v2'][t['key']] for r in cohort);employers=sorted({r['company'] for r in cohort});lo,hi=wilson(k,n)

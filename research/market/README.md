@@ -1,12 +1,13 @@
 # Market indicators and provenance
 
-Snapshot: 19 November 2026; extraction cutoff 18 November 2026. These releases cover US/Canada. China context is cited separately in the [role overview](../../docs/en/role-overview.md).
+Snapshot: 19 November 2026; extraction cutoff 18 November 2026. These releases cover US/Canada; the Statistics Canada series is the only official quarterly vacancy count by occupation among the three countries. China context is cited separately in the [role overview](../../docs/en/role-overview.md).
 
 | Source | Published measure | Checked-in subset | Coverage | Rights / provenance |
 |---|---|---|---|---|
 | [Indeed AI tracker](https://github.com/hiring-lab/ai-tracker) |AI-related keyword share of all advertisements; daily seven-day trailing observations |indeed-daily-subset.csv |2025-01-01–2026-10-31 |Indeed Hiring Lab; CC-BY-4.0;raw hash/URL in manifest |
 | [Indeed postings tracker](https://github.com/hiring-lab/job_postings_tracker) |Software Development total-posting index; 2020-02-01=100 |indeed-daily-subset.csv |2025-01-01–2026-11-13 |Indeed Hiring Lab; CC-BY-4.0;raw hash/URL in manifest |
 | [LinkedIn public dashboard](https://pulse.linkedin.com/reporting-ai) |AI builders relative hiring growth YoY and overall hiring-rate YoY by company size |linkedin-monthly-subset.csv |2025-01–2026-10 |LinkedIn Economic Graph; selected factual observations and public-manifest hash |
+| [Statistics Canada Table 14-10-0444-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410044401) |Job vacancies by occupation (NOC 2021 unit group), quarterly, unadjusted; published quality grades A–E |statcan-tech-vacancies.csv |2023Q1–2026Q2, Canada; 10 tech occupations and all occupations |Statistics Canada Open Licence; retrieved through the Web Data Service API on 2026-11-23 |
 
 ## Aggregation
 

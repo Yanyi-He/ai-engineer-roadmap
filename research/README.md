@@ -4,7 +4,7 @@ Collection windows: 18–19 November 2026 (reviewed cohorts) and 23 November 202
 
 | File | Meaning |
 |---|---|
-| [jds.json](jds.json) |320 scoped descriptions: CN 51, US 236, CA 33; `sample` marks 104 hand-reviewed and 216 rule-screened records; URLs, grades, status, offsets/hashes, `features` (codebook) and `features_v2` (skill terms) |
+| [jds.json](jds.json) |367 scoped descriptions: CN 51, US 236, CA 80; `sample` marks 104 hand-reviewed, 216 rule-screened (`v4-rule-screened`) and 47 Canada-expansion (`v5-canada`) records; URLs, grades, status, offsets/hashes, `features` (codebook) and `features_v2` (skill terms) |
 | [skill-terms.json](skill-terms.json) |39 stricter terms in two groups (tech stack, role expectations) with zh/en labels |
 | [enterprise-cases.json](enterprise-cases.json) |Nine large and mid-size employer postings coded by capability (required/preferred); qualitative, not pooled |
 | [skill-distribution.csv](skill-distribution.csv) |Shares by market and subsample with 95% Wilson intervals and employer-balanced shares |
