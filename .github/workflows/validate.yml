@@ -14,4 +14,11 @@ jobs:
       - run: python scripts/validate.py
       - run: python -B -m unittest discover -s tests -v
       - run: python -B -m labs.evaluation.regression
+      - run: pip install -r starters/p1-knowledge-service/requirements.txt -r starters/p2-approval-agent/requirements.txt
+      - name: Test P1 starter and evaluation gate
+        working-directory: starters/p1-knowledge-service
+        run: python -B -m pytest -q && python -B evals/run_eval.py
+      - name: Test P2 starter
+        working-directory: starters/p2-approval-agent
+        run: python -B -m pytest -q
       - run: git diff --exit-code

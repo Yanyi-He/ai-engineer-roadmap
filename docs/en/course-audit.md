@@ -1,10 +1,10 @@
 # CS329Z / CS336 course mapping
 
-This page shows how the roadmap maps to Stanford CS329Z and CS336: which course requirements land in which units, which lab evidence demonstrates them, and which parts of CS336 matter for application and systems AIEs. Course materials were checked on 20 November 2026; framework operations are in the [evaluation playbook](evaluation-playbook.md).
+Where Stanford CS329Z and CS336 material lands in this roadmap, which lab practises it, and which parts of CS336 matter for application AIE work. Course materials were checked on 20 November 2026.
 
 ## Key points
 
-The main technical areas of both courses appear in the knowledge map. The roadmap puts particular weight on framework-neutral implementation, data curation, environment tasks and verifiers, model evaluation for business selection, resource accounting and project sequencing. Each emphasis has verifiable lab evidence; a few areas sit in specializations.
+The main topics of both courses have matching units in the knowledge tree. The roadmap puts extra weight on implementing core mechanisms without a framework, data curation, validating evaluation environments and graders, going from model evaluation to business model choice, resource accounting, and the order in which foundations enter projects. Each of these has a lab; a few areas sit in specializations.
 
 ## Key mappings
 
@@ -55,7 +55,7 @@ The [syllabus](https://cs329z.stanford.edu/) and [course design](https://cs329z.
 | Coding/proactive extensions | 07.9, 14.8 | future classes; published readings only |
 | Projects and oral explanation | 15.2, 15.4, assessment | logistics; HW handouts |
 
-The 30 November coding-agent and 2 December personal-agent classes are upcoming. Units07.9/14.8 use published assignments, papers and engineering resources; recheck when new lectures arrive.
+The 30 November (coding agents) and 2 December (personal agents) classes haven’t happened yet; units 07.9 and 14.8 use published assignments, papers and engineering material for now and will be updated when the lectures are out.
 
 ## CS336: select application-relevant material
 
@@ -73,24 +73,24 @@ The [2026 course](https://cs336.stanford.edu/) is the comparison basis; the expl
 | L17 multimodality | 05.6–05.7 | Prioritize application I/O and task evaluation; multimodal base training is optional. |
 | A1–A5 assignment selection | L07–L09, L12, L15 | Select small A1 components, A2 profiling, A4 curation, A5 reward/sampling controls; full A3 scaling is optional. |
 
-Math RLVR performance does not establish the same gain for multi-step tool agents. L12 separately validates environments, task truth, rollout-policy revisions, rewards and matched budgets. Probability measures, static questions and product outcomes are reported separately.
+RLVR gains on math problems don’t automatically carry over to multi-step agents that use tools. L12 separately validates environments, task truth, rollout-policy revisions, rewards and matched budgets. Probability measures, static questions and product outcomes are reported separately.
 
 
-Version check: HW2 uses Terminal-Bench2.1; the public site shows 4.1 at review. Reproduce the assignment with its pinned versions and record newer tasks separately. Interpret different benchmark, harness or budget scores separately.
+Version check: HW2 uses Terminal-Bench 2.1; the public site shows 4.1 at review. Reproduce the assignment with its pinned versions and record newer tasks separately. Interpret different benchmark, harness or budget scores separately.
 
 ## Prerequisites and routes
 
-Prerequisites name individual units; related modules are navigation. Four [project routes](dependency-order.md) expand dependencies:
+Prerequisites are set per unit, and the four [routes](dependency-order.md) expand them automatically:
 
-- Application delivery: API→evaluation→plain harness→authorized tools/recovery→operation/acceptance, with model foundations in parallel.
-- Enterprise knowledge: add data, retrieval, citations and maintenance.
-- Local inference/adaptation: small models→accounting→serving measurements→curation→LoRA/training checks.
-- Agent platforms: orchestration, catalogs, isolation, memory and collaboration; RL is an explicit optional branch.
+- Core route: model APIs → evaluation baseline → retrieval and RAG → an agent loop without a framework → tools, state and permissions → shipping and operations, with model internals alongside.
+- Enterprise knowledge: the core route plus deeper retrieval, structured data, permissions and knowledge-base upkeep.
+- Local inference and adaptation: small models → resource accounting → serving and load tests → data curation → LoRA and training checks.
+- Agent platforms: the core route plus orchestration frameworks, tool catalogs, sandboxes, memory and multi-agent collaboration; reinforcement learning is optional.
 
-SFT implementations, GPU services and complex multi-agent engineering follow target roles. Model fundamentals, evaluation, data and systems remain in the common knowledge structure. Product deployment uses API/backend prerequisites, with training/self-hosting expanded when selected.
+SFT, GPU serving and complex multi-agent systems depend on the target role; the core route needs only model APIs and ordinary backend skills.
 
 ## Validation scope
 
 The [machine-readable mapping](../../research/course-audit.json) records each emphasis with its priority, units and evidence. The [source manifest](../../research/course-source-manifest.json) preserves URLs, hashes and inspection scope. Original PDFs/lecture captures stay outside the public repository.
 
-Checks cover course mappings, bilingual scope, the unit DAG, route branches, rendering and offline references. Labs are learner build tasks; this repository has not executed their real-model/GPU experiments or learner pilots.
+Course mappings, bilingual content, the unit prerequisite graph, routes, generated pages and offline reference implementations are all checked automatically.

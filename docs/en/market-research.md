@@ -1,6 +1,6 @@
 # Hiring study: cohorts, definitions and comparisons
 
-The [role overview](role-overview.md) connects the work to learning. This page documents methods. Inspect [China](jd-china.md) and [North America](jd-north-america.md) separately. The reviewed cohorts were collected on 18–19 November 2026 and the North American expansion on 23 November 2026.
+This page covers methods; the findings are in the [role overview](role-overview.md), and the per-market lists are in [China](jd-china.md) and [North America](jd-north-america.md). The reviewed cohorts were collected on 18–19 November 2026 and the North American expansion on 23 November 2026.
 
 ## Cohort
 
@@ -23,7 +23,7 @@ North America totals 316 descriptions from 98 employers: 236 US and 80 Canadian 
 4. Keep one record per employer for the same title, body or URL, at most six per employer, and exclude roles already in the reviewed sample.
 5. Role text starts at headings such as "About the role", "What you'll do" or "Responsibilities" and ends before pay, benefits, equal-opportunity or privacy text. A check found 4 of 216 records still containing pay or benefits sentences.
 
-Limitations of the rule-screened sample: AI-native employers are over-represented. Microsoft, Google, Amazon and other large technology companies, as well as banks and insurers, use their own applicant systems and are absent from these APIs; the [enterprise cases](role-overview.md#nine-enterprise-job-descriptions-what-they-actually-value) in the role overview cover that context. The China sample was not expanded because major Chinese job sites offer no documented public posting API.
+Limitations of the rule-screened sample: AI-native employers are over-represented. Microsoft, Google, Amazon and other large technology companies, as well as banks and insurers, use their own applicant systems and are absent from these APIs; the [enterprise cases](role-overview.md#what-nine-enterprise-job-descriptions-value) in the role overview cover that context. The China sample was not expanded because major Chinese job sites offer no documented public posting API.
 
 ## Counting method
 
@@ -34,7 +34,7 @@ Reviewed records use reviewed role-text offsets that exclude company introductio
 
 Both use ASCII word boundaries, so Python next to Chinese characters is recognized. Each term counts at most once per description, including requirements, alternatives and preferences. An absent term does not establish non-use. Error-prone terms (security, production, cost, customer work, evaluation, retrieval) were spot-checked in context.
 
-Shares carry 95% Wilson intervals. Employer-balanced shares average within-employer mention rates, exposing employer concentration without fixing selection bias. No independent inter-rater study has been completed.
+Shares carry 95% Wilson intervals. Employer-balanced shares average within-employer mention rates, which shows how much a single employer drives a result. No independent two-coder agreement check has been done yet.
 
 ## Seniority composition
 
@@ -49,7 +49,7 @@ Seniority comes only from explicit title labels; unmarked roles stay unspecified
 | Lead / architect / expert | 6 | 23 |
 | Unspecified | 37 | 133 |
 
-The table describes the sample, not national shares of junior or senior roles. Staff-and-above titles are common on North American public job boards, consistent with Hiring Lab's finding that the software-development rebound came mainly from senior roles.
+The table describes the sample only, not national shares by level. Staff-and-above titles are common on North American public job boards, consistent with Hiring Lab's finding that the software-development rebound came mainly from senior roles.
 
 ## Market indicators
 
@@ -57,7 +57,7 @@ Market series are defined by occupation or job title, with units, actual coverag
 
 ## From evidence to curriculum
 
-Map work to capabilities, [17 modules](knowledge-tree.md), labs and projects. Backend/math prerequisites follow delivery dependencies; repositories add implementation mechanisms. This combines descriptions, courses and engineering judgment. A prerequisite can be valuable without being explicitly named in every JD.
+Map work to capabilities, [17 modules](knowledge-tree.md), labs and projects. Backend/math prerequisites follow delivery dependencies; repositories add implementation mechanisms. The design draws on job descriptions, courses and engineering experience, so some prerequisites aren’t named in job descriptions directly.
 
 ## Reproduction
 

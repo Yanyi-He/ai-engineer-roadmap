@@ -18,6 +18,8 @@ python3 -B scripts/summarize_market.py
 python3 -B scripts/render_docs.py
 python3 -B scripts/validate.py
 python3 -B -m unittest discover -s tests -v
+(cd starters/p1-knowledge-service && python -m pytest -q && python evals/run_eval.py)
+(cd starters/p2-approval-agent && python -m pytest -q)
 ```
 
 Explain the problem, the final change and relevant validation. Keep examples general-purpose and remove personal resumes, private project notes, credentials and employer/customer data. Original contributions use this repository's MIT license; external material retains its own license.

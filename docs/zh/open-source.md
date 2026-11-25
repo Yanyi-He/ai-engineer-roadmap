@@ -1,6 +1,6 @@
 # GitHub项目研究：从技术栈提炼系统机制
 
-61个候选的元数据采集于2026-11-18至19，每行保留采集日期。包含运行时、框架、平台、官方文档和学习路线，按职责选择。Stars用于发现候选，主语言是GitHub的仓库级分类；具体依赖和运行职责需要文件级证据。
+61 个项目的元数据采集于 2026-11-18 至 19，每行标了采集日期，范围包括运行时、框架、平台、官方文档和学习路线。星数只用来发现候选；表里的主语言是 GitHub 对整个仓库的分类，具体依赖要看文件。
 
 | Repository | Stars | Primary language | Category | Captured | Archive flag |
 |---|---:|---|---|---|---|
@@ -83,13 +83,13 @@
 | [sgl-project/sglang](https://github.com/sgl-project/sglang) | Python-led serving; architecture-doc level | 和 vLLM 做同 workload 对照，不必同时运营两套 |
 | [spring-projects/spring-ai](https://github.com/spring-projects/spring-ai) | Java/Spring; official reference level | 企业 Java 系统中的模型与工具集成 |
 
-标为 manifests 的项目实际读取了依赖文件；仅标 metadata/README/docs 的项目没有声称完整源码审计。检查点清单在 `research/github-repos.json` 的 `inspected_files`。可选依赖不等于默认启用的运行时；Graphiti/Mem0 支持多个后端，不要求把所有数据库都安装。
+标为 manifests 的项目读过依赖文件；标为 metadata、README 或 docs 的只看了这些材料。读过哪些文件记在 `research/github-repos.json` 的 `inspected_files` 里。可选依赖默认不会启用；Graphiti、Mem0 支持多种后端，选一种数据库即可。
 
 可复用的组合包括类型化Python后端、TS产品端、持久数据库、异步worker、模型适配、可恢复编排、工具和评测/trace闭环。按当前任务选择组件。
 
-许可证 `NOASSERTION`/缺失表示 API 未可靠识别，不表示没有限制；AutoGen 的代码与文档许可可能不同。任何实际复制都应核对具体文件。Basic Memory 当前 AGPL，Dify/n8n 等自定义许可项目适合先借设计。
+许可证显示 `NOASSERTION` 或缺失，只说明 GitHub API 没识别出来，项目仍可能有限制；AutoGen 的代码和文档许可可能不同。复制代码前先看具体文件的许可证。Basic Memory 目前是 AGPL；Dify、n8n 等自定义许可的项目，适合先借鉴设计。
 
-高星信号没有证明这些组件在本研究的 367 份 JD 中都有同等需求。最终建议按[技术栈决策表](stack-decisions.md)执行。
+星数高的项目在 JD 里未必同样常见。该学哪些，以[技术栈选择](stack-decisions.md)为准。
 
 ## 模型、数据与机器人方向的参考项目
 
@@ -102,4 +102,4 @@
 | A2A | cross-service task lifecycle and agent communication |09|
 | LeRobot / MuJoCo / IsaacLab / OpenPI / ROS2 docs | simulation, embodied data, policies and robot integration |16|
 
-这些项目主要完成元数据与官方文档层筛选；逐个记录检查范围。课程并不要求全部安装或逐个复刻。进一步实现级阅读见[固定版本源码](source-readings.md)，选型见[技术表](stack-decisions.md)。
+这些项目只看了元数据和官方文档，不需要全部安装或复刻。进一步实现级阅读见[固定版本源码](source-readings.md)，选型见[技术表](stack-decisions.md)。

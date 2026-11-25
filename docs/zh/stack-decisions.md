@@ -15,18 +15,19 @@
 | 本地推理 | Mac: llama.cpp/MLX LM；Linux GPU: vLLM 先选一种 | 内存、延迟、吞吐、成本与质量 | SGLang 做对照，不要求维护两套 serving |
 | 优化 | 数据/检索/prompt → DSPy → PEFT/TRL | 用实验决定是否需要训练 | Bandit/OPE、DPO/GRPO/verl 属专项深度 |
 
-## 除 Agent、MCP、沙箱，还必须补什么
+## Agent、MCP 和沙箱之外还要补什么
 
-重点补 **数据工程与检索、评估与实验、后端与分布式基础、可观测与可靠性、身份权限与隐私、模型服务性能、产品需求与业务沟通**。多模态、语音、NL2SQL、领域规则、训练优化按岗位和项目需要进入。基础模型预训练、CUDA 内核和多机训练平台属于可选专门化；应用 AIE 不必先成为全栈 AI Infra 专家。
+重点补数据工程与检索、评测与实验、后端与分布式基础、可观测性与可靠性、身份权限与隐私、模型服务性能、产品需求与业务沟通。多模态、语音、NL2SQL、领域规则和训练优化按岗位和项目需要再学。基础模型预训练、CUDA 内核和多机训练平台是可选的专门方向，做应用 AIE 一般用不到这么深。
 
-## 更新判断
+## 这些框架各管哪一层
 
-LangGraph解决有状态Agent控制流；PydanticAI/ADK/Microsoft Agent Framework提供不同应用/工具抽象；Temporal负责跨服务耐久业务流程；DSPy优化有度量目标的模型程序；MCP定义工具交互。组合时要为重试、状态和生命周期选定权威层。先画职责边界，再选库。
+LangGraph 管有状态的 Agent 控制流；PydanticAI、ADK 和 Microsoft Agent Framework 提供另一套应用和工具抽象；Temporal 负责跨服务的耐久业务流程；DSPy 按指标优化模型程序；MCP 规定工具怎么和客户端交互。组合使用时，先定好重试、状态和生命周期各由哪一层负责。先画职责边界，再选库。
 
-默认练习只保留一种orchestrator、一个持久存储和一种trace/eval记录方式。采用第二套框架前，写清新约束并迁移一项任务比较。源码机制与边界见[固定版本阅读](source-readings.md)。
+练习时只用一种编排框架、一个持久存储和一种 trace/评测记录方式。要换第二个框架，先写清楚是什么新约束需要它，再拿一个任务迁过去比较。源码机制见[固定版本源码阅读](source-readings.md)。
 
-- AutoGen 已于 2026 年归档（2026-11-23 复核），由 Microsoft Agent Framework 接替；Flowise 于 2026-08 归档并停止维护。两者都不进入新项目主线。
-- Flowise 元数据已标归档；历史内容可读，暂不作为新项目主框架。
-- Dify、n8n、Langfuse、LiteLLM 等仓库存在自定义或分区许可，复用前读目标文件许可；Basic Memory 当前元数据为 AGPL-3.0。星数与旧博客不能代替许可核对。
+## 维护状态（2026-11-23 复核）
+
+- AutoGen 已归档，由 Microsoft Agent Framework 接替；Flowise 于 2026-08 归档并停止维护。两者都不建议用在新项目里。
+- Dify、n8n、Langfuse、LiteLLM 等仓库使用自定义或分区许可，复用代码前先读对应的许可证文件；Basic Memory 目前是 AGPL-3.0。
 
 依据：[LangGraph](https://docs.langchain.com/oss/python/langgraph/overview)、[Microsoft Agent Framework](https://learn.microsoft.com/agent-framework/overview)、[Spring AI](https://docs.spring.io/spring-ai/reference/)、[LangChain4j](https://docs.langchain4j.dev/)、[MCP](https://modelcontextprotocol.io/docs/develop/build-server)、[高星快照](open-source.md)。

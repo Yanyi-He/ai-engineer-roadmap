@@ -2,7 +2,7 @@
 
 [Methods](market-research.md) · [Overview](role-overview.md)
 
-18 employers; 36 internet roles. Tencent 16, Baidu 6, ByteDance 6, Alibaba 5. Other roles include manufacturing, automotive, software and finance; composition affects findings.
+18 employers, 36 of the roles at internet companies: Tencent 16, Baidu 6, ByteDance 6, Alibaba 5. The rest come from manufacturing, automotive, software, finance and other sectors. The sample leans toward large companies, so keep that in mind when reading the shares.
 
 ## All keyword categories
 

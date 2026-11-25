@@ -1,6 +1,6 @@
 # AI Engineering knowledge tree
 
-Browse modules and units, then mechanisms, failures, readings and evidence. The taxonomy gives an overview; [study order](dependency-order.md) expands unit prerequisites and project routes. The [course mapping](course-audit.md) shows how CS329Z/CS336 map to units.
+Every module, unit and topic branch. For what to study first, see the [study order](dependency-order.md); for where CS329Z and CS336 material fits, see the [course mapping](course-audit.md).
 
 ```mermaid
 mindmap
@@ -31,6 +31,7 @@ mindmap
       03.3 ML tasks and generalization
       03.4 Neural networks and optimization
       03.5 PyTorch training engineering
+      03.6 Taking classical ML to production （MLOps）
     04 Transformers and language-model internals
       04.1 Tokenization, corpora and objectives
       04.2 Transformer computation
@@ -152,7 +153,7 @@ mindmap
 
 ## [00 Careers and end-to-end AI delivery](modules/00.md)
 
-Translate a business need into product, data, model, system and acceptance work.
+Break a business need into product, data, model, system and acceptance work.
 
 - **[00.1 Role map and market interpretation](modules/00.md#unit-00-1)** · `core` · [Latent Space: The Rise of the AI Engineer](https://latent.space/p/ai-engineer/)
   - Application/system roles: AI Engineer, LLM/agent engineer, Applied AI and FDE
@@ -169,7 +170,7 @@ Translate a business need into product, data, model, system and acceptance work.
 
 ## [01 Python and software engineering](modules/01.md)
 
-Independently write, test, debug and maintain deliverable Python code.
+Write, test, debug and maintain production Python code on your own.
 
 - **[01.1 Python language and data model](modules/01.md#unit-01-1)** · `core` · [Python Tutorial](https://docs.python.org/3/tutorial/)
   - Objects, mutability, references, copying and collections
@@ -218,7 +219,7 @@ Independently write, test, debug and maintain deliverable Python code.
 
 ## [02 Backend, data and distributed systems](modules/02.md)
 
-Integrate model features into business services with identity, data and operational boundaries.
+Connect model features to real business systems: authentication, databases, queues and cloud deployment.
 
 - **[02.1 HTTP APIs and streaming](modules/02.md#unit-02-1)** · `core` · [FastAPI Tutorial](https://fastapi.tiangolo.com/tutorial/)
   - HTTP semantics, REST, pagination, OpenAPI and versions
@@ -256,6 +257,7 @@ Integrate model features into business services with identity, data and operatio
   - Configuration, secrets, environments and dependency startup
   - CI/CD, migrations, canaries and rollback
   - Discovery, load balancing and Kubernetes objects
+  - Infrastructure as code and GitOps: Terraform for cloud resources and environments, Helm packaging, Argo CD sync and drift detection
 - **[02.7 TypeScript and AI frontend interaction](modules/02.md#unit-02-7)** · `core` · [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
   - TS types, async, packages and API clients
   - React state, forms, streaming, errors and task recovery
@@ -272,7 +274,7 @@ Integrate model features into business services with identity, data and operatio
 
 ## [03 Math, ML, deep learning and PyTorch](modules/03.md)
 
-Understand learning/experiments/optimization and run/debug small training jobs.
+Understand how models learn and how experiments work; run and debug small training jobs.
 
 - **[03.1 Linear algebra and numerical basics](modules/03.md#unit-03-1)** · `core` · [Dive into Deep Learning](https://d2l.ai/)
   - NumPy vectors, matrices, tensors, shapes, broadcasting and matrix products
@@ -306,10 +308,17 @@ Understand learning/experiments/optimization and run/debug small training jobs.
   - AMP, checkpoints, resume, logs and configuration
   - Memory profiling, OOM diagnosis and minimal reproductions
   - Strides, views/reshape, contiguous layout, broadcasting and einsum/einops; copies and memory
+- **[03.6 Taking classical ML to production (MLOps)](modules/03.md#unit-03-6)** · `advanced` · [DataTalksClub MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp)
+  - Feature pipelines and feature stores: offline/online consistency and point-in-time-correct training data (Feast and similar)
+  - Experiment tracking and model registry: parameters, metrics, data versions and model versions (MLflow)
+  - Batch scoring and online serving: scheduled batch jobs, real-time APIs and managed serving (SageMaker, Databricks Model Serving and similar)
+  - Monitoring: data drift, prediction drift, quality monitoring under delayed labels and retraining triggers (Evidently and similar)
+  - CI/CD for ML: data validation, training pipelines, model comparison gates and rollback
+  - Model governance: model cards, approval records and model-risk management in regulated industries
 
 ## [04 Transformers and language-model internals](modules/04.md)
 
-Explain token-to-logit dataflow and implement a small decoder.
+Explain the computation from tokens to logits and implement a small decoder yourself.
 
 - **[04.1 Tokenization, corpora and objectives](modules/04.md#unit-04-1)** · `core` · [Hugging Face LLM Course](https://huggingface.co/learn/llm-course/en/chapter1/1)
   - BPE/WordPiece/Unigram, vocabularies and special tokens
@@ -360,7 +369,7 @@ Explain token-to-logit dataflow and implement a small decoder.
 
 ## [05 Model applications, prompting and multimodal I/O](modules/05.md)
 
-Deliver model applications with explicit contracts, budgets and interaction boundaries.
+Build dependable model applications: structured output, tool calling, context management and cost control.
 
 - **[05.1 Model APIs and provider adapters](modules/05.md#unit-05-1)** · `core` · [LiteLLM Documentation](https://docs.litellm.ai/docs/)
   - Messages, capabilities, parameters and pinned revisions
@@ -430,7 +439,7 @@ Deliver model applications with explicit contracts, budgets and interaction boun
 
 ## [06 Data engineering, retrieval and RAG](modules/06.md)
 
-Build a measurable, maintainable and authorized knowledge application.
+Build an enterprise knowledge application that can be evaluated, kept current and filtered by permissions.
 
 - **[06.1 Ingestion and data quality](modules/06.md#unit-06-1)** · `core` · [Docling Documentation](https://docling-project.github.io/docling/)
   - Connectors, incremental sync, provenance and data cards
@@ -439,6 +448,7 @@ Build a measurable, maintainable and authorized knowledge application.
   - Structural/semantic chunks, overlap and metadata
   - Batching, replay, idempotent indexes and deletion
   - Choosing parsers (Docling, MinerU, PaddleOCR, Unstructured) or cloud document-intelligence services (Azure Document Intelligence, AWS Textract), and evaluating parse quality by document type
+  - Enterprise data platforms: Spark/Databricks batch processing, Airflow orchestration, lakehouse table formats (Delta/Iceberg) and lineage
 - **[06.2 Embeddings and similarity](modules/06.md#unit-06-2)** · `core` · [Sentence Transformers: Retrieve and Rerank](https://www.sbert.net/examples/sentence_transformer/applications/retrieve_rerank/README.html)
   - Bi-encoders, query/document representations and objectives
   - Cosine/dot/L2, normalization, dimension and distribution
@@ -495,7 +505,7 @@ Build a measurable, maintainable and authorized knowledge application.
 
 ## [07 Agent architecture, harnesses and memory](modules/07.md)
 
-Build an execution system that plans, uses tools, verifies outcomes and recovers.
+Build agents that plan, call tools, check their results and recover from failures.
 
 - **[07.1 Choosing workflows and agents](modules/07.md#unit-07-1)** · `core` · [Anthropic: Building Effective Agents](https://www.anthropic.com/research/building-effective-agents)
   - Fixed flows, dynamic decisions and hybrids
@@ -559,7 +569,7 @@ Build an execution system that plans, uses tools, verifies outcomes and recovers
 
 ## [08 LangGraph and common framework choices](modules/08.md)
 
-Master one stateful framework and explain alternatives and cross-layer composition.
+Use LangGraph well, and explain how it compares and combines with other frameworks and workflow engines.
 
 - **[08.1 LangGraph state graphs](modules/08.md#unit-08-1)** · `core` · [LangChain Academy: Introduction to LangGraph](https://academy.langchain.com/courses/intro-to-langgraph)
   - StateGraph, schemas, nodes and edges
@@ -588,7 +598,7 @@ Master one stateful framework and explain alternatives and cross-layer compositi
   - Limits, tenancy, upgrades, rollback and support
 - **[08.5 Peer frameworks and enterprise ecosystems](modules/08.md#unit-08-5)** · `advanced` · [Google Agent Development Kit](https://google.github.io/adk-docs/)
   - LangChain versus LangGraph responsibilities
-  - ADK, PydanticAI, Microsoft Agent Framework (successor to the archived AutoGen), CrewAI, and AgentScope and Spring AI Alibaba in China
+  - ADK, PydanticAI, Microsoft Agent Framework (successor to AutoGen and Semantic Kernel), CrewAI, and AgentScope and Spring AI Alibaba in China
   - Provider agent SDKs (OpenAI Agents SDK, Claude Agent SDK) and neutral typed actions
   - TypeScript (Vercel AI SDK, Mastra), Java (Spring AI/LangChain4j; see 02.8) and .NET ecosystems
   - Compare sessions, state, retries, tools, deployment and evaluation
@@ -616,7 +626,7 @@ Master one stateful framework and explain alternatives and cross-layer compositi
 
 ## [09 Multi-agent collaboration](modules/09.md)
 
-Design collaboration for decomposable tasks and measure gains/costs against one agent.
+Decide when a task is worth splitting across agents, and measure what that gains and costs over a single agent.
 
 - **[09.1 Decomposition and organization](modules/09.md#unit-09-1)** · `core` · [Stanford CS329Z: Engineering AI Agents](https://cs329z.stanford.edu/)
   - Single agent, fixed parallelism and multi-agent choices
@@ -651,7 +661,7 @@ Design collaboration for decomposable tasks and measure gains/costs against one 
 
 ## [10 MCP, tool platforms and safe execution](modules/10.md)
 
-Develop interoperable tools with explicit permissions and bounded execution.
+Build tool services such as MCP servers that any client can call, with clear permissions and bounded execution.
 
 - **[10.1 Tool and connector design](modules/10.md#unit-10-1)** · `core` · [Anthropic: Writing Effective Tools for Agents](https://www.anthropic.com/research/writing-tools-for-agents)
   - Business capabilities→narrow APIs; reads/writes/effects
@@ -701,7 +711,7 @@ Develop interoperable tools with explicit permissions and bounded execution.
 
 ## [11 Evaluation, optimization and observability](modules/11.md)
 
-Drive iteration with credible evaluation and attribute failures to components.
+Use reliable evaluation to decide what to change next, and trace production failures to the component at fault.
 
 - **[11.1 Tasks, labels and benchmark design](modules/11.md#unit-11-1)** · `core` · [Inspect AI](https://inspect.aisi.org.uk/)
   - Request/environment/stopping/scorer tuple
@@ -791,7 +801,7 @@ Drive iteration with credible evaluation and attribute failures to components.
 
 ## [12 Data curation, fine-tuning, RL and distillation](modules/12.md)
 
-Understand training choices and complete small adaptation with independent evaluation.
+Know when fine-tuning is worth it, and run one small fine-tune with an independent evaluation.
 
 - **[12.1 Training goals and data engineering](modules/12.md#unit-12-1)** · `core` · [Hugging Face LLM Course](https://huggingface.co/learn/llm-course/en/chapter1/1)
   - When to use prompts, RAG, SFT, preferences or RL
@@ -865,7 +875,7 @@ Understand training choices and complete small adaptation with independent evalu
 
 ## [13 Local models, inference optimization and deployment](modules/13.md)
 
-Run models locally, diagnose inference bottlenecks and deploy for a workload.
+Run models locally, find inference bottlenecks and choose a deployment that fits the workload.
 
 - **[13.1 Local small-model deployment](modules/13.md#unit-13-1)** · `core` · [MLX LM](https://github.com/ml-explore/mlx-lm)
   - Hardware/memory, model size, licenses and revisions
@@ -916,7 +926,7 @@ Run models locally, diagnose inference bottlenecks and deploy for a workload.
 
 ## [14 End-to-end products and production delivery](modules/14.md)
 
-Own delivery from discovery to operation of an AI product.
+Deliver a complete AI product, from requirements to production operation.
 
 - **[14.1 Discovery, business metrics and design](modules/14.md#unit-14-1)** · `core` · [Full Stack LLM Bootcamp](https://fullstackdeeplearning.com/llm-bootcamp/)
   - Discovery, workflow observation, user tasks and non-goals
@@ -942,6 +952,7 @@ Own delivery from discovery to operation of an AI product.
   - Redelivery, crashes, queues and dependency failure
   - Backup/restore and schema/model/index rollback
   - Alerts, on-call, runbooks, incidents and improvements
+  - Application load testing: simulate realistic request mixes with Locust or k6 and verify that queuing, rate limits, timeouts and degradation behave as designed
 - **[14.5 Security, privacy and domain governance](modules/14.md#unit-14-5)** · `core` · [OWASP GenAI Security Project](https://genai.owasp.org/llm-top-10/)
   - Threat models, injection, tool abuse and exfiltration
   - Tenancy, access, secrets, encryption and audit
@@ -956,6 +967,7 @@ Own delivery from discovery to operation of an AI product.
   - Adoption, success, time saved and corrections
   - Maintenance, upgrades, handoff and documentation
   - Environment promotion (sandbox → dev → QA → UAT → prod), architecture decision records, API specifications and runbooks
+  - Feature flags and progressive delivery: roll out by tenant, user or percentage, compare metrics, then expand, roll back or retire flags (OpenFeature and similar)
 - **[14.7 Risk tiers, privacy boundaries and safety evaluation](modules/14.md#unit-14-7)** · `core` · [Stanford CS329Z: Engineering AI Agents](https://cs329z.stanford.edu/)
   - Threat models covering assets, principals, sources, actions, attackers and egress
   - Direct/indirect injection, poisoned retrieval, cross-tenant leaks and composed-tool risks
@@ -980,7 +992,7 @@ Own delivery from discovery to operation of an AI product.
 
 ## [15 Portfolio, applications and interviews](modules/15.md)
 
-Turn learning into reproducible work that can sustain technical interviews.
+Turn your projects into work others can reproduce and that holds up under interview follow-ups.
 
 - **[15.1 JD mapping and portfolio planning](modules/15.md#unit-15-1)** · `core` · [Tech Interview Handbook](https://www.techinterviewhandbook.org/)
   - Country, role family, industry and level
@@ -1032,7 +1044,7 @@ Turn learning into reproducible work that can sustain technical interviews.
 
 ## [16 World models, robotics and embodied-AI electives](modules/16.md)
 
-Understand links to physical intelligence and choose a robotics specialization.
+See how AI application engineering connects to robotics and embodied AI, and go deeper if it interests you.
 
 - **[16.1 RL and dynamic environments](modules/16.md#unit-16-1)** · `elective` · [Hugging Face Deep RL Course](https://huggingface.co/learn/deep-rl-course/unit0/introduction)
   - States/actions/transitions/rewards and partial observability

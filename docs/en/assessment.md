@@ -1,6 +1,6 @@
-# Exit assessment: independent application engineering
+# Assessment: can you do application AIE work on your own?
 
-Finishing links is not competence. Unit-level checks live in the [self-check question bank](self-check.md); this page reviews a whole project. It is a project-review rubric, not an employer certification or a hiring guarantee. Prefer a reviewer who did not implement the system. They should reproduce it from a clean environment and request an unannounced change. Record self-review as self-review.
+The [self-check questions](self-check.md) test single units; this page reviews a whole project. The rubric is this roadmap’s own, for judging whether a project is ready to show employers. Ideally someone who didn’t build it does the review: they set it up from a clean environment and ask for a change you didn’t know about in advance. If you review your own work, record it as a self-review.
 
 | Capability | Minimum independent performance | Evidence |
 |---|---|---|
@@ -11,14 +11,14 @@ Finishing links is not competence. Unit-level checks live in the [self-check que
 | Model literacy | Run a local model and explain quantization, tokens, context and measurement conditions | Weight revision, hardware, quality/latency/memory results |
 | Communication/judgment | Adapt to a new constraint; explain when not to use an agent or ship | Design defense, decisions, next hypotheses |
 
-Rate each 0–3: 0 cannot run/explain, 1 follows a tutorial, 2 independently modifies/diagnoses, 3 handles unfamiliar constraints and defends tradeoffs. **The exit requires at least 2 in all six dimensions and no unresolved critical boundary failure.** This is an author-defined rubric, not a rule inferred from JD statistics.
+Score each row 0–3: 0 can’t run or explain it; 1 can reproduce it by following a tutorial; 2 can change and debug it on your own; 3 can handle unfamiliar constraints and explain the tradeoffs. **To pass, score at least 2 on all six and break none of the baseline rules below.**
 
-Critical boundaries: no fabricated results; repeated tuning on public tests is not blind evaluation; no cross-user leakage; action systems require authorization; failures remain visible; documented reproduction works. Domain-sensitive systems also need appropriate domain review.
+Baseline rules: no made-up results; repeated tuning on a public test set doesn’t count as a blind test; no data leaks between users; a system that takes actions can’t have any effect without authorization; failures are visible to users; the docs are enough to reproduce the project. High-stakes domains such as health and finance also need review by domain experts.
 
-Suggested review: 20 minutes for task/design, 30 for an unseen failure, 30 for a small change, 20 for experimental choices. Hidden cases can include a stale document, approval for an action that changed and a crash after external commit. Score independent performance, not vocabulary.
+A suggested review: 20 minutes on the task and architecture, 30 minutes debugging a hidden failure live, 30 minutes making a small change and 20 minutes on experiment design and tradeoffs. Good hidden cases: a stale document, an approved action that was changed afterwards, and a crash after an external commit. Score what the candidate does on their own in the session.
 
-Passing establishes a demonstrable application project and independent skills. It does not validate long-term production ownership, cross-team scale or advanced algorithm research. Post-training and inference-platform roles require their respective specialist experiments.
+Passing shows you have an application AIE project worth showing and a set of skills you can apply on your own. It doesn’t test long-term ownership of production systems, cross-team work or algorithm research. For post-training or inference-platform roles, also complete the matching specialization labs.
 
-Sample [L13 harness, L14 environment/verifier and L15 data evidence](labs.md) as relevant to the product. Assess training/self-hosting for the target specialization. Keep midpoint/final review records from someone other than the implementer.
+Depending on the project, spot-check [L13 (agent without a framework), L14 (evaluation environment and grader) and L15 (data curation)](labs.md); review training and self-hosted models against the target specialization. Have someone other than the developer record the midpoint and final reviews.
 
-Use the [Ragas/regression playbook](evaluation-playbook.md) and L16/L17 to connect metrics, evaluators and CI to the product.
+For wiring evaluation into the project, see the [evaluation playbook](evaluation-playbook.md) and labs L16 and L17.

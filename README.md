@@ -2,49 +2,51 @@
 
 [中文](README.zh-CN.md) · English
 
-**Become an AI Engineer: what to learn, in what order and how to prove it, built from 367 job descriptions in China and North America.**
+[![Validate](https://github.com/Yanyi-He/ai-engineer-roadmap/actions/workflows/validate.yml/badge.svg)](https://github.com/Yanyi-He/ai-engineer-roadmap/actions/workflows/validate.yml) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
+**What to learn to become an AI Engineer, in what order, and how to show you can do the job. Built from 367 real job descriptions in China and North America.**
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/overview/roadmap-en-dark.svg">
   <img alt="Roadmap overview: four stages (foundations, build AI apps, evaluate and ship, get hired) plus specializations chosen by target role. Each dot is one learning unit." src="assets/overview/roadmap-en-light.svg" width="100%">
 </picture>
 
-Each of the 126 units has a knowledge outline, a target depth (explain, implement, diagnose or design), one free primary reading with the exact scope, a build task and three self-check questions.
+Each of the 127 units lists what to know, how deep to go (explain, implement, diagnose or design), one free primary reading with the sections to read, a build task and three self-check questions.
 
 ## Start here
 
 | If you are… | Start with | Then |
 |---|---|---|
-| A software engineer moving into AI | [Entry diagnostic](docs/en/entry-diagnostic.md): skip what you already know | Follow the [application delivery route](docs/en/dependency-order.md#application-delivery) and build the [labs](docs/en/labs.md) |
+| A software engineer moving into AI | [Entry diagnostic](docs/en/entry-diagnostic.md): skip what you already know | Follow the [core route](docs/en/dependency-order.md#core-route-ai-application-engineering) and build the [labs](docs/en/labs.md) as you go |
 | Preparing for AI Engineer interviews | [Self-check question bank](docs/en/self-check.md): answer without notes | Fill gaps from the unit pages, then work through [module 15](docs/en/modules/15.md) |
 | Deciding whether the role fits you | [Role overview](docs/en/role-overview.md): what employers hire for | Compare the [China](docs/en/jd-china.md) and [North America](docs/en/jd-north-america.md) analyses |
 | Going deeper into training or inference | [Learning path](docs/en/learning-path.md): choose a specialization | Modules [12](docs/en/modules/12.md) and [13](docs/en/modules/13.md), then capstone [P4](docs/en/capstones.md#p4-small-model-serving-and-adaptation) |
 
 ## What makes it different
 
-- **Built from hiring evidence, not a tool list.** In 51 Chinese and 316 North American AI-engineering job descriptions, shipping to production appears in 86% and 90%, and evaluation in 53% and 67%; fine-tuning appears in only 31% and 18%. The markets also differ: Java/Spring appears in 47% of Chinese descriptions and 10% of North American ones. See the [charts, intervals and enterprise cases](docs/en/role-overview.md).
-- **Prerequisites at the unit level.** You can ship a model API service and a framework-free agent before studying transformer internals. Each route expands only the prerequisites its project needs.
-- **Free readings with a scope.** All 181 resources are link-checked, and each unit names the chapters or sections to read and why that source was chosen.
-- **Evidence you can show.** 17 labs, 4 capstones, an exit-assessment rubric and 378 self-check questions turn reading into work an interviewer can inspect.
+- **Priorities come from hiring data.** Across 51 Chinese and 316 North American AI-engineering job descriptions, 86% and 90% ask for shipping to production and 53% and 67% ask for evaluation; only 31% and 18% mention fine-tuning. The markets differ too: 47% of Chinese descriptions want Java/Spring, against 10% in North America. See the [charts, intervals and enterprise cases](docs/en/role-overview.md).
+- **Prerequisites at the unit level.** You can ship a model API service and an agent without a framework before studying transformer internals. Each route pulls in only the prerequisites it needs.
+- **Free readings, with the sections to read.** All 193 resources are link-checked, and each unit says which chapters to read and why that source was picked.
+- **Work you can show an interviewer.** 17 labs, 4 capstone projects (P1 and P2 come with [runnable starter code](starters/)), an assessment rubric and 381 self-check questions.
 
 ## All pages
 
-1. [Roles and hiring](docs/en/role-overview.md): 367 descriptions analyzed by market (80 Canadian), enterprise JD cases and verifiable data such as official Canadian quarterly vacancies.
+1. [Roles and hiring](docs/en/role-overview.md): 367 job descriptions analyzed by market (80 from Canada), breakdowns of large-employer postings, and official Canadian quarterly vacancies.
 2. [Diagnostic](docs/en/entry-diagnostic.md) → [learning path](docs/en/learning-path.md) → [dependencies](docs/en/dependency-order.md).
-3. [Knowledge tree](docs/en/knowledge-tree.md): 17 modules, 126 units, 698 topic branches.
-4. [Self-check question bank](docs/en/self-check.md): 378 interview-style questions, three per unit, for finding gaps before interviews.
+3. [Knowledge tree](docs/en/knowledge-tree.md): 17 modules, 127 units, 708 topics.
+4. [Self-check questions](docs/en/self-check.md): 381 interview-style questions, three per unit, for finding gaps before interviews.
 5. [Labs](docs/en/labs.md) → [capstones](docs/en/capstones.md) → [assessment](docs/en/assessment.md).
 6. [Stack decisions](docs/en/stack-decisions.md), [repositories](docs/en/open-source.md), [resource policy](docs/en/resource-policy.md).
 
-[CS329Z / CS336 course mapping](docs/en/course-audit.md) shows how both courses map to units, depth, prerequisites and practice choices.
+[CS329Z / CS336 course mapping](docs/en/course-audit.md): where each course’s material fits in the units, and how deep to go.
 
 ## Modules
 
-Begin with a small model application, add retrieval and tools, then state and operations. Study math and model foundations in parallel, and choose specialist branches for target roles.
+Start with a small model application, then add retrieval, tool calling, state and operations. Pick up math and model internals as you go, and choose a specialization for the roles you target.
 
 <!-- FULL-KNOWLEDGE-TREE:START -->
 <details>
-<summary>Expand the full tree: 17 modules, 126 units</summary>
+<summary>Expand the full tree: 17 modules, 127 units</summary>
 
 ```mermaid
 mindmap
@@ -75,6 +77,7 @@ mindmap
       03.3 ML tasks and generalization
       03.4 Neural networks and optimization
       03.5 PyTorch training engineering
+      03.6 Taking classical ML to production （MLOps）
     04 Transformers and language-model internals
       04.1 Tokenization, corpora and objectives
       04.2 Transformer computation
@@ -217,30 +220,30 @@ mindmap
 | [15 · Portfolio, applications and interviews](docs/en/modules/15.md) | Turn learning into reproducible work that can sustain technical interviews. |
 | [16 · World models, robotics and embodied-AI electives](docs/en/modules/16.md) | Understand links to physical intelligence and choose a robotics specialization. |
 
-## Evaluation practice
+## Evaluation in practice
 
-The [Ragas/testing/regression playbook](docs/en/evaluation-playbook.md) connects metrics/labels, tool choice, execution, diagnosis and CI. Six synthetic cases exercise actual Ragas ID scoring, pytest and good/broken promptfoo configurations. Semantic judges are explicitly enabled.
+The [evaluation playbook](docs/en/evaluation-playbook.md) shows how to evaluate RAG and agents with Ragas, pytest and promptfoo and wire them into CI. It includes six synthetic cases and runnable configs, one of them deliberately broken so you can confirm the tests catch it; LLM judges are optional.
 
-## Resources
+## Using the resources
 
-Published [Stanford CS329Z](https://cs329z.stanford.edu/) materials provide the agent-systems spine, supported by official documentation, open textbooks and free courses. The 181-resource registry specifies scope and selection reasons. Complete one primary reading/build task before consulting additional references. Metadata from 61 repositories helps select source-reading examples.
+Published [Stanford CS329Z](https://cs329z.stanford.edu/) lectures and assignments are the backbone for agents; the rest are official docs, open textbooks and free courses. Each of the 193 resources says which part to read and why it was picked. Finish one primary reading and its exercise before looking elsewhere. A separate list of 61 GitHub repositories supplies source-reading examples.
 
-Core reading is free to access; commercial APIs, clouds and GPUs can incur execution costs. Access, course progress and snapshots are documented in the [resource policy](docs/en/resource-policy.md).
+All readings are free; commercial APIs, cloud services and GPUs cost money to run. Access status and snapshot dates are in the [resource policy](docs/en/resource-policy.md).
 
-## Run the reference implementations
+## Running the code
 
-Python 3.10+ and the standard library run three offline mechanism references: retrieval metrics, valid-time memory and recovery after external commits. Other labs are build briefs for learners. [Instructions](labs/README.md)
+Three labs ship reference implementations that need only Python 3.10+ and the standard library: retrieval metrics, memory with valid-time facts, and crash recovery after an external commit. The other labs are exercises for you to build. [Instructions](labs/README.md)
+
+P1 (permission-aware knowledge service) and P2 (approval agent) have [starter code](starters/) that needs Python 3.12 and FastAPI, runs offline and has its tests and evaluation in CI:
 
 ```sh
-python3 -B -m unittest discover -s tests -v
-python3 -B scripts/summarize_jds.py
-python3 -B scripts/summarize_market.py
-python3 -B scripts/render_docs.py
-python3 -B scripts/validate.py
+cd starters/p1-knowledge-service
+pip install -r requirements.txt
+python -m pytest -q && python evals/run_eval.py
 ```
 
-## Research and contribution
+## Research methods and contributing
 
-[Hiring methods](docs/en/market-research.md) analyze 51 Chinese and 316 North American descriptions: 104 reviewed by hand and 263 rule-screened from public job-board APIs and employer career pages. Market charts keep only occupation-defined series. Missing national historical active totals remain empty; see the [overview](docs/en/role-overview.md).
+[Hiring research methods](docs/en/market-research.md): 51 Chinese and 316 North American job descriptions, 104 reviewed by hand and 263 screened with the same rules from public job-board APIs and employer career pages.
 
-Contribute reproducible failures, curriculum improvements, experiments or resource updates through the [contribution guide](CONTRIBUTING.md). Outcomes are assessed with projects and independent review; learner employment outcomes have not yet been studied. Original repository material uses MIT. External materials retain their own licenses.
+Contributions are welcome: new cases, route improvements, labs or resource updates. See [CONTRIBUTING](CONTRIBUTING.md). Original content is MIT-licensed; external material keeps its own license.

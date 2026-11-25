@@ -1,48 +1,62 @@
-# 从基础到独立交付的学习路径
+# 学习路径
 
-目标与市场见[岗位总述](role-overview.md)，课程对应见[CS329Z/CS336课程对照](course-audit.md)。[单元先修与四条路线](dependency-order.md)自动展开所需知识，模块编号用于分类。
+这一页回答三个问题：先学什么、要花多久、什么时候可以开始投简历。逐个单元的顺序见[学习顺序](dependency-order.md)，岗位要求见[岗位总述](role-overview.md)。
 
-## 先形成小闭环，再逐步加深
+## 主线：四个阶段
 
-| 阶段 | 学习重点 | 实作出口 |
+下表按有后端经验、每周投入 10–15 小时来排，大约 18 周。数学和模型原理（03–04）不用等到最后，从第 1 周起每周穿插一点。
+
+| 阶段 | 周次 | 学什么 | 做出什么 |
+|---|---|---|---|
+| 1 打基础 | 1–2 | 用[入门诊断](entry-diagnostic.md)找出 01–02 的薄弱处并补上；模型 API、结构化输出和工具调用（05.1–05.3）；评测基线（11.1–11.4） | [L01](labs.md#l01)：带测试的模型 API 服务 |
+| 2 构建 AI 应用 | 3–8 | 解析、检索与 RAG（06.1–06.6）；不用框架写一个 Agent 循环（07.1–07.5）；LangGraph（08.1–08.3）；MCP 与工具安全（10.1–10.4） | [L02](labs.md#l02)、[L13](labs.md#l13)、[L03](labs.md#l03)、[L05](labs.md#l05)；[P1](capstones.md#p1-企业知识服务) 做到 L1 |
+| 3 评测与上线 | 9–15 | 追踪、回归和安全测试（11.5–11.12、10.7、14.7）；部署和运维（02.6、14）：IaC、CI/CD、灰度发布、压测、告警 | [L06](labs.md#l06)、[L16](labs.md#l16)、[L17](labs.md#l17)、[L14](labs.md#l14)；一个作品做到 L2 |
+| 4 求职 | 16–18 | Transformer 原理（04）、面试准备（15）、简历和投递 | [自测题](self-check.md)、模拟面试 |
+
+L1、L2 的具体要求见[综合项目](capstones.md#从作品到-offer分级上线与证据)。P1 和 P2 有[可运行的起步代码](../../starters/)。
+
+## 按背景调整
+
+| 背景 | 每周投入 | 主线时长 | 重点 |
+|---|---|---|---|
+| 2 年以上后端或全栈经验 | 10–15 小时 | 约 16–20 周 | 01–02 大部分可跳过；集中在 05–11、14，作品做到 L2 |
+| 已经在做 AI 应用（用过 RAG、LangGraph） | 8–10 小时 | 约 8–12 周 | 补评测（11）、安全（10.4–10.7、14.7）、上线（14）和作品 |
+| 应届或转专业 | 15–20 小时 | 约 6–9 个月 | 01–04 完整学；先把一个作品做到 L1，再做到 L2 |
+| 再加一个专项 | — | 另加 6–10 周 | 后训练（12）或推理优化（13）二选一 |
+
+## 选一个专项
+
+主线学完后，按目标岗位选一个方向深入。
+
+| 目标方向 | 深入单元 | 作品里要多出来的东西 |
 |---|---|---|
-| A 任务与模型接口 | Python、HTTP/数据、输入输出、错误与预算 | L01：可测试API；任务卡与评测基线 |
-| B 机制与框架 | 显式Action/Observation、循环、工具、上下文和停止 | L13：先做自己的harness，再迁移LangGraph/DSPy |
-| C 数据与知识 | 失败分类、数据策展；按任务接检索与引用 | L15数据；知识系统另做L02 |
-| D 可恢复动作 | 持久状态、幂等、MCP、身份与授权 | L03/L05；按需L04记忆 |
-| E 验证与产品运行 | 环境任务、评分器、重复试次、trace、发布/回滚 | L14/L06；中期demo与评测review |
-| F 基础与专项 | 数学/ML/Transformer并行补；选择模型或平台纵深 | L09模型基础；L07本地模型；训练方向L08/L12 |
-| G 作品与求职 | 一个端到端产品、优化证据、独立复现与需求变更 | [作品](capstones.md)与[评审](assessment.md) |
+| 企业知识与数据 | 06.5–06.9、07.6、08.7 | 增量更新和删除、文档权限、引用对不对得上；检索和回答分开评测 |
+| Agent 平台 | 08.5–08.6、09.4、10.5 | 换一个框架重写、耐久工作流、沙箱、跨服务协作、故障演练 |
+| 模型行为与数据优化 | 12.2–12.9 | 偏好或轨迹数据、可靠的奖励、独立测试集，和同预算的提示词方案对比 |
+| 推理优化 | 04.3、13.3–13.7 | profiler 结果、压测和容量估算、批处理/量化/多卡的取舍 |
+| 多模态与语音 | 04.7、05.6–05.7、06.9 | 字段抽取准确率、流式延迟、人工确认和异常处理 |
+| 中国企业集成 | 02.8、08.8、14.9 | Java/Spring 接入 AI 服务、把 Dify 原型迁成代码、内容标识与备案清单 |
+| 企业 AI/ML 混合岗位（银行、保险、资管） | 03.6、06.1、12.4、14.5–14.6 | 传统模型上线和漂移监控、数据平台流水线、模型风险文档、灰度发布 |
+| 世界模型与具身智能 | 16 | 仿真任务、数据和策略评测；再按岗位补控制与机器人知识 |
 
-初学者从[诊断](entry-diagnostic.md)和01开始。有后端经验者用实现、解释和变更抵免已有内容。core是共同知识，advanced用于岗位深化，elective用于方向拓展；完整实作按一个主要项目集中推进。
+## 课程和资料
 
-四条路线分别面向应用交付、企业知识、本地推理/适配、Agent平台。托管模型支持应用主线；SFT、GPU serving和复杂Multi-Agent在所选分支展开。基础模型原理和数据/评测方法仍需掌握。
+每个单元都指定了一份主读资料和阅读范围，先读它、做它的动手任务，其他链接遇到问题再查。下面几门课可以当主干：
 
-## 用课程串起知识和项目
+- **Agent 系统：** [Stanford CS329Z](https://cs329z.stanford.edu/) 的讲义、harness 作业和评测作业，对应模块 07–11。课程还在进行，新材料发布后会补进来。
+- **模型基础：** [D2L](https://d2l.ai/) 按 03–04 选读，[Hugging Face LLM Course](https://huggingface.co/learn/llm-course/en/chapter1/1) 讲 tokenizer、模型、数据和微调。至少亲手跑通一个小模型的训练循环。
+- **LangGraph：** 官方 [Intro to LangGraph](https://academy.langchain.com/courses/intro-to-langgraph) 和[课程代码](https://github.com/langchain-ai/langchain-academy)，对应 08.1–08.4；长任务再看 [Deep Agents 课程](https://academy.langchain.com/courses/foundation-introduction-to-deepagents)。
+- **端到端产品：** [FSDL LLM Bootcamp](https://fullstackdeeplearning.com/llm-bootcamp/) 讲需求、评测、部署和用户反馈；[LLM Zoomcamp](https://github.com/DataTalksClub/llm-zoomcamp) 边学边做一个检索产品。
 
-- **Agent系统主线：** [CS329Z](https://cs329z.stanford.edu/)已公开讲义、harness作业和eval作业，对应07–11。课程正在进行，未发布材料随课程进度补入。
-- **模型基础：** [D2L](https://d2l.ai/)按03–04选读；[Hugging Face LLM Course](https://huggingface.co/learn/llm-course/en/chapter1/1)串联tokenizer、模型、数据和适配。完成一个小模型训练循环。
-- **LangGraph专题：** [官方Intro to LangGraph](https://academy.langchain.com/courses/intro-to-langgraph)配[课程代码](https://github.com/langchain-ai/langchain-academy)，按08.1–08.4完成状态、路由、持久化、人工介入和观测；再读[Deep Agents官方课程](https://academy.langchain.com/courses/foundation-introduction-to-deepagents)中的长任务机制。
-- **端到端产品：** [FSDL LLM Bootcamp](https://fullstackdeeplearning.com/llm-bootcamp/)学习需求、评测、部署和反馈；[LLM Zoomcamp](https://github.com/DataTalksClub/llm-zoomcamp)用于边学边构建检索产品。
+Chip Huyen 的《AI Engineering》值得读，但需要购买；作者的[配套资料](https://github.com/chiphuyen/aie-book)免费。
 
-按单元指定的主读范围学习并做任务，其他链接按问题查阅。《AI Engineering》可自行配合阅读；公共路线链接[作者免费配套资料](https://github.com/chiphuyen/aie-book)，完整书籍另购。
+## 什么时候可以开始投简历
 
-## 选择一项纵深
+满足下面几条就可以投了，不必等全部单元学完：
 
-| 目标方向 | 深入单元 | 要增加的证据 |
-|---|---|---|
-| 企业知识与数据 | 06.5/06.7、06.9、07.6、08.7 | 增量更新、权限、来源/时间一致性，检索和回答分层对照 |
-| Agent与平台 | 08.5–08.6、09.4、10.5 | 框架迁移、耐久工作流、沙箱、跨服务协作与失败演练 |
-| 模型行为与数据优化 | 12.2–12.9 | 偏好/轨迹数据、可靠奖励、独立测试与预算匹配对照 |
-| 推理优化 | 04.3、13.3–13.7 | profiler、容量/负载实验、调度/量化/多卡取舍 |
-| 多模态与语音 | 04.7、05.6–05.7、06.9 | 字段/交互质量、流式延迟、人机确认和异常处理 |
-| 中国企业集成 | 02.8、08.8、14.9 | Java/Spring AI服务接入、Dify原型迁移为代码、内容标识与备案清单 |
-| 世界模型与具身 | 16 | 仿真任务、数据与策略评测；按岗位继续补控制与机器人知识 |
+- 至少一个作品做到 L2：部署在云上，有评测集和 CI，有几位真实用户用过。
+- 能讲清一次优化：改了什么、怎么测的、提升了多少、代价是什么。
+- core 单元的自测题，大部分能不看资料答出来。
+- 拿三份目标 JD 对照，缺的技能写进补课清单，边投边补。
 
-## 推进和验收
-
-每次保存配置、运行命令、失败案例和下一项修改。按实际耗时调整学习计划，基础补修、模型运行预算和返工单独记录。
-
-进入求职阶段时，应已有一个端到端作品、一次可信优化实验，以及[评审标准](assessment.md)中的独立实现、定位和沟通能力。训练或平台岗位再增加专项作品，目标JD新增要求持续进入自己的补课清单。
-
-测评操作见[Ragas与回归指南](evaluation-playbook.md)，用L16/L17把指标、评测器和CI接到作品中。
+训练或平台方向的岗位，再加一个对应专项的作品。面试时会怎么考，见[能力评审](assessment.md)和[模块 15](modules/15.md)。

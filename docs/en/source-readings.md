@@ -1,6 +1,6 @@
 # Learn designs from specific source files
 
-Snapshot 2026-11-18. The 61-repository registry supports discovery and dependency comparison. This page closely reads only three files. Pinned commits make the reading reproducible; they are not installation recommendations.
+Snapshot date 2026-11-18. The three files below were read line by line. Links are pinned to commits so you can check the reading; install current versions for your own work.
 
 ## 1. LangGraph: what a checkpoint contains
 
@@ -18,8 +18,8 @@ Exercise: draw validity, observation and correction timelines, then define as-of
 
 Read [binary-content offload](https://github.com/langchain-ai/deepagents/blob/09625520f4551b5909a4dda84aeb598f933b6da5/libs/deepagents/deepagents/middleware/_blob_offload.py#L55-L119). It uses content-addressed blobs, backend storage and message rewriting with fallback.
 
-Exercise: design artifact references, authorization, budgets, expiry and readback for large tool outputs. Measure context savings and readback failures. This particular file does not establish automatic compression of arbitrary text. A content hash is not access authorization.
+Exercise: design artifact references, authorization, budgets, expiry and readback for large tool outputs. Measure context savings and readback failures. This file covers offloading specific content; ordinary text output isn’t necessarily compressed. A content hash is not access authorization.
 
 ## The output of a source reading
 
-Record path/commit, invariant, failure case, smallest transferable mechanism and when not to adopt it. Preserve licenses and attribution when reusing code. Validate understanding with L03/L04/L06 rather than describing copied code as an original algorithm.
+Record path/commit, invariant, failure case, smallest transferable mechanism and when not to adopt it. Preserve licenses and attribution when reusing code. Check your understanding with the failure exercises in L03, L04 and L06.

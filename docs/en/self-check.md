@@ -2,7 +2,7 @@
 
 [Map](knowledge-tree.md) · [Study order](dependency-order.md) · [Entry diagnostic](entry-diagnostic.md) · [Assessment](assessment.md)
 
-Three interview-style questions per unit, 378 in total. They roughly follow the order: explain a mechanism, diagnose a problem, then design or implement. There is no answer key; the unit’s outline and primary reading cover what a good answer needs.
+Three interview-style questions per unit, 381 in total. They roughly follow the order: explain a mechanism, diagnose a problem, then design or implement. There is no answer key; the unit’s outline and primary reading cover what a good answer needs.
 
 How to use it:
 
@@ -151,6 +151,12 @@ How to use it:
 - [ ] Explain the difference between view, reshape and contiguous. When does view raise an error?
 - [ ] Training runs out of memory midway. How do you find whether activations, optimizer state or a particular batch is responsible, and build a minimal reproduction?
 - [ ] Sketch a training loop with mixed precision, checkpointing and resume, and list the state that must be restored on resume.
+
+### [03.6 Taking classical ML to production (MLOps)](modules/03.md#unit-03-6) · `advanced`
+
+- [ ] What problems does training-serving skew cause, and how does a feature store mitigate it?
+- [ ] Three months after launch a model degrades, but labels arrive a month late. How do you use data drift and prediction drift to catch it early and decide whether to retrain?
+- [ ] Design a model release process: experiment tracking, model registry, offline comparison gates, canary rollout and rollback, and the audit records to keep.
 
 ## [04 · Transformers and language-model internals](modules/04.md)
 

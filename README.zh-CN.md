@@ -2,49 +2,51 @@
 
 中文 · [English](README.md)
 
-**成为 AI Engineer：学什么、按什么顺序学、怎样证明自己会。基于中国与北美 367 份 JD 整理。**
+[![Validate](https://github.com/Yanyi-He/ai-engineer-roadmap/actions/workflows/validate.yml/badge.svg)](https://github.com/Yanyi-He/ai-engineer-roadmap/actions/workflows/validate.yml) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
+**想做 AI Engineer：学什么、按什么顺序学、怎么证明自己会。内容依据中国和北美 367 份真实 JD 整理。**
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/overview/roadmap-zh-dark.svg">
   <img alt="路线总览：打基础、构建AI应用、评测与上线、求职四个阶段，另有按目标岗位选择的专项。每个圆点代表一个学习单元。" src="assets/overview/roadmap-zh-light.svg" width="100%">
 </picture>
 
-全部 126 个单元，每个都有知识框架、目标深度（解释、实现、诊断或设计）、一份标明阅读范围的免费主读资源、一个动手任务和 3 道自测题。
+127 个单元，每个都写明要掌握的知识点、要学到多深（能解释、能实现、能诊断还是能设计）、一份免费主读资料和阅读范围、一个动手任务和 3 道自测题。
 
 ## 从哪里开始
 
 | 你的情况 | 先看 | 然后 |
 |---|---|---|
-| 有软件开发基础，想转做 AI 应用 | [入门诊断](docs/zh/entry-diagnostic.md)：跳过已经掌握的内容 | 沿[应用交付主线](docs/zh/dependency-order.md#应用交付主线)学习，完成[实验](docs/zh/labs.md) |
-| 正在准备 AIE 面试 | [自测题清单](docs/zh/self-check.md)：不看资料作答 | 回到对应单元补缺，再完成[模块 15](docs/zh/modules/15.md) |
+| 有软件开发基础，想转做 AI 应用 | [入门诊断](docs/zh/entry-diagnostic.md)：跳过已经掌握的内容 | 沿[主线](docs/zh/dependency-order.md#主线ai-应用工程)学习，边学边做[实验](docs/zh/labs.md) |
+| 正在准备 AIE 面试 | [自测题](docs/zh/self-check.md)：不看资料作答 | 回到对应单元补缺，再完成[模块 15](docs/zh/modules/15.md) |
 | 还在判断这个岗位是否适合自己 | [岗位总述](docs/zh/role-overview.md)：企业招 AIE 做什么 | 对比[中国](docs/zh/jd-china.md)和[北美](docs/zh/jd-north-america.md) JD 分析 |
 | 想往训练或推理方向深入 | [学习路径](docs/zh/learning-path.md)：选择专项方向 | 模块 [12](docs/zh/modules/12.md)、[13](docs/zh/modules/13.md)，再做[完整项目 P4](docs/zh/capstones.md#p4-小模型服务与行为优化) |
 
 ## 这份路线有什么不同
 
-- **从招聘证据出发，而不是罗列工具。** 在 51 份中国和 316 份北美 AI 工程岗位描述中，生产上线与交付分别出现在 86% 和 90% 的 JD 里，评测与实验为 53% 和 67%，微调只有 31% 和 18%。两地也有差异：Java/Spring 出现在 47% 的中国 JD 中，北美只有 10%。详见[图表、置信区间与企业 JD 拆解](docs/zh/role-overview.md)。
-- **先修精确到单元。** 不必先学完 Transformer 原理，也能先做出模型 API 服务和无框架 Agent；每条路线只展开项目需要的先修。
-- **免费资源，并标明阅读范围。** 181 项资源全部检查过链接，每个单元写明读哪些章节、为什么选这份资料。
-- **能拿给面试官看的证据。** 17 个实验、4 个完整项目、毕业评审标准和 378 道自测题，把阅读变成可以检查的作品。
+- **按招聘数据定重点。** 51 份中国 JD 和 316 份北美 JD 里，要求生产上线的分别占 86% 和 90%，要求评测的占 53% 和 67%，要求微调的只有 31% 和 18%。两地也不一样：47% 的中国 JD 要 Java/Spring，北美只有 10%。图表、置信区间和企业 JD 拆解见[岗位总述](docs/zh/role-overview.md)。
+- **先修精确到单元。** 不用先学完 Transformer 原理，也能先做出模型 API 服务和不依赖框架的 Agent；每条路线只展开它需要的先修。
+- **免费资料，写明读哪部分。** 193 项资源都检查过链接，每个单元写明读哪几章、为什么选它。
+- **做出来的东西能给面试官看。** 17 个实验、4 个综合项目（P1、P2 附[可运行的起步代码](starters/)）、能力评审标准和 381 道自测题。
 
 ## 全部页面
 
-1. [岗位与招聘市场](docs/zh/role-overview.md)：367 份 JD 分市场分析（加拿大 80 份）、企业 JD 拆解，以及加拿大官方季度职位空缺等可核验数据。
+1. [岗位与招聘市场](docs/zh/role-overview.md)：367 份 JD 按市场分析（其中加拿大 80 份）、大厂中厂 JD 拆解、加拿大官方季度职位空缺。
 2. [入门诊断](docs/zh/entry-diagnostic.md) → [学习路径](docs/zh/learning-path.md) → [依赖顺序](docs/zh/dependency-order.md)。
-3. [完整知识树](docs/zh/knowledge-tree.md)：17 个模块、126 个单元、698 条主题分支。
-4. [自测题清单](docs/zh/self-check.md)：每个单元 3 道面试式自测题，共 378 道，用于面试前查漏补缺。
-5. [实验](docs/zh/labs.md) → [完整项目](docs/zh/capstones.md) → [能力评审](docs/zh/assessment.md)。
+3. [知识树](docs/zh/knowledge-tree.md)：17 个模块、127 个单元、708 条主题分支。
+4. [自测题](docs/zh/self-check.md)：每个单元 3 道面试式问题，共 381 道，面试前查漏补缺。
+5. [实验](docs/zh/labs.md) → [综合项目](docs/zh/capstones.md) → [能力评审](docs/zh/assessment.md)。
 6. [技术选择](docs/zh/stack-decisions.md)、[开源项目研究](docs/zh/open-source.md)、[资源筛选](docs/zh/resource-policy.md)。
 
-[CS329Z / CS336 课程对照](docs/zh/course-audit.md)说明两门课怎样落到单元、学习深度、先修与实作取舍。
+[CS329Z / CS336 课程对照](docs/zh/course-audit.md)：两门课的内容分别落在哪些单元、学到多深。
 
 ## 模块
 
-学习时先完成小型模型应用，再逐步加入检索、工具、状态和运行能力。数学与模型原理可以并行补充，专业分支按目标岗位选择。
+先做出一个小的模型应用，再逐步加上检索、工具调用、状态管理和上线运维。数学和模型原理边做边补，专项按目标岗位选。
 
 <!-- FULL-KNOWLEDGE-TREE:START -->
 <details>
-<summary>展开完整知识树：17模块、126单元</summary>
+<summary>展开完整知识树：17模块、127单元</summary>
 
 ```mermaid
 mindmap
@@ -75,6 +77,7 @@ mindmap
       03.3 机器学习任务与泛化
       03.4 神经网络与优化过程
       03.5 PyTorch训练工程
+      03.6 传统 ML 上线与 MLOps
     04 Transformer与大语言模型原理
       04.1 Tokenizer、语料与训练目标
       04.2 Transformer完整计算链
@@ -217,30 +220,30 @@ mindmap
 | [15 · 项目作品、求职与面试准备](docs/zh/modules/15.md) | 把学习产物整理成可复现、可面试深挖的工程证据。 |
 | [16 · 世界模型、机器人与具身智能选修](docs/zh/modules/16.md) | 理解应用AIE与物理智能的连接，按兴趣进入机器人专项。 |
 
-## 评测操作
+## 评测实操
 
-[Ragas、测试与回归实操](docs/zh/evaluation-playbook.md)串联指标/标签、框架选择、运行、失败诊断和CI。提供6个合成案例、真实Ragas ID评分、pytest和promptfoo正常/破坏配置；LLM judge按需启用。
+[评测实操指南](docs/zh/evaluation-playbook.md)：用 Ragas、pytest 和 promptfoo 评测 RAG 和 Agent，并接进 CI。附 6 个合成案例和可运行的配置，其中一份配置故意改坏，用来确认测试真能抓到问题；LLM 评审按需开启。
 
-## 资源如何使用
+## 资料怎么用
 
-[Stanford CS329Z](https://cs329z.stanford.edu/)的已公开材料承担 Agent 系统主线，辅以官方文档、开放教材和免费课程。181 项资源记录了对应范围与选用理由；优先完成一个主读资源和对应实现，再按问题查阅其他资料。61 个 GitHub 项目的元数据用于筛选源码参考。
+[Stanford CS329Z](https://cs329z.stanford.edu/) 公开的讲义和作业是 Agent 部分的主干，其余是官方文档、开放教材和免费课程。193 项资源都写了读哪部分、为什么选它。先完成一份主读资料和它的练习，遇到问题再查别的。另外整理了 61 个 GitHub 项目，用来挑选源码阅读的例子。
 
-核心阅读材料可以免费获取；商业 API、云和 GPU 的实际使用可能产生费用。资源访问状态、课程发布进度与快照日期见[资源说明](docs/zh/resource-policy.md)。
+阅读材料都免费；调用商业 API、云服务和 GPU 会产生费用。资源的访问状态和快照日期见[资源说明](docs/zh/resource-policy.md)。
 
-## 运行仓库中的参考实现
+## 运行代码
 
-Python 3.10+，标准库即可运行三个离线机制参考：检索指标、有效时间记忆、外部操作后的崩溃恢复。其余实验是需要学习者完成的构建任务。[运行说明](labs/README.md)
+三个实验附参考实现，只需要 Python 3.10+ 标准库：检索指标、带有效时间的记忆、外部操作之后的崩溃恢复。其余实验是留给你做的题目。[运行说明](labs/README.md)
+
+P1（带权限的知识服务）和 P2（审批 Agent）有[起步代码](starters/)，需要 Python 3.12 和 FastAPI，离线就能跑，测试和评测都接进了 CI：
 
 ```sh
-python3 -B -m unittest discover -s tests -v
-python3 -B scripts/summarize_jds.py
-python3 -B scripts/summarize_market.py
-python3 -B scripts/render_docs.py
-python3 -B scripts/validate.py
+cd starters/p1-knowledge-service
+pip install -r requirements.txt
+python -m pytest -q && python evals/run_eval.py
 ```
 
-## 研究与贡献
+## 研究方法与贡献
 
-[招聘研究](docs/zh/market-research.md)分别分析中国 51 份、北美 316 份 JD：其中 104 份人工复核，263 份按同一规则从公开职位接口和雇主招聘页规则筛选。市场图表只保留按职业定义的指标，未获得的全国历史空缺总量留空。数据与图表的范围在[岗位总述](docs/zh/role-overview.md)中说明。
+[招聘研究方法](docs/zh/market-research.md)：中国 51 份、北美 316 份 JD，其中 104 份人工逐条复核，263 份从公开职位接口和雇主招聘页按同一套规则筛选。
 
-欢迎补充可复现案例、改进学习脉络、贡献实验或更新资源，见[贡献指南](CONTRIBUTING.md)。学习成果通过作品与独立评审验证；本路线尚无学习者就业结果研究。仓库原创内容采用 MIT，外部材料保留各自许可证。
+欢迎补充案例、改进路线、贡献实验或更新资源，见[贡献指南](CONTRIBUTING.md)。原创内容采用 MIT 许可，外部材料保留各自的许可证。

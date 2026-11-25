@@ -1,8 +1,8 @@
-# Seventeen labs: mechanisms through product delivery
+# 17 labs
 
-Extend one coherent project. L02/L03/L04 include offline references for retrieval metrics, external-commit recovery and valid-time memory. Learners build real-model, MCP and deployment extensions. [Reference instructions](../../labs/README.md)
+Build the labs into one project and extend it step by step. L02, L03 and L04 come with reference implementations that run offline (retrieval metrics, recovery after an external commit, and memory with valid-time facts); connecting real models, MCP and deployment is up to you. [How to run the references](../../labs/README.md)
 
-Retain task/data versions, configurations, commands, per-item results, failure analysis and the next change. Follow the [stage path](learning-path.md); L09 foundations can run alongside early API work, while L11/L12 follow specialization needs.
+For each lab, keep the task and data versions, configuration, commands, per-question results, failure analysis and your next change. The order is in the [learning path](learning-path.md); L09 can run alongside the early API labs, and L11 and L12 depend on your specialization.
 
 ## L01
 
@@ -14,9 +14,9 @@ Pass by showing bounded retries and queues, recording redaction rules, and compa
 
 ## L02
 
-**Measure retrieval before building RAG.** Prerequisites: 06.1–06.4, 11.1–11.2. Run `python3 -m labs.retrieval --split dev --k 3`. The reference implements BM25, Recall@k and graded nDCG on a tiny English synthetic fixture. It includes no vector model, generator or real-world quality evidence.
+**Measure retrieval before building RAG.** Prerequisites: 06.1–06.4, 11.1–11.2. Run `python3 -m labs.retrieval --split dev --k 3`. The reference implements BM25, Recall@k and graded nDCG on a small synthetic English dataset, without embeddings or answer generation. It includes no vector model, generator or real-world quality evidence.
 
-Build a redistributable corpus with document IDs, revisions, access scopes and relevance labels. Split dev and holdout by source/question family; paraphrases must not cross groups. Compare BM25, dense, hybrid and reranking under the same candidate budget and queries. Measure retrieval, ranking, supported answers, abstention and leakage separately. Recall on queries with no relevant document is undefined, not perfect.
+Build a redistributable corpus with document IDs, revisions, access scopes and relevance labels. Split dev and holdout by source/question family; paraphrases must not cross groups. Compare BM25, dense, hybrid and reranking under the same candidate budget and queries. Measure retrieval, ranking, supported answers, abstention and leakage separately. For queries with no relevant document, Recall is undefined; count them separately instead of as 100%.
 
 Deliver per-query rankings, qrels and index/embedding versions. Explain three failures by ingestion, retrieval, ranking or generation. Insert stale and unauthorized documents; restrict scope before retrieval. Report small-sample numerators/denominators and resample independent question families when estimating uncertainty. Public holdout is for teaching; reserve an untuned private test set for a real capstone.
 

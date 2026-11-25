@@ -1,14 +1,14 @@
 [
   {
     "id": "application",
-    "zh": "应用交付主线",
-    "en": "Application delivery",
-    "purpose_zh": "以托管模型完成业务Agent产品；模型原理并行补齐。",
-    "purpose_en": "Deliver a business-agent product with hosted models; strengthen model foundations in parallel.",
+    "zh": "主线：AI 应用工程",
+    "en": "Core route: AI application engineering",
+    "purpose_zh": "用托管模型 API 做出能上线的 AI 应用，覆盖 RAG、Agent、工具调用、评测和运维，不需要 GPU。模型原理和应用并行学。",
+    "purpose_en": "Build production AI applications on hosted model APIs: RAG, agents, tool calling, evaluation and operations. No GPU needed. Study model internals alongside.",
     "stages": [
       {
-        "zh": "需求、Python与模型接口",
-        "en": "Task, Python and model interface",
+        "zh": "需求、Python 与模型 API",
+        "en": "Requirements, Python and model APIs",
         "targets": [
           "00.2",
           "01.5",
@@ -24,8 +24,8 @@
         ]
       },
       {
-        "zh": "评测基线与可测量目标",
-        "en": "Evaluation baseline and measurable targets",
+        "zh": "评测基线",
+        "en": "Evaluation baseline",
         "targets": [
           "03.2",
           "11.1",
@@ -37,8 +37,19 @@
         "labs": []
       },
       {
-        "zh": "无框架Agent内核",
-        "en": "Framework-neutral harness",
+        "zh": "检索与 RAG",
+        "en": "Retrieval and RAG",
+        "targets": [
+          "06.4",
+          "06.6"
+        ],
+        "labs": [
+          "L02"
+        ]
+      },
+      {
+        "zh": "不用框架写一个 Agent 循环",
+        "en": "An agent loop without a framework",
         "targets": [
           "05.4",
           "07.3",
@@ -49,10 +60,9 @@
         ]
       },
       {
-        "zh": "数据、工具、持久化与授权",
-        "en": "Data, tools, persistence and authorization",
+        "zh": "工具、状态与权限",
+        "en": "Tools, state and permissions",
         "targets": [
-          "12.10",
           "07.4",
           "10.3",
           "10.4",
@@ -66,14 +76,17 @@
         ]
       },
       {
-        "zh": "验证器、运行与业务验收",
-        "en": "Verifier, operation and acceptance",
+        "zh": "上线与运营",
+        "en": "Shipping and operations",
         "targets": [
+          "02.6",
           "11.8",
           "11.6",
+          "11.11",
           "14.1",
           "14.2",
           "14.3",
+          "14.4",
           "14.6",
           "14.7",
           "11.12"
@@ -81,12 +94,13 @@
         "labs": [
           "L14",
           "L06",
+          "L16",
           "L17"
         ]
       },
       {
-        "zh": "模型原理、选型复核与作品答辩",
-        "en": "Model foundations, selection review and portfolio",
+        "zh": "模型原理与面试准备",
+        "en": "Model internals and interview prep",
         "targets": [
           "04.2",
           "04.5",
@@ -105,14 +119,14 @@
   },
   {
     "id": "knowledge",
-    "zh": "企业知识与RAG方向",
+    "zh": "企业知识与 RAG 方向",
     "en": "Enterprise knowledge and RAG",
-    "purpose_zh": "在应用基础上增加权限感知的数据与知识服务。",
-    "purpose_en": "Add authorized data/knowledge services to application foundations.",
+    "purpose_zh": "主线加上更深的知识库工作：进阶检索、结构化数据与 Text-to-SQL、权限，以及索引的更新和删除。",
+    "purpose_en": "The core route plus deeper knowledge-base work: advanced retrieval, structured data and text-to-SQL, permissions, and keeping the index current.",
     "stages": [
       {
-        "zh": "需求、Python与模型接口",
-        "en": "Task, Python and model interface",
+        "zh": "需求、Python 与模型 API",
+        "en": "Requirements, Python and model APIs",
         "targets": [
           "00.2",
           "01.5",
@@ -128,8 +142,8 @@
         ]
       },
       {
-        "zh": "评测基线与可测量目标",
-        "en": "Evaluation baseline and measurable targets",
+        "zh": "评测基线",
+        "en": "Evaluation baseline",
         "targets": [
           "03.2",
           "11.1",
@@ -141,8 +155,26 @@
         "labs": []
       },
       {
-        "zh": "无框架Agent内核",
-        "en": "Framework-neutral harness",
+        "zh": "检索、RAG 与知识库运维",
+        "en": "Retrieval, RAG and knowledge operations",
+        "targets": [
+          "06.4",
+          "06.6",
+          "06.5",
+          "06.7",
+          "06.8",
+          "11.11",
+          "12.10"
+        ],
+        "labs": [
+          "L02",
+          "L15",
+          "L16"
+        ]
+      },
+      {
+        "zh": "不用框架写一个 Agent 循环",
+        "en": "An agent loop without a framework",
         "targets": [
           "05.4",
           "07.3",
@@ -153,26 +185,9 @@
         ]
       },
       {
-        "zh": "数据、检索、引用与维护",
-        "en": "Data, retrieval, citations and maintenance",
+        "zh": "工具、状态与权限",
+        "en": "Tools, state and permissions",
         "targets": [
-          "06.4",
-          "06.6",
-          "06.8",
-          "12.10",
-          "11.11"
-        ],
-        "labs": [
-          "L02",
-          "L15",
-          "L16"
-        ]
-      },
-      {
-        "zh": "数据、工具、持久化与授权",
-        "en": "Data, tools, persistence and authorization",
-        "targets": [
-          "12.10",
           "07.4",
           "10.3",
           "10.4",
@@ -186,14 +201,17 @@
         ]
       },
       {
-        "zh": "验证器、运行与业务验收",
-        "en": "Verifier, operation and acceptance",
+        "zh": "上线与运营",
+        "en": "Shipping and operations",
         "targets": [
+          "02.6",
           "11.8",
           "11.6",
+          "11.11",
           "14.1",
           "14.2",
           "14.3",
+          "14.4",
           "14.6",
           "14.7",
           "11.12"
@@ -205,8 +223,8 @@
         ]
       },
       {
-        "zh": "模型原理、选型复核与作品答辩",
-        "en": "Model foundations, selection review and portfolio",
+        "zh": "模型原理与面试准备",
+        "en": "Model internals and interview prep",
         "targets": [
           "04.2",
           "04.5",
@@ -227,8 +245,8 @@
     "id": "model_optimization",
     "zh": "本地推理与模型适配方向",
     "en": "Local inference and model adaptation",
-    "purpose_zh": "从小模型计算与训练走到推理、LoRA及可回滚模型服务。",
-    "purpose_en": "Build small-model fundamentals, inference, LoRA and a reversible model service.",
+    "purpose_zh": "从小模型的计算和训练出发，做到本地推理、LoRA 微调和可回滚的模型服务。",
+    "purpose_en": "Start from small-model computation and training, then local inference, LoRA fine-tuning and a model service you can roll back.",
     "stages": [
       {
         "zh": "软件、数据与模型计算",
@@ -298,14 +316,14 @@
   },
   {
     "id": "agent_platform",
-    "zh": "Agent平台与系统优化方向",
-    "en": "Agent platforms and system optimization",
-    "purpose_zh": "应用主线后深入执行环境、编排、协作和数据驱动优化；RL按目标另选。",
-    "purpose_en": "Extend applications with execution, orchestration, coordination and data-driven optimization; select RL separately.",
+    "zh": "Agent 平台方向",
+    "en": "Agent platforms",
+    "purpose_zh": "主线加上 Agent 平台的深度：框架语义、耐久工作流、沙箱、多 Agent 协作和程序优化；强化学习可选。",
+    "purpose_en": "The core route plus agent-platform depth: framework semantics, durable workflows, sandboxes, multi-agent collaboration and program optimization. Reinforcement learning is optional.",
     "stages": [
       {
-        "zh": "需求、Python与模型接口",
-        "en": "Task, Python and model interface",
+        "zh": "需求、Python 与模型 API",
+        "en": "Requirements, Python and model APIs",
         "targets": [
           "00.2",
           "01.5",
@@ -321,8 +339,8 @@
         ]
       },
       {
-        "zh": "评测基线与可测量目标",
-        "en": "Evaluation baseline and measurable targets",
+        "zh": "评测基线",
+        "en": "Evaluation baseline",
         "targets": [
           "03.2",
           "11.1",
@@ -334,8 +352,19 @@
         "labs": []
       },
       {
-        "zh": "无框架Agent内核",
-        "en": "Framework-neutral harness",
+        "zh": "检索与 RAG",
+        "en": "Retrieval and RAG",
+        "targets": [
+          "06.4",
+          "06.6"
+        ],
+        "labs": [
+          "L02"
+        ]
+      },
+      {
+        "zh": "不用框架写一个 Agent 循环",
+        "en": "An agent loop without a framework",
         "targets": [
           "05.4",
           "07.3",
@@ -346,10 +375,9 @@
         ]
       },
       {
-        "zh": "数据、工具、持久化与授权",
-        "en": "Data, tools, persistence and authorization",
+        "zh": "工具、状态与权限",
+        "en": "Tools, state and permissions",
         "targets": [
-          "12.10",
           "07.4",
           "10.3",
           "10.4",
@@ -363,14 +391,17 @@
         ]
       },
       {
-        "zh": "验证器、运行与业务验收",
-        "en": "Verifier, operation and acceptance",
+        "zh": "上线与运营",
+        "en": "Shipping and operations",
         "targets": [
+          "02.6",
           "11.8",
           "11.6",
+          "11.11",
           "14.1",
           "14.2",
           "14.3",
+          "14.4",
           "14.6",
           "14.7",
           "11.12"
@@ -378,12 +409,13 @@
         "labs": [
           "L14",
           "L06",
+          "L16",
           "L17"
         ]
       },
       {
-        "zh": "模型原理、选型复核与作品答辩",
-        "en": "Model foundations, selection review and portfolio",
+        "zh": "模型原理与面试准备",
+        "en": "Model internals and interview prep",
         "targets": [
           "04.2",
           "04.5",
@@ -399,8 +431,8 @@
         ]
       },
       {
-        "zh": "框架语义、工具目录与沙箱",
-        "en": "Framework semantics, catalogs and isolation",
+        "zh": "框架、耐久工作流与沙箱",
+        "en": "Frameworks, durable workflows and sandboxes",
         "targets": [
           "08.2",
           "08.5",
@@ -413,8 +445,8 @@
         "labs": []
       },
       {
-        "zh": "记忆、协作与程序优化",
-        "en": "Memory, collaboration and program optimization",
+        "zh": "记忆、多 Agent 协作与程序优化",
+        "en": "Memory, multi-agent collaboration and program optimization",
         "targets": [
           "07.8",
           "09.5",
@@ -426,8 +458,8 @@
         ]
       },
       {
-        "zh": "可选模型策略优化",
-        "en": "Optional policy optimization",
+        "zh": "强化学习",
+        "en": "Reinforcement learning",
         "targets": [
           "12.6",
           "12.7"

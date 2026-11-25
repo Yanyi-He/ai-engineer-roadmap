@@ -8,7 +8,7 @@
       "customer_discovery_delivery"
     ],
     "outcome_zh": "把一个业务需求拆成产品、数据、模型、系统和验收工作。",
-    "outcome_en": "Translate a business need into product, data, model, system and acceptance work.",
+    "outcome_en": "Break a business need into product, data, model, system and acceptance work.",
     "nodes": [
       {
         "id": "00.1",
@@ -106,8 +106,8 @@
       "algorithms_cs_foundations",
       "git_cicd"
     ],
-    "outcome_zh": "独立编写、测试、调试和维护可交付的Python服务代码。",
-    "outcome_en": "Independently write, test, debug and maintain deliverable Python code.",
+    "outcome_zh": "能独立写、测、调试和维护上线用的 Python 代码。",
+    "outcome_en": "Write, test, debug and maintain production Python code on your own.",
     "nodes": [
       {
         "id": "01.1",
@@ -441,8 +441,8 @@
       "java_spring",
       "typescript_javascript"
     ],
-    "outcome_zh": "把模型功能接入有身份、数据与运行边界的业务服务。",
-    "outcome_en": "Integrate model features into business services with identity, data and operational boundaries.",
+    "outcome_zh": "把模型功能接进真实的业务系统：登录鉴权、数据库、队列和云上部署。",
+    "outcome_en": "Connect model features to real business systems: authentication, databases, queues and cloud deployment.",
     "nodes": [
       {
         "id": "02.1",
@@ -691,14 +691,16 @@
           "云计算、对象存储、托管数据库、队列与IAM",
           "配置注入、secret、环境分层和依赖启动顺序",
           "CI/CD、数据库迁移、灰度和回滚",
-          "服务发现、负载均衡、Kubernetes核心对象概览"
+          "服务发现、负载均衡、Kubernetes核心对象概览",
+          "基础设施即代码与 GitOps：用 Terraform 管理云资源和环境，用 Helm 打包，用 Argo CD 同步部署并发现配置漂移"
         ],
         "topics_en": [
           "Images, networking, volumes, health checks and limits",
           "Compute, objects, managed databases, queues and IAM",
           "Configuration, secrets, environments and dependency startup",
           "CI/CD, migrations, canaries and rollback",
-          "Discovery, load balancing and Kubernetes objects"
+          "Discovery, load balancing and Kubernetes objects",
+          "Infrastructure as code and GitOps: Terraform for cloud resources and environments, Helm packaging, Argo CD sync and drift detection"
         ],
         "build_zh": "用Compose发布API、worker和数据库并演练回滚。",
         "build_en": "Deploy API/worker/database with Compose and rehearse rollback.",
@@ -833,8 +835,8 @@
       "pytorch_ml_framework",
       "training_experiment_data"
     ],
-    "outcome_zh": "理解模型学习、实验与优化，能运行和诊断小规模训练。",
-    "outcome_en": "Understand learning/experiments/optimization and run/debug small training jobs.",
+    "outcome_zh": "看懂模型怎么学、实验怎么做，能跑通并排查小规模训练。",
+    "outcome_en": "Understand how models learn and how experiments work; run and debug small training jobs.",
     "nodes": [
       {
         "id": "03.1",
@@ -1061,6 +1063,54 @@
           "03.4",
           "01.5"
         ]
+      },
+      {
+        "id": "03.6",
+        "zh": "传统 ML 上线与 MLOps",
+        "en": "Taking classical ML to production (MLOps)",
+        "depth": "implement",
+        "track": "advanced",
+        "primary_resource": "mlops-zoomcamp",
+        "read_zh": "MLOps Zoomcamp 的实验跟踪（MLflow）、编排、部署（批量/在线/流式）、监控和最佳实践各模块；特征存储与漂移监控按需查 Feast、Evidently 文档。",
+        "read_en": "MLOps Zoomcamp modules on experiment tracking (MLflow), orchestration, deployment (batch/online/streaming), monitoring and best practices; consult the Feast and Evidently docs for feature stores and drift monitoring.",
+        "topics_zh": [
+          "特征管道与特征存储：离线和在线特征一致、时间点正确的训练数据（Feast 等）",
+          "实验跟踪与模型注册：参数、指标、数据版本和模型版本（MLflow）",
+          "批量打分与在线服务：定时批处理、实时 API 和托管服务（SageMaker、Databricks Model Serving 等）",
+          "监控：数据漂移、预测漂移、标签延迟时的效果监控与重训触发（Evidently 等）",
+          "ML 的 CI/CD：数据校验、训练流水线、模型对比门槛与回滚",
+          "模型治理：模型卡、审批记录与受监管行业的模型风险管理"
+        ],
+        "topics_en": [
+          "Feature pipelines and feature stores: offline/online consistency and point-in-time-correct training data (Feast and similar)",
+          "Experiment tracking and model registry: parameters, metrics, data versions and model versions (MLflow)",
+          "Batch scoring and online serving: scheduled batch jobs, real-time APIs and managed serving (SageMaker, Databricks Model Serving and similar)",
+          "Monitoring: data drift, prediction drift, quality monitoring under delayed labels and retraining triggers (Evidently and similar)",
+          "CI/CD for ML: data validation, training pipelines, model comparison gates and rollback",
+          "Model governance: model cards, approval records and model-risk management in regulated industries"
+        ],
+        "build_zh": "把一个表格分类模型（例如工单分流）从 notebook 带到生产：特征管道、MLflow 注册、批量和在线打分、漂移报告与重训触发，并写一份模型卡。",
+        "build_en": "Take a tabular classifier (for example ticket triage) from notebook to production: feature pipeline, MLflow registry, batch and online scoring, a drift report with a retraining trigger, and a model card.",
+        "checks_zh": [
+          "训练时的特征和线上打分时的特征不一致（training-serving skew）会造成什么问题？特征存储怎样缓解？",
+          "模型上线三个月后效果下降，但标签要一个月后才拿到。你如何用数据漂移和预测漂移提前发现问题，并决定是否重训？",
+          "设计一个模型发布流程：实验跟踪、模型注册、离线对比门槛、灰度上线和回滚，并说明需要保留哪些审计记录。"
+        ],
+        "checks_en": [
+          "What problems does training-serving skew cause, and how does a feature store mitigate it?",
+          "Three months after launch a model degrades, but labels arrive a month late. How do you use data drift and prediction drift to catch it early and decide whether to retrain?",
+          "Design a model release process: experiment tracking, model registry, offline comparison gates, canary rollout and rollback, and the audit records to keep."
+        ],
+        "jd_keys": [
+          "math_statistics_ml",
+          "training_experiment_data",
+          "model_serving_inference",
+          "observability"
+        ],
+        "prerequisites": [
+          "03.3",
+          "02.6"
+        ]
       }
     ],
     "related_modules": [
@@ -1076,8 +1126,8 @@
       "math_statistics_ml",
       "multimodal_voice"
     ],
-    "outcome_zh": "沿token到logits讲清模型数据流，并实现一个小型decoder。",
-    "outcome_en": "Explain token-to-logit dataflow and implement a small decoder.",
+    "outcome_zh": "讲清从 token 到 logits 的计算过程，并自己实现一个小型 decoder。",
+    "outcome_en": "Explain the computation from tokens to logits and implement a small decoder yourself.",
     "nodes": [
       {
         "id": "04.1",
@@ -1410,8 +1460,8 @@
       "multimodal_voice",
       "cloud"
     ],
-    "outcome_zh": "交付具有严格接口、预算和交互边界的模型应用。",
-    "outcome_en": "Deliver model applications with explicit contracts, budgets and interaction boundaries.",
+    "outcome_zh": "做出可靠的模型应用：结构化输出、工具调用、上下文管理和成本控制。",
+    "outcome_en": "Build dependable model applications: structured output, tool calling, context management and cost control.",
     "nodes": [
       {
         "id": "05.1",
@@ -1902,8 +1952,8 @@
       "hybrid_retrieval_reranking",
       "vector_database_named"
     ],
-    "outcome_zh": "构建可评测、可更新、有权限边界的企业知识应用。",
-    "outcome_en": "Build a measurable, maintainable and authorized knowledge application.",
+    "outcome_zh": "做出能评测、能更新、按权限返回内容的企业知识库应用。",
+    "outcome_en": "Build an enterprise knowledge application that can be evaluated, kept current and filtered by permissions.",
     "nodes": [
       {
         "id": "06.1",
@@ -1920,7 +1970,8 @@
           "清洗、去重、内容hash、文档/段落ID与版本",
           "按标题/语义/结构切分、overlap与metadata",
           "批处理、失败重跑、幂等索引和删除传播",
-          "解析工具选型（Docling、MinerU、PaddleOCR、Unstructured）或云端文档智能服务（Azure Document Intelligence、AWS Textract），按文档类型评估解析质量"
+          "解析工具选型（Docling、MinerU、PaddleOCR、Unstructured）或云端文档智能服务（Azure Document Intelligence、AWS Textract），按文档类型评估解析质量",
+          "企业数据平台：Spark/Databricks 批处理、Airflow 编排、Lakehouse 表格式（Delta/Iceberg）与数据血缘"
         ],
         "topics_en": [
           "Connectors, incremental sync, provenance and data cards",
@@ -1928,7 +1979,8 @@
           "Cleaning, hashes, document/chunk IDs and revisions",
           "Structural/semantic chunks, overlap and metadata",
           "Batching, replay, idempotent indexes and deletion",
-          "Choosing parsers (Docling, MinerU, PaddleOCR, Unstructured) or cloud document-intelligence services (Azure Document Intelligence, AWS Textract), and evaluating parse quality by document type"
+          "Choosing parsers (Docling, MinerU, PaddleOCR, Unstructured) or cloud document-intelligence services (Azure Document Intelligence, AWS Textract), and evaluating parse quality by document type",
+          "Enterprise data platforms: Spark/Databricks batch processing, Airflow orchestration, lakehouse table formats (Delta/Iceberg) and lineage"
         ],
         "build_zh": "为一个有修订和删除的数据源建立可重放入库流水线。",
         "build_en": "Build replayable ingestion for a source with revisions/deletion.",
@@ -2359,8 +2411,8 @@
       "memory",
       "reliability_recovery"
     ],
-    "outcome_zh": "构建能规划、调用工具、验证结果并从故障中恢复的执行系统。",
-    "outcome_en": "Build an execution system that plans, uses tools, verifies outcomes and recovers.",
+    "outcome_zh": "构建能规划、调用工具、检查结果并从失败中恢复的 Agent。",
+    "outcome_en": "Build agents that plan, call tools, check their results and recover from failures.",
     "nodes": [
       {
         "id": "07.1",
@@ -2806,8 +2858,8 @@
       "typed_agent_frameworks",
       "dify_coze"
     ],
-    "outcome_zh": "深入掌握一套有状态编排框架，并能解释同层替代与跨层组合。",
-    "outcome_en": "Master one stateful framework and explain alternatives and cross-layer composition.",
+    "outcome_zh": "熟练使用 LangGraph，并能说清它和其他框架、工作流引擎怎么分工。",
+    "outcome_en": "Use LangGraph well, and explain how it compares and combines with other frameworks and workflow engines.",
     "nodes": [
       {
         "id": "08.1",
@@ -3007,14 +3059,14 @@
         "read_en": "ADK agents, sessions, tools and workflows; compare PydanticAI/MAF.",
         "topics_zh": [
           "LangChain与LangGraph的职责差异",
-          "ADK、PydanticAI、Microsoft Agent Framework（接替已归档的 AutoGen）、CrewAI，以及国内的 AgentScope 与 Spring AI Alibaba",
+          "ADK、PydanticAI、Microsoft Agent Framework（AutoGen 和 Semantic Kernel 的后继）、CrewAI，以及国内的 AgentScope 与 Spring AI Alibaba",
           "OpenAI Agents SDK、Claude Agent SDK等provider agent SDK与框架中立的typed action contract",
           "TypeScript（Vercel AI SDK、Mastra）、Java（Spring AI/LangChain4j，见02.8）与.NET生态",
           "session、state、重试、工具、部署和评测语义对照"
         ],
         "topics_en": [
           "LangChain versus LangGraph responsibilities",
-          "ADK, PydanticAI, Microsoft Agent Framework (successor to the archived AutoGen), CrewAI, and AgentScope and Spring AI Alibaba in China",
+          "ADK, PydanticAI, Microsoft Agent Framework (successor to AutoGen and Semantic Kernel), CrewAI, and AgentScope and Spring AI Alibaba in China",
           "Provider agent SDKs (OpenAI Agents SDK, Claude Agent SDK) and neutral typed actions",
           "TypeScript (Vercel AI SDK, Mastra), Java (Spring AI/LangChain4j; see 02.8) and .NET ecosystems",
           "Compare sessions, state, retries, tools, deployment and evaluation"
@@ -3203,8 +3255,8 @@
       "workflow_orchestration_harness",
       "reliability_recovery"
     ],
-    "outcome_zh": "按可分解任务设计协作，并测量相对单Agent的收益和成本。",
-    "outcome_en": "Design collaboration for decomposable tasks and measure gains/costs against one agent.",
+    "outcome_zh": "判断任务值不值得拆给多个 Agent，并测出比单个 Agent 多得到什么、多花多少。",
+    "outcome_en": "Decide when a task is worth splitting across agents, and measure what that gains and costs over a single agent.",
     "nodes": [
       {
         "id": "09.1",
@@ -3447,8 +3499,8 @@
       "sandbox_isolation",
       "security_governance"
     ],
-    "outcome_zh": "开发能被不同客户端调用、权限清晰、执行受控的工具服务。",
-    "outcome_en": "Develop interoperable tools with explicit permissions and bounded execution.",
+    "outcome_zh": "开发 MCP 等工具服务：不同客户端都能调用，权限清楚，执行有限制。",
+    "outcome_en": "Build tool services such as MCP servers that any client can call, with clear permissions and bounded execution.",
     "nodes": [
       {
         "id": "10.1",
@@ -3791,8 +3843,8 @@
       "latency_cost_performance",
       "training_experiment_data"
     ],
-    "outcome_zh": "用可信评测驱动迭代，并把线上失败定位到具体组件。",
-    "outcome_en": "Drive iteration with credible evaluation and attribute failures to components.",
+    "outcome_zh": "用可靠的评测决定下一步改什么，并把线上失败定位到具体环节。",
+    "outcome_en": "Use reliable evaluation to decide what to change next, and trace production failures to the component at fault.",
     "nodes": [
       {
         "id": "11.1",
@@ -4394,8 +4446,8 @@
       "distillation",
       "training_experiment_data"
     ],
-    "outcome_zh": "理解主要训练路线，并完成小规模领域适配与独立评测。",
-    "outcome_en": "Understand training choices and complete small adaptation with independent evaluation.",
+    "outcome_zh": "知道什么时候该微调，并完成一次小规模微调和独立评测。",
+    "outcome_en": "Know when fine-tuning is worth it, and run one small fine-tune with an independent evaluation.",
     "nodes": [
       {
         "id": "12.1",
@@ -4904,8 +4956,8 @@
       "quantization_compression",
       "gpu_distributed_training"
     ],
-    "outcome_zh": "本地运行模型，定位推理瓶颈，并选择适合负载的部署方式。",
-    "outcome_en": "Run models locally, diagnose inference bottlenecks and deploy for a workload.",
+    "outcome_zh": "在本地跑模型，找到推理瓶颈，按负载选择部署方式。",
+    "outcome_en": "Run models locally, find inference bottlenecks and choose a deployment that fits the workload.",
     "nodes": [
       {
         "id": "13.1",
@@ -5253,8 +5305,8 @@
       "reliability_recovery",
       "customer_discovery_delivery"
     ],
-    "outcome_zh": "从需求发现到上线运营，承担完整AI产品的交付责任。",
-    "outcome_en": "Own delivery from discovery to operation of an AI product.",
+    "outcome_zh": "从需求到上线运营，独立交付一个完整的 AI 产品。",
+    "outcome_en": "Deliver a complete AI product, from requirements to production operation.",
     "nodes": [
       {
         "id": "14.1",
@@ -5409,14 +5461,16 @@
           "限流、预算、超时、重试、熔断和fallback",
           "重复请求、worker崩溃、队列积压和依赖故障",
           "备份恢复、schema/模型/索引回滚",
-          "告警、on-call、runbook、RCA和改进"
+          "告警、on-call、runbook、RCA和改进",
+          "应用级压测：用 Locust 或 k6 模拟真实请求组合，验证排队、限流、超时与降级是否按设计生效"
         ],
         "topics_en": [
           "SLIs/SLOs, error budgets and critical paths",
           "Limits, budgets, deadlines, retries and fallback",
           "Redelivery, crashes, queues and dependency failure",
           "Backup/restore and schema/model/index rollback",
-          "Alerts, on-call, runbooks, incidents and improvements"
+          "Alerts, on-call, runbooks, incidents and improvements",
+          "Application load testing: simulate realistic request mixes with Locust or k6 and verify that queuing, rate limits, timeouts and degradation behave as designed"
         ],
         "build_zh": "演练三类故障并完成一页事故复盘。",
         "build_en": "Drill three failure classes and write an incident review.",
@@ -5504,7 +5558,8 @@
           "调用费用、训练费用、存储/观测费用和预算",
           "采用率、任务成功、人工节省和投诉/纠正",
           "维护节奏、依赖升级、交接和文档",
-          "多环境发布（sandbox → dev → QA → UAT → prod）、架构决策记录（ADR）、API 规范与运行手册"
+          "多环境发布（sandbox → dev → QA → UAT → prod）、架构决策记录（ADR）、API 规范与运行手册",
+          "功能开关与渐进发布：按租户、用户或比例放量，对照指标后扩大、回滚或清理开关（OpenFeature 等）"
         ],
         "topics_en": [
           "Traceable releases across model/prompt/tools/index/data",
@@ -5512,7 +5567,8 @@
           "Inference/training/storage/observability cost and budgets",
           "Adoption, success, time saved and corrections",
           "Maintenance, upgrades, handoff and documentation",
-          "Environment promotion (sandbox → dev → QA → UAT → prod), architecture decision records, API specifications and runbooks"
+          "Environment promotion (sandbox → dev → QA → UAT → prod), architecture decision records, API specifications and runbooks",
+          "Feature flags and progressive delivery: roll out by tenant, user or percentage, compare metrics, then expand, roll back or retire flags (OpenFeature and similar)"
         ],
         "build_zh": "发布一次可回滚变更，并交付运维与成本记录。",
         "build_en": "Release a reversible change with operation/cost evidence.",
@@ -5698,8 +5754,8 @@
       "algorithms_cs_foundations",
       "transformer_model_internals"
     ],
-    "outcome_zh": "把学习产物整理成可复现、可面试深挖的工程证据。",
-    "outcome_en": "Turn learning into reproducible work that can sustain technical interviews.",
+    "outcome_zh": "把作品整理成别人能复现、经得起面试追问的样子。",
+    "outcome_en": "Turn your projects into work others can reproduce and that holds up under interview follow-ups.",
     "nodes": [
       {
         "id": "15.1",
@@ -6039,8 +6095,8 @@
       "multimodal_voice",
       "reinforcement_learning"
     ],
-    "outcome_zh": "理解应用AIE与物理智能的连接，按兴趣进入机器人专项。",
-    "outcome_en": "Understand links to physical intelligence and choose a robotics specialization.",
+    "outcome_zh": "了解 AI 应用工程和机器人、具身智能的联系，有兴趣再深入。",
+    "outcome_en": "See how AI application engineering connects to robotics and embodied AI, and go deeper if it interests you.",
     "nodes": [
       {
         "id": "16.1",

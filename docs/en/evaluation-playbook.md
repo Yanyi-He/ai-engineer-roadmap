@@ -1,6 +1,6 @@
 # Practical AI evaluation: Ragas, regression and release checks
 
-Maps to [11.10–11.12](modules/11.md#unit-11-10). Build the workflow from measurement design and labels through real-system capture, scoring, diagnosis, regression and release decisions. Select a primary toolchain and extend it for the task.
+Maps to [11.10–11.12](modules/11.md#unit-11-10). After this page you should be able to run an evaluation end to end on your own: decide what to measure, prepare labels, run the real system, score it, analyze failures, run regressions and decide whether to release. Pick one toolchain first and extend it as the task needs.
 
 ## 1. Choose tools by responsibility
 

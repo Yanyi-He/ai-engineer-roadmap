@@ -15,12 +15,19 @@
 | Inference | Mac: llama.cpp/MLX LM; Linux GPU: start with vLLM | Memory, latency, throughput, cost and quality | Compare SGLang later |
 | Optimization | Data/retrieval/prompts → DSPy → PEFT/TRL | Experimental evidence before training | Bandits/OPE, DPO/GRPO/verl are specializations |
 
-Beyond agents, MCP and sandboxes, prioritize data/retrieval engineering, evaluation, backend/distributed systems, observability/reliability, identity/privacy, model-serving performance, and product/business communication. Multimodality, speech, NL2SQL and post-training depend on the role. Foundation-model pretraining, CUDA kernels and distributed training platforms are optional specialties.
+## What else to learn beyond agents, MCP and sandboxes
 
-Maintenance findings (rechecked 23 November 2026): AutoGen is archived and succeeded by Microsoft Agent Framework; Flowise was archived and reached end of life in August 2026. Neither belongs in a new project's main line. Dify, n8n, Langfuse and LiteLLM require checking custom/partitioned licensing; Basic Memory currently reports AGPL-3.0. Inspect the actual file license before reuse.
+Prioritize data and retrieval engineering, evaluation and experiments, backend and distributed systems, observability and reliability, identity and privacy, model-serving performance, and product and business communication. Multimodality, speech, NL2SQL, domain rules and post-training depend on the role. Foundation-model pretraining, CUDA kernels and distributed training platforms are optional specialties that application AIE work rarely needs.
+
+## Which layer each framework owns
+
+LangGraph controls stateful agent execution; PydanticAI, ADK and Microsoft Agent Framework offer other application and tool abstractions; Temporal runs durable workflows across services; DSPy optimizes model programs against a metric; MCP defines how tools talk to clients. When you combine them, decide up front which layer owns retries, state and lifecycle. Draw the boundaries first, then pick libraries.
+
+For practice, use one orchestrator, one store and one format for traces and evaluation records. Before adopting a second framework, write down the new constraint that calls for it and port one task to compare. For source-level mechanisms, see [pinned source readings](source-readings.md).
+
+## Maintenance status (checked 23 November 2026)
+
+- AutoGen is archived and succeeded by Microsoft Agent Framework; Flowise was archived and reached end of life in August 2026. Neither is a good choice for new projects.
+- Dify, n8n, Langfuse and LiteLLM use custom or partitioned licenses; read the license file before reusing code. Basic Memory is currently AGPL-3.0.
 
 Primary references: [LangGraph](https://docs.langchain.com/oss/python/langgraph/overview), [Microsoft Agent Framework](https://learn.microsoft.com/agent-framework/overview), [Spring AI](https://docs.spring.io/spring-ai/reference/), [LangChain4j](https://docs.langchain4j.dev/), [MCP](https://modelcontextprotocol.io/docs/develop/build-server), [repository snapshot](open-source.md).
-
-## Different layers, not interchangeable names
-
-LangGraph controls stateful agent execution; PydanticAI/ADK/Microsoft Agent Framework offer alternative application/tool abstractions; Temporal handles durable cross-service workflows; DSPy optimizes measurable model programs; MCP defines tool interaction. Choose an authoritative owner for retries, state and lifecycle when combining them. Start with one orchestrator, one store and one trace/evaluation record format. Port one task before adopting another framework. See [pinned source readings](source-readings.md).

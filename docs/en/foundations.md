@@ -1,8 +1,8 @@
-# A bridge into math, ML and model fundamentals
+# Math and model foundations, learned alongside
 
-The full scope is in [03 math/ML](modules/03.md) and [04 Transformers/LLMs](modules/04.md). These small calculations and mechanism checks support studying foundations alongside application work.
+The full scope is in [03 math/ML](modules/03.md) and [04 Transformers/LLMs](modules/04.md). This page picks the parts AI application work uses most, each with a small exercise you can do by hand while you build.
 
-Use selected [Dive into Deep Learning](https://d2l.ai/) sections on linear algebra, calculus, probability/statistics, softmax regression, attention and transformers. Add tokenizer/model material from the [Hugging Face LLM Course](https://huggingface.co/learn/llm-course/en/chapter1/1). For uncertainty, read the assumptions and resampling units in [SciPy bootstrap](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html), not just its function signature.
+Use selected [Dive into Deep Learning](https://d2l.ai/) sections on linear algebra, calculus, probability/statistics, softmax regression, attention and transformers. Add tokenizer/model material from the [Hugging Face LLM Course](https://huggingface.co/learn/llm-course/en/chapter1/1). For uncertainty, read [SciPy bootstrap](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html) for its assumptions and what unit gets resampled.
 
 | Minimum concept | Demonstration | Later capability |
 |---|---|---|
@@ -14,4 +14,4 @@ Use selected [Dive into Deep Learning](https://d2l.ai/) sections on linear algeb
 | Attention, positions, context, KV cache | Draw single-head tensor shapes; explain prefill versus decode | Context and inference costs |
 | Train/dev/test, distribution shift | Group paraphrases, user histories and temporal information | Credible model/policy improvement |
 
-Pass by computing small examples, explaining an actual failure and naming the assumptions. Training specialization adds backpropagation, optimizers, precision and distributed computing. Multi-step RL adds MDPs, policy gradients, advantage estimation and off-policy bias.
+You know enough when you can work a small example by hand, use it to explain a real failure and say what the formula assumes. For training roles, add backpropagation, optimizers, numerical precision and distributed computing; for multi-step RL, add MDPs, policy gradients, advantage estimation and off-policy bias.

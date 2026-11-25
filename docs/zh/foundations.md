@@ -1,8 +1,8 @@
-# 数学、ML与模型原理的补课入口
+# 数学与模型原理：边做边补
 
-基础范围完整列在[03数学/ML](modules/03.md)和[04Transformer/LLM](modules/04.md)。这里提供小计算与机制检查入口，帮助与应用项目并行补课。
+完整范围在[03 数学/ML](modules/03.md)和[04 Transformer/LLM](modules/04.md)。这一页挑出做 AI 应用最常用的部分，每项配一个手算或动手的小练习，可以和应用项目同时进行。
 
-主教材：[Dive into Deep Learning](https://d2l.ai/) 的 Linear Algebra、Calculus、Probability and Statistics、Softmax Regression、Attention、Transformers 相关节；遇到公式再回查，不要求先顺读全书。补充 [Hugging Face LLM Course](https://huggingface.co/learn/llm-course/en/chapter1/1) 的tokenizer和Transformer模型说明。统计实践参考 [SciPy bootstrap](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html)，读假设和重采样单位，不只抄函数调用。
+主教材：[Dive into Deep Learning](https://d2l.ai/) 的 Linear Algebra、Calculus、Probability and Statistics、Softmax Regression、Attention、Transformers 相关节；遇到公式再回查，不要求先顺读全书。补充 [Hugging Face LLM Course](https://huggingface.co/learn/llm-course/en/chapter1/1) 的tokenizer和Transformer模型说明。统计实践参考 [SciPy bootstrap](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html)，重点看它的假设，以及按什么单位重采样。
 
 | 最小知识 | 手上要做出来 | 对应后续能力 |
 |---|---|---|
@@ -14,4 +14,4 @@
 | attention、位置、上下文窗口与KV cache | 画单头attention的张量形状；解释生成时prefill与decode为何不同 | 上下文管理、推理成本 |
 | train/dev/test与分布迁移 | 把模板改写、同用户历史和时间信息分组；解释随机逐条切分的泄漏 | 可信的模型/策略改进 |
 
-完成标准：不靠记术语，能手算小例子、解释一个真实失败，并指出公式成立的假设。需训练纵深时再增加反向传播、优化器、数值精度与分布式计算；需要多步RL时补MDP、策略梯度、优势估计与off-policy偏差。
+学到什么程度算够：能手算小例子，能用它解释一个真实的失败，能说出公式成立的前提。要做训练方向时再增加反向传播、优化器、数值精度与分布式计算；需要多步RL时补MDP、策略梯度、优势估计与off-policy偏差。

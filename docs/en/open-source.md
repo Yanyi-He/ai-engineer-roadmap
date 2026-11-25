@@ -1,6 +1,6 @@
 # Repository study: extract system mechanisms
 
-Metadata for 61 candidates was captured on18–19 November 2026. Rows include runtimes, frameworks, platforms, documentation and learning paths. Stars aid discovery. GitHub primary language classifies a repository; file-level evidence is needed for dependencies and runtime responsibilities.
+Metadata for 61 projects was captured on 18–19 November 2026, with the date on each row. They include runtimes, frameworks, platforms, documentation and learning paths. Stars were used only to find candidates; the primary language is GitHub’s label for the whole repository, so check the files for actual dependencies.
 
 | Repository | Stars | Primary language | Category | Captured | Archive flag |
 |---|---:|---|---|---|---|
@@ -83,15 +83,15 @@ Metadata for 61 candidates was captured on18–19 November 2026. Rows include ru
 | [sgl-project/sglang](https://github.com/sgl-project/sglang) | Python-led serving; architecture-doc level | Compare on the same workload; do not operate two engines prematurely |
 | [spring-projects/spring-ai](https://github.com/spring-projects/spring-ai) | Java/Spring; official reference level | Model and tool integration in existing Java enterprise systems |
 
-Manifest-labeled projects had dependency files inspected. Metadata/README/docs-level entries are not full source audits. See `inspected_files` in the snapshot. Optional integrations are not automatically enabled runtime dependencies; supporting several stores does not require installing all of them.
+Projects labeled manifests had their dependency files read; those labeled metadata, README or docs had only those read. The files read are listed under `inspected_files` in the snapshot. Optional integrations are off by default; projects that support several stores need only one of them.
 
-**Reusable combination:** typed Python backends and TS product surfaces, durable databases and workers, provider adapters, recoverable orchestration, narrow tools, and data/evaluation/trace loops. Do not stack every popular library in one project.
+**Reusable combination:** typed Python backends and TS product surfaces, durable databases and workers, provider adapters, recoverable orchestration, narrow tools, and data/evaluation/trace loops. Pick only what the current task needs.
 
-`NOASSERTION` or missing license metadata does not mean unrestricted use. Code and documentation can have different licenses. Inspect specific files before copying; Basic Memory currently reports AGPL, while projects such as Dify/n8n have custom terms. Start by adapting design ideas.
+A `NOASSERTION` or missing license only means the GitHub API couldn’t identify it; the project may still be restricted, and code and docs can have different licenses. Check the specific files before copying. Basic Memory is currently AGPL, and projects such as Dify and n8n have custom terms, so start by borrowing design ideas.
 
-Star counts do not establish equal demand in the JD sample. Use the [stack decision table](stack-decisions.md) for learning priorities.
+Popular repositories aren’t necessarily common in job descriptions. For what to learn, follow the [stack decisions](stack-decisions.md).
 
-Concrete implementation readings are limited to [three pinned files](source-readings.md). Manifest/docs observations are not runtime guarantees. An active flag means not marked archived in the snapshot, not independently verified maintenance.
+Source code was read closely for [three pinned files](source-readings.md). “Active” means the repository wasn’t archived at snapshot time.
 
 ## Model, data and robotics references
 
@@ -104,4 +104,4 @@ Concrete implementation readings are limited to [three pinned files](source-read
 | A2A | cross-service task lifecycle and agent communication |09|
 | LeRobot / MuJoCo / IsaacLab / OpenPI / ROS2 docs | simulation, embodied data, policies and robot integration |16|
 
-These projects were primarily screened at metadata/official-documentation level; inspection scope is recorded per entry. Select implementations by learning need. See [pinned source readings](source-readings.md) and [stack decisions](stack-decisions.md).
+These projects were screened on metadata and official documentation only; you don’t need to install or rebuild them all. See [pinned source readings](source-readings.md) and [stack decisions](stack-decisions.md).

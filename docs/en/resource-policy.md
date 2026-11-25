@@ -1,6 +1,6 @@
 # Resource selection and use
 
-Selection considers authoritative ownership, complete public access, specific topics/exercises, maintenance and adoption signals. Each unit has one primary reading scope; additional references answer specific questions. All 181 entries preserve selection reasons, costs, release status and check dates. We use explicit evidence where no comparable rating exists.
+Selection considers authoritative ownership, complete public access, specific topics/exercises, maintenance and adoption signals. Each unit has one primary reading scope; additional references answer specific questions. All 193 entries preserve selection reasons, costs, release status and check dates. We use explicit evidence where no comparable rating exists.
 
 CS329Z supplies the agent-systems spine using published materials from an ongoing course. Complete open textbooks, official tutorials and published courses support foundations/deployment. LangGraph uses its official course/code, followed by the Deep Agents course for harness depth. Historical FSDL lectures support product/system methods; check current APIs in current documentation.
 
@@ -18,7 +18,7 @@ Free access means legal access to the core text/video/specification. APIs, GPUs,
 | [Full Stack LLM Bootcamp](https://fullstackdeeplearning.com/llm-bootcamp/) | Product requirements through deployment/feedback | Do not copy historical APIs verbatim |
 | [LLM Master](https://github.com/youngyangyang04/llm-master) | Staged path, topic indexes and project gates | Borrow structure; exclude paid funnels and recharge links |
 
-The structure borrows staged navigation, framework-focused study and incremental projects. This roadmap adds market-separated JD evidence, 17 modules/126 units, selected reading scopes, 698 topic branches and end-to-end assessment. Its prose and diagrams are original.
+The structure borrows staged navigation, framework-focused study and incremental projects. This roadmap adds market-separated JD evidence, 17 modules/127 units, selected reading scopes, 708 topic branches and end-to-end assessment. Its prose and diagrams are original.
 
 ## Resource registry
 
@@ -205,5 +205,17 @@ The structure borrows staged navigation, framework-focused study and incremental
 | spring-ai-alibaba | [Spring AI Alibaba](https://github.com/alibaba/spring-ai-alibaba) | repo | free software | complete / reference | 2026-11-23 |
 | ragflow | [RAGFlow](https://github.com/infiniflow/ragflow) | repo | free software; self-hosted resources | complete / reference | 2026-11-23 |
 | dify-source | [Dify source code](https://github.com/langgenius/dify) | repo | free source; modified Apache 2.0 licence | complete / reference | 2026-11-23 |
+| mlops-zoomcamp | [DataTalksClub MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp) | course | free; optional cloud cost | complete / core | 2026-11-24 |
+| mlflow | [MLflow Documentation](https://mlflow.org/docs/latest/) | docs | free docs; open source | complete / reference | 2026-11-24 |
+| feast | [Feast Documentation](https://docs.feast.dev/) | docs | free docs; open source | complete / reference | 2026-11-24 |
+| evidently | [Evidently Documentation](https://docs.evidentlyai.com/) | docs | free docs; open source | complete / reference | 2026-11-24 |
+| terraform | [Terraform Tutorials](https://developer.hashicorp.com/terraform/tutorials) | tutorial | free docs; cloud cost when applied | complete / core | 2026-11-24 |
+| helm | [Helm Documentation](https://helm.sh/docs/) | docs | free docs; open source | complete / reference | 2026-11-24 |
+| argocd | [Argo CD Documentation](https://argo-cd.readthedocs.io/en/stable/) | docs | free docs; open source | complete / reference | 2026-11-24 |
+| openfeature | [OpenFeature Documentation](https://openfeature.dev/docs/reference/intro) | docs | free docs; open standard | complete / reference | 2026-11-24 |
+| k6 | [Grafana k6 Documentation](https://grafana.com/docs/k6/latest/) | docs | free docs; open source | complete / reference | 2026-11-24 |
+| locust | [Locust Documentation](https://docs.locust.io/en/stable/) | docs | free docs; open source | complete / reference | 2026-11-24 |
+| spark | [Apache Spark Documentation](https://spark.apache.org/docs/latest/) | docs | free docs; open source | complete / reference | 2026-11-24 |
+| airflow | [Apache Airflow Documentation](https://airflow.apache.org/docs/apache-airflow/stable/index.html) | docs | free docs; open source | complete / reference | 2026-11-24 |
 
 See the [tree](knowledge-tree.md) for scope and [evaluation guide](evaluation-playbook.md) for operations.

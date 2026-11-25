@@ -1,15 +1,15 @@
 # Repository scope and validation
 
-This bilingual learning guide develops application/systems AI engineering through end-to-end delivery.
+A bilingual (Chinese and English) AIE learning roadmap. Content and code are public, and contributions are welcome.
 
 | Material | Scope and verification |
 |---|---|
 | Roles/market |367 descriptions, 116 employers (104 reviewed, 263 rule-screened; 80 Canadian); separate China/NA and US/CA; public indicators retain sources, units, coverage and missing values|
-| Curriculum |17 modules, 126 units, 698 topics, 378 self-check questions; bilingual scope, prerequisites, depth, readings, build tasks and self-checks|
-| Resources/source |181 resources, 61 repository snapshots, 3 pinned source readings; inspection scope recorded|
+| Curriculum |17 modules, 127 units, 708 topics, 381 self-check questions; bilingual scope, prerequisites, depth, readings, build tasks and self-checks|
+| Resources/source |193 resources, 61 repository snapshots, 3 pinned source readings; inspection scope recorded|
 | Practice |17 lab briefs, 4 general capstones, 3 runnable offline mechanism references|
 | Assessment |Task/data/experiment/operation package plus independent implementation, diagnosis, change and discussion|
 
-Automation checks structure, dependencies, links, counts, deterministic rendering and reference behavior. Learners complete real-model experiments, GPU runs, products and external review. Completion effort and employment outcomes have not been studied; learner pilots and independent reproduction can improve the guide.
+CI checks structure, prerequisites, links, recomputed statistics, that generated pages match their sources, and the behavior of the reference implementations and starter code. Learners run the real-model experiments, GPU work, full products and outside reviews themselves.
 
-Comparable national historical vacancy totals and AIE-specific employer-size trends remain unavailable; see [market definitions](../../research/market/README.md). The [overview](role-overview.md) uses application/systems scope and end-to-end product delivery.
+Market data sources and gaps are described in the [market data notes](../../research/market/README.md).

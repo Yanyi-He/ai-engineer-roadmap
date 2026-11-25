@@ -1983,5 +1983,137 @@
     "content_sha256": "9a518360c5d8095e04f3545213739bd6b990e912c43539fb61a94f61c8ea4a92",
     "checked_at": "2026-11-23",
     "verification_method": "HTTP GET plus title/content snapshot; editorial scope/cost annotations are separate"
+  },
+  {
+    "id": "mlops-zoomcamp",
+    "url": "https://github.com/DataTalksClub/mlops-zoomcamp",
+    "resolved_url": "https://github.com/DataTalksClub/mlops-zoomcamp",
+    "http_status": 200,
+    "title": "GitHub - DataTalksClub/mlops-zoomcamp: Free MLOps course from DataTalks.Club. Register here 👇🏼 to get notified about the next cohort · GitHub",
+    "characters": 9046,
+    "content_sha256": "e58ccc4a3151a6a8b8c8136f0e2052c6ba8b6692816576b6bad3b127fbe7cc07",
+    "checked_at": "2026-11-24",
+    "verification_method": "HTTP GET plus title/content snapshot; editorial scope/cost annotations are separate"
+  },
+  {
+    "id": "mlflow",
+    "url": "https://mlflow.org/docs/latest/",
+    "resolved_url": "https://mlflow.org/docs/latest/",
+    "http_status": 200,
+    "title": "MLflow Documentation | MLflow AI Platform",
+    "characters": 1135,
+    "content_sha256": "fa3533c97bc2974fb48eb3c1a9c4c69108a9d72ce66f820b4a6eb451b14b7479",
+    "checked_at": "2026-11-24",
+    "verification_method": "HTTP GET plus title/content snapshot; editorial scope/cost annotations are separate"
+  },
+  {
+    "id": "feast",
+    "url": "https://docs.feast.dev/",
+    "resolved_url": "https://docs.feast.dev/",
+    "http_status": 200,
+    "title": "Introduction | Feast: the Open Source Feature Store",
+    "characters": 10016,
+    "content_sha256": "46b94a6692de1792903c7adaee627d69c6888d0549694e1950e66c7822c2dc43",
+    "checked_at": "2026-11-24",
+    "verification_method": "HTTP GET plus title/content snapshot; editorial scope/cost annotations are separate"
+  },
+  {
+    "id": "evidently",
+    "url": "https://docs.evidentlyai.com/",
+    "resolved_url": "https://docs.evidentlyai.com/introduction",
+    "http_status": 200,
+    "title": "What is Evidently? - Documentation",
+    "characters": 30706,
+    "content_sha256": "1e57632a80f78b19721bd847caea3c19ed952e6c6115a29db1293fda703a5347",
+    "checked_at": "2026-11-24",
+    "verification_method": "HTTP GET plus title/content snapshot; editorial scope/cost annotations are separate"
+  },
+  {
+    "id": "terraform",
+    "url": "https://developer.hashicorp.com/terraform/tutorials",
+    "resolved_url": "https://developer.hashicorp.com/terraform/tutorials",
+    "http_status": 200,
+    "title": "Tutorials | Terraform | HashiCorp Developer",
+    "characters": 6461,
+    "content_sha256": "e7cfd30d6c0e23c4bd70fd3b18066c51feba2dcf90ed2e1d827d870b058f645c",
+    "checked_at": "2026-11-24",
+    "verification_method": "HTTP GET plus title/content snapshot; editorial scope/cost annotations are separate"
+  },
+  {
+    "id": "helm",
+    "url": "https://helm.sh/docs/",
+    "resolved_url": "https://helm.sh/docs/",
+    "http_status": 200,
+    "title": "Docs Home | Helm",
+    "characters": 1960,
+    "content_sha256": "efff18233a8355e3cb7325db5f396df1dcba9ca73a45acb24d13097cb3f985ab",
+    "checked_at": "2026-11-24",
+    "verification_method": "HTTP GET plus title/content snapshot; editorial scope/cost annotations are separate"
+  },
+  {
+    "id": "argocd",
+    "url": "https://argo-cd.readthedocs.io/en/stable/",
+    "resolved_url": "https://argo-cd.readthedocs.io/en/stable/",
+    "http_status": 200,
+    "title": "Argo CD - Declarative GitOps CD for Kubernetes",
+    "characters": 8777,
+    "content_sha256": "51f5d499b9c79ae6c94bdfe66a0f6b307a4ec37c70b101f34b6fea125c5b0511",
+    "checked_at": "2026-11-24",
+    "verification_method": "HTTP GET plus title/content snapshot; editorial scope/cost annotations are separate"
+  },
+  {
+    "id": "openfeature",
+    "url": "https://openfeature.dev/docs/reference/intro",
+    "resolved_url": "https://openfeature.dev/docs/reference/intro/",
+    "http_status": 200,
+    "title": "Introduction | OpenFeature",
+    "characters": 5055,
+    "content_sha256": "b873952ff4bf1414e96fd5a139791192ef0c9e734ed0831c0eca555741c91def",
+    "checked_at": "2026-11-24",
+    "verification_method": "HTTP GET plus title/content snapshot; editorial scope/cost annotations are separate"
+  },
+  {
+    "id": "k6",
+    "url": "https://grafana.com/docs/k6/latest/",
+    "resolved_url": "https://grafana.com/docs/k6/latest/",
+    "http_status": 200,
+    "title": "Grafana k6 | Grafana k6 documentation",
+    "characters": 27286,
+    "content_sha256": "bf26f85c1dfcfeaac5b1c0c83721af1f2802379f439d2338e393df113582e78a",
+    "checked_at": "2026-11-24",
+    "verification_method": "HTTP GET plus title/content snapshot; editorial scope/cost annotations are separate"
+  },
+  {
+    "id": "locust",
+    "url": "https://docs.locust.io/en/stable/",
+    "resolved_url": "https://docs.locust.io/en/stable/",
+    "http_status": 200,
+    "title": "Locust Documentation — Locust 2.47.0 documentation",
+    "characters": 4360,
+    "content_sha256": "b459bd06046b22818da0af08f80e33315ba3ecfa78eddbde4329365ec544614d",
+    "checked_at": "2026-11-24",
+    "verification_method": "HTTP GET plus title/content snapshot; editorial scope/cost annotations are separate"
+  },
+  {
+    "id": "spark",
+    "url": "https://spark.apache.org/docs/latest/",
+    "resolved_url": "https://spark.apache.org/docs/latest/",
+    "http_status": 200,
+    "title": "Overview - Spark 4.3.0 Documentation",
+    "characters": 7441,
+    "content_sha256": "4b922b407b64e73613a100131961aff2edee54e1460aa2300bd353619b506ec0",
+    "checked_at": "2026-11-24",
+    "verification_method": "HTTP GET plus title/content snapshot; editorial scope/cost annotations are separate"
+  },
+  {
+    "id": "airflow",
+    "url": "https://airflow.apache.org/docs/apache-airflow/stable/index.html",
+    "resolved_url": "https://airflow.apache.org/docs/apache-airflow/stable/index.html",
+    "http_status": 200,
+    "title": "What is Airflow®? — Airflow 3.4.0 Documentation",
+    "characters": 7416,
+    "content_sha256": "0bf34dd57500a74a292662f876d0c34d624e741b3c4217e7b37416eeebe9ce6d",
+    "checked_at": "2026-11-24",
+    "verification_method": "HTTP GET plus title/content snapshot; editorial scope/cost annotations are separate"
   }
 ]

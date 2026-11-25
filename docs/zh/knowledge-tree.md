@@ -1,6 +1,6 @@
 # AIE知识树
 
-从模块进入单元，再看机制、失败、资源和实践产物。分类图用于总览；[学习顺序](dependency-order.md)按单元先修与项目路线展开；[课程对照](course-audit.md)说明CS329Z/CS336怎样落到单元。
+全部模块、单元和主题分支。先学什么看[学习顺序](dependency-order.md)；CS329Z 和 CS336 的内容落在哪些单元，看[课程对照](course-audit.md)。
 
 ```mermaid
 mindmap
@@ -31,6 +31,7 @@ mindmap
       03.3 机器学习任务与泛化
       03.4 神经网络与优化过程
       03.5 PyTorch训练工程
+      03.6 传统 ML 上线与 MLOps
     04 Transformer与大语言模型原理
       04.1 Tokenizer、语料与训练目标
       04.2 Transformer完整计算链
@@ -169,7 +170,7 @@ mindmap
 
 ## [01 Python与软件工程基础](modules/01.md)
 
-独立编写、测试、调试和维护可交付的Python服务代码。
+能独立写、测、调试和维护上线用的 Python 代码。
 
 - **[01.1 Python语言与数据模型](modules/01.md#unit-01-1)** · `core` · [Python Tutorial](https://docs.python.org/3/tutorial/)
   - 变量、对象、可变性、引用与复制；list/dict/set/tuple
@@ -218,7 +219,7 @@ mindmap
 
 ## [02 传统后端、数据与分布式基础](modules/02.md)
 
-把模型功能接入有身份、数据与运行边界的业务服务。
+把模型功能接进真实的业务系统：登录鉴权、数据库、队列和云上部署。
 
 - **[02.1 HTTP、API与流式交互](modules/02.md#unit-02-1)** · `core` · [FastAPI Tutorial](https://fastapi.tiangolo.com/tutorial/)
   - HTTP语义、状态码、REST、分页、OpenAPI和API版本
@@ -256,6 +257,7 @@ mindmap
   - 配置注入、secret、环境分层和依赖启动顺序
   - CI/CD、数据库迁移、灰度和回滚
   - 服务发现、负载均衡、Kubernetes核心对象概览
+  - 基础设施即代码与 GitOps：用 Terraform 管理云资源和环境，用 Helm 打包，用 Argo CD 同步部署并发现配置漂移
 - **[02.7 TypeScript与AI前端交互](modules/02.md#unit-02-7)** · `core` · [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
   - TS类型、接口、async/await、包管理和API client
   - React状态、表单、流式渲染、错误与任务恢复
@@ -272,7 +274,7 @@ mindmap
 
 ## [03 数学、机器学习、深度学习与PyTorch](modules/03.md)
 
-理解模型学习、实验与优化，能运行和诊断小规模训练。
+看懂模型怎么学、实验怎么做，能跑通并排查小规模训练。
 
 - **[03.1 线性代数与数值基础](modules/03.md#unit-03-1)** · `core` · [Dive into Deep Learning](https://d2l.ai/)
   - NumPy向量/矩阵/张量、维度、广播与矩阵乘法
@@ -306,10 +308,17 @@ mindmap
   - AMP、checkpoint、恢复、日志与实验配置
   - 显存profile、OOM定位和最小可复现实验
   - stride、view/reshape、contiguous、广播和einsum/einops；复制与内存开销
+- **[03.6 传统 ML 上线与 MLOps](modules/03.md#unit-03-6)** · `advanced` · [DataTalksClub MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp)
+  - 特征管道与特征存储：离线和在线特征一致、时间点正确的训练数据（Feast 等）
+  - 实验跟踪与模型注册：参数、指标、数据版本和模型版本（MLflow）
+  - 批量打分与在线服务：定时批处理、实时 API 和托管服务（SageMaker、Databricks Model Serving 等）
+  - 监控：数据漂移、预测漂移、标签延迟时的效果监控与重训触发（Evidently 等）
+  - ML 的 CI/CD：数据校验、训练流水线、模型对比门槛与回滚
+  - 模型治理：模型卡、审批记录与受监管行业的模型风险管理
 
 ## [04 Transformer与大语言模型原理](modules/04.md)
 
-沿token到logits讲清模型数据流，并实现一个小型decoder。
+讲清从 token 到 logits 的计算过程，并自己实现一个小型 decoder。
 
 - **[04.1 Tokenizer、语料与训练目标](modules/04.md#unit-04-1)** · `core` · [Hugging Face LLM Course](https://huggingface.co/learn/llm-course/en/chapter1/1)
   - BPE/WordPiece/Unigram、词表与special tokens
@@ -360,7 +369,7 @@ mindmap
 
 ## [05 模型应用、Prompt与多模态接口](modules/05.md)
 
-交付具有严格接口、预算和交互边界的模型应用。
+做出可靠的模型应用：结构化输出、工具调用、上下文管理和成本控制。
 
 - **[05.1 模型API与Provider适配](modules/05.md#unit-05-1)** · `core` · [LiteLLM Documentation](https://docs.litellm.ai/docs/)
   - 消息、请求参数、模型能力发现与版本固定
@@ -430,7 +439,7 @@ mindmap
 
 ## [06 数据工程、检索与RAG](modules/06.md)
 
-构建可评测、可更新、有权限边界的企业知识应用。
+做出能评测、能更新、按权限返回内容的企业知识库应用。
 
 - **[06.1 文档入库与数据质量](modules/06.md#unit-06-1)** · `core` · [Docling Documentation](https://docling-project.github.io/docling/)
   - 数据源连接、增量同步、来源许可与数据卡
@@ -439,6 +448,7 @@ mindmap
   - 按标题/语义/结构切分、overlap与metadata
   - 批处理、失败重跑、幂等索引和删除传播
   - 解析工具选型（Docling、MinerU、PaddleOCR、Unstructured）或云端文档智能服务（Azure Document Intelligence、AWS Textract），按文档类型评估解析质量
+  - 企业数据平台：Spark/Databricks 批处理、Airflow 编排、Lakehouse 表格式（Delta/Iceberg）与数据血缘
 - **[06.2 Embedding与相似度](modules/06.md#unit-06-2)** · `core` · [Sentence Transformers: Retrieve and Rerank](https://www.sbert.net/examples/sentence_transformer/applications/retrieve_rerank/README.html)
   - bi-encoder、query/document表示与训练目标
   - cosine/dot/L2、归一化、维度和分布
@@ -495,7 +505,7 @@ mindmap
 
 ## [07 Agent架构、Harness与记忆](modules/07.md)
 
-构建能规划、调用工具、验证结果并从故障中恢复的执行系统。
+构建能规划、调用工具、检查结果并从失败中恢复的 Agent。
 
 - **[07.1 Workflow与Agent的选型](modules/07.md#unit-07-1)** · `core` · [Anthropic: Building Effective Agents](https://www.anthropic.com/research/building-effective-agents)
   - 确定流程、动态决策和混合架构
@@ -559,7 +569,7 @@ mindmap
 
 ## [08 LangGraph与企业常见框架](modules/08.md)
 
-深入掌握一套有状态编排框架，并能解释同层替代与跨层组合。
+熟练使用 LangGraph，并能说清它和其他框架、工作流引擎怎么分工。
 
 - **[08.1 LangGraph状态图基础](modules/08.md#unit-08-1)** · `core` · [LangChain Academy: Introduction to LangGraph](https://academy.langchain.com/courses/intro-to-langgraph)
   - StateGraph、state schema、节点与边
@@ -588,7 +598,7 @@ mindmap
   - 限流、租户、升级、回滚与生产支持
 - **[08.5 同层框架与企业语言生态](modules/08.md#unit-08-5)** · `advanced` · [Google Agent Development Kit](https://google.github.io/adk-docs/)
   - LangChain与LangGraph的职责差异
-  - ADK、PydanticAI、Microsoft Agent Framework（接替已归档的 AutoGen）、CrewAI，以及国内的 AgentScope 与 Spring AI Alibaba
+  - ADK、PydanticAI、Microsoft Agent Framework（AutoGen 和 Semantic Kernel 的后继）、CrewAI，以及国内的 AgentScope 与 Spring AI Alibaba
   - OpenAI Agents SDK、Claude Agent SDK等provider agent SDK与框架中立的typed action contract
   - TypeScript（Vercel AI SDK、Mastra）、Java（Spring AI/LangChain4j，见02.8）与.NET生态
   - session、state、重试、工具、部署和评测语义对照
@@ -616,7 +626,7 @@ mindmap
 
 ## [09 Multi-Agent与协作系统](modules/09.md)
 
-按可分解任务设计协作，并测量相对单Agent的收益和成本。
+判断任务值不值得拆给多个 Agent，并测出比单个 Agent 多得到什么、多花多少。
 
 - **[09.1 任务分解与组织结构](modules/09.md#unit-09-1)** · `core` · [Stanford CS329Z: Engineering AI Agents](https://cs329z.stanford.edu/)
   - 单Agent、固定并行、multi-agent的选择
@@ -651,7 +661,7 @@ mindmap
 
 ## [10 MCP、工具平台与安全执行](modules/10.md)
 
-开发能被不同客户端调用、权限清晰、执行受控的工具服务。
+开发 MCP 等工具服务：不同客户端都能调用，权限清楚，执行有限制。
 
 - **[10.1 工具与连接器产品设计](modules/10.md#unit-10-1)** · `core` · [Anthropic: Writing Effective Tools for Agents](https://www.anthropic.com/research/writing-tools-for-agents)
   - 业务能力→窄工具API；读写分离和副作用
@@ -701,7 +711,7 @@ mindmap
 
 ## [11 评测、优化与可观测性](modules/11.md)
 
-用可信评测驱动迭代，并把线上失败定位到具体组件。
+用可靠的评测决定下一步改什么，并把线上失败定位到具体环节。
 
 - **[11.1 任务、标签与Benchmark设计](modules/11.md#unit-11-1)** · `core` · [Inspect AI](https://inspect.aisi.org.uk/)
   - request、environment、stopping criteria、scorer四元组
@@ -791,7 +801,7 @@ mindmap
 
 ## [12 数据策展、微调、强化学习与蒸馏](modules/12.md)
 
-理解主要训练路线，并完成小规模领域适配与独立评测。
+知道什么时候该微调，并完成一次小规模微调和独立评测。
 
 - **[12.1 训练目标与数据工程](modules/12.md#unit-12-1)** · `core` · [Hugging Face LLM Course](https://huggingface.co/learn/llm-course/en/chapter1/1)
   - prompt/RAG/SFT/偏好优化/RL的适用问题
@@ -865,7 +875,7 @@ mindmap
 
 ## [13 本地模型、推理优化与部署](modules/13.md)
 
-本地运行模型，定位推理瓶颈，并选择适合负载的部署方式。
+在本地跑模型，找到推理瓶颈，按负载选择部署方式。
 
 - **[13.1 本地小模型部署](modules/13.md#unit-13-1)** · `core` · [MLX LM](https://github.com/ml-explore/mlx-lm)
   - 硬件/内存、模型大小、许可证和权重revision
@@ -916,7 +926,7 @@ mindmap
 
 ## [14 端到端AI产品与生产交付](modules/14.md)
 
-从需求发现到上线运营，承担完整AI产品的交付责任。
+从需求到上线运营，独立交付一个完整的 AI 产品。
 
 - **[14.1 需求发现、业务指标与技术方案](modules/14.md#unit-14-1)** · `core` · [Full Stack LLM Bootcamp](https://fullstackdeeplearning.com/llm-bootcamp/)
   - stakeholder访谈、流程观察、用户任务与非目标
@@ -942,6 +952,7 @@ mindmap
   - 重复请求、worker崩溃、队列积压和依赖故障
   - 备份恢复、schema/模型/索引回滚
   - 告警、on-call、runbook、RCA和改进
+  - 应用级压测：用 Locust 或 k6 模拟真实请求组合，验证排队、限流、超时与降级是否按设计生效
 - **[14.5 安全、隐私与领域治理](modules/14.md#unit-14-5)** · `core` · [OWASP GenAI Security Project](https://genai.owasp.org/llm-top-10/)
   - 威胁建模、注入、工具滥用和数据外泄
   - 租户隔离、授权、密钥、加密与审计
@@ -956,6 +967,7 @@ mindmap
   - 采用率、任务成功、人工节省和投诉/纠正
   - 维护节奏、依赖升级、交接和文档
   - 多环境发布（sandbox → dev → QA → UAT → prod）、架构决策记录（ADR）、API 规范与运行手册
+  - 功能开关与渐进发布：按租户、用户或比例放量，对照指标后扩大、回滚或清理开关（OpenFeature 等）
 - **[14.7 风险分层、隐私边界与安全评测](modules/14.md#unit-14-7)** · `core` · [Stanford CS329Z: Engineering AI Agents](https://cs329z.stanford.edu/)
   - 资产、主体、数据来源、工具动作、攻击者与数据出口的威胁建模
   - 直接/间接注入、检索投毒、跨租户泄漏与工具链组合风险
@@ -980,7 +992,7 @@ mindmap
 
 ## [15 项目作品、求职与面试准备](modules/15.md)
 
-把学习产物整理成可复现、可面试深挖的工程证据。
+把作品整理成别人能复现、经得起面试追问的样子。
 
 - **[15.1 JD映射与作品规划](modules/15.md#unit-15-1)** · `core` · [Tech Interview Handbook](https://www.techinterviewhandbook.org/)
   - 目标国家、岗位族、行业和level
@@ -1032,7 +1044,7 @@ mindmap
 
 ## [16 世界模型、机器人与具身智能选修](modules/16.md)
 
-理解应用AIE与物理智能的连接，按兴趣进入机器人专项。
+了解 AI 应用工程和机器人、具身智能的联系，有兴趣再深入。
 
 - **[16.1 强化学习与动态环境基础](modules/16.md#unit-16-1)** · `elective` · [Hugging Face Deep RL Course](https://huggingface.co/learn/deep-rl-course/unit0/introduction)
   - 状态、动作、转移、奖励和partial observation

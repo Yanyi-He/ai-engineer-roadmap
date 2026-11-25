@@ -1,76 +1,80 @@
-# 单元先修、并行学习与项目路线
+# 学习顺序与路线
 
-先修精确到单元，模块编号只作分类。可以先做模型API和无框架Agent，再按任务加入RAG或LangGraph；应用交付可使用托管模型。SFT、GPU服务与多Agent工程在相应专项路线展开。
+每条路线按阶段列出要学的单元，先修单元已经展开，从上往下学即可。主线用托管模型 API 构建应用，不需要 GPU；微调、GPU 推理和多 Agent 工程放在专项路线。模块编号只用于分类，不代表学习顺序。
 
 ```mermaid
 flowchart LR
-  A[Software and API] --> B[Evaluation baseline]
-  B --> C[Framework-neutral harness]
-  C --> D[Authorized tools and recovery]
-  D --> E[Product delivery]
-  B --> F[Knowledge and RAG]
-  C --> G[Agent platforms]
-  B --> H[Local models and adaptation]
-  I[Math and model foundations] -. parallel .-> E
+  A[Python 与模型 API] --> B[评测基线]
+  B --> R[检索与 RAG]
+  R --> C[Agent 循环]
+  C --> D[工具、状态与权限]
+  D --> E[上线与运营]
+  E --> P[原理与面试]
+  R --> F[企业知识专项]
+  D --> G[Agent 平台专项]
+  B --> H[本地推理与模型适配]
+  I[数学与模型原理] -. 并行 .-> P
 ```
 
-## 应用交付主线
+## 主线：AI 应用工程
 
-以托管模型完成业务Agent产品；模型原理并行补齐。
+用托管模型 API 做出能上线的 AI 应用，覆盖 RAG、Agent、工具调用、评测和运维，不需要 GPU。模型原理和应用并行学。
 
-| 阶段 | 该阶段展开的先修与目标 | 实验 |
+| 阶段 | 单元（含先修） | 实验 |
 |---|---|---|
-| 需求、Python与模型接口 | [00.1](modules/00.md#unit-00-1), [00.2](modules/00.md#unit-00-2), [01.1](modules/01.md#unit-01-1), [01.2](modules/01.md#unit-01-2), [01.5](modules/01.md#unit-01-5), [01.6](modules/01.md#unit-01-6), [01.3](modules/01.md#unit-01-3), [02.1](modules/02.md#unit-02-1), [05.1](modules/05.md#unit-05-1), [05.3](modules/05.md#unit-05-3), [01.7](modules/01.md#unit-01-7), [05.10](modules/05.md#unit-05-10) | [L01](labs.md#l01) |
-| 评测基线与可测量目标 | [03.1](modules/03.md#unit-03-1), [03.2](modules/03.md#unit-03-2), [11.1](modules/11.md#unit-11-1), [11.2](modules/11.md#unit-11-2), [11.3](modules/11.md#unit-11-3), [11.4](modules/11.md#unit-11-4), [05.9](modules/05.md#unit-05-9) | — |
-| 无框架Agent内核 | [05.4](modules/05.md#unit-05-4), [07.1](modules/07.md#unit-07-1), [07.2](modules/07.md#unit-07-2), [07.3](modules/07.md#unit-07-3), [07.5](modules/07.md#unit-07-5) | [L13](labs.md#l13) |
-| 数据、工具、持久化与授权 | [05.2](modules/05.md#unit-05-2), [12.1](modules/12.md#unit-12-1), [02.2](modules/02.md#unit-02-2), [06.1](modules/06.md#unit-06-1), [12.10](modules/12.md#unit-12-10), [02.3](modules/02.md#unit-02-3), [02.4](modules/02.md#unit-02-4), [07.4](modules/07.md#unit-07-4), [10.2](modules/10.md#unit-10-2), [02.5](modules/02.md#unit-02-5), [10.3](modules/10.md#unit-10-3), [10.1](modules/10.md#unit-10-1), [10.4](modules/10.md#unit-10-4), [08.1](modules/08.md#unit-08-1), [08.3](modules/08.md#unit-08-3), [10.7](modules/10.md#unit-10-7) | [L03](labs.md#l03), [L05](labs.md#l05) |
-| 验证器、运行与业务验收 | [02.6](modules/02.md#unit-02-6), [11.8](modules/11.md#unit-11-8), [11.5](modules/11.md#unit-11-5), [11.6](modules/11.md#unit-11-6), [14.1](modules/14.md#unit-14-1), [14.2](modules/14.md#unit-14-2), [02.7](modules/02.md#unit-02-7), [14.3](modules/14.md#unit-14-3), [14.4](modules/14.md#unit-14-4), [05.5](modules/05.md#unit-05-5), [14.6](modules/14.md#unit-14-6), [14.5](modules/14.md#unit-14-5), [14.7](modules/14.md#unit-14-7), [11.10](modules/11.md#unit-11-10), [11.12](modules/11.md#unit-11-12) | [L14](labs.md#l14), [L06](labs.md#l06), [L17](labs.md#l17) |
-| 模型原理、选型复核与作品答辩 | [03.3](modules/03.md#unit-03-3), [03.4](modules/03.md#unit-03-4), [03.5](modules/03.md#unit-03-5), [04.1](modules/04.md#unit-04-1), [04.2](modules/04.md#unit-04-2), [04.5](modules/04.md#unit-04-5), [11.9](modules/11.md#unit-11-9), [05.8](modules/05.md#unit-05-8), [15.2](modules/15.md#unit-15-2), [01.4](modules/01.md#unit-01-4), [15.3](modules/15.md#unit-15-3), [15.4](modules/15.md#unit-15-4), [04.4](modules/04.md#unit-04-4), [15.5](modules/15.md#unit-15-5), [15.6](modules/15.md#unit-15-6), [15.1](modules/15.md#unit-15-1), [15.7](modules/15.md#unit-15-7) | [L09](labs.md#l09) |
+| 需求、Python 与模型 API | [00.1](modules/00.md#unit-00-1), [00.2](modules/00.md#unit-00-2), [01.1](modules/01.md#unit-01-1), [01.2](modules/01.md#unit-01-2), [01.5](modules/01.md#unit-01-5), [01.6](modules/01.md#unit-01-6), [01.3](modules/01.md#unit-01-3), [02.1](modules/02.md#unit-02-1), [05.1](modules/05.md#unit-05-1), [05.3](modules/05.md#unit-05-3), [01.7](modules/01.md#unit-01-7), [05.10](modules/05.md#unit-05-10) | [L01](labs.md#l01) |
+| 评测基线 | [03.1](modules/03.md#unit-03-1), [03.2](modules/03.md#unit-03-2), [11.1](modules/11.md#unit-11-1), [11.2](modules/11.md#unit-11-2), [11.3](modules/11.md#unit-11-3), [11.4](modules/11.md#unit-11-4), [05.9](modules/05.md#unit-05-9) | — |
+| 检索与 RAG | [02.2](modules/02.md#unit-02-2), [06.1](modules/06.md#unit-06-1), [04.1](modules/04.md#unit-04-1), [06.2](modules/06.md#unit-06-2), [01.4](modules/01.md#unit-01-4), [06.3](modules/06.md#unit-06-3), [06.4](modules/06.md#unit-06-4), [06.6](modules/06.md#unit-06-6) | [L02](labs.md#l02) |
+| 不用框架写一个 Agent 循环 | [05.4](modules/05.md#unit-05-4), [07.1](modules/07.md#unit-07-1), [07.2](modules/07.md#unit-07-2), [07.3](modules/07.md#unit-07-3), [07.5](modules/07.md#unit-07-5) | [L13](labs.md#l13) |
+| 工具、状态与权限 | [02.3](modules/02.md#unit-02-3), [02.4](modules/02.md#unit-02-4), [07.4](modules/07.md#unit-07-4), [10.2](modules/10.md#unit-10-2), [02.5](modules/02.md#unit-02-5), [10.3](modules/10.md#unit-10-3), [10.1](modules/10.md#unit-10-1), [10.4](modules/10.md#unit-10-4), [08.1](modules/08.md#unit-08-1), [08.3](modules/08.md#unit-08-3), [10.7](modules/10.md#unit-10-7) | [L03](labs.md#l03), [L05](labs.md#l05) |
+| 上线与运营 | [02.6](modules/02.md#unit-02-6), [11.8](modules/11.md#unit-11-8), [11.5](modules/11.md#unit-11-5), [11.6](modules/11.md#unit-11-6), [11.10](modules/11.md#unit-11-10), [11.11](modules/11.md#unit-11-11), [14.1](modules/14.md#unit-14-1), [14.2](modules/14.md#unit-14-2), [02.7](modules/02.md#unit-02-7), [14.3](modules/14.md#unit-14-3), [14.4](modules/14.md#unit-14-4), [05.5](modules/05.md#unit-05-5), [14.6](modules/14.md#unit-14-6), [14.5](modules/14.md#unit-14-5), [14.7](modules/14.md#unit-14-7), [11.12](modules/11.md#unit-11-12) | [L14](labs.md#l14), [L06](labs.md#l06), [L16](labs.md#l16), [L17](labs.md#l17) |
+| 模型原理与面试准备 | [03.3](modules/03.md#unit-03-3), [03.4](modules/03.md#unit-03-4), [03.5](modules/03.md#unit-03-5), [04.2](modules/04.md#unit-04-2), [04.5](modules/04.md#unit-04-5), [11.9](modules/11.md#unit-11-9), [05.8](modules/05.md#unit-05-8), [15.2](modules/15.md#unit-15-2), [15.3](modules/15.md#unit-15-3), [15.4](modules/15.md#unit-15-4), [04.4](modules/04.md#unit-04-4), [15.5](modules/15.md#unit-15-5), [15.6](modules/15.md#unit-15-6), [15.1](modules/15.md#unit-15-1), [15.7](modules/15.md#unit-15-7) | [L09](labs.md#l09) |
 
-## 企业知识与RAG方向
+## 企业知识与 RAG 方向
 
-在应用基础上增加权限感知的数据与知识服务。
+主线加上更深的知识库工作：进阶检索、结构化数据与 Text-to-SQL、权限，以及索引的更新和删除。
 
-| 阶段 | 该阶段展开的先修与目标 | 实验 |
+| 阶段 | 单元（含先修） | 实验 |
 |---|---|---|
-| 需求、Python与模型接口 | [00.1](modules/00.md#unit-00-1), [00.2](modules/00.md#unit-00-2), [01.1](modules/01.md#unit-01-1), [01.2](modules/01.md#unit-01-2), [01.5](modules/01.md#unit-01-5), [01.6](modules/01.md#unit-01-6), [01.3](modules/01.md#unit-01-3), [02.1](modules/02.md#unit-02-1), [05.1](modules/05.md#unit-05-1), [05.3](modules/05.md#unit-05-3), [01.7](modules/01.md#unit-01-7), [05.10](modules/05.md#unit-05-10) | [L01](labs.md#l01) |
-| 评测基线与可测量目标 | [03.1](modules/03.md#unit-03-1), [03.2](modules/03.md#unit-03-2), [11.1](modules/11.md#unit-11-1), [11.2](modules/11.md#unit-11-2), [11.3](modules/11.md#unit-11-3), [11.4](modules/11.md#unit-11-4), [05.9](modules/05.md#unit-05-9) | — |
-| 无框架Agent内核 | [05.4](modules/05.md#unit-05-4), [07.1](modules/07.md#unit-07-1), [07.2](modules/07.md#unit-07-2), [07.3](modules/07.md#unit-07-3), [07.5](modules/07.md#unit-07-5) | [L13](labs.md#l13) |
-| 数据、检索、引用与维护 | [02.2](modules/02.md#unit-02-2), [06.1](modules/06.md#unit-06-1), [04.1](modules/04.md#unit-04-1), [06.2](modules/06.md#unit-06-2), [01.4](modules/01.md#unit-01-4), [06.3](modules/06.md#unit-06-3), [06.4](modules/06.md#unit-06-4), [06.6](modules/06.md#unit-06-6), [02.5](modules/02.md#unit-02-5), [06.8](modules/06.md#unit-06-8), [05.2](modules/05.md#unit-05-2), [12.1](modules/12.md#unit-12-1), [12.10](modules/12.md#unit-12-10), [11.10](modules/11.md#unit-11-10), [11.11](modules/11.md#unit-11-11) | [L02](labs.md#l02), [L15](labs.md#l15), [L16](labs.md#l16) |
-| 数据、工具、持久化与授权 | [02.3](modules/02.md#unit-02-3), [02.4](modules/02.md#unit-02-4), [07.4](modules/07.md#unit-07-4), [10.2](modules/10.md#unit-10-2), [10.3](modules/10.md#unit-10-3), [10.1](modules/10.md#unit-10-1), [10.4](modules/10.md#unit-10-4), [08.1](modules/08.md#unit-08-1), [08.3](modules/08.md#unit-08-3), [10.7](modules/10.md#unit-10-7) | [L03](labs.md#l03), [L05](labs.md#l05) |
-| 验证器、运行与业务验收 | [02.6](modules/02.md#unit-02-6), [11.8](modules/11.md#unit-11-8), [11.5](modules/11.md#unit-11-5), [11.6](modules/11.md#unit-11-6), [14.1](modules/14.md#unit-14-1), [14.2](modules/14.md#unit-14-2), [02.7](modules/02.md#unit-02-7), [14.3](modules/14.md#unit-14-3), [14.4](modules/14.md#unit-14-4), [05.5](modules/05.md#unit-05-5), [14.6](modules/14.md#unit-14-6), [14.5](modules/14.md#unit-14-5), [14.7](modules/14.md#unit-14-7), [11.12](modules/11.md#unit-11-12) | [L14](labs.md#l14), [L06](labs.md#l06), [L17](labs.md#l17) |
-| 模型原理、选型复核与作品答辩 | [03.3](modules/03.md#unit-03-3), [03.4](modules/03.md#unit-03-4), [03.5](modules/03.md#unit-03-5), [04.2](modules/04.md#unit-04-2), [04.5](modules/04.md#unit-04-5), [11.9](modules/11.md#unit-11-9), [05.8](modules/05.md#unit-05-8), [15.2](modules/15.md#unit-15-2), [15.3](modules/15.md#unit-15-3), [15.4](modules/15.md#unit-15-4), [04.4](modules/04.md#unit-04-4), [15.5](modules/15.md#unit-15-5), [15.6](modules/15.md#unit-15-6), [15.1](modules/15.md#unit-15-1), [15.7](modules/15.md#unit-15-7) | [L09](labs.md#l09) |
+| 需求、Python 与模型 API | [00.1](modules/00.md#unit-00-1), [00.2](modules/00.md#unit-00-2), [01.1](modules/01.md#unit-01-1), [01.2](modules/01.md#unit-01-2), [01.5](modules/01.md#unit-01-5), [01.6](modules/01.md#unit-01-6), [01.3](modules/01.md#unit-01-3), [02.1](modules/02.md#unit-02-1), [05.1](modules/05.md#unit-05-1), [05.3](modules/05.md#unit-05-3), [01.7](modules/01.md#unit-01-7), [05.10](modules/05.md#unit-05-10) | [L01](labs.md#l01) |
+| 评测基线 | [03.1](modules/03.md#unit-03-1), [03.2](modules/03.md#unit-03-2), [11.1](modules/11.md#unit-11-1), [11.2](modules/11.md#unit-11-2), [11.3](modules/11.md#unit-11-3), [11.4](modules/11.md#unit-11-4), [05.9](modules/05.md#unit-05-9) | — |
+| 检索、RAG 与知识库运维 | [02.2](modules/02.md#unit-02-2), [06.1](modules/06.md#unit-06-1), [04.1](modules/04.md#unit-04-1), [06.2](modules/06.md#unit-06-2), [01.4](modules/01.md#unit-01-4), [06.3](modules/06.md#unit-06-3), [06.4](modules/06.md#unit-06-4), [06.6](modules/06.md#unit-06-6), [05.4](modules/05.md#unit-05-4), [06.5](modules/06.md#unit-06-5), [02.5](modules/02.md#unit-02-5), [06.7](modules/06.md#unit-06-7), [06.8](modules/06.md#unit-06-8), [11.10](modules/11.md#unit-11-10), [11.11](modules/11.md#unit-11-11), [05.2](modules/05.md#unit-05-2), [12.1](modules/12.md#unit-12-1), [12.10](modules/12.md#unit-12-10) | [L02](labs.md#l02), [L15](labs.md#l15), [L16](labs.md#l16) |
+| 不用框架写一个 Agent 循环 | [07.1](modules/07.md#unit-07-1), [07.2](modules/07.md#unit-07-2), [07.3](modules/07.md#unit-07-3), [07.5](modules/07.md#unit-07-5) | [L13](labs.md#l13) |
+| 工具、状态与权限 | [02.3](modules/02.md#unit-02-3), [02.4](modules/02.md#unit-02-4), [07.4](modules/07.md#unit-07-4), [10.2](modules/10.md#unit-10-2), [10.3](modules/10.md#unit-10-3), [10.1](modules/10.md#unit-10-1), [10.4](modules/10.md#unit-10-4), [08.1](modules/08.md#unit-08-1), [08.3](modules/08.md#unit-08-3), [10.7](modules/10.md#unit-10-7) | [L03](labs.md#l03), [L05](labs.md#l05) |
+| 上线与运营 | [02.6](modules/02.md#unit-02-6), [11.8](modules/11.md#unit-11-8), [11.5](modules/11.md#unit-11-5), [11.6](modules/11.md#unit-11-6), [14.1](modules/14.md#unit-14-1), [14.2](modules/14.md#unit-14-2), [02.7](modules/02.md#unit-02-7), [14.3](modules/14.md#unit-14-3), [14.4](modules/14.md#unit-14-4), [05.5](modules/05.md#unit-05-5), [14.6](modules/14.md#unit-14-6), [14.5](modules/14.md#unit-14-5), [14.7](modules/14.md#unit-14-7), [11.12](modules/11.md#unit-11-12) | [L14](labs.md#l14), [L06](labs.md#l06), [L17](labs.md#l17) |
+| 模型原理与面试准备 | [03.3](modules/03.md#unit-03-3), [03.4](modules/03.md#unit-03-4), [03.5](modules/03.md#unit-03-5), [04.2](modules/04.md#unit-04-2), [04.5](modules/04.md#unit-04-5), [11.9](modules/11.md#unit-11-9), [05.8](modules/05.md#unit-05-8), [15.2](modules/15.md#unit-15-2), [15.3](modules/15.md#unit-15-3), [15.4](modules/15.md#unit-15-4), [04.4](modules/04.md#unit-04-4), [15.5](modules/15.md#unit-15-5), [15.6](modules/15.md#unit-15-6), [15.1](modules/15.md#unit-15-1), [15.7](modules/15.md#unit-15-7) | [L09](labs.md#l09) |
 
 ## 本地推理与模型适配方向
 
-从小模型计算与训练走到推理、LoRA及可回滚模型服务。
+从小模型的计算和训练出发，做到本地推理、LoRA 微调和可回滚的模型服务。
 
-| 阶段 | 该阶段展开的先修与目标 | 实验 |
+| 阶段 | 单元（含先修） | 实验 |
 |---|---|---|
 | 软件、数据与模型计算 | [00.1](modules/00.md#unit-00-1), [00.2](modules/00.md#unit-00-2), [01.1](modules/01.md#unit-01-1), [01.2](modules/01.md#unit-01-2), [01.3](modules/01.md#unit-01-3), [02.1](modules/02.md#unit-02-1), [01.6](modules/01.md#unit-01-6), [02.6](modules/02.md#unit-02-6), [03.1](modules/03.md#unit-03-1), [03.2](modules/03.md#unit-03-2), [03.3](modules/03.md#unit-03-3), [03.4](modules/03.md#unit-03-4), [01.5](modules/01.md#unit-01-5), [03.5](modules/03.md#unit-03-5), [04.1](modules/04.md#unit-04-1), [04.2](modules/04.md#unit-04-2), [04.6](modules/04.md#unit-04-6), [11.1](modules/11.md#unit-11-1), [11.4](modules/11.md#unit-11-4) | [L01](labs.md#l01), [L09](labs.md#l09) |
 | 资源核算与本地服务 | [13.7](modules/13.md#unit-13-7), [13.1](modules/13.md#unit-13-1), [13.2](modules/13.md#unit-13-2), [02.2](modules/02.md#unit-02-2), [02.3](modules/02.md#unit-02-3), [02.4](modules/02.md#unit-02-4), [13.3](modules/13.md#unit-13-3), [13.4](modules/13.md#unit-13-4), [13.5](modules/13.md#unit-13-5) | [L07](labs.md#l07) |
 | 数据策展与SFT/LoRA | [05.1](modules/05.md#unit-05-1), [05.2](modules/05.md#unit-05-2), [12.1](modules/12.md#unit-12-1), [06.1](modules/06.md#unit-06-1), [12.10](modules/12.md#unit-12-10), [12.2](modules/12.md#unit-12-2), [12.3](modules/12.md#unit-12-3), [12.4](modules/12.md#unit-12-4) | [L15](labs.md#l15), [L08](labs.md#l08) |
 | 模型评测与服务交付 | [04.5](modules/04.md#unit-04-5), [11.9](modules/11.md#unit-11-9), [05.3](modules/05.md#unit-05-3), [11.2](modules/11.md#unit-11-2), [11.3](modules/11.md#unit-11-3), [11.5](modules/11.md#unit-11-5), [11.6](modules/11.md#unit-11-6), [05.9](modules/05.md#unit-05-9), [14.1](modules/14.md#unit-14-1), [02.5](modules/02.md#unit-02-5), [14.2](modules/14.md#unit-14-2), [14.4](modules/14.md#unit-14-4), [05.5](modules/05.md#unit-05-5), [14.6](modules/14.md#unit-14-6), [15.2](modules/15.md#unit-15-2), [11.10](modules/11.md#unit-11-10), [11.12](modules/11.md#unit-11-12), [04.4](modules/04.md#unit-04-4), [01.4](modules/01.md#unit-01-4), [15.5](modules/15.md#unit-15-5), [15.1](modules/15.md#unit-15-1), [15.7](modules/15.md#unit-15-7) | [L06](labs.md#l06), [L17](labs.md#l17) |
 
-## Agent平台与系统优化方向
+## Agent 平台方向
 
-应用主线后深入执行环境、编排、协作和数据驱动优化；RL按目标另选。
+主线加上 Agent 平台的深度：框架语义、耐久工作流、沙箱、多 Agent 协作和程序优化；强化学习可选。
 
-| 阶段 | 该阶段展开的先修与目标 | 实验 |
+| 阶段 | 单元（含先修） | 实验 |
 |---|---|---|
-| 需求、Python与模型接口 | [00.1](modules/00.md#unit-00-1), [00.2](modules/00.md#unit-00-2), [01.1](modules/01.md#unit-01-1), [01.2](modules/01.md#unit-01-2), [01.5](modules/01.md#unit-01-5), [01.6](modules/01.md#unit-01-6), [01.3](modules/01.md#unit-01-3), [02.1](modules/02.md#unit-02-1), [05.1](modules/05.md#unit-05-1), [05.3](modules/05.md#unit-05-3), [01.7](modules/01.md#unit-01-7), [05.10](modules/05.md#unit-05-10) | [L01](labs.md#l01) |
-| 评测基线与可测量目标 | [03.1](modules/03.md#unit-03-1), [03.2](modules/03.md#unit-03-2), [11.1](modules/11.md#unit-11-1), [11.2](modules/11.md#unit-11-2), [11.3](modules/11.md#unit-11-3), [11.4](modules/11.md#unit-11-4), [05.9](modules/05.md#unit-05-9) | — |
-| 无框架Agent内核 | [05.4](modules/05.md#unit-05-4), [07.1](modules/07.md#unit-07-1), [07.2](modules/07.md#unit-07-2), [07.3](modules/07.md#unit-07-3), [07.5](modules/07.md#unit-07-5) | [L13](labs.md#l13) |
-| 数据、工具、持久化与授权 | [05.2](modules/05.md#unit-05-2), [12.1](modules/12.md#unit-12-1), [02.2](modules/02.md#unit-02-2), [06.1](modules/06.md#unit-06-1), [12.10](modules/12.md#unit-12-10), [02.3](modules/02.md#unit-02-3), [02.4](modules/02.md#unit-02-4), [07.4](modules/07.md#unit-07-4), [10.2](modules/10.md#unit-10-2), [02.5](modules/02.md#unit-02-5), [10.3](modules/10.md#unit-10-3), [10.1](modules/10.md#unit-10-1), [10.4](modules/10.md#unit-10-4), [08.1](modules/08.md#unit-08-1), [08.3](modules/08.md#unit-08-3), [10.7](modules/10.md#unit-10-7) | [L03](labs.md#l03), [L05](labs.md#l05) |
-| 验证器、运行与业务验收 | [02.6](modules/02.md#unit-02-6), [11.8](modules/11.md#unit-11-8), [11.5](modules/11.md#unit-11-5), [11.6](modules/11.md#unit-11-6), [14.1](modules/14.md#unit-14-1), [14.2](modules/14.md#unit-14-2), [02.7](modules/02.md#unit-02-7), [14.3](modules/14.md#unit-14-3), [14.4](modules/14.md#unit-14-4), [05.5](modules/05.md#unit-05-5), [14.6](modules/14.md#unit-14-6), [14.5](modules/14.md#unit-14-5), [14.7](modules/14.md#unit-14-7), [11.10](modules/11.md#unit-11-10), [11.12](modules/11.md#unit-11-12) | [L14](labs.md#l14), [L06](labs.md#l06), [L17](labs.md#l17) |
-| 模型原理、选型复核与作品答辩 | [03.3](modules/03.md#unit-03-3), [03.4](modules/03.md#unit-03-4), [03.5](modules/03.md#unit-03-5), [04.1](modules/04.md#unit-04-1), [04.2](modules/04.md#unit-04-2), [04.5](modules/04.md#unit-04-5), [11.9](modules/11.md#unit-11-9), [05.8](modules/05.md#unit-05-8), [15.2](modules/15.md#unit-15-2), [01.4](modules/01.md#unit-01-4), [15.3](modules/15.md#unit-15-3), [15.4](modules/15.md#unit-15-4), [04.4](modules/04.md#unit-04-4), [15.5](modules/15.md#unit-15-5), [15.6](modules/15.md#unit-15-6), [15.1](modules/15.md#unit-15-1), [15.7](modules/15.md#unit-15-7) | [L09](labs.md#l09) |
-| 框架语义、工具目录与沙箱 | [08.2](modules/08.md#unit-08-2), [08.5](modules/08.md#unit-08-5), [08.6](modules/08.md#unit-08-6), [10.5](modules/10.md#unit-10-5), [06.2](modules/06.md#unit-06-2), [06.3](modules/06.md#unit-06-3), [10.6](modules/10.md#unit-10-6), [07.9](modules/07.md#unit-07-9), [08.8](modules/08.md#unit-08-8) | — |
-| 记忆、协作与程序优化 | [07.6](modules/07.md#unit-07-6), [07.8](modules/07.md#unit-07-8), [09.1](modules/09.md#unit-09-1), [09.2](modules/09.md#unit-09-2), [09.3](modules/09.md#unit-09-3), [09.5](modules/09.md#unit-09-5), [08.7](modules/08.md#unit-08-7) | [L04](labs.md#l04), [L10](labs.md#l10) |
-| 可选模型策略优化（可选，按单元先修进入） | [12.6](modules/12.md#unit-12-6), [12.7](modules/12.md#unit-12-7) | [L12](labs.md#l12) |
+| 需求、Python 与模型 API | [00.1](modules/00.md#unit-00-1), [00.2](modules/00.md#unit-00-2), [01.1](modules/01.md#unit-01-1), [01.2](modules/01.md#unit-01-2), [01.5](modules/01.md#unit-01-5), [01.6](modules/01.md#unit-01-6), [01.3](modules/01.md#unit-01-3), [02.1](modules/02.md#unit-02-1), [05.1](modules/05.md#unit-05-1), [05.3](modules/05.md#unit-05-3), [01.7](modules/01.md#unit-01-7), [05.10](modules/05.md#unit-05-10) | [L01](labs.md#l01) |
+| 评测基线 | [03.1](modules/03.md#unit-03-1), [03.2](modules/03.md#unit-03-2), [11.1](modules/11.md#unit-11-1), [11.2](modules/11.md#unit-11-2), [11.3](modules/11.md#unit-11-3), [11.4](modules/11.md#unit-11-4), [05.9](modules/05.md#unit-05-9) | — |
+| 检索与 RAG | [02.2](modules/02.md#unit-02-2), [06.1](modules/06.md#unit-06-1), [04.1](modules/04.md#unit-04-1), [06.2](modules/06.md#unit-06-2), [01.4](modules/01.md#unit-01-4), [06.3](modules/06.md#unit-06-3), [06.4](modules/06.md#unit-06-4), [06.6](modules/06.md#unit-06-6) | [L02](labs.md#l02) |
+| 不用框架写一个 Agent 循环 | [05.4](modules/05.md#unit-05-4), [07.1](modules/07.md#unit-07-1), [07.2](modules/07.md#unit-07-2), [07.3](modules/07.md#unit-07-3), [07.5](modules/07.md#unit-07-5) | [L13](labs.md#l13) |
+| 工具、状态与权限 | [02.3](modules/02.md#unit-02-3), [02.4](modules/02.md#unit-02-4), [07.4](modules/07.md#unit-07-4), [10.2](modules/10.md#unit-10-2), [02.5](modules/02.md#unit-02-5), [10.3](modules/10.md#unit-10-3), [10.1](modules/10.md#unit-10-1), [10.4](modules/10.md#unit-10-4), [08.1](modules/08.md#unit-08-1), [08.3](modules/08.md#unit-08-3), [10.7](modules/10.md#unit-10-7) | [L03](labs.md#l03), [L05](labs.md#l05) |
+| 上线与运营 | [02.6](modules/02.md#unit-02-6), [11.8](modules/11.md#unit-11-8), [11.5](modules/11.md#unit-11-5), [11.6](modules/11.md#unit-11-6), [11.10](modules/11.md#unit-11-10), [11.11](modules/11.md#unit-11-11), [14.1](modules/14.md#unit-14-1), [14.2](modules/14.md#unit-14-2), [02.7](modules/02.md#unit-02-7), [14.3](modules/14.md#unit-14-3), [14.4](modules/14.md#unit-14-4), [05.5](modules/05.md#unit-05-5), [14.6](modules/14.md#unit-14-6), [14.5](modules/14.md#unit-14-5), [14.7](modules/14.md#unit-14-7), [11.12](modules/11.md#unit-11-12) | [L14](labs.md#l14), [L06](labs.md#l06), [L16](labs.md#l16), [L17](labs.md#l17) |
+| 模型原理与面试准备 | [03.3](modules/03.md#unit-03-3), [03.4](modules/03.md#unit-03-4), [03.5](modules/03.md#unit-03-5), [04.2](modules/04.md#unit-04-2), [04.5](modules/04.md#unit-04-5), [11.9](modules/11.md#unit-11-9), [05.8](modules/05.md#unit-05-8), [15.2](modules/15.md#unit-15-2), [15.3](modules/15.md#unit-15-3), [15.4](modules/15.md#unit-15-4), [04.4](modules/04.md#unit-04-4), [15.5](modules/15.md#unit-15-5), [15.6](modules/15.md#unit-15-6), [15.1](modules/15.md#unit-15-1), [15.7](modules/15.md#unit-15-7) | [L09](labs.md#l09) |
+| 框架、耐久工作流与沙箱 | [08.2](modules/08.md#unit-08-2), [08.5](modules/08.md#unit-08-5), [08.6](modules/08.md#unit-08-6), [10.5](modules/10.md#unit-10-5), [10.6](modules/10.md#unit-10-6), [07.9](modules/07.md#unit-07-9), [08.8](modules/08.md#unit-08-8) | — |
+| 记忆、多 Agent 协作与程序优化 | [07.6](modules/07.md#unit-07-6), [07.8](modules/07.md#unit-07-8), [09.1](modules/09.md#unit-09-1), [09.2](modules/09.md#unit-09-2), [09.3](modules/09.md#unit-09-3), [09.5](modules/09.md#unit-09-5), [05.2](modules/05.md#unit-05-2), [12.1](modules/12.md#unit-12-1), [12.10](modules/12.md#unit-12-10), [08.7](modules/08.md#unit-08-7) | [L04](labs.md#l04), [L10](labs.md#l10) |
+| 强化学习（可选） | [12.6](modules/12.md#unit-12-6), [12.7](modules/12.md#unit-12-7) | [L12](labs.md#l12) |
 
 ## 全部单元的先修
 
-下表为一种可行拓扑顺序；同批无依赖主题可以并行。已有能力通过[诊断](entry-diagnostic.md)抵免。可选分支的先修仅在选择该分支时展开。
+下表是全部单元的一种可行顺序，互不依赖的单元可以同时学。已经掌握的内容，用[入门诊断](entry-diagnostic.md)确认后跳过。
 
 | Unit | Track | Prerequisites |
 |---|---|---|
@@ -103,6 +107,7 @@ flowchart LR
 | [11.1 任务、标签与Benchmark设计](modules/11.md#unit-11-1) | core | [00.2 从业务问题到AI系统](modules/00.md#unit-00-2), [03.2 概率统计与实验判断](modules/03.md#unit-03-2) |
 | [02.8 Java/Spring AI与企业系统集成](modules/02.md#unit-02-8) | advanced | [02.1 HTTP、API与流式交互](modules/02.md#unit-02-1), [02.5 身份认证、授权与租户隔离](modules/02.md#unit-02-5) |
 | [03.4 神经网络与优化过程](modules/03.md#unit-03-4) | core | [03.1 线性代数与数值基础](modules/03.md#unit-03-1), [03.3 机器学习任务与泛化](modules/03.md#unit-03-3) |
+| [03.6 传统 ML 上线与 MLOps](modules/03.md#unit-03-6) | advanced | [03.3 机器学习任务与泛化](modules/03.md#unit-03-3), [02.6 云、容器与发布基础](modules/02.md#unit-02-6) |
 | [04.4 解码与结构化生成](modules/04.md#unit-04-4) | core | [04.1 Tokenizer、语料与训练目标](modules/04.md#unit-04-1), [03.2 概率统计与实验判断](modules/03.md#unit-03-2) |
 | [04.5 预训练、后训练与模型能力](modules/04.md#unit-04-5) | core | [03.3 机器学习任务与泛化](modules/03.md#unit-03-3), [04.1 Tokenizer、语料与训练目标](modules/04.md#unit-04-1) |
 | [05.2 Prompt工程与任务分解](modules/05.md#unit-05-2) | core | [05.1 模型API与Provider适配](modules/05.md#unit-05-1) |
