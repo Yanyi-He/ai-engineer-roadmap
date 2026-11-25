@@ -40,7 +40,7 @@ Questions interviewers ask about this design: what happens if the arguments chan
 
 ## 中文
 
-[P2 带业务操作的流程 Agent](../../docs/zh/capstones.md#p2-带业务操作的流程-agent)的最小可运行骨架：工单进来，Agent 提出退款方案，人工审批具体动作，即使支付系统超时也只退款一次。
+[P2 带业务操作的流程 Agent](../../docs/zh/capstones.md#p2-带业务操作的流程-agent) 的最小可运行骨架：工单进来，Agent 提出退款方案，人工审批具体动作，即使支付系统超时也只退款一次。
 
 - **规划：** 规则基线输出 JSON 方案，金额取自订单记录，不取自工单文本，注入的数字无法抬高退款。
 - **审批：** 审批绑定工具名与参数的 SHA-256 摘要，动作一改就要重新审批。

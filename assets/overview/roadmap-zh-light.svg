@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 372" width="1040" height="372" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
 <title id="t">AI Engineering 学习路线总览</title>
-<desc id="d">四个阶段：打基础、构建AI应用、评测与上线、求职；另有按目标岗位选择的专项。每个圆点代表一个学习单元。</desc>
+<desc id="d">四个阶段：打基础、构建 AI 应用、评测与上线、求职；另有按目标岗位选择的专项。每个圆点代表一个学习单元。</desc>
 <rect x="20.0" y="16" width="220.0" height="312" rx="12" fill="#f6f8fa" stroke="#d0d7de"/>
 <text x="36.0" y="42.0" font-size="11.5" fill="#59636e" font-weight="600">阶段 1 · 30 个单元</text>
 <text x="36.0" y="66.0" font-size="18" fill="#1f2328" font-weight="700">打基础</text>
@@ -8,7 +8,7 @@
 <text x="36.0" y="100.0" font-size="13.5" fill="#1f2328">00  岗位地图与交付全景</text>
 <circle cx="40.0" cy="114" r="3.6" fill="#0969da"/>
 <circle cx="50.0" cy="114" r="3.6" fill="#0969da"/>
-<text x="36.0" y="140.0" font-size="13.5" fill="#1f2328">01  Python与软件工程</text>
+<text x="36.0" y="140.0" font-size="13.5" fill="#1f2328">01  Python 与软件工程</text>
 <circle cx="40.0" cy="154" r="3.6" fill="#0969da"/>
 <circle cx="50.0" cy="154" r="3.6" fill="#0969da"/>
 <circle cx="60.0" cy="154" r="3.6" fill="#0969da"/>
@@ -25,14 +25,14 @@
 <circle cx="90.0" cy="194" r="3.6" fill="#0969da"/>
 <circle cx="100.0" cy="194" r="3.6" fill="#0969da"/>
 <circle cx="110.0" cy="194" r="3.6" fill="#0969da" fill-opacity="0.35"/>
-<text x="36.0" y="220.0" font-size="13.5" fill="#1f2328">03  数学、ML与PyTorch</text>
+<text x="36.0" y="220.0" font-size="13.5" fill="#1f2328">03  数学、ML 与 PyTorch</text>
 <circle cx="40.0" cy="234" r="3.6" fill="#0969da"/>
 <circle cx="50.0" cy="234" r="3.6" fill="#0969da"/>
 <circle cx="60.0" cy="234" r="3.6" fill="#0969da"/>
 <circle cx="70.0" cy="234" r="3.6" fill="#0969da"/>
 <circle cx="80.0" cy="234" r="3.6" fill="#0969da"/>
 <circle cx="90.0" cy="234" r="3.6" fill="#0969da" fill-opacity="0.35"/>
-<text x="36.0" y="260.0" font-size="13.5" fill="#1f2328">04  Transformer与LLM原理</text>
+<text x="36.0" y="260.0" font-size="13.5" fill="#1f2328">04  Transformer 与 LLM 原理</text>
 <circle cx="40.0" cy="274" r="3.6" fill="#0969da"/>
 <circle cx="50.0" cy="274" r="3.6" fill="#0969da"/>
 <circle cx="60.0" cy="274" r="3.6" fill="#0969da" fill-opacity="0.35"/>
@@ -44,9 +44,9 @@
 <path d="M248.0 60 H272.0 M266.0 55 L272.0 60 L266.0 65" fill="none" stroke="#59636e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <rect x="280.0" y="16" width="220.0" height="312" rx="12" fill="#f6f8fa" stroke="#d0d7de"/>
 <text x="296.0" y="42.0" font-size="11.5" fill="#59636e" font-weight="600">阶段 2 · 43 个单元</text>
-<text x="296.0" y="66.0" font-size="18" fill="#1f2328" font-weight="700">构建AI应用</text>
+<text x="296.0" y="66.0" font-size="18" fill="#1f2328" font-weight="700">构建 AI 应用</text>
 <line x1="296.0" y1="78" x2="332.0" y2="78" stroke="#8250df" stroke-width="3" stroke-linecap="round"/>
-<text x="296.0" y="100.0" font-size="13.5" fill="#1f2328">05  模型应用与Prompt</text>
+<text x="296.0" y="100.0" font-size="13.5" fill="#1f2328">05  模型应用与 Prompt</text>
 <circle cx="300.0" cy="114" r="3.6" fill="#8250df"/>
 <circle cx="310.0" cy="114" r="3.6" fill="#8250df"/>
 <circle cx="320.0" cy="114" r="3.6" fill="#8250df"/>
@@ -57,7 +57,7 @@
 <circle cx="370.0" cy="114" r="3.6" fill="#8250df"/>
 <circle cx="380.0" cy="114" r="3.6" fill="#8250df"/>
 <circle cx="390.0" cy="114" r="3.6" fill="#8250df"/>
-<text x="296.0" y="140.0" font-size="13.5" fill="#1f2328">06  检索与RAG</text>
+<text x="296.0" y="140.0" font-size="13.5" fill="#1f2328">06  检索与 RAG</text>
 <circle cx="300.0" cy="154" r="3.6" fill="#8250df"/>
 <circle cx="310.0" cy="154" r="3.6" fill="#8250df"/>
 <circle cx="320.0" cy="154" r="3.6" fill="#8250df"/>
@@ -67,7 +67,7 @@
 <circle cx="360.0" cy="154" r="3.6" fill="#8250df" fill-opacity="0.35"/>
 <circle cx="370.0" cy="154" r="3.6" fill="#8250df"/>
 <circle cx="380.0" cy="154" r="3.6" fill="#8250df" fill-opacity="0.35"/>
-<text x="296.0" y="180.0" font-size="13.5" fill="#1f2328">07  Agent架构与记忆</text>
+<text x="296.0" y="180.0" font-size="13.5" fill="#1f2328">07  Agent 架构与记忆</text>
 <circle cx="300.0" cy="194" r="3.6" fill="#8250df"/>
 <circle cx="310.0" cy="194" r="3.6" fill="#8250df"/>
 <circle cx="320.0" cy="194" r="3.6" fill="#8250df"/>
@@ -77,7 +77,7 @@
 <circle cx="360.0" cy="194" r="3.6" fill="#8250df"/>
 <circle cx="370.0" cy="194" r="3.6" fill="#8250df" fill-opacity="0.35"/>
 <circle cx="380.0" cy="194" r="3.6" fill="#8250df" fill-opacity="0.35"/>
-<text x="296.0" y="220.0" font-size="13.5" fill="#1f2328">08  LangGraph与框架</text>
+<text x="296.0" y="220.0" font-size="13.5" fill="#1f2328">08  LangGraph 与框架</text>
 <circle cx="300.0" cy="234" r="3.6" fill="#8250df"/>
 <circle cx="310.0" cy="234" r="3.6" fill="#8250df" fill-opacity="0.35"/>
 <circle cx="320.0" cy="234" r="3.6" fill="#8250df"/>
@@ -86,7 +86,7 @@
 <circle cx="350.0" cy="234" r="3.6" fill="#8250df" fill-opacity="0.35"/>
 <circle cx="360.0" cy="234" r="3.6" fill="#8250df" fill-opacity="0.35"/>
 <circle cx="370.0" cy="234" r="3.6" fill="#8250df" fill-opacity="0.35"/>
-<text x="296.0" y="260.0" font-size="13.5" fill="#1f2328">10  MCP与工具安全</text>
+<text x="296.0" y="260.0" font-size="13.5" fill="#1f2328">10  MCP 与工具安全</text>
 <circle cx="300.0" cy="274" r="3.6" fill="#8250df"/>
 <circle cx="310.0" cy="274" r="3.6" fill="#8250df"/>
 <circle cx="320.0" cy="274" r="3.6" fill="#8250df"/>
@@ -142,13 +142,13 @@
 <path d="M508.0 265.0 H532.0 M526.0 260.0 L532.0 265.0 L526.0 270.0" fill="none" stroke="#59636e" stroke-width="1.6" stroke-dasharray="4 3" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="556.0" y="230.0" font-size="16" fill="#1f2328" font-weight="700">按目标岗位选专项</text>
 <text x="696.0" y="230.0" font-size="12.5" fill="#59636e">可选纵深 · 26 个单元</text>
-<text x="556.0" y="258.0" font-size="13.5" fill="#1f2328">09  多Agent协作</text>
+<text x="556.0" y="258.0" font-size="13.5" fill="#1f2328">09  多 Agent 协作</text>
 <circle cx="560.0" cy="271" r="3.6" fill="#1b7c83"/>
 <circle cx="570.0" cy="271" r="3.6" fill="#1b7c83" fill-opacity="0.35"/>
 <circle cx="580.0" cy="271" r="3.6" fill="#1b7c83" fill-opacity="0.35"/>
 <circle cx="590.0" cy="271" r="3.6" fill="#1b7c83" fill-opacity="0.35"/>
 <circle cx="600.0" cy="271" r="3.6" fill="#1b7c83" fill-opacity="0.35"/>
-<text x="780.0" y="258.0" font-size="13.5" fill="#1f2328">12  微调、RL与蒸馏</text>
+<text x="780.0" y="258.0" font-size="13.5" fill="#1f2328">12  微调、RL 与蒸馏</text>
 <circle cx="784.0" cy="271" r="3.6" fill="#1b7c83"/>
 <circle cx="794.0" cy="271" r="3.6" fill="#1b7c83" fill-opacity="0.35"/>
 <circle cx="804.0" cy="271" r="3.6" fill="#1b7c83" fill-opacity="0.35"/>

@@ -10,7 +10,7 @@ Model/config revision, tokenizer/template, hardware, backend, precision, input/o
 | Weights / 权重 | | | | |
 | Gradients/optimizer, if training / 梯度与优化器 | | | | |
 | Activations / 激活 | | | | |
-| KV cache / KV缓存 | | | | |
+| KV cache / KV 缓存 | | | | |
 | Runtime/workspace/fragmentation / 运行时开销 | | | | |
 | Prefill/decode compute / 推理计算 | | | | |
 

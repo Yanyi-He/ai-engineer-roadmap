@@ -3,7 +3,7 @@
 - User and workflow / 用户与流程:
 - Concrete input and expected outcome / 具体输入与期望结果:
 - Manual or rule baseline / 人工或规则基线:
-- Why use a model; why use an agent / 为什么需要模型与Agent:
+- Why use a model; why use an agent / 为什么需要模型与 Agent:
 - Non-goals and domain limits / 非目标与领域边界:
 - Error classes and business loss / 错误类别与损失:
 - Success, quality, latency and cost constraints / 成功、质量、延迟与费用约束:

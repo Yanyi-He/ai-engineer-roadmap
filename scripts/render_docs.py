@@ -36,10 +36,10 @@ def write_self_check(out,lang):
     core=sum(len(n['checks_'+lang]) for n in all_units if n['track']=='core')
     if zh:
         lines=['# 自测题清单','','[知识树](knowledge-tree.md) · [学习顺序](dependency-order.md) · [入门诊断](entry-diagnostic.md) · [能力评审](assessment.md)','',
-               f'每个单元3道面试式自测题，共{total}道。三道题大致对应：讲清机制、诊断问题、设计或实现。题目不附标准答案，答好所需的要点在对应单元的知识框架和主读资源里。','',
-               '用法：','','- 不看资料，口头或在纸上作答，每题2–3分钟。','- 答不出来：回到该单元的主读资源和知识框架。',
+               f'每个单元 3 道面试式自测题，共 {total} 道。三道题大致对应：讲清机制、诊断问题、设计或实现。题目不附标准答案，答好所需的要点在对应单元的知识框架和主读资源里。','',
+               '用法：','','- 不看资料，口头或在纸上作答，每题 2–3 分钟。','- 答不出来：回到该单元的主读资源和知识框架。',
                '- 能讲清原理，却举不出自己的代码、实验或线上案例：完成该单元的动手任务。',
-               f'- 先覆盖core单元（{core}道）；advanced和elective按目标岗位选做。','- Fork本仓库后，把`[ ]`改成`[x]`记录进度。','']
+               f'- 先覆盖 core 单元（{core} 道）；advanced 和 elective 按目标岗位选做。','- Fork 本仓库后，把 `[ ]` 改成 `[x]` 记录进度。','']
     else:
         lines=['# Self-check question bank','','[Map](knowledge-tree.md) · [Study order](dependency-order.md) · [Entry diagnostic](entry-diagnostic.md) · [Assessment](assessment.md)','',
                f'Three interview-style questions per unit, {total} in total. They roughly follow the order: explain a mechanism, diagnose a problem, then design or implement. There is no answer key; the unit’s outline and primary reading cover what a good answer needs.','',
@@ -58,7 +58,7 @@ def main():
         for m in mods:
             lines=[f"# {m['id']} · {m[lang]}",'',('[总览](../knowledge-tree.md) · [学习顺序](../dependency-order.md) · [自测题](../self-check.md) · [课程对照](../course-audit.md)' if zh else '[Map](../knowledge-tree.md) · [Study order](../dependency-order.md) · [Self-check](../self-check.md) · [Course mapping](../course-audit.md)'),'',m['outcome_'+lang],'',('相关模块：' if zh else 'Related modules: ')+(', '.join(f"[{k}](./{k}.md)" for k in m['related_modules']) or '—'),'',('`core` 是各类 AIE 岗位都会用到的内容，`advanced` 按目标岗位选学，`elective` 是选修。每个单元标出先修单元，整体顺序见[学习顺序](../dependency-order.md)。' if zh else '`core` units apply to every AIE role, `advanced` units depend on the role you target, and `elective` units are optional. Each unit lists its prerequisites; see the [study order](../dependency-order.md) for the full sequence.'),'']
             if m['id'] in ['06','11']:
-                lines += [('[评测操作：Ragas、pytest、promptfoo与CI](../evaluation-playbook.md)' if zh else '[Evaluation operations: Ragas, pytest, promptfoo and CI](../evaluation-playbook.md)'), '']
+                lines += [('[评测操作：Ragas、pytest、promptfoo 与 CI](../evaluation-playbook.md)' if zh else '[Evaluation operations: Ragas, pytest, promptfoo and CI](../evaluation-playbook.md)'), '']
             for n in m['nodes']:
                 lines += [f'<a id="unit-{n["id"].replace(".","-")}"></a>','',f"## {n['id']} {n[lang]}",'',f"`{n['track']}` · {depth[n['depth']][0 if zh else 1]}",'',('先修：' if zh else 'Prerequisites: ')+(', '.join(unit_link(x,lang,'../') for x in n['prerequisites']) or '—'),'',('### 知识框架' if zh else '### Knowledge outline'),'']
                 lines += ['- '+t for t in n['topics_'+lang]]
@@ -66,7 +66,7 @@ def main():
                 lines += [f'{i}. {q}' for i,q in enumerate(n['checks_'+lang],1)]+['']
             lines += [('## 按需参考' if zh else '## References'),'']+['- '+resource_link(r,lang) for r in refs[m['id']]]
             (out/'modules'/f"{m['id']}.md").write_text('\n'.join(lines)+'\n')
-        lines=['# '+('AIE知识树' if zh else 'AI Engineering knowledge tree'),'',('全部模块、单元和主题分支。先学什么看[学习顺序](dependency-order.md)；CS329Z 和 CS336 的内容落在哪些单元，看[课程对照](course-audit.md)。' if zh else 'Every module, unit and topic branch. For what to study first, see the [study order](dependency-order.md); for where CS329Z and CS336 material fits, see the [course mapping](course-audit.md).'),'','```mermaid','mindmap','  root((AI Engineering))']
+        lines=['# '+('AIE 知识树' if zh else 'AI Engineering knowledge tree'),'',('全部模块、单元和主题分支。先学什么看[学习顺序](dependency-order.md)；CS329Z 和 CS336 的内容落在哪些单元，看[课程对照](course-audit.md)。' if zh else 'Every module, unit and topic branch. For what to study first, see the [study order](dependency-order.md); for where CS329Z and CS336 material fits, see the [course mapping](course-audit.md).'),'','```mermaid','mindmap','  root((AI Engineering))']
         for m in mods:
             lines.append('    '+m['id']+' '+m[lang])
             for n in m['nodes']:lines.append('      '+n['id']+' '+n[lang].replace('(','（').replace(')','）'))
@@ -85,7 +85,7 @@ def main():
         start='<!-- FULL-KNOWLEDGE-TREE:START -->'
         end='<!-- FULL-KNOWLEDGE-TREE:END -->'
         tree='\n'.join(lines).split('```mermaid',1)[1].split('```',1)[0]
-        summary=(f'展开完整知识树：{len(mods)}模块、{len(units)}单元' if zh else f'Expand the full tree: {len(mods)} modules, {len(units)} units')
+        summary=(f'展开完整知识树：{len(mods)} 个模块、{len(units)} 个单元' if zh else f'Expand the full tree: {len(mods)} modules, {len(units)} units')
         block=start+'\n<details>\n<summary>'+summary+'</summary>\n\n```mermaid'+tree+'```\n\n</details>\n'+end
         if start in readme:
             readme=readme.split(start,1)[0]+block+readme.split(end,1)[1]

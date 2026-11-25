@@ -1,4 +1,4 @@
-# 北美：53份人工复核的应用/系统AIE JD
+# 北美：53 份人工复核的应用/系统 AIE JD
 
 [研究方法](market-research.md) · [岗位总述](role-overview.md)
 
@@ -79,7 +79,7 @@
 
 ## 逐条来源
 
-`listed-at-collection`表示采集时列在雇主列表，`description-accessible-opening-unverified`表示可读原文但开放状态待核。A1为企业来源，A2为高校承载，B1为转载。完整字段见[数据](../../research/jds.json)。
+`listed-at-collection` 表示采集时列在雇主列表，`description-accessible-opening-unverified` 表示可读原文但开放状态待核。A1 为企业来源，A2 为高校承载，B1 为转载。完整字段见[数据](../../research/jds.json)。
 
 | ID | Employer / title | Country | Grade | Status |
 |---|---|---|---|---|

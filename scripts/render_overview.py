@@ -18,7 +18,7 @@ SPECIALIZE = ['09', '12', '13', '16']
 STAGE_TEXT = {
     'en': {'foundations': 'Foundations', 'build': 'Build AI apps', 'ship': 'Evaluate & ship', 'hired': 'Get hired',
            'specialize': 'Specialize by target role'},
-    'zh': {'foundations': '打基础', 'build': '构建AI应用', 'ship': '评测与上线', 'hired': '求职',
+    'zh': {'foundations': '打基础', 'build': '构建 AI 应用', 'ship': '评测与上线', 'hired': '求职',
            'specialize': '按目标岗位选专项'},
 }
 SHORT = {
@@ -28,10 +28,10 @@ SHORT = {
            '09': 'Multi-agent systems', '10': 'MCP & tool safety', '11': 'Evals & observability',
            '12': 'Fine-tuning & RL', '13': 'Inference & serving', '14': 'Production delivery',
            '15': 'Portfolio & interviews', '16': 'World models & robotics'},
-    'zh': {'00': '岗位地图与交付全景', '01': 'Python与软件工程', '02': '后端、数据与分布式', '03': '数学、ML与PyTorch',
-           '04': 'Transformer与LLM原理', '05': '模型应用与Prompt', '06': '检索与RAG', '07': 'Agent架构与记忆',
-           '08': 'LangGraph与框架', '09': '多Agent协作', '10': 'MCP与工具安全', '11': '评测与可观测性',
-           '12': '微调、RL与蒸馏', '13': '推理优化与部署', '14': '端到端生产交付', '15': '作品集与面试',
+    'zh': {'00': '岗位地图与交付全景', '01': 'Python 与软件工程', '02': '后端、数据与分布式', '03': '数学、ML 与 PyTorch',
+           '04': 'Transformer 与 LLM 原理', '05': '模型应用与 Prompt', '06': '检索与 RAG', '07': 'Agent 架构与记忆',
+           '08': 'LangGraph 与框架', '09': '多 Agent 协作', '10': 'MCP 与工具安全', '11': '评测与可观测性',
+           '12': '微调、RL 与蒸馏', '13': '推理优化与部署', '14': '端到端生产交付', '15': '作品集与面试',
            '16': '世界模型与具身智能'},
 }
 THEMES = {
@@ -166,7 +166,7 @@ def svg(mods, lang, theme, c):
     body.append(text(lx + 8, y2, lead, 12.5, t['muted'], anchor='end'))
     h = y2 + 14
     title = 'AI Engineering 学习路线总览' if zh else 'AI Engineering roadmap overview'
-    desc = ('四个阶段：打基础、构建AI应用、评测与上线、求职；另有按目标岗位选择的专项。每个圆点代表一个学习单元。' if zh else
+    desc = ('四个阶段：打基础、构建 AI 应用、评测与上线、求职；另有按目标岗位选择的专项。每个圆点代表一个学习单元。' if zh else
             'Four stages: foundations, building AI applications, evaluating and shipping, and getting hired, plus specializations chosen by target role. Each dot is one learning unit.')
     head = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {h}" width="{W}" height="{h}" role="img" '
             f'aria-labelledby="t d" font-family="{FONT}">')

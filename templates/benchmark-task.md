@@ -23,4 +23,4 @@
 |---|---|---|---|---|---|
 
 Report all attempts, n, k, selection policy, cache/seed conditions and metric definitions. Keep oracle/verifier versions and any repairs separate from agent changes.
-报告全部试次、n/k、候选选择策略、缓存/随机条件和指标定义。oracle/评分器版本与Agent修复分别记录。
+报告全部试次、n/k、候选选择策略、缓存/随机条件和指标定义。oracle/评分器版本与 Agent 修复分别记录。

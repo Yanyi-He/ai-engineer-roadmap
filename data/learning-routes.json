@@ -279,7 +279,7 @@
         ]
       },
       {
-        "zh": "数据策展与SFT/LoRA",
+        "zh": "数据策展与 SFT/LoRA",
         "en": "Curation and SFT/LoRA",
         "targets": [
           "12.10",

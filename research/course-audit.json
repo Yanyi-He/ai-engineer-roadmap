@@ -24,7 +24,7 @@
       ],
       "title_zh": "无框架内核到框架抽象",
       "title_en": "From a plain harness to framework abstractions",
-      "gap_zh": "已有循环与harness主题，实验未明确要求先独立实现再迁移。",
+      "gap_zh": "已有循环与 harness 主题，实验未明确要求先独立实现再迁移。",
       "gap_en": "Loops/harnesses existed; labs did not clearly require an independent implementation before migration.",
       "evidence_zh": "L13：同一任务的显式循环、工具协议、预算与故障夹具，再迁移到框架并比较。",
       "evidence_en": "L13:explicit loop,tool protocol,budget and fault fixtures,then migrate the same task and compare.",
@@ -85,9 +85,9 @@
       ],
       "title_zh": "重复运行与评分器校验",
       "title_en": "Repeated trials and grader validation",
-      "gap_zh": "pass@k/pass^k已有术语，需补不同事件、估计分母、相关试次与误判。",
+      "gap_zh": "pass@k/pass^k 已有术语，需补不同事件、估计分母、相关试次与误判。",
       "gap_en": "pass@k/pass^k were named;event definitions,denominators,dependence and grader errors needed depth.",
-      "evidence_zh": "报告k/n、全部结果、失败分类和grader挑战集；区分多候选成功与连续可靠。",
+      "evidence_zh": "报告 k/n、全部结果、失败分类和 grader 挑战集；区分多候选成功与连续可靠。",
       "evidence_en": "Reportk/n,all outcomes,failure classes and grader challenges;separate candidate success from consistency.",
       "source_files": [
         "cs329z-lecture15.pdf",
@@ -106,7 +106,7 @@
       "title_en": "Model evaluation and task-based selection",
       "gap_zh": "已有模型卡和业务指标，缺少模型级评测的可比性与迁移判断。",
       "gap_en": "Model cards/business metrics existed;model-level comparability and transfer decisions lacked structure.",
-      "evidence_zh": "选型卡：同一任务/工具/预算比较，区分模型、harness和评分方式的影响。",
+      "evidence_zh": "选型卡：同一任务/工具/预算比较，区分模型、harness 和评分方式的影响。",
       "evidence_en": "Selection card:matched tasks/tools/budgets,separating model,harness and scoring effects.",
       "source_files": [
         "lecture_12.py"
@@ -122,7 +122,7 @@
       ],
       "title_zh": "资源核算与瓶颈判断",
       "title_en": "Resource accounting and bottleneck diagnosis",
-      "gap_zh": "有显存与GPU术语，缺少内存分账、算术强度与估算—测量闭环。",
+      "gap_zh": "有显存与 GPU 术语，缺少内存分账、算术强度与估算—测量闭环。",
       "gap_en": "Memory/GPU concepts existed;accounting,arithmetic intensity and estimate/measure loops needed depth.",
       "evidence_zh": "资源预算表：权重/KV/激活等，理论上界、实测和误差解释；L07/L09。",
       "evidence_en": "Budget worksheet:weights/KV/activations,bounds,measurements and discrepancies;L07/L09.",
@@ -197,7 +197,7 @@
       ],
       "title_zh": "数据驱动程序优化",
       "title_en": "Data-driven program optimization",
-      "gap_zh": "已有DSPy与GEPA/MIPRO，需要明确输入数据、反馈、搜索预算和隔离测试。",
+      "gap_zh": "已有 DSPy 与 GEPA/MIPRO，需要明确输入数据、反馈、搜索预算和隔离测试。",
       "gap_en": "DSPy/GEPA/MIPRO existed;inputs,feedback,search budgets and held-out tests needed explicit treatment.",
       "evidence_zh": "一次可复算的提示/示例优化，保存候选、费用、独立测试与负结果。",
       "evidence_en": "One reproducible prompt/example optimization with candidates,costs,held-out tests and negative results.",
@@ -214,11 +214,11 @@
         "12.7",
         "12.8"
       ],
-      "title_zh": "RL与蒸馏的实验正确性",
+      "title_zh": "RL 与蒸馏的实验正确性",
       "title_en": "Correct post-training experiments",
-      "gap_zh": "算法名覆盖较全，rollout/训练版本、归一化、loss reduction与异步数据偏移需补齐。",
+      "gap_zh": "算法名覆盖较全，rollout/训练版本、归一化、loss reduction 与异步数据偏移需补齐。",
       "gap_en": "Algorithm coverage was broad;rollout/training revisions,normalization,reduction and stale data needed depth.",
-      "evidence_zh": "L12先检查奖励解析与策略版本，再比较SFT/RL或蒸馏；数学RLVR结果与Agent任务分别验证。",
+      "evidence_zh": "L12 先检查奖励解析与策略版本，再比较 SFT/RL 或蒸馏；数学 RLVR 结果与 Agent 任务分别验证。",
       "evidence_en": "L12 checks reward parsing/policy revisions before comparisons;validate math RLVR and agent tasks separately.",
       "source_files": [
         "cs336-a5.pdf",
@@ -252,11 +252,11 @@
         "07.3",
         "10.5"
       ],
-      "title_zh": "代码Agent与ACI选修",
+      "title_zh": "代码 Agent 与 ACI 选修",
       "title_en": "Coding agents and ACI elective",
       "gap_zh": "终端接口已有；仓库定位、patch、测试和重放可作为平台方向扩展。",
       "gap_en": "Terminal interfaces existed;localization,patches,tests and replay form a platform elective.",
-      "evidence_zh": "小型离线修复任务，比较工具观察格式；11月30日课程尚未授课。",
+      "evidence_zh": "小型离线修复任务，比较工具观察格式；11 月 30 日课程尚未授课。",
       "evidence_en": "Small offline repair with interface comparison;the30 November lecture is upcoming.",
       "source_files": [
         "cs329z-hw2.pdf",
@@ -274,7 +274,7 @@
       "title_en": "Proactive-interaction elective",
       "gap_zh": "事件触发、打扰成本、纠正推断和用户控制可作为后续产品方向。",
       "gap_en": "Event triggers,interruption costs,correctable inferences and controls form a product extension.",
-      "evidence_zh": "模拟事件的误触发/去重/撤销实验；12月2日课程尚未授课，使用已公开论文。",
+      "evidence_zh": "模拟事件的误触发/去重/撤销实验；12 月 2 日课程尚未授课，使用已公开论文。",
       "evidence_en": "Simulated false-trigger/deduplication/revocation;the2 December class is upcoming,use the published paper.",
       "source_files": [
         "cs329z-home.html"
@@ -290,9 +290,9 @@
       ],
       "title_zh": "阶段作品、口试与同行复核",
       "title_en": "Milestones,oral explanation and peer review",
-      "gap_zh": "已有最终评审，需把proposal、基线、中期demo和评测复核放进学习过程。",
+      "gap_zh": "已有最终评审，需把 proposal、基线、中期 demo 和评测复核放进学习过程。",
       "gap_en": "Final review existed;proposal,baseline,midpoint demo and evaluation review needed explicit milestones.",
-      "evidence_zh": "每个项目保留中期review与最终独立复现，现场解释和修改实现。",
+      "evidence_zh": "每个项目保留中期 review 与最终独立复现，现场解释和修改实现。",
       "evidence_en": "Retain midpoint review and final independent reproduction,with explanation and a live change.",
       "source_files": [
         "cs329z-logistics.html"
@@ -310,9 +310,9 @@
       ],
       "title_zh": "精确先修与岗位分支",
       "title_en": "Precise prerequisites and role branches",
-      "gap_zh": "模块依赖把完整RAG、模型原理或本地服务放到部分无关路径之前。",
+      "gap_zh": "模块依赖把完整 RAG、模型原理或本地服务放到部分无关路径之前。",
       "gap_en": "Module prerequisites unnecessarily blocked some paths on full RAG,theory or local serving.",
-      "evidence_zh": "112单元先修DAG与四条自动展开路线；API路线不依赖SFT、GPU服务或多Agent工程。",
+      "evidence_zh": "112 单元先修 DAG 与四条自动展开路线；API 路线不依赖 SFT、GPU 服务或多 Agent 工程。",
       "evidence_en": "112-unit DAG and4 expanded routes;the API path excludes SFT,GPU serving and multi-agent engineering.",
       "source_files": [
         "cs329z-logistics.html",
