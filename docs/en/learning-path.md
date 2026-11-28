@@ -11,15 +11,29 @@ The plan below assumes backend experience and 10–15 hours a week, about 18 wee
 | 1 Foundations | 1–2 | Use the [entry diagnostic](entry-diagnostic.md) to find and fill gaps in 01–02; model APIs, structured output and tool calling (05.1–05.3); an evaluation baseline (11.1–11.4) | [L01](labs.md#l01): a tested model API service |
 | 2 Build AI apps | 3–8 | Parsing, retrieval and RAG (06.1–06.6); an agent loop without a framework (07.1–07.5); LangGraph (08.1–08.3); MCP and tool safety (10.1–10.4) | [L02](labs.md#l02), [L13](labs.md#l13), [L03](labs.md#l03), [L05](labs.md#l05); [P1](capstones.md#p1-enterprise-knowledge-service) at L1 |
 | 3 Evaluate and ship | 9–15 | Tracing, regression and security tests (11.5–11.12, 10.7, 14.7); deployment and operations (02.6, 14): IaC, CI/CD, gradual rollout, load tests, alerts | [L06](labs.md#l06), [L16](labs.md#l16), [L17](labs.md#l17), [L14](labs.md#l14); one project at L2 |
-| 4 Get hired | 16–18 | Transformer internals (04), interview prep (15), résumé and applications | [Self-check questions](self-check.md), mock interviews |
+| 4 Get hired | 16–18 | Review Transformer internals (04, studied alongside since week 1), interview prep (15), résumé and applications | [Self-check questions](self-check.md), mock interviews |
 
 The [capstones page](capstones.md#from-project-to-offer-levels-deployment-and-evidence) defines L1 and L2. P1 and P2 have [runnable starter code](../../starters/).
+
+### Is the time realistic?
+
+At 10–15 hours a week, 18 weeks give you 180–270 hours. The core route has 74 units including prerequisites, plus 10 labs and one project taken to L2. A rough split:
+
+| Work | Estimated hours | Notes |
+|---|---:|---|
+| Unit reading and short exercises | 70–100 | With backend experience, most of 01–02 needs only the diagnostic; the time goes to 05–11 and 14 |
+| 10 labs | 60–90 | Do the main path under "Deliverables" first, about 6–9 hours each; leave the fault drills under "Acceptance" until the project goes for L2 |
+| One project to L2 | 40–60 | Deployment, eval set, CI, real users and one written-up optimization |
+| Coding-interview practice | 40–60 | 3 hours a week from week 1, by topic from [LeetCode Top Interview 150](https://leetcode.com/studyplan/top-interview-150/) or a similar list; timed mocks in the last 3 weeks |
+| Total | 210–310 | Fits about 18 weeks at 15 hours a week; at 10 hours a week, plan for 22–24 weeks |
+
+AIE roles at large North American tech companies (Amazon, Microsoft, Google and others) still include algorithm and system-design rounds, so start coding practice in week 1. Chinese employers and AI-native companies lean more on project deep-dives and RAG/agent design, so part of the practice time can go to polishing the project instead.
 
 ## Adjusting for your background
 
 | Background | Hours per week | Core route | Focus |
 |---|---|---|---|
-| 2+ years of backend or full-stack work | 10–15 | About 16–20 weeks | Skip most of 01–02; spend the time on 05–11 and 14, and bring a project to L2 |
+| 2+ years of backend or full-stack work | 10–15 | About 18–24 weeks, interview practice included | Skip most of 01–02; spend the time on 05–11 and 14, and bring a project to L2 |
 | Already building AI apps (RAG, LangGraph) | 8–10 | About 8–12 weeks | Fill in evaluation (11), security (10.4–10.7, 14.7), shipping (14) and portfolio work |
 | New graduate or career changer | 15–20 | About 6–9 months | Study 01–04 in full; get one project to L1, then to L2 |
 | Adding a specialization | — | Another 6–10 weeks | Post-training (12) or inference optimization (13), not both |

@@ -19,9 +19,19 @@ The role takes software engineering from SDE, data and experimentation methods f
 
 ## 2. Hiring market: which data matter for SDE and AIE decisions?
 
-Data updated 23 November 2026.
+Data updated 27 November 2026.
 
-### North American software development: recovering, concentrated in senior and AI roles
+### The short version
+
+| Market | Software development overall | AI-related roles |
+|---|---|---|
+| United States | Indeed's Software Development postings index rose from 64.9 in 2025Q1 to 80.1 in 2026Q4, still about 20% below February 2020; BLS projects 10% growth for software developers, QA analysts and testers in 2025–2035, against 3.5% for all occupations | LinkedIn "AI Engineer" hiring +64% YoY, +62% at entry level; active postings in the AI/ML title group are about three times May 2024 |
+| Canada | Indeed's Software Development index fell from 81.7 in 2025Q4 to 76.2 in 2026Q4; the federal COPS projections rate software engineers, software developers and data scientists as "balance" | Postings that require AI skills rose from 1.3% of all postings in 2024 to 3.0% in 2025; businesses using AI to produce goods or services rose from 6.1% in 2024 to 19.2% in 2026; AI Engineer tops LinkedIn's 2026 list of Canada's fastest-growing jobs |
+| China | In Beijing's public employment-service data, job seekers outnumber openings for computer software engineers; software-industry revenue growth slowed from 13.0% (first three quarters of 2025) to 8.4% (same period of 2026), and profit growth from 8.7% to 1.6% | Maimai: new AI postings +789% YoY; Zhaopin: agent-related technical talent demand +244% YoY; the labour ministry added an "agent developer" specialty |
+
+In all three markets the growth is in AI-related and senior roles. Official occupation-level data show software jobs overall in balance, with stiff competition for entry-level general development roles; employers compete for engineers who can ship AI systems and show that they work.
+
+### United States: software postings recovering, growth in senior and AI roles
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../../assets/research/market-software-postings-en-dark.svg">
@@ -30,11 +40,13 @@ Data updated 23 November 2026.
 
 Indeed's Software Development postings index uses 1 February 2020 = 100. The US rose from 64.9 in 2025Q1 to 75.5 in 2026Q3 and 80.1 in 2026Q4 (to 13 November); Canada fell from 81.7 in 2025Q4 to 76.2 in 2026Q4. [Quarterly data](../../research/market/indeed-quarterly.csv), [Indeed data](https://github.com/hiring-lab/job_postings_tracker)
 
-Hiring Lab reports that US software-development postings have risen about 15% since February 2025 but remain about 27.5% below pre-pandemic levels. Of the increase from May 2025 to May 2026, 71% came from senior roles and 37% from jobs with AI in the title (the groups overlap). The author calls the evidence preliminary. [Hiring Lab, 8 July 2026](https://hiringlab.indeed.com/2026/07/08/ai-and-job-postings-from-destruction-to-creation/)
+- **Where the growth comes from:** Hiring Lab reports that US software-development postings have risen about 15% since February 2025 but remain about 27.5% below pre-pandemic levels. Of the increase from May 2025 to May 2026, 71% came from senior roles and 37% from jobs with AI in the title (the groups overlap). The author calls the evidence preliminary. [Hiring Lab, 8 July 2026](https://hiringlab.indeed.com/2026/07/08/ai-and-job-postings-from-destruction-to-creation/)
+- **Long-run projection:** in BLS's 2025–2035 projections, software developers, QA analysts and testers held 1,905,400 jobs in 2025 and are projected to grow 10% (+185,400), with about 106,100 openings a year; all occupations grow 3.5%. The previous projection (2024–2034) was 15%. [BLS Occupational Outlook](https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm), [BLS 2025–2035 summary](https://www.bls.gov/news.release/ecopro.nr0.htm)
+- **New graduates:** the New York Fed's 2024 ACS figures for bachelor's graduates aged 22–27 put unemployment at 7.8% for computer engineering and 7.0% for computer science, the 2nd and 4th highest of 73 majors (4.2% overall). Their underemployment rates are only 15.8% and 19.1% (39.4% overall), and their early-career median wages, $90,000 and $87,000, are the two highest. Landing a job is harder; the jobs graduates land are good ones. [New York Fed, released February 2026](https://www.newyorkfed.org/research/college-labor-market)
 
 For job seekers, the recovery is mostly in senior and AI-related roles; newcomers need projects that show they can deliver an AI system on their own.
 
-### Signals specific to AI Engineers
+### United States: signals specific to AI Engineers
 
 | Signal | Latest value | How to read it |
 |---|---|---|
@@ -44,7 +56,20 @@ For job seekers, the recovery is mostly in senior and AI-related roles; newcomer
 | US active postings in the AI/ML job-title group | 13,636 (September 2026), nearly triple May 2024 | The closest public figure to total AI-engineer plus ML-engineer demand. [CompTIA](https://www.comptia.org/en/about-us/news/press-releases/employer-demand-for-tech-talent-reaches-three-year-high-comptia-analysis-finds/) |
 | Share of US software-development postings mentioning AI | 20% or more (December 2025) | A posting that mentions AI may not require AI engineering, but the share shows AI becoming a common SDE expectation. [Hiring Lab, 22 January 2026](https://hiringlab.indeed.com/2026/01/22/january-labor-market-update-jobs-mentioning-ai-are-growing-amid-broader-hiring-weakness/) |
 
-### Canada: official quarterly vacancies
+### Canada: AI demand is growing
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../../assets/research/market-ai-skill-share-en-dark.svg">
+  <img alt="Share of job postings requiring AI skills in Canada, the US, the UK and Australia, 2018–2025" src="../../assets/research/market-ai-skill-share-en-light.svg" width="100%">
+</picture>
+
+- **Job postings:** Lightcast's share of postings that require at least one AI skill rose in Canada from 1.30% in 2024 to 3.00% in 2025, more than doubling in a year and rising faster than the US (1.65% → 2.56%), the UK and Australia. Posting coverage differs by country, so changes within a country are more reliable than cross-country levels. [Data](../../research/market/ai-skill-postings-share.csv), [Our World in Data](https://ourworldindata.org/grapher/share-artificial-intelligence-job-postings), [Stanford AI Index 2026, chapter 4](https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_4_economy.pdf)
+- **Business adoption:** in Statistics Canada's Survey on Business Conditions, the share of businesses that used AI to produce goods or deliver services in the past 12 months was 6.1% in 2024Q2, 12.2% in 2025 and 19.2% in 2026; 42.3% in information and cultural industries and 40.4% in finance and insurance. Among businesses using AI, 24.8% use large language models. [Data](../../research/market/statcan-ai-use.csv), [Statistics Canada Table 33-10-1167-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3310116701)
+- **Fastest-growing titles:** LinkedIn's Canadian Jobs on the Rise list (January 2026) ranks AI Engineer as the fastest-growing job of the past three years, AI consultant/strategist second and AI/ML researcher fourth. The most common AI Engineer skills are LangChain, RAG and LLMs; the jobs concentrate in Toronto, Montreal and Vancouver; the median prior experience is 2.8 years; and the most common previous roles are software engineer, data scientist and full-stack engineer. [LinkedIn News](https://www.linkedin.com/pulse/linkedin-jobs-rise-2026-15-fastest-growing-canada-linkedin-news-p93cf/)
+
+Indeed's AI-keyword share does not measure Canadian AI demand: since 2026 Ontario requires postings to say whether AI is used to screen applicants, and that disclosure text pushed Canada's share to about 20% ([Hiring Lab Canada](https://hiringlab.indeed.com/en-ca/2026/07/08/ontario-job-postings-highlight-the-widespread-use-of-ai-in-hiring-processes/)). The three measures above count required skills, survey responses and job titles, a different basis from keyword shares, and Lightcast's 2025 figures predate the rule.
+
+### Canada: software jobs overall, supply and demand
 
 Statistics Canada's Job Vacancy and Wage Survey (JVWS) publishes quarterly vacancies by detailed occupation. It is the only official national series among the three countries that counts vacancies by occupation each quarter. AIE has no occupation code of its own; AI engineers are usually coded as software engineers (21231), software developers and programmers (21232) or data scientists (21211).
 
@@ -67,15 +92,34 @@ Statistics Canada's Job Vacancy and Wage Survey (JVWS) publishes quarterly vacan
 
 Since 2023, software and data vacancies have fallen sharply: the 2123 group from 11,315 to about 6,900 and data scientists from 6,375 to about 2,900, while vacancies across all occupations fell by about 30%. From 2025 these occupations held roughly steady with a slight rise; software-engineer vacancies reached 2,170 in 2026Q2, the highest since 2023Q3. A vacancy count is the number of positions open at one point in time, not the number of hires in a year. [Data and quality grades](../../research/market/statcan-tech-vacancies.csv), [Statistics Canada Table 14-10-0444-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410044401)
 
+Employment and Social Development Canada's Canadian Occupational Projection System (COPS) released its 2026–2035 projections in November 2026. It compares ten-year job openings with job seekers by occupation and rates each as shortage, balance or surplus:
+
+<!-- COPS-TABLE:START -->
+| Occupation (NOC 2021) | Employment 2025 | 10-year employment growth | Job openings 2026–35 | Job seekers 2026–35 | Recent / projected conditions |
+|---|---:|---:|---:|---:|---|
+| Software engineers and designers (21231) | 122,000 | +15.2% | 37,300 | 41,300 | Balance / Balance |
+| Software developers and programmers (21232) | 230,600 | +15.4% | 67,600 | 64,700 | Balance / Balance |
+| Data scientists (21211) | 50,800 | +13.4% | 12,000 | 18,100 | Balance / Balance |
+| Cybersecurity specialists (21220) | 35,700 | +19.0% | 15,800 | 15,200 | Balance / Balance |
+| Web developers and programmers (21234) | 25,100 | +4.8% | 4,700 | 5,400 | Balance / Balance |
+| All Occupations | 21,028,700 | +8.3% | 7,446,400 | 7,158,700 | — / — |
+
+Job openings = expansion + retirements + other replacement; job seekers = school leavers + new immigrants + other mobility (may be negative). [Full data](../../research/market/cops-2026-2035-tech.csv)
+<!-- COPS-TABLE:END -->
+
+Software and data occupations are projected to grow about 13–15% over ten years, faster than 8.3% for all occupations, but graduates and new immigrants supply about as many job seekers as there are openings, so both 2023–2025 and 2026–2035 are rated "balance". In 2026 only 7.0% of businesses named a lack of skilled workers as a barrier to using AI; among businesses using AI, 11.4% hired employees with AI skills and 32.0% trained existing staff. [COPS open data](https://open.canada.ca/data/en/dataset/e80851b8-de68-43bd-a85c-c72e1b3a3890), [Statistics Canada Tables 33-10-1168-01 and 33-10-1169-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3310116801)
+
+So in Canada, official occupation statistics do not support claims of an overall "AI talent shortage". The available evidence points one way: AI skill requirements and AI job titles are growing fast, and employers prefer to hire or retrain experienced software engineers and data scientists. For job seekers, the strongest case is solid software engineering plus an AI project that is deployed and evaluated.
+
 ### China: platform growth signals, no skill shares
 
 - Maimai, *Agent 重置职场* (January–July 2026): new AI postings +789.47% YoY; AI application development was 60.97% of new AI postings, and agent developers were the most demanded application role; FDE / on-site deployment roles grew 1,522.73%. [National Business Daily](https://www.nbd.com.cn/articles/2026-09-16/4583369.html)
-- Zhaopin, H1 2026: demand for agent-related technical talent +244% YoY. [CCTV Finance](https://finance.cctv.cn/2026/08/28/ARTIxnofbL409vkM6skY5WRh260828.shtml)
+- Zhaopin: in the month after the 2026 Spring Festival, AI-industry postings rose 16.9% YoY and robotics algorithm engineers 57% ([Xinhua, 12 May 2026](https://www.news.cn/fortune/20260512/85b58753df6e4208923a35a44b3d2846/c.html)); in H1 2026, demand for agent-related technical talent rose 244% YoY ([CCTV Finance](https://finance.cctv.cn/2026/08/28/ARTIxnofbL409vkM6skY5WRh260828.shtml)).
 - On 9 September 2026 the Ministry of Human Resources and Social Security added an "agent developer" (智能体开发员) specialty under the generative-AI system application occupation. [Beijing News](https://m.bjnews.com.cn/detail/1788949841129475.html)
-
+- Ministry of Industry and Information Technology software-industry data: in the first three quarters of 2025, software revenue grew 13.0% and profit 8.7%; in the same period of 2026, revenue grew 8.4% and profit 1.6%. The industry is still growing, but noticeably more slowly. [Xinhua, 31 October 2025](https://www.news.cn/info/20251031/cdfe79d608564bf6b9f93fe7f6559c00/c.html), [Xinhua, 31 October 2026](https://www.news.cn/fortune/20261031/e8d5045f729f4ec5b0097cb3845b068b/c.html)
 - Beijing Municipal Human Resources and Social Security Bureau, quarterly supply-and-demand analysis (public employment service data): in 2025Q3, computer software engineers ranked fourth among occupations where job seekers outnumber openings, with 7,868 more seekers than openings; software testers (2,111 more) and data-analysis engineers (1,000 more) also ranked high. The data come from public employment services and exclude large employers' own hiring channels, but they show ample supply for general software roles in Beijing. [Beijing HRSS Bureau, 2025Q3](https://rsj.beijing.gov.cn/xxgk/sjfbsj/gqfx/202511/P020251103356760469762.pdf)
 
-These platforms publish growth rates without samples, methods or skill shares, and China has no national quarterly vacancy count by occupation. For the skills Chinese roles ask for, see the job-description sample in the next section.
+These platforms publish growth rates without samples, methods or skill shares, and China has no national quarterly vacancy count by occupation. Widely shared figures such as a "5 million AI talent gap" could not be traced to a checkable official source and are not used here. For the skills Chinese roles ask for, see the job-description sample in the next section.
 
 AIE and SRE have no official occupation codes, and neither the US nor China publishes national quarterly vacancies by occupation, so the overall size of the AIE market can only be estimated from the indirect figures above.
 

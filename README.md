@@ -31,7 +31,7 @@ Each of the 127 units lists what to know, how deep to go (explain, implement, di
 
 ## All pages
 
-1. [Roles and hiring](docs/en/role-overview.md): 367 job descriptions analyzed by market (80 from Canada), breakdowns of large-employer postings, and official Canadian quarterly vacancies.
+1. [Roles and hiring](docs/en/role-overview.md): software and AI hiring trends in the US, Canada and China (official BLS, Statistics Canada and COPS data), 367 job descriptions analyzed by market (80 from Canada), and breakdowns of large-employer postings.
 2. [Diagnostic](docs/en/entry-diagnostic.md) → [learning path](docs/en/learning-path.md) → [dependencies](docs/en/dependency-order.md).
 3. [Knowledge tree](docs/en/knowledge-tree.md): 17 modules, 127 units, 708 topics.
 4. [Self-check questions](docs/en/self-check.md): 381 interview-style questions, three per unit, for finding gaps before interviews.

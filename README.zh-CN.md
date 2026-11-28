@@ -31,7 +31,7 @@
 
 ## 全部页面
 
-1. [岗位与招聘市场](docs/zh/role-overview.md)：367 份 JD 按市场分析（其中加拿大 80 份）、大厂中厂 JD 拆解、加拿大官方季度职位空缺。
+1. [岗位与招聘市场](docs/zh/role-overview.md)：中美加软件岗位与 AI 岗位趋势（BLS、加拿大统计局、COPS 职业预测等官方数据）、367 份 JD 按市场分析（其中加拿大 80 份）、大厂中厂 JD 拆解。
 2. [入门诊断](docs/zh/entry-diagnostic.md) → [学习路径](docs/zh/learning-path.md) → [依赖顺序](docs/zh/dependency-order.md)。
 3. [知识树](docs/zh/knowledge-tree.md)：17 个模块、127 个单元、708 条主题分支。
 4. [自测题](docs/zh/self-check.md)：每个单元 3 道面试式问题，共 381 道，面试前查漏补缺。

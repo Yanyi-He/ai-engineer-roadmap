@@ -99,13 +99,18 @@ def line_chart(lang, theme, series, quarters, title, ylabel, foot, zero_line=Fal
         body.append(t(x(i), H - bottom + 22, q, 12, th['muted'], anchor='middle'))
     body.append(f'<text transform="translate(22 {top + ph / 2:.0f}) rotate(-90)" font-size="12" fill="{th["muted"]}" text-anchor="middle">{escape(ylabel)}</text>')
     lx = left
+    used = []
     for s in series:
         c = th[s.get('color', s.get('country'))]
         pts = [(x(i), y(v)) for i, v in enumerate(s['values']) if v is not None]
         body.append(f'<polyline points="{" ".join(f"{a:.1f},{b:.1f}" for a, b in pts)}" fill="none" stroke="{c}" stroke-width="2.4" stroke-linejoin="round"/>')
         body += [f'<circle cx="{a:.1f}" cy="{b:.1f}" r="3.6" fill="{c}"/>' for a, b in pts]
         last = pts[-1]
-        body.append(t(last[0] + 8, last[1] + 4, f'{s["values"][-1]:,.0f}' if s['values'][-1] >= 100 else f'{s["values"][-1]:.1f}', 11.5, c, weight='600'))
+        ly = last[1] + 4
+        while any(abs(ly - u) < 13 for u in used):  # keep end labels of close series apart
+            ly += 13
+        used.append(ly)
+        body.append(t(last[0] + 8, ly, f'{s["values"][-1]:,.0f}' if s['values'][-1] >= 100 else f'{s["values"][-1]:.1f}', 11.5, c, weight='600'))
         body.append(f'<rect x="{lx}" y="50" width="14" height="10" rx="2" fill="{c}"/>')
         body.append(t(lx + 20, 59, s['label'], 13, th['muted']))
         lx += max(150, int(len(s['label']) * (13 if zh else 7.4)) + 40)
@@ -283,6 +288,49 @@ def render_canada_tables():
         replace_block(ROOT / f'docs/{lang}/role-overview.md', 'CANADA-VACANCIES', vlines)
 
 
+def render_ai_share_chart():
+    # Lightcast AI-skill posting shares (AI Index 2026 via Our World in Data); annual, so no partial period.
+    rows = list(csv.DictReader((ROOT / 'research/market/ai-skill-postings-share.csv').open()))
+    years = sorted({r['year'] for r in rows})
+    spec = [('CA', 'CA', '加拿大', 'Canada'), ('US', 'US', '美国', 'United States'), ('GB', 's3', '英国', 'United Kingdom'), ('AU', 's4', '澳大利亚', 'Australia')]
+    for lang in ['zh', 'en']:
+        zh = lang == 'zh'
+        series = []
+        for code, color, lzh, len_ in spec:
+            sub = {r['year']: float(r['ai_job_postings_share_pct']) for r in rows if r['country'] == code}
+            series.append({'color': color, 'label': lzh if zh else len_, 'values': [sub.get(y) for y in years]})
+        title = '要求 AI 技能的招聘广告占全部广告的比例（%）' if zh else 'Job postings requiring AI skills, share of all postings (%)'
+        foot = ('来源：Lightcast，经 Stanford AI Index 2026 与 Our World in Data 发布 · 按岗位要求的技能统计，与 Indeed 关键词占比口径不同' if zh else
+                'Source: Lightcast via Stanford AI Index 2026 and Our World in Data · counts required skills; not comparable with Indeed keyword shares')
+        for theme in THEMES:
+            (OUT / f'market-ai-skill-share-{lang}-{theme}.svg').write_text(
+                line_chart(lang, theme, [dict(x) for x in series], years, title, '占比（%）' if zh else 'Share (%)', foot, partial=False))
+
+
+def render_cops_table():
+    rows = list(csv.DictReader((ROOT / 'research/market/cops-2026-2035-tech.csv').open()))
+    names = {'00000': '全部职业', '20012': '计算机与信息系统经理', '21211': '数据科学家', '21220': '网络安全专家',
+             '21222': '信息系统专家', '21223': '数据库分析与管理', '21230': '计算机系统开发与程序员', '21231': '软件工程师',
+             '21232': '软件开发与程序员', '21234': 'Web 开发与程序员', '21311': '计算机工程师（不含软件）'}
+    cond = {'Balance': ('平衡', 'Balance'), 'N/A': ('—', '—')}
+    order = ['21231', '21232', '21211', '21220', '21234', '00000']
+    for lang in ['zh', 'en']:
+        zh = lang == 'zh'
+        head = ('| 职业（NOC 2021） | 2025 年就业 | 10 年就业增长 | 2026–35 职位空缺 | 2026–35 求职者 | 近期 / 预测供需 |' if zh else
+                '| Occupation (NOC 2021) | Employment 2025 | 10-year employment growth | Job openings 2026–35 | Job seekers 2026–35 | Recent / projected conditions |')
+        lines = [head, '|---|---:|---:|---:|---:|---|']
+        by = {r['noc2021']: r for r in rows}
+        for noc in order:
+            r = by[noc]
+            emp, grow = int(r['employment_2025']), int(r['expansion_demand_2026_2035'])
+            label = (names[noc] if zh else r['occupation']) + ('' if noc == '00000' else f'（{noc}）' if zh else f' ({noc})')
+            c1, c2 = cond.get(r['recent_conditions_2023_2025'], (r['recent_conditions_2023_2025'],) * 2), cond.get(r['projected_conditions_2026_2035'], (r['projected_conditions_2026_2035'],) * 2)
+            lines.append(f"| {label} | {emp:,} | {100 * grow / emp:+.1f}% | {int(r['job_openings_2026_2035']):,} | {int(r['job_seekers_2026_2035']):,} | {c1[0 if zh else 1]} / {c2[0 if zh else 1]} |")
+        lines += ['', ('职位空缺 = 扩张需求 + 退休 + 其他替换需求；求职者 = 毕业生 + 新移民 + 其他流动（可为负）。[完整数据](../../research/market/cops-2026-2035-tech.csv)' if zh else
+                       'Job openings = expansion + retirements + other replacement; job seekers = school leavers + new immigrants + other mobility (may be negative). [Full data](../../research/market/cops-2026-2035-tech.csv)')]
+        replace_block(ROOT / f'docs/{lang}/role-overview.md', 'COPS-TABLE', lines)
+
+
 def render_charts():
     OUT.mkdir(parents=True, exist_ok=True)
     render_skill_charts()
@@ -291,6 +339,8 @@ def render_charts():
     render_skill_tables()
     render_enterprise_tables()
     render_canada_tables()
+    render_ai_share_chart()
+    render_cops_table()
 
 
 if __name__ == '__main__':

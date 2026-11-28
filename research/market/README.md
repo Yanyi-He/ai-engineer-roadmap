@@ -1,6 +1,6 @@
 # Market indicators and provenance
 
-Snapshot: 19 November 2026; extraction cutoff 18 November 2026. These releases cover US/Canada; the Statistics Canada series is the only official quarterly vacancy count by occupation among the three countries. China context is cited separately in the [role overview](../../docs/en/role-overview.md).
+Snapshot: 19 November 2026; extraction cutoff 18 November 2026. Canadian AI-skill, business-AI-use and COPS series added 27 November 2026. These releases cover US/Canada; the Statistics Canada series is the only official quarterly vacancy count by occupation among the three countries. China context is cited separately in the [role overview](../../docs/en/role-overview.md).
 
 | Source | Published measure | Checked-in subset | Coverage | Rights / provenance |
 |---|---|---|---|---|
@@ -8,6 +8,9 @@ Snapshot: 19 November 2026; extraction cutoff 18 November 2026. These releases c
 | [Indeed postings tracker](https://github.com/hiring-lab/job_postings_tracker) |Software Development total-posting index; 2020-02-01=100 |indeed-daily-subset.csv |2025-01-01–2026-11-13 |Indeed Hiring Lab; CC-BY-4.0;raw hash/URL in manifest |
 | [LinkedIn public dashboard](https://pulse.linkedin.com/reporting-ai) |AI builders relative hiring growth YoY and overall hiring-rate YoY by company size |linkedin-monthly-subset.csv |2025-01–2026-10 |LinkedIn Economic Graph; selected factual observations and public-manifest hash |
 | [Statistics Canada Table 14-10-0444-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410044401) |Job vacancies by occupation (NOC 2021 unit group), quarterly, unadjusted; published quality grades A–E |statcan-tech-vacancies.csv |2023Q1–2026Q2, Canada; 10 tech occupations and all occupations |Statistics Canada Open Licence; retrieved through the Web Data Service API on 2026-11-23 |
+| [Lightcast via Stanford AI Index 2026 / Our World in Data](https://ourworldindata.org/grapher/share-artificial-intelligence-job-postings) |Share of job postings requiring at least one AI skill; annual |ai-skill-postings-share.csv |2018–2025; Canada, US, UK, Australia |CC BY 4.0 (Our World in Data); retrieved 2026-11-27 |
+| [Statistics Canada, Survey on Business Conditions](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3310116701) |Percent of businesses using AI to produce goods or deliver services; AI-related staffing changes; barriers |statcan-ai-use.csv |2024Q2–2026Q2, Canada; all industries and NAICS 51, 52, 54 |Statistics Canada Open Licence; Web Data Service download on 2026-11-27 |
+| [COPS 2026–2035 projections](https://open.canada.ca/data/en/dataset/e80851b8-de68-43bd-a85c-c72e1b3a3890) |Ten-year job openings, job seekers and shortage/balance/surplus rating by NOC 2021 occupation |cops-2026-2035-tech.csv |2025 employment; 2026–2035 projections; recent conditions 2023–2025 |Open Government Licence – Canada; retrieved 2026-11-27 |
 
 ## Aggregation
 
@@ -18,6 +21,8 @@ Snapshot: 19 November 2026; extraction cutoff 18 November 2026. These releases c
 2026Q4 is partial. `n_observations`/`n_months`, actual first/last dates and `partial_quarter` remain in the tables. `scripts/summarize_market.py` regenerates both quarterly files from the committed subsets.
 
 ## Scope of inference
+
+Lightcast's AI-skill share counts postings that require at least one AI skill. It is a different measure from Indeed's keyword share and is unaffected by the wording of a posting's disclosure section; country levels depend on each country's posting coverage, so compare years within one country. The Statistics Canada AI-use series asks businesses whether they used AI to produce goods or deliver services; staffing changes are reported by AI-using businesses. COPS rates occupations nationally; "balance" says nothing about a specific seniority level or skill set.
 
 AI keywords include non-engineering jobs using AI. Software Development is a broad category. AI builders extends beyond application/systems AIE. Employer-size series cover overall hiring. These measures provide context and retain separate axes.
 

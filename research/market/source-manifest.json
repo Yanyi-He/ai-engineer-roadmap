@@ -51,6 +51,43 @@
    "bytes": 155998,
    "sha256": "3826ca34494941098ccb9d3c345ceb124eba06b91ab9fc0671f16e658d1919c7",
    "raw_files": "statcan-14100444-raw.json + statcan-14100444-groups.json (private capture)"
+  },
+  {
+   "file": "ai-skill-postings-share.csv",
+   "url": "https://ourworldindata.org/grapher/share-artificial-intelligence-job-postings.csv",
+   "attribution": "Lightcast via Stanford AI Index Report 2026, processed by Our World in Data",
+   "license": "CC BY 4.0 (Our World in Data); underlying data Lightcast via AI Index",
+   "measure": "Share of job postings requiring at least one AI skill, annual, by country",
+   "retrieved": "2026-11-27",
+   "sha256": "27333689e20916bf0986bc1610091fa69e75626c5436c76292620e940bbe4497",
+   "bytes": 5778,
+   "subset_sha256": "b77f8f7c7846ff638328aa6d4ef268937d7029cff5c4ce7074d8138bc30627ac",
+   "raw_files": "owid-ai-postings.csv (private capture)"
+  },
+  {
+   "file": "statcan-ai-use.csv",
+   "url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3310116701",
+   "api": "https://www150.statcan.gc.ca/t1/wds/rest/getFullTableDownloadCSV/33101167/en",
+   "attribution": "Statistics Canada, Canadian Survey on Business Conditions, Tables 33-10-0825-01, 33-10-1004-01, 33-10-1167-01, 33-10-1168-01, 33-10-1169-01",
+   "license": "Statistics Canada Open Licence",
+   "measure": "Business AI use (percent of businesses), AI-related staffing changes and barriers, second quarter of 2024–2026; quality grades A–E as published",
+   "retrieved": "2026-11-27",
+   "sha256": "f1a913a677f60c599db0e6a4341b403428b85303337284f6a4bc70e78a22735f",
+   "bytes": 3966295,
+   "subset_sha256": "b62d5f4b63480760c54b24e2a511aae9948b0bd0f967e9fb032a4b3eefd83840",
+   "raw_files": "33100825/33101004/33101167/33101168/33101169 CSV (private capture; hash is 33101167)"
+  },
+  {
+   "file": "cops-2026-2035-tech.csv",
+   "url": "https://open.canada.ca/data/dataset/e80851b8-de68-43bd-a85c-c72e1b3a3890/resource/7c4767a5-f807-441d-9776-a0074b5870a0/download/summary_sommaire_2026_2035.csv",
+   "attribution": "Employment and Social Development Canada, Canadian Occupational Projection System (COPS) 2026–2035",
+   "license": "Open Government Licence – Canada",
+   "measure": "Projected job openings, job seekers and labour market conditions (shortage/balance/surplus) by NOC 2021 occupation, 2026–2035; recent conditions 2023–2025",
+   "retrieved": "2026-11-27",
+   "sha256": "7cd1920c6774814bfedfc227caff74618011444c8bd121cf8b01f35a562726c7",
+   "bytes": 114230,
+   "subset_sha256": "e53223086664c94d408c970bb8c0a7b658d35ddc4a770c8e501fe666e3877e3f",
+   "raw_files": "summary_sommaire_2026_2035.csv (private capture, Latin-1)"
   }
  ],
  "cutoff": "2026-11-18",
@@ -62,6 +99,8 @@
   "Indeed Software Development is a broad category index, not an SDE title census.",
   "LinkedIn AI builders use broader skills/occupation definitions than application-AIE.",
   "LinkedIn company sizes cover all hiring; they do not establish AIE demand by size.",
-  "Partial-quarter observations retain their actual last dates."
+  "Partial-quarter observations retain their actual last dates.",
+  "Lightcast AI-skill shares count required skills, not keywords; compare years within a country rather than levels across countries.",
+  "COPS 'balance' is a national occupation-level judgement; it does not separate seniority or AI skills."
  ]
 }
